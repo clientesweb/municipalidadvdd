@@ -266,7 +266,7 @@ export default function GuiaDeTramitesPage() {
               <li>Completar y presentar el formulario correspondiente.</li>
               <li>
                 <a
-                  href="/documents/solicitud.pdf"
+                  href="/solicitud.pdf"
                   download="solicitud.pdf"
                   className="text-[#16b5d0] hover:underline font-medium"
                 >
@@ -335,7 +335,7 @@ export default function GuiaDeTramitesPage() {
             <ul className="list-disc list-inside space-y-2">
               <li>
                 <a
-                  href="/documents/Mensuras_de_Posesion.pdf"
+                  href="/Mensuras_de_Posesion.pdf"
                   download="Mensuras_de_Posesion.pdf"
                   className="text-[#16b5d0] hover:underline font-medium"
                 >
