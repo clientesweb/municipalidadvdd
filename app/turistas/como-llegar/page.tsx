@@ -21,7 +21,7 @@ export default function ComoLlegarPage() {
   const rightMenuItems = [
     { name: "Circuitos", href: "/turistas/circuitos" },
     { name: "Servicios", href: "/vecinos/servicios" },
-    { name: "Noticias", href: "/vecinos/noticias" },
+    { name: "Noticias", href: "/noticias" },
   ]
 
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
