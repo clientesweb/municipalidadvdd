@@ -335,7 +335,7 @@ export default function GuiaDeTramitesPage() {
             <ul className="list-disc list-inside space-y-2">
               <li>
                 <a
-                  href="https://www.villadeldique.com.ar/Mensuras_de_Posesion.pdf"
+                  href="https://www.villadeldique.com.ar/Mensuras_de_Posesión.pdf"
                   download="Mensuras_de_Posesion.pdf"
                   className="text-[#16b5d0] hover:underline font-medium"
                 >
