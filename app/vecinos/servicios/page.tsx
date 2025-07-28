@@ -282,6 +282,48 @@ export default function ServiciosPage() {
               </div>
             </div>
           </section>
+          {/* Electricidad */}
+          <section className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
+              <div className="flex items-center space-x-3">
+                <Building2 className="h-6 w-6" />
+                <h2 className="text-2xl sm:text-3xl font-bold">ELECTRICIDAD VILLA DEL DIQUE</h2>
+              </div>
+            </div>
+            <div className="p-6 sm:p-8">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="tel:+5493546534000"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    +54 9 3546 53-4000
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="mailto:Electrocidadvilladeldiqueok@gmail.com"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    Electrocidadvilladeldiqueok@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="https://www.instagram.com/electricidadvilladeldiqueok?igsh=NXkwOWh0Nmt2bW1j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    @electricidadvilladeldiqueok
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Transporte */}
           <section className="bg-white shadow-xl rounded-lg overflow-hidden">
