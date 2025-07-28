@@ -151,7 +151,7 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/banner-vecinos.webp"
+              src="/images/guia-de-tramites.webp"
               alt="Vamos Juntos - Guía de Trámites Villa del Dique"
               fill
               className="object-cover"
@@ -168,7 +168,7 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/banner-noticias-municipalidad-villa-del-dique.webp"
+              src="/images/ver-noticias.webp"
               alt="Villa del Dique No Para - Ver Noticias"
               fill
               className="object-cover"
