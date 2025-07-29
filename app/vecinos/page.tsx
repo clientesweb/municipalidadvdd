@@ -458,7 +458,7 @@ export default function VecinosPage() {
           </p>
           <div className="flex flex-row justify-center items-center gap-3 max-w-md mx-auto">
             <Link
-              href="https://play.google.com/store/apps/details?id=com.example.app" // Placeholder link
+              href="https://www.villadeldique.com.ar/descargar-app-android/VillaDelDique.apk" // Placeholder link
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block hover:scale-105 transition-transform duration-200"
