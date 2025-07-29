@@ -325,6 +325,111 @@ export default function ServiciosPage() {
             </div>
           </section>
 
+          {/* Cooperativa de Obra y Servicios Públicos de Villa del Dique Ltda. */}
+          <section className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
+              <div className="flex items-center space-x-3">
+                <Building2 className="h-6 w-6" />
+                <h2 className="text-2xl sm:text-3xl font-bold">
+                  COOPERATIVA DE OBRA Y SERVICIOS PÚBLICOS DE VILLA DEL DIQUE LTDA.
+                </h2>
+              </div>
+            </div>
+            <div className="p-6 sm:p-8">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="https://share.google/3oNfajs3HtUVQqVG9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    Bv Hipólito Yrigoyen S/N (esq. Chaco) - Ver en Google Maps
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="tel:03546497250"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    03546-497250
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                  <a
+                    href="mailto:coopvdique@grandeslagos.com.ar"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    coopvdique@grandeslagos.com.ar
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Link
+                    href="http://www.coopvvilladeldique.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                  >
+                    www.coopvvilladeldique.com
+                  </Link>
+                </div>
+              </div>
+              <div className="mt-4 space-y-4">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Servicios Principales</h3>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:03546497250"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      03546-497250
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Internet</h3>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:+5493546405803"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      +54 9 3546 40-5803
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pagos</h3>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:+5493546405869"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      +54 9 3546 40-5869
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Sepelio</h3>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:+5493546405807"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      +54 9 3546 40-5807
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Transporte */}
           <section className="bg-white shadow-xl rounded-lg overflow-hidden">
             <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
