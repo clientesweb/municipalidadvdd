@@ -9,14 +9,14 @@ export function ServiceWorkerRegistration() {
         navigator.serviceWorker
           .register("/service-worker.js")
           .then((registration) => {
-            console.log("Service Worker registered with scope:", registration.scope)
+            console.log("Service Worker registrado con éxito:", registration.scope)
           })
           .catch((error) => {
-            console.error("Service Worker registration failed:", error)
+            console.error("Fallo en el registro del Service Worker:", error)
           })
       })
     }
   }, [])
 
-  return null
+  return null // Este componente no renderiza nada visualmente
 }
