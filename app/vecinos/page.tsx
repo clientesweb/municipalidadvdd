@@ -2,8 +2,9 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2 } from "lucide-react"
 import Link from "next/link"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function VecinosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -151,7 +152,7 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/guia-de-tramites.webp"
+              src="/images/banner-vecinos.webp"
               alt="Vamos Juntos - Guía de Trámites Villa del Dique"
               fill
               className="object-cover"
@@ -168,7 +169,7 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/ver-noticias.webp"
+              src="/images/banner-noticias-municipalidad-villa-del-dique.webp"
               alt="Villa del Dique No Para - Ver Noticias"
               fill
               className="object-cover"
@@ -247,6 +248,137 @@ export default function VecinosPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Organización y Horarios de Recolección de Residuos */}
+      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="waste-collection" className="border border-gray-200 rounded-lg shadow-sm bg-white">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 transition-colors duration-200">
+                <div className="flex items-center space-x-3 text-left">
+                  <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <Trash2 className="h-5 w-5" />
+                  </div>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                    ORGANIZACIÓN Y HORARIOS DE RECOLECCIÓN DE RESIDUOS
+                  </h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 text-gray-700">
+                  <p className="text-base sm:text-lg leading-relaxed">Estimados vecinos de Villa del Dique,</p>
+                  <p className="text-base sm:text-lg leading-relaxed">
+                    Con el objetivo de optimizar el servicio de recolección de residuos y facilitar la correcta
+                    disposición de sus desechos, presentamos el detalle de los recorridos de nuestros camiones
+                    compactadores.
+                  </p>
+
+                  <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">RECORRIDO Y DÍAS DE RECOLECCIÓN</h3>
+                  </div>
+
+                  {/* Camión Compactador N° 1 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h4 className="text-lg sm:text-xl font-bold text-[#16b5d0] mb-4 flex items-center">
+                      <div className="w-8 h-8 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        1
+                      </div>
+                      CAMIÓN COMPACTADOR N° 1
+                    </h4>
+
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-gray-900 mb-2">Lunes, Miércoles y Viernes:</h5>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                          <li>Parte de la zona comercial</li>
+                          <li>Aguas Claras</li>
+                          <li>Tulsa</li>
+                          <li>Zona Náutica</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h5 className="font-semibold text-gray-900 mb-2">Martes, Jueves y Sábado:</h5>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                          <li>Aguas Claras</li>
+                          <li>Bello Horizonte</li>
+                          <li>Vallecito</li>
+                          <li>Parte de la zona del Valle</li>
+                          <li>Playa Grande</li>
+                          <li>Peñón</li>
+                          <li>Villa Guadalupe</li>
+                          <li>
+                            Paraje La Sierrita (se recolecta los <strong>Martes y Jueves</strong>)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Camión Compactador N° 2 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h4 className="text-lg sm:text-xl font-bold text-[#16b5d0] mb-4 flex items-center">
+                      <div className="w-8 h-8 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        2
+                      </div>
+                      CAMIÓN COMPACTADOR N° 2
+                    </h4>
+
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-gray-900 mb-2">Lunes y Jueves:</h5>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                          <li>Parte de la zona comercial</li>
+                          <li>Zona del Valle</li>
+                          <li>IPVy Vivero</li>
+                          <li>Residencial "A"</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h5 className="font-semibold text-gray-900 mb-2">Martes y Viernes:</h5>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                          <li>Residencial "B"</li>
+                          <li>Parte de la zona comercial</li>
+                          <li>Villa del Dique Norte</li>
+                          <li>Villa Nueva</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h5 className="font-semibold text-gray-900 mb-2">Miércoles y Sábados:</h5>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                          <li>Gahona</li>
+                          <li>Pinar de Jeremías</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Recomendación Importante */}
+                  <div className="bg-[#d39d85] text-white p-6 rounded-lg">
+                    <h4 className="text-lg sm:text-xl font-bold mb-4">
+                      RECOMENDACIÓN IMPORTANTE SOBRE EL HORARIO DE DISPOSICIÓN DE RESIDUOS
+                    </h4>
+                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                      Para asegurar una recolección aún más eficiente y mantener la limpieza y el orden de nuestras
+                      calles durante todo el día,{" "}
+                      <strong>
+                        les solicitamos encarecidamente que dispongan sus bolsas de residuos en la vía pública durante
+                        la noche anterior al día de recolección.
+                      </strong>
+                    </p>
+                    <p className="text-base sm:text-lg leading-relaxed">
+                      Agradecemos enormemente su comprensión y colaboración para mantener nuestro Villa del Dique limpio
+                      y ordenado.
+                    </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
