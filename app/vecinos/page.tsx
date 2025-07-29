@@ -449,42 +449,40 @@ export default function VecinosPage() {
         </div>
       </section>
 
-      {/* New Section: Download PWA */}
-      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-[#16b5d0] text-center">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            ¡Descarga nuestra web progresiva app!
-          </h2>
-          <p className="text-base sm:text-lg text-white mb-8">
+      {/* New Section: Download PWA - Improved */}
+      <section className="w-full py-6 sm:py-8 px-4 bg-[#16b5d0]">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">¡Descarga nuestra web progresiva app!</h2>
+          <p className="text-sm sm:text-base text-white mb-6">
             Y lleva todas las novedades de villa del dique en tu teléfono
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <div className="flex flex-row justify-center items-center gap-3 max-w-md mx-auto">
             <Link
               href="https://play.google.com/store/apps/details?id=com.example.app" // Placeholder link
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block"
+              className="inline-block hover:scale-105 transition-transform duration-200"
             >
               <Image
                 src="/images/google-play-button.png"
                 alt="Get it on Google Play"
-                width={200}
-                height={60}
-                className="h-12 sm:h-14 w-auto object-contain"
+                width={140}
+                height={42}
+                className="h-10 sm:h-12 w-auto object-contain"
               />
             </Link>
             <Link
               href="https://apps.apple.com/us/app/example-app/id1234567890" // Placeholder link
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block"
+              className="inline-block hover:scale-105 transition-transform duration-200"
             >
               <Image
                 src="/images/app-store-button.png"
                 alt="Available on the App Store"
-                width={200}
-                height={60}
-                className="h-12 sm:h-14 w-auto object-contain"
+                width={140}
+                height={42}
+                className="h-10 sm:h-12 w-auto object-contain"
               />
             </Link>
           </div>
