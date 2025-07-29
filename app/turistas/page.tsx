@@ -1,22 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function TuristasPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [currentBanner, setCurrentBanner] = useState(0)
-
-  // Auto-rotate carousel every 6 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBanner((prev) => (prev === 0 ? 1 : 0))
-    }, 6000)
-
-    return () => clearInterval(interval)
-  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -144,42 +134,20 @@ export default function TuristasPage() {
         </div>
       </header>
 
-      {/* Banner Carousel */}
+      {/* Single Banner */}
       <section className="relative w-full">
-        <div className="relative w-full aspect-video overflow-hidden">
-          {/* Banner 1 - Recomendación al Turista - Now clickable */}
-          <Link
-            href="/turistas/recomendaciones"
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              currentBanner === 0 ? "opacity-100 z-20" : "opacity-0 z-10"
-            }`}
-          >
+        <Link href="/turistas/recomendaciones" className="block w-full">
+          <div className="relative w-full aspect-video overflow-hidden">
             <Image
-              src="/images/banner-turistas-recomendacion.webp"
+              src="/images/recomendacion-al-turista.webp"
               alt="Recomendación al Turista - Villa del Dique"
               fill
               className="object-cover"
               priority
               sizes="100vw"
             />
-          </Link>
-
-          {/* Banner 2 - Ver Mapa Turístico */}
-          <Link
-            href="/turistas/mapa"
-            className={`absolute inset-0 transition-opacity duration-500 ${
-              currentBanner === 1 ? "opacity-100 z-20" : "opacity-0 z-10"
-            }`}
-          >
-            <Image
-              src="/images/banner-secundario-mapa-turismo.webp"
-              alt="Ver Mapa Turístico - Villa del Dique"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </section>
 
       {/* Banner "Tu Plan Perfecto" */}
@@ -323,7 +291,7 @@ export default function TuristasPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-[#c84f9b]">Información Turística</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">Información Turística</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
