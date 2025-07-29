@@ -9,7 +9,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function VecinosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [currentBanner, setCurrentBanner] = useState(0)
-  const [deferredPrompt, setDeferredPrompt] = useState<Event | null>(null) // Estado para almacenar el evento de instalación de la PWA
 
   // Auto-rotate carousel every 6 seconds
   useEffect(() => {
@@ -20,35 +19,8 @@ export default function VecinosPage() {
     return () => clearInterval(interval)
   }, [])
 
-  // Escuchar el evento beforeinstallprompt
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e: Event) => {
-      e.preventDefault() // Previene que la mini-barra de información aparezca en móviles
-      setDeferredPrompt(e) // Guarda el evento para que pueda ser disparado más tarde
-      console.log("Evento 'beforeinstallprompt' disparado.")
-    }
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
-
-    return () => {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
-    }
-  }, [])
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
-  }
-
-  const handleInstallClick = async () => {
-    if (deferredPrompt) {
-      // Muestra el diálogo de instalación
-      ;(deferredPrompt as any).prompt()
-      // Espera la respuesta del usuario al diálogo
-      const { outcome } = await (deferredPrompt as any).userChoice
-      console.log(`Respuesta del usuario al diálogo de instalación: ${outcome}`)
-      // Una vez que se usa el prompt, no se puede usar de nuevo hasta que se dispare un nuevo evento beforeinstallprompt.
-      setDeferredPrompt(null)
-    }
   }
 
   const leftMenuItems = [
@@ -487,34 +459,22 @@ export default function VecinosPage() {
             Y lleva todas las novedades de villa del dique en tu teléfono
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            {deferredPrompt ? ( // Solo muestra el botón si la PWA es instalable
-              <button
-                onClick={handleInstallClick}
-                className="inline-block"
-                aria-label="Instalar aplicación en Google Play"
-              >
-                <Image
-                  src="/images/google-play-button.png"
-                  alt="Get it on Google Play"
-                  width={200}
-                  height={60}
-                  className="h-12 sm:h-14 w-auto object-contain"
-                />
-              </button>
-            ) : (
-              // Opcionalmente, muestra un botón deshabilitado o diferente si no es instalable
-              <div className="inline-block opacity-50 cursor-not-allowed">
-                <Image
-                  src="/images/google-play-button.png"
-                  alt="Get it on Google Play (No disponible)"
-                  width={200}
-                  height={60}
-                  className="h-12 sm:h-14 w-auto object-contain"
-                />
-              </div>
-            )}
             <Link
-              href="https://apps.apple.com/us/app/example-app/id1234567890" // En iOS, la instalación es a través de "Add to Home Screen" en Safari
+              href="https://play.google.com/store/apps/details?id=com.example.app" // Placeholder link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Image
+                src="/images/google-play-button.png"
+                alt="Get it on Google Play"
+                width={200}
+                height={60}
+                className="h-12 sm:h-14 w-auto object-contain"
+              />
+            </Link>
+            <Link
+              href="https://apps.apple.com/us/app/example-app/id1234567890" // Placeholder link
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
