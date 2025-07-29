@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2 } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign, Megaphone } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -183,75 +183,88 @@ export default function VecinosPage() {
         </div>
       </section>
 
-      {/* Pago de Tasas Municipales Section */}
+      {/* Pago de Tasas Municipales Section (now in Accordion) */}
       <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-gradient-to-r from-[#16b5d0] to-[#14a3bd]">
         <div className="container mx-auto max-w-6xl">
-          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 lg:p-12">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                ¿Querés ponerte al día con tus tasas municipales?
-              </h2>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-medium">
-                Seguí estos simples pasos para consultar y abonar tu deuda desde la comodidad de tu casa:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-10">
-              <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
-                  1
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="municipal-taxes" className="border border-gray-200 rounded-lg shadow-sm bg-white">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 transition-colors duration-200">
+                <div className="flex items-center space-x-3 text-left">
+                  <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <DollarSign className="h-5 w-5" />
+                  </div>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                    ¿QUERÉS PONERTE AL DÍA CON TUS TASAS MUNICIPALES?
+                  </h2>
                 </div>
-                <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
-                  Hacé clic en "Consulta y pago de deuda"
-                </p>
-              </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 text-gray-700">
+                  <p className="text-base sm:text-lg leading-relaxed">
+                    Seguí estos simples pasos para consultar y abonar tu deuda desde la comodidad de tu casa:
+                  </p>
 
-              <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
-                  2
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-10">
+                    <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                        1
+                      </div>
+                      <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
+                        Hacé clic en "Consulta y pago de deuda"
+                      </p>
+                    </div>
+
+                    <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                        2
+                      </div>
+                      <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
+                        Ingresá en la opción "Tasa por Servicio a la Propiedad"
+                      </p>
+                    </div>
+
+                    <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                        3
+                      </div>
+                      <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
+                        Completá con tu número de cuenta y verificador
+                      </p>
+                    </div>
+
+                    <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                        4
+                      </div>
+                      <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
+                        Hacé clic en "Pagar"
+                      </p>
+                    </div>
+
+                    <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                        5
+                      </div>
+                      <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
+                        Seleccioná tu método de pago preferido y ¡listo!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <a
+                      href="https://www.municipalidad.com/villadeldique"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-[#d39d85] hover:bg-[#c8906f] text-white font-bold text-lg sm:text-xl lg:text-2xl px-8 py-4 sm:px-10 sm:py-5 lg:px-12 lg:py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
+                    >
+                      Consulta y Pago de Deuda
+                    </a>
+                  </div>
                 </div>
-                <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
-                  Ingresá en la opción "Tasa por Servicio a la Propiedad"
-                </p>
-              </div>
-
-              <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
-                  3
-                </div>
-                <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
-                  Completá con tu número de cuenta y verificador
-                </p>
-              </div>
-
-              <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
-                  4
-                </div>
-                <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">Hacé clic en "Pagar"</p>
-              </div>
-
-              <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
-                  5
-                </div>
-                <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
-                  Seleccioná tu método de pago preferido y ¡listo!
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a
-                href="https://www.municipalidad.com/villadeldique"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#d39d85] hover:bg-[#c8906f] text-white font-bold text-lg sm:text-xl lg:text-2xl px-8 py-4 sm:px-10 sm:py-5 lg:px-12 lg:py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
-              >
-                Consulta y Pago de Deuda
-              </a>
-            </div>
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
@@ -435,6 +448,16 @@ export default function VecinosPage() {
           </div>
         </div>
       </section>
+
+      {/* Floating Complaint Button */}
+      <Link
+        href="/vecinos/reclamos"
+        className="fixed bottom-8 right-8 z-50 bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-colors duration-200 flex items-center gap-2 text-lg font-semibold group"
+        aria-label="Ir a la página de reclamos"
+      >
+        <Megaphone className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
+        <span className="hidden sm:inline-block">Reclamos</span>
+      </Link>
 
       {/* Footer */}
       <footer className="w-full bg-[#16b5d0] text-white py-8 sm:py-10 md:py-12 px-4">
