@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     apple: "/icon-192x192.png",
   },
   generator: "v0.dev",
-  manifest: "/manifest.ts", // Agrega la referencia al manifest
+  manifest: "/manifest.json", // Agrega la referencia al manifest
 }
 
 export default function RootLayout({
