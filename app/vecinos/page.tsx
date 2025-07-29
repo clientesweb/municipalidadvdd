@@ -24,7 +24,7 @@ export default function VecinosPage() {
   }
 
   const leftMenuItems = [
-    { name: "Noticias", href: "/noticias" }, // Changed from "/vecinos/noticias"
+    { name: "Noticias", href: "/noticias" },
     { name: "El Pueblo", href: "/vecinos/el-pueblo" },
     { name: "Muni", href: "/vecinos/muni" },
   ]
@@ -66,14 +66,16 @@ export default function VecinosPage() {
 
             {/* Logo Center */}
             <div className="flex-shrink-0 mx-6 xl:mx-8">
-              <Image
-                src="/images/logo-oficial.webp"
-                alt="Villa del Dique Municipalidad"
-                width={300}
-                height={120}
-                className="h-12 sm:h-14 md:h-16 w-auto object-contain"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/images/logo-oficial.webp"
+                  alt="Villa del Dique Municipalidad"
+                  width={300}
+                  height={120}
+                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Right Menu Items */}
@@ -94,14 +96,16 @@ export default function VecinosPage() {
           <div className="flex lg:hidden justify-between items-center">
             {/* Logo */}
             <div className="flex-1 flex justify-center">
-              <Image
-                src="/images/logo-oficial.webp"
-                alt="Villa del Dique Municipalidad"
-                width={300}
-                height={120}
-                className="h-12 sm:h-14 md:h-16 w-auto object-contain"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/images/logo-oficial.webp"
+                  alt="Villa del Dique Municipalidad"
+                  width={300}
+                  height={120}
+                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Hamburger Menu Button */}
@@ -144,7 +148,7 @@ export default function VecinosPage() {
       {/* Banner Carousel */}
       <section className="relative w-full">
         <div className="relative w-full aspect-video overflow-hidden">
-          {/* Banner 1 - Vamos Juntos - Guía de Trámites */}
+          {/* Banner 1 - Guía de Trámites */}
           <Link
             href="/vecinos/guia-de-tramites"
             className={`absolute inset-0 transition-opacity duration-500 ${
@@ -152,8 +156,8 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/banner-vecinos.webp"
-              alt="Vamos Juntos - Guía de Trámites Villa del Dique"
+              src="/images/guia-de-tramites.webp"
+              alt="Guía de Trámites - Villa del Dique"
               fill
               className="object-cover"
               priority
@@ -161,7 +165,7 @@ export default function VecinosPage() {
             />
           </Link>
 
-          {/* Banner 2 - Villa del Dique No Para - Noticias */}
+          {/* Banner 2 - Ver Noticias */}
           <Link
             href="/noticias"
             className={`absolute inset-0 transition-opacity duration-500 ${
@@ -169,8 +173,8 @@ export default function VecinosPage() {
             }`}
           >
             <Image
-              src="/images/banner-noticias-municipalidad-villa-del-dique.webp"
-              alt="Villa del Dique No Para - Ver Noticias"
+              src="/images/ver-noticias.webp"
+              alt="Ver Noticias - Villa del Dique"
               fill
               className="object-cover"
               sizes="100vw"
@@ -480,7 +484,7 @@ export default function VecinosPage() {
                   </li>
                   <li>
                     <a
-                      href="/noticias" // Changed from "/vecinos/noticias"
+                      href="/noticias"
                       className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Noticias
@@ -523,7 +527,7 @@ export default function VecinosPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-[#16b5d0]">Emergencias y Contacto</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">Emergencias y Contacto</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
