@@ -492,12 +492,12 @@ export default function VecinosPage() {
       {/* New Banner: Descargá Nuestra App */}
       <section className="relative w-full">
         <Link
-          href="/descargar-app" // Placeholder link for app download
+          href="#" // Placeholder link for app download
           className="block w-full"
         >
           <div className="relative w-full">
             <Image
-              src="/images/banner-descarga-wpa.webp"
+              src="/banner-descarga-wpa.webp"
               alt="Villa del Dique - Descargá Nuestra App"
               width={1920}
               height={200}
