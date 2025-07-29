@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Calendar, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Calendar, ArrowRight } from "lucide-react"
 
-export default function NoticiasIndexPage() {
+export default function NoticiasPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -25,21 +25,6 @@ export default function NoticiasIndexPage() {
   ]
 
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
-
-  // News articles data
-  const newsArticles = [
-    {
-      id: "villa-del-dique-no-para",
-      title: "Avances de Obras Públicas en Villa del Dique Durante el Receso Invernal",
-      excerpt:
-        "Mientras los niños y niñas disfrutan del receso invernal, el Municipio de Villa del Dique continúa ejecutando importantes obras en distintos puntos de la localidad.",
-      date: "8 de julio de 2025",
-      author: "Municipalidad de Villa del Dique",
-      image: "/images/villa-del-dique-no-para.webp",
-      featured: true,
-      tags: ["Obras Públicas", "Infraestructura", "Desarrollo"],
-    },
-  ]
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -149,142 +134,91 @@ export default function NoticiasIndexPage() {
         </div>
       </header>
 
-      {/* Main Content Area */}
+      {/* Main Content */}
       <main className="flex-grow container mx-auto py-8 px-4 sm:py-12 md:py-16 lg:py-20">
-        {/* Page Title */}
+        {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-4">NOTICIAS</h1>
-          <div className="w-24 h-1 bg-[#16b5d0] mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Mantente informado sobre las últimas novedades y avances en Villa del Dique
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">Noticias</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Mantente informado sobre las últimas novedades y acontecimientos de Villa del Dique
           </p>
         </div>
 
-        {/* Featured Article */}
-        {newsArticles
-          .filter((article) => article.featured)
-          .map((article) => (
-            <div key={article.id} className="mb-16">
-              <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-2 px-4 rounded-t-lg">
-                <span className="font-semibold text-sm uppercase tracking-wide">Noticia Destacada</span>
-              </div>
-
-              <div className="bg-white shadow-xl rounded-b-lg overflow-hidden">
-                <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="relative h-64 lg:h-auto">
-                    <Image
-                      src={article.image || "/placeholder.svg"}
-                      alt={article.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-
-                  <div className="p-8 lg:p-12 flex flex-col justify-center">
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {article.tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          className="bg-[#16b5d0]/10 text-[#16b5d0] px-3 py-1 rounded-full text-sm font-medium"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 leading-tight">{article.title}</h2>
-
-                    <p className="text-gray-600 mb-6 leading-relaxed">{article.excerpt}</p>
-
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
-                      <div className="flex items-center space-x-2">
-                        <Calendar className="h-4 w-4" />
-                        <span>{article.date}</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <User className="h-4 w-4" />
-                        <span>{article.author}</span>
-                      </div>
-                    </div>
-
-                    <Link
-                      href={`/noticias/${article.id}`}
-                      className="inline-flex items-center space-x-2 bg-[#16b5d0] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0ea5e9] transition-colors duration-200 w-fit"
-                    >
-                      <span>Leer más</span>
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-
-        {/* Regular Articles Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsArticles
-            .filter((article) => !article.featured)
-            .map((article) => (
-              <article
-                key={article.id}
-                className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative h-48">
+        {/* Featured News */}
+        <section className="mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Noticia Destacada</h2>
+          <Link href="/noticias/nueva-maquinaria-vial" className="group">
+            <article className="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div className="relative h-64 sm:h-80 lg:h-96">
                   <Image
-                    src={article.image || "/placeholder.svg"}
-                    alt={article.title}
+                    src="/images/incoporacion-maquinaria.webp"
+                    alt="Villa del Dique suma nueva maquinaria para el mantenimiento vial"
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
                   />
                 </div>
-
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {article.tags.slice(0, 2).map((tag, index) => (
-                      <span
-                        key={index}
-                        className="bg-[#16b5d0]/10 text-[#16b5d0] px-2 py-1 rounded-full text-xs font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                <div className="p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                  <div className="flex items-center space-x-2 text-[#16b5d0] mb-4">
+                    <Calendar className="h-4 w-4" />
+                    <span className="text-sm font-medium">27 de julio de 2025</span>
                   </div>
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Villa del Dique suma nueva maquinaria para el mantenimiento vial
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    La Municipalidad incorporó una moderna motoniveladora a su parque automotor para mejorar los
+                    servicios públicos y optimizar los trabajos de mantenimiento vial.
+                  </p>
+                  <div className="flex items-center text-[#16b5d0] font-semibold group-hover:text-[#0ea5e9] transition-colors duration-200">
+                    <span>Leer más</span>
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </Link>
+        </section>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">{article.title}</h3>
-
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{article.excerpt.substring(0, 120)}...</p>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2 text-xs text-gray-500">
-                      <Calendar className="h-3 w-3" />
-                      <span>{article.date}</span>
-                    </div>
-
-                    <Link
-                      href={`/noticias/${article.id}`}
-                      className="text-[#16b5d0] hover:text-[#0ea5e9] font-semibold text-sm flex items-center space-x-1 transition-colors duration-200"
-                    >
-                      <span>Leer más</span>
-                      <ArrowRight className="h-3 w-3" />
-                    </Link>
+        {/* Regular News */}
+        <section>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Más Noticias</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Villa del Dique No Para */}
+            <Link href="/noticias/villa-del-dique-no-para" className="group">
+              <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/villa-del-dique-no-para.webp"
+                    alt="Villa del Dique No Para: Avances de Obras Públicas Durante el Receso Invernal"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center space-x-2 text-[#16b5d0] mb-3">
+                    <Calendar className="h-4 w-4" />
+                    <span className="text-sm font-medium">8 de julio de 2025</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Villa del Dique No Para: Avances de Obras Públicas Durante el Receso Invernal
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    El Municipio continúa ejecutando importantes obras en distintos puntos de la localidad durante el
+                    receso invernal.
+                  </p>
+                  <div className="flex items-center text-[#16b5d0] font-semibold text-sm group-hover:text-[#0ea5e9] transition-colors duration-200">
+                    <span>Leer más</span>
+                    <ArrowRight className="h-3 w-3 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
                 </div>
               </article>
-            ))}
-        </div>
-
-        {/* Empty State if no regular articles */}
-        {newsArticles.filter((article) => !article.featured).length === 0 && (
-          <div className="text-center py-12">
-            <div className="text-gray-400 mb-4">
-              <Calendar className="h-16 w-16 mx-auto" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2">Más noticias próximamente</h3>
-            <p className="text-gray-500">Estamos trabajando para traerte las últimas novedades de Villa del Dique</p>
+            </Link>
           </div>
-        )}
+        </section>
       </main>
 
       {/* Footer */}
