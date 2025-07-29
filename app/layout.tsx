@@ -1,13 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google" // Importar desde next/font/google
+import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
 import "./globals.css"
+import { ServiceWorkerRegistration } from "@/components/service-worker-registration" // Import the new component
 
 // Configurar Darker Grotesque con el rango de pesos
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
   variable: "--font-darker-grotesque",
-  weight: ["300", "400", "500", "600", "700", "800", "900"], // Especificar todos los pesos
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 })
 
@@ -80,11 +81,19 @@ export const metadata: Metadata = {
   category: "government",
   classification: "Gobierno Municipal",
   other: {
-    "theme-color": "#16b5d0", // Updated color
-    "msapplication-TileColor": "#16b5d0", // Updated color
+    "theme-color": "#16b5d0",
+    "msapplication-TileColor": "#16b5d0",
     "msapplication-config": "/browserconfig.xml",
   },
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192x192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512x512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/icon-192x192.png",
+  },
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -95,18 +104,20 @@ export default function RootLayout({
   return (
     <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
       <head>
-        <meta name="theme-color" content="#16b5d0" /> {/* Updated color */}
-        <meta name="msapplication-TileColor" content="#16b5d0" /> {/* Updated color */}
+        <meta name="theme-color" content="#16b5d0" />
+        <meta name="msapplication-TileColor" content="#16b5d0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Villa del Dique" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Favicons */}
+        {/* Link to manifest.json */}
+        <link rel="manifest" href="/manifest.json" />
+        {/* Favicons (already present, but ensure consistency with manifest) */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/images/favicon-192x192.png" type="image/png" sizes="192x192" />
-        <link rel="icon" href="/images/favicon-512x512.png" type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/images/favicon-192x192.png" />
+        <link rel="icon" href="/icon-192x192.png" type="image/png" sizes="192x192" />
+        <link rel="icon" href="/icon-512x512.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/icon-192x192.png" />
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -143,7 +154,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-darker-grotesk">{children}</body>
+      <body className="font-darker-grotesk">
+        {children}
+        <ServiceWorkerRegistration /> {/* Register the service worker */}
+      </body>
     </html>
   )
 }
