@@ -472,7 +472,7 @@ export default function VecinosPage() {
               />
             </Link>
             <Link
-              href="https://apps.apple.com/us/app/example-app/id1234567890" // Placeholder link
+              href="#" // Placeholder link
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block hover:scale-105 transition-transform duration-200"
