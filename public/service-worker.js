@@ -1,36 +1,41 @@
+const CACHE_NAME = "villa-del-dique-cache-v1"
+const urlsToCache = [
+  "/",
+  "/index.html",
+  "/globals.css",
+  "/favicon.ico",
+  "/icon-192x192.png",
+  "/icon-512x512.png",
+  // Agrega aquí cualquier otro recurso estático que quieras cachear
+  // Por ejemplo: '/images/logo.png', '/js/main.js', '/css/styles.css'
+  "/images/logo-oficial.webp",
+  "/images/guia-de-tramites.webp",
+  "/images/ver-noticias.webp",
+  "/images/banner-tu-plan-perfecto.webp",
+  "/images/google-play-button.png",
+  "/images/app-store-button.png",
+  "/images/banner-descarga-wpa.webp",
+  "/images/logo-footer-blanco.png",
+]
+
 self.addEventListener("install", (event) => {
   console.log("Service Worker: Instalado")
   event.waitUntil(
-    caches.open("v1").then((cache) => {
-      return cache.addAll([
-        "/",
-        "/index.html",
-        "/app/vecinos/page.tsx", // Asegúrate de que las rutas de tus páginas principales estén aquí
-        "/app/noticias/page.tsx",
-        "/app/turistas/page.tsx",
-        "/images/logo-oficial.webp",
-        "/images/guia-de-tramites.webp",
-        "/images/ver-noticias.webp",
-        "/images/banner-tu-plan-perfecto.webp",
-        "/images/google-play-button.png",
-        "/images/app-store-button.png",
-        "/images/banner-descarga-wpa.webp",
-        "/images/logo-footer-blanco.png",
-        "/icon-192x192.png",
-        "/icon-512x512.png",
-        // Agrega aquí cualquier otro recurso estático que quieras cachear
-      ])
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("Opened cache")
+      return cache.addAll(urlsToCache)
     }),
   )
 })
 
 self.addEventListener("activate", (event) => {
   console.log("Service Worker: Activado")
+  const cacheWhitelist = [CACHE_NAME]
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
-          if (cacheName !== "v1") {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
             console.log("Service Worker: Eliminando caché antigua", cacheName)
             return caches.delete(cacheName)
           }
@@ -44,7 +49,11 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return response || fetch(event.request)
+      // Cache hit - return response
+      if (response) {
+        return response
+      }
+      return fetch(event.request)
     }),
   )
 })
