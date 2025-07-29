@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign, Megaphone } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -448,6 +448,16 @@ export default function VecinosPage() {
           </div>
         </div>
       </section>
+
+      {/* Floating Complaint Button */}
+      <Link
+        href="/vecinos/reclamos"
+        className="fixed bottom-8 right-8 z-50 bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-colors duration-200 flex items-center gap-2 text-lg font-semibold group"
+        aria-label="Ir a la página de reclamos"
+      >
+        <Megaphone className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
+        <span className="hidden sm:inline-block">Reclamos</span>
+      </Link>
 
       {/* Footer */}
       <footer className="w-full bg-[#16b5d0] text-white py-8 sm:py-10 md:py-12 px-4">
