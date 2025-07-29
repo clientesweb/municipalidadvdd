@@ -1,15 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative, Inter } from "next/font/google"
+import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google" // Importar desde next/font/google
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { ServiceWorkerRegistration } from "@/components/service-worker-registration" // Import the new component
 
 // Configurar Darker Grotesque con el rango de pesos
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
   variable: "--font-darker-grotesque",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"], // Especificar todos los pesos
   display: "swap",
 })
 
@@ -21,12 +19,10 @@ const cinzelDecorative = Cinzel_Decorative({
   display: "swap",
 })
 
-// Configurar Inter con el subconjunto latino
-const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
-  title: "Municipalidad de Villa del Dique",
-  description: "Página oficial de la Municipalidad de Villa del Dique",
+  title: "Villa del Dique - Municipalidad Oficial | Córdoba, Argentina",
+  description:
+    "Sitio web oficial de la Municipalidad de Villa del Dique, Córdoba. Información para vecinos y turistas, trámites municipales, noticias locales y servicios públicos. El progreso que queremos.",
   keywords: [
     "Villa del Dique",
     "Municipalidad",
@@ -84,44 +80,33 @@ export const metadata: Metadata = {
   category: "government",
   classification: "Gobierno Municipal",
   other: {
-    "theme-color": "#16b5d0",
-    "msapplication-TileColor": "#16b5d0",
+    "theme-color": "#16b5d0", // Updated color
+    "msapplication-TileColor": "#16b5d0", // Updated color
     "msapplication-config": "/browserconfig.xml",
   },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon-192x192.png", type: "image/png", sizes: "192x192" },
-      { url: "/icon-512x512.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: "/icon-192x192.png",
-  },
-  generator: "v0.dev",
-  manifest: "/manifest.json", // Agrega la referencia al manifest
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
+    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
       <head>
-        <meta name="theme-color" content="#16b5d0" />
-        <meta name="msapplication-TileColor" content="#16b5d0" />
+        <meta name="theme-color" content="#16b5d0" /> {/* Updated color */}
+        <meta name="msapplication-TileColor" content="#16b5d0" /> {/* Updated color */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Villa del Dique" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Link to manifest.json */}
-        <link rel="manifest" href="/manifest.json" />
-        {/* Favicons (already present, but ensure consistency with manifest) */}
+        {/* Favicons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon-192x192.png" type="image/png" sizes="192x192" />
-        <link rel="icon" href="/icon-512x512.png" type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/icon-192x192.png" />
+        <link rel="icon" href="/images/favicon-192x192.png" type="image/png" sizes="192x192" />
+        <link rel="icon" href="/images/favicon-512x512.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/images/favicon-192x192.png" />
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -158,12 +143,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-          <ServiceWorkerRegistration /> {/* Register the service worker */}
-        </ThemeProvider>
-      </body>
+      <body className="font-darker-grotesk">{children}</body>
     </html>
   )
 }
