@@ -563,7 +563,7 @@ export default function VecinosPage() {
       {/* Footer */}
       <footer className="w-full bg-[#16b5d0] text-white py-8 sm:py-10 md:py-12 px-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Logo y Lema */}
             <div className="flex flex-col items-center sm:items-center lg:items-start space-y-4">
               <Image
