@@ -1,21 +1,21 @@
 "use client"
 
 import type React from "react"
-
-import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, CheckCircle } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Label } from "@/components/ui/label"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { CheckCircle } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
 
 export default function ReclamosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isSuccessDialogOpen, setIsSuccessDialogOpen] = useState(false)
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -23,11 +23,10 @@ export default function ReclamosPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Aquí iría la lógica para enviar el formulario (e.g., a una API)
-    console.log("Formulario de reclamo enviado!")
-    setIsSuccessDialogOpen(true)
-    // Opcional: Resetear el formulario después de enviar
-    // e.currentTarget.reset();
+    // Here you would typically send the form data to your backend
+    console.log("Formulario enviado!")
+    setIsDialogOpen(true)
+    // Optionally reset form fields here
   }
 
   const leftMenuItems = [
@@ -159,21 +158,21 @@ export default function ReclamosPage() {
               Formulario de Reclamos
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 text-center">
-              Completá el siguiente formulario para enviar tu reclamo a la Municipalidad de Villa del Dique.
+              Ayúdanos a mejorar los servicios de Villa del Dique. Completa el siguiente formulario con tu reclamo o
+              sugerencia.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <Label htmlFor="nombre">Nombre y Apellido</Label>
-                  <Input id="nombre" type="text" placeholder="Tu nombre completo" required />
+                  <Input id="nombre" placeholder="Tu nombre completo" required />
                 </div>
                 <div>
                   <Label htmlFor="email">Email</Label>
                   <Input id="email" type="email" placeholder="tu@ejemplo.com" required />
                 </div>
               </div>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <Label htmlFor="telefono">Teléfono</Label>
@@ -181,48 +180,56 @@ export default function ReclamosPage() {
                 </div>
                 <div>
                   <Label htmlFor="direccion">Dirección del Reclamo</Label>
-                  <Input id="direccion" type="text" placeholder="Calle y número" required />
+                  <Input id="direccion" placeholder="Calle, número, barrio" required />
                 </div>
               </div>
-
               <div>
                 <Label htmlFor="tipoReclamo">Tipo de Reclamo</Label>
                 <Select required>
                   <SelectTrigger id="tipoReclamo" className="w-full">
-                    <SelectValue placeholder="Selecciona el tipo de reclamo" />
+                    <SelectValue placeholder="Selecciona un tipo de reclamo" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="alumbrado">Alumbrado Público</SelectItem>
                     <SelectItem value="residuos">Recolección de Residuos</SelectItem>
                     <SelectItem value="vias">Vías Públicas (Calles, veredas)</SelectItem>
                     <SelectItem value="espaciosVerdes">Espacios Verdes (Plazas, parques)</SelectItem>
-                    <SelectItem value="aguaSaneamiento">Agua y Saneamiento</SelectItem>
+                    <SelectItem value="agua">Agua y Saneamiento</SelectItem>
                     <SelectItem value="otros">Otros</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
-
               <div>
                 <Label htmlFor="descripcion">Descripción del Reclamo</Label>
-                <Textarea
-                  id="descripcion"
-                  placeholder="Detalla tu reclamo aquí..."
-                  rows={5}
-                  className="resize-y"
-                  required
-                />
+                <Textarea id="descripcion" placeholder="Detalla tu reclamo aquí..." rows={5} required />
               </div>
-
               <div>
                 <Label htmlFor="adjunto">Adjuntar Archivo (Opcional)</Label>
                 <Input id="adjunto" type="file" />
-                <p className="text-sm text-gray-500 mt-1">Fotos o documentos relevantes (Max. 5MB)</p>
+                <p className="text-sm text-gray-500 mt-1">Puedes adjuntar fotos o documentos relevantes.</p>
               </div>
-
-              <Button type="submit" className="w-full bg-[#16b5d0] hover:bg-[#14a3bd] text-white py-3 text-lg">
+              <Button type="submit" className="w-full py-3 text-lg bg-[#16b5d0] hover:bg-[#14a3bd] text-white">
                 Enviar Reclamo
               </Button>
             </form>
+
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+              <DialogContent className="sm:max-w-[425px] p-6 text-center">
+                <DialogHeader>
+                  <CheckCircle className="mx-auto h-16 w-16 text-green-500 mb-4" />
+                  <DialogTitle className="text-2xl font-bold">¡Reclamo Enviado!</DialogTitle>
+                  <DialogDescription className="text-gray-600">
+                    Tu reclamo ha sido recibido con éxito. Nos pondremos en contacto contigo si es necesario.
+                  </DialogDescription>
+                </DialogHeader>
+                <Button
+                  onClick={() => setIsDialogOpen(false)}
+                  className="mt-4 bg-[#16b5d0] hover:bg-[#14a3bd] text-white"
+                >
+                  Cerrar
+                </Button>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </main>
@@ -295,7 +302,7 @@ export default function ReclamosPage() {
 
             {/* Institucional */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">Institucional</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">Institucional</h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -355,24 +362,6 @@ export default function ReclamosPage() {
           </div>
         </div>
       </footer>
-
-      {/* Success Dialog */}
-      <Dialog open={isSuccessDialogOpen} onOpenChange={setIsSuccessDialogOpen}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader className="flex flex-col items-center text-center">
-            <CheckCircle className="h-16 w-16 text-green-500 mb-4" />
-            <DialogTitle className="text-2xl font-bold">¡Reclamo Enviado!</DialogTitle>
-            <DialogDescription className="text-base text-gray-600 mt-2">
-              Tu reclamo ha sido recibido exitosamente. Nos pondremos en contacto a la brevedad.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="flex justify-center mt-6">
-            <Button onClick={() => setIsSuccessDialogOpen(false)} className="bg-[#16b5d0] hover:bg-[#14a3bd]">
-              Cerrar
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   )
 }
