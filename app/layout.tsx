@@ -1,7 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
+import { Darker_Grotesque, Cinzel_Decorative, Inter } from "next/font/google"
 import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
 import { ServiceWorkerRegistration } from "@/components/service-worker-registration" // Import the new component
 
 // Configurar Darker Grotesque con el rango de pesos
@@ -20,10 +21,12 @@ const cinzelDecorative = Cinzel_Decorative({
   display: "swap",
 })
 
+// Configurar Inter con el subconjunto latino
+const inter = Inter({ subsets: ["latin"] })
+
 export const metadata: Metadata = {
-  title: "Villa del Dique - Municipalidad Oficial | Córdoba, Argentina",
-  description:
-    "Sitio web oficial de la Municipalidad de Villa del Dique, Córdoba. Información para vecinos y turistas, trámites municipales, noticias locales y servicios públicos. El progreso que queremos.",
+  title: "Municipalidad de Villa del Dique",
+  description: "Página oficial de la Municipalidad de Villa del Dique",
   keywords: [
     "Villa del Dique",
     "Municipalidad",
@@ -94,15 +97,16 @@ export const metadata: Metadata = {
     apple: "/icon-192x192.png",
   },
   generator: "v0.dev",
+  manifest: "/manifest.ts", // Agrega la referencia al manifest
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
+    <html lang="es" suppressHydrationWarning className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
       <head>
         <meta name="theme-color" content="#16b5d0" />
         <meta name="msapplication-TileColor" content="#16b5d0" />
@@ -154,9 +158,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-darker-grotesk">
-        {children}
-        <ServiceWorkerRegistration /> {/* Register the service worker */}
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+          <ServiceWorkerRegistration /> {/* Register the service worker */}
+        </ThemeProvider>
       </body>
     </html>
   )
