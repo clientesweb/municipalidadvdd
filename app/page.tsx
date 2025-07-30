@@ -1,41 +1,14 @@
 import Image from "next/image"
 import { Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
-import { Darker_Grotesque } from "next/font/google" // Importar la fuente de Google [^1]
-
-// Definir las instancias de la fuente con sus pesos y variables CSS [^2]
-const darkerGrotesqueMedium = Darker_Grotesque({
-  weight: "500", // Medium
-  subsets: ["latin"],
-  variable: "--font-darker-grotesque-medium",
-  display: "swap",
-})
-
-const darkerGrotesqueBold = Darker_Grotesque({
-  weight: "700", // Bold
-  subsets: ["latin"],
-  variable: "--font-darker-grotesque-bold",
-  display: "swap",
-})
-
-const darkerGrotesqueBlack = Darker_Grotesque({
-  weight: "900", // Black
-  subsets: ["latin"],
-  variable: "--font-darker-grotesque-black",
-  display: "swap",
-})
 
 export default function HomePage() {
   return (
-    <div
-      className={`${darkerGrotesqueMedium.variable} ${darkerGrotesqueBold.variable} ${darkerGrotesqueBlack.variable} font-darker-grotesque-medium min-h-screen`}
-    >
+    <div className="min-h-screen">
       {/* Header Announcement */}
       <div className="w-full bg-municipal-primary text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-sm sm:text-base font-darker-grotesque-medium">
-            Página oficial de la Municipalidad de Villa del Dique
-          </p>
+          <p className="text-sm sm:text-base font-montserrat">Página oficial de la Municipalidad de Villa del Dique</p>
         </div>
       </div>
 
@@ -78,7 +51,7 @@ export default function HomePage() {
               href="/vecinos"
               className="group bg-white/70 hover:bg-white/90 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-4 sm:py-6 md:py-8 shadow-lg w-full sm:w-auto min-w-[240px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[360px] xl:min-w-[400px] rounded-sm block text-center"
             >
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-darker-grotesque-bold text-municipal-primary group-hover:text-municipal-secondary tracking-wide">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-nunito font-bold text-municipal-primary group-hover:text-municipal-secondary tracking-wide">
                 VECINO
               </span>
             </Link>
@@ -88,7 +61,7 @@ export default function HomePage() {
               href="/turistas"
               className="group bg-white/70 hover:bg-white/90 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-4 sm:py-6 md:py-8 shadow-lg w-full sm:w-auto min-w-[240px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[360px] xl:min-w-[400px] rounded-sm block text-center"
             >
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-darker-grotesque-bold text-[#E91E63] group-hover:text-[#C2185B] tracking-wide">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-nunito font-bold text-[#E91E63] group-hover:text-[#C2185B] tracking-wide">
                 TURISTA
               </span>
             </Link>
@@ -109,7 +82,7 @@ export default function HomePage() {
                 height={120}
                 className="h-16 sm:h-18 md:h-20 w-auto object-contain"
               />
-              <p className="text-lg sm:text-xl font-darker-grotesque-bold text-center sm:text-center lg:text-left">
+              <p className="text-lg sm:text-xl font-nunito font-bold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -117,7 +90,7 @@ export default function HomePage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-darker-grotesque-black mb-4">Redes Sociales</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-black mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -132,12 +105,12 @@ export default function HomePage() {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-darker-grotesque-black mb-4">Acceso Rápido</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-black mb-4">Acceso Rápido</h3>
                 <ul className="space-y-2">
                   <li>
                     <a
                       href="#"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-darker-grotesque-medium"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-montserrat"
                     >
                       Guía de trámites
                     </a>
@@ -145,7 +118,7 @@ export default function HomePage() {
                   <li>
                     <a
                       href="#"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-darker-grotesque-medium"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-montserrat"
                     >
                       Noticias
                     </a>
@@ -153,7 +126,7 @@ export default function HomePage() {
                   <li>
                     <a
                       href="#"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-darker-grotesque-medium"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-montserrat"
                     >
                       Turismo
                     </a>
@@ -164,12 +137,12 @@ export default function HomePage() {
 
             {/* Institucional */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-darker-grotesque-black mb-4">Institucional</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-black mb-4">Institucional</h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="#"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-darker-grotesque-medium"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-montserrat"
                   >
                     La Muni
                   </a>
@@ -177,7 +150,7 @@ export default function HomePage() {
                 <li>
                   <a
                     href="/vecinos/honorable-concejo-deliberante"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-darker-grotesque-medium"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-montserrat"
                   >
                     Concejo Deliberante
                   </a>
@@ -187,13 +160,13 @@ export default function HomePage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-darker-grotesque-black mb-4 text-municipal-primary">
+              <h3 className="text-xl sm:text-2xl font-nunito font-black mb-4 text-municipal-primary">
                 Emergencias y Contacto
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base font-darker-grotesque-medium">
+                  <p className="text-sm sm:text-base font-montserrat">
                     Mario Nivoli 206
                     <br />
                     Villa del Dique, Córdoba
@@ -201,7 +174,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base font-darker-grotesque-medium">03546-497241</p>
+                  <p className="text-sm sm:text-base font-montserrat">03546-497241</p>
                 </div>
               </div>
             </div>
@@ -209,16 +182,16 @@ export default function HomePage() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-sm sm:text-base opacity-80 font-darker-grotesque-medium">
+            <p className="text-sm sm:text-base opacity-80 font-montserrat">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-sm opacity-70 font-darker-grotesque-medium">
+            <p className="text-sm opacity-70 font-montserrat">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline hover:opacity-90 font-darker-grotesque-medium transition-all duration-200"
+                className="hover:underline hover:opacity-90 font-montserrat transition-all duration-200"
               >
                 Duality Domain
               </a>
