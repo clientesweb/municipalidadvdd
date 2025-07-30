@@ -42,7 +42,7 @@ export default function VecinosPage() {
       {/* Header Announcement */}
       <div className="w-full bg-[#16b5d0] text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-sm sm:text-base font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
+          <p className="text-base sm:text-lg font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ export default function VecinosPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-base xl:text-lg font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -72,7 +72,7 @@ export default function VecinosPage() {
                   alt="Villa del Dique Municipalidad"
                   width={300}
                   height={120}
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  className="h-16 sm:h-18 md:h-20 lg:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -84,7 +84,7 @@ export default function VecinosPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-base xl:text-lg font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -102,7 +102,7 @@ export default function VecinosPage() {
                   alt="Villa del Dique Municipalidad"
                   width={300}
                   height={120}
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  className="h-16 sm:h-18 md:h-20 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -134,7 +134,7 @@ export default function VecinosPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="block text-2xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-3 border-b border-gray-100"
+                  className="block text-3xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-3 border-b border-gray-100"
                   onClick={toggleMenu}
                 >
                   {item.name}
@@ -193,14 +193,14 @@ export default function VecinosPage() {
                   <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
                     <DollarSign className="h-5 w-5" />
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
                     ¿QUERÉS PONERTE AL DÍA CON TUS TASAS MUNICIPALES?
                   </h2>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-6 text-gray-700">
-                  <p className="text-base sm:text-lg leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed">
                     Seguí estos simples pasos para consultar y abonar tu deuda desde la comodidad de tu casa:
                   </p>
 
@@ -233,7 +233,7 @@ export default function VecinosPage() {
                     </div>
 
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
+                      <div className="w-10 h-10 sm:w-12 sm:w-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto mb-3">
                         4
                       </div>
                       <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
@@ -278,15 +278,15 @@ export default function VecinosPage() {
                   <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
                     <Trash2 className="h-5 w-5" />
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
                     ORGANIZACIÓN Y HORARIOS DE RECOLECCIÓN DE RESIDUOS
                   </h2>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-6 text-gray-700">
-                  <p className="text-base sm:text-lg leading-relaxed">Estimados vecinos de Villa del Dique,</p>
-                  <p className="text-base sm:text-lg leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed">Estimados vecinos de Villa del Dique,</p>
+                  <p className="text-lg sm:text-xl leading-relaxed">
                     Con el objetivo de optimizar el servicio de recolección de residuos y facilitar la correcta
                     disposición de sus desechos, presentamos el detalle de los recorridos de nuestros camiones
                     compactadores.
@@ -379,7 +379,7 @@ export default function VecinosPage() {
                     <h4 className="text-lg sm:text-xl font-bold mb-4">
                       RECOMENDACIÓN IMPORTANTE SOBRE EL HORARIO DE DISPOSICIÓN DE RESIDUOS
                     </h4>
-                    <p className="text-base sm:text-lg leading-relaxed mb-4">
+                    <p className="text-lg sm:text-xl leading-relaxed mb-4">
                       Para asegurar una recolección aún más eficiente y mantener la limpieza y el orden de nuestras
                       calles durante todo el día,{" "}
                       <strong>
@@ -387,7 +387,7 @@ export default function VecinosPage() {
                         la noche anterior al día de recolección.
                       </strong>
                     </p>
-                    <p className="text-base sm:text-lg leading-relaxed">
+                    <p className="text-lg sm:text-xl leading-relaxed">
                       Agradecemos enormemente su comprensión y colaboración para mantener nuestro Villa del Dique limpio
                       y ordenado.
                     </p>
@@ -429,19 +429,19 @@ export default function VecinosPage() {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-12 justify-center items-center max-w-6xl mx-auto">
             <Link
               href="tel:354697829"
-              className="bg-[#d39d85] text-white font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-bold text-xl sm:text-2xl lg:text-3xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Policía: 354697829
             </Link>
             <Link
               href="tel:3546497497"
-              className="bg-[#d39d85] text-white font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-bold text-xl sm:text-2xl lg:text-3xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Bomberos: 3546497497
             </Link>
             <Link
               href="tel:3546497636"
-              className="bg-[#d39d85] text-white font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-bold text-xl sm:text-2xl lg:text-3xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Hospital: 3546497636
             </Link>
@@ -531,7 +531,7 @@ export default function VecinosPage() {
                 height={120}
                 className="h-16 sm:h-18 md:h-20 w-auto object-contain"
               />
-              <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
+              <p className="text-xl sm:text-2xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -539,7 +539,7 @@ export default function VecinosPage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -554,12 +554,12 @@ export default function VecinosPage() {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Acceso Rápido</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Acceso Rápido</h3>
                 <ul className="space-y-2">
                   <li>
                     <Link
                       href="/vecinos/guia-de-tramites"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                     >
                       Guía de trámites
                     </Link>
@@ -567,7 +567,7 @@ export default function VecinosPage() {
                   <li>
                     <a
                       href="/noticias"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                     >
                       Noticias
                     </a>
@@ -575,7 +575,7 @@ export default function VecinosPage() {
                   <li>
                     <a
                       href="/vecinos/servicios"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                     >
                       Servicios
                     </a>
@@ -586,12 +586,12 @@ export default function VecinosPage() {
 
             {/* Institucional */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">Institucional</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Institucional</h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="/vecinos/muni"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                   >
                     La Muni
                   </a>
@@ -599,7 +599,7 @@ export default function VecinosPage() {
                 <li>
                   <a
                     href="/vecinos/honorable-concejo-deliberante"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                   >
                     Concejo Deliberante
                   </a>
@@ -609,11 +609,11 @@ export default function VecinosPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">Emergencias y Contacto</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-white">Emergencias y Contacto</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">
+                  <p className="text-base sm:text-lg">
                     Mario Nivoli 206
                     <br />
                     Villa del Dique, Córdoba
@@ -621,7 +621,7 @@ export default function VecinosPage() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">03546-497241</p>
+                  <p className="text-base sm:text-lg">03546-497241</p>
                 </div>
               </div>
             </div>
@@ -629,10 +629,10 @@ export default function VecinosPage() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-sm sm:text-base opacity-80">
+            <p className="text-base sm:text-lg opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-sm opacity-70">
+            <p className="text-base opacity-70">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
