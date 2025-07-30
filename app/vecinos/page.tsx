@@ -196,69 +196,86 @@ export default function VecinosPage() {
                     <DollarSign className="h-5 w-5" />
                   </div>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-nunito font-bold text-gray-900">
+                    {" "}
+                    {/* Applied font-nunito */}
                     ¿QUERÉS PONERTE AL DÍA CON TUS TASAS MUNICIPALES?
                   </h2>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-6 text-gray-700 font-montserrat">
+                  {" "}
+                  {/* Applied font-montserrat */}
                   <p className="text-base sm:text-lg leading-relaxed">
                     Seguí estos simples pasos para consultar y abonar tu deuda desde la comodidad de tu casa:
                   </p>
-
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-10">
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
-                        1
+                        {" "}
+                        {/* Applied font-nunito */}1
                       </div>
                       <p className="text-sm sm:text-base font-montserrat font-medium text-gray-800 leading-relaxed">
+                        {" "}
+                        {/* Applied font-montserrat */}
                         Hacé clic en "Consulta y pago de deuda"
                       </p>
                     </div>
 
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
-                        2
+                        {" "}
+                        {/* Applied font-nunito */}2
                       </div>
                       <p className="text-sm sm:text-base font-montserrat font-medium text-gray-800 leading-relaxed">
+                        {" "}
+                        {/* Applied font-montserrat */}
                         Ingresá en la opción "Tasa por Servicio a la Propiedad"
                       </p>
                     </div>
 
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
-                        3
+                        {" "}
+                        {/* Applied font-nunito */}3
                       </div>
                       <p className="text-sm sm:text-base font-montserrat font-medium text-gray-800 leading-relaxed">
+                        {" "}
+                        {/* Applied font-montserrat */}
                         Completá con tu número de cuenta y verificador
                       </p>
                     </div>
 
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
-                        4
+                        {" "}
+                        {/* Applied font-nunito */}4
                       </div>
                       <p className="text-sm sm:text-base font-montserrat font-medium text-gray-800 leading-relaxed">
+                        {" "}
+                        {/* Applied font-montserrat */}
                         Hacé clic en "Pagar"
                       </p>
                     </div>
 
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
-                        5
+                        {" "}
+                        {/* Applied font-nunito */}5
                       </div>
                       <p className="text-sm sm:text-base font-montserrat font-medium text-gray-800 leading-relaxed">
+                        {" "}
+                        {/* Applied font-montserrat */}
                         Seleccioná tu método de pago preferido y ¡listo!
                       </p>
                     </div>
                   </div>
-
                   <div className="text-center">
                     <a
                       href="https://www.municipalidad.com/villadeldique"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-[#d39d85] hover:bg-[#c8906f] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl px-8 py-4 sm:px-10 sm:py-5 lg:px-12 lg:py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
+                      className="inline-block bg-[#d39d85] hover:bg-[#c8906f] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl px-8 py-4 sm:px-10 sm:py-5 lg:px-12 lg:py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform" // Applied font-nunito
                     >
                       Consulta y Pago de Deuda
                     </a>
@@ -281,37 +298,44 @@ export default function VecinosPage() {
                     <Trash2 className="h-5 w-5" />
                   </div>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-nunito font-bold text-gray-900">
+                    {" "}
+                    {/* Applied font-nunito */}
                     ORGANIZACIÓN Y HORARIOS DE RECOLECCIÓN DE RESIDUOS
                   </h2>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-6 text-gray-700 font-montserrat">
+                  {" "}
+                  {/* Applied font-montserrat */}
                   <p className="text-base sm:text-lg leading-relaxed">Estimados vecinos de Villa del Dique,</p>
                   <p className="text-base sm:text-lg leading-relaxed">
                     Con el objetivo de optimizar el servicio de recolección de residuos y facilitar la correcta
                     disposición de sus desechos, presentamos el detalle de los recorridos de nuestros camiones
                     compactadores.
                   </p>
-
                   <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
                     <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4 text-center">
                       RECORRIDO Y DÍAS DE RECOLECCIÓN
-                    </h3>
+                    </h3>{" "}
+                    {/* Applied font-nunito */}
                   </div>
-
                   {/* Camión Compactador N° 1 */}
                   <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                     <h4 className="text-lg sm:text-xl font-nunito font-bold text-[#16b5d0] mb-4 flex items-center">
+                      {" "}
+                      {/* Applied font-nunito */}
                       <div className="w-8 h-8 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-sm font-nunito font-bold mr-3">
-                        1
+                        {" "}
+                        {/* Applied font-nunito */}1
                       </div>
                       CAMIÓN COMPACTADOR N° 1
                     </h4>
 
                     <div className="space-y-4">
                       <div>
-                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Lunes, Miércoles y Viernes:</h5>
+                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Lunes, Miércoles y Viernes:</h5>{" "}
+                        {/* Applied font-nunito */}
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                           <li>Parte de la zona comercial</li>
                           <li>Aguas Claras</li>
@@ -321,7 +345,8 @@ export default function VecinosPage() {
                       </div>
 
                       <div>
-                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Martes, Jueves y Sábado:</h5>
+                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Martes, Jueves y Sábado:</h5>{" "}
+                        {/* Applied font-nunito */}
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                           <li>Aguas Claras</li>
                           <li>Bello Horizonte</li>
@@ -337,19 +362,22 @@ export default function VecinosPage() {
                       </div>
                     </div>
                   </div>
-
                   {/* Camión Compactador N° 2 */}
                   <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                     <h4 className="text-lg sm:text-xl font-nunito font-bold text-[#16b5d0] mb-4 flex items-center">
+                      {" "}
+                      {/* Applied font-nunito */}
                       <div className="w-8 h-8 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-sm font-nunito font-bold mr-3">
-                        2
+                        {" "}
+                        {/* Applied font-nunito */}2
                       </div>
                       CAMIÓN COMPACTADOR N° 2
                     </h4>
 
                     <div className="space-y-4">
                       <div>
-                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Lunes y Jueves:</h5>
+                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Lunes y Jueves:</h5>{" "}
+                        {/* Applied font-nunito */}
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                           <li>Parte de la zona comercial</li>
                           <li>Zona del Valle</li>
@@ -359,7 +387,8 @@ export default function VecinosPage() {
                       </div>
 
                       <div>
-                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Martes y Viernes:</h5>
+                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Martes y Viernes:</h5>{" "}
+                        {/* Applied font-nunito */}
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                           <li>Residencial "B"</li>
                           <li>Parte de la zona comercial</li>
@@ -369,7 +398,8 @@ export default function VecinosPage() {
                       </div>
 
                       <div>
-                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Miércoles y Sábados:</h5>
+                        <h5 className="font-nunito font-semibold text-gray-900 mb-2">Miércoles y Sábados:</h5>{" "}
+                        {/* Applied font-nunito */}
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                           <li>Gahona</li>
                           <li>Pinar de Jeremías</li>
@@ -377,10 +407,11 @@ export default function VecinosPage() {
                       </div>
                     </div>
                   </div>
-
                   {/* Recomendación Importante */}
                   <div className="bg-[#d39d85] text-white p-6 rounded-lg">
                     <h4 className="text-lg sm:text-xl font-nunito font-bold mb-4">
+                      {" "}
+                      {/* Applied font-nunito */}
                       RECOMENDACIÓN IMPORTANTE SOBRE EL HORARIO DE DISPOSICIÓN DE RESIDUOS
                     </h4>
                     <p className="text-base sm:text-lg leading-relaxed mb-4">
@@ -428,24 +459,26 @@ export default function VecinosPage() {
       <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8 text-center">
+            {" "}
+            {/* Applied font-nunito */}
             Contactos de Emergencia
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-12 justify-center items-center max-w-6xl mx-auto">
             <Link
               href="tel:354697829"
-              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center" // Applied font-nunito
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Policía: 354697829
             </Link>
             <Link
               href="tel:3546497497"
-              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center" // Applied font-nunito
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Bomberos: 3546497497
             </Link>
             <Link
               href="tel:3546497636"
-              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
+              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center" // Applied font-nunito
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Hospital: 3546497636
             </Link>
@@ -458,9 +491,11 @@ export default function VecinosPage() {
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-white mb-3">
             ¡Descarga nuestra web progresiva app!
-          </h2>
+          </h2>{" "}
+          {/* Applied font-nunito */}
           <p className="text-sm sm:text-base font-montserrat text-white mb-6">
-            Y lleva todas las novedades de villa del dique en tu teléfono
+            {" "}
+            {/* Applied font-montserrat */}Y lleva todas las novedades de villa del dique en tu teléfono
           </p>
           <div className="flex flex-row justify-center items-center gap-3 max-w-md mx-auto">
             <Link
@@ -517,7 +552,7 @@ export default function VecinosPage() {
       {/* Floating Complaint Button */}
       <Link
         href="/vecinos/reclamos"
-        className="fixed bottom-8 right-8 z-50 bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-colors duration-200 flex items-center gap-2 text-lg font-nunito font-semibold group"
+        className="fixed bottom-8 right-8 z-50 bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-colors duration-200 flex items-center gap-2 text-lg font-nunito font-semibold group" // Applied font-nunito
         aria-label="Ir a la página de reclamos"
       >
         <Megaphone className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
@@ -538,6 +573,8 @@ export default function VecinosPage() {
                 className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height classes
               />
               <p className="text-lg sm:text-xl font-nunito font-semibold text-center sm:text-center lg:text-left">
+                {" "}
+                {/* Applied font-nunito */}
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -545,7 +582,8 @@ export default function VecinosPage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>{" "}
+                {/* Applied font-nunito */}
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -560,8 +598,11 @@ export default function VecinosPage() {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>{" "}
+                {/* Applied font-nunito */}
                 <ul className="space-y-2 font-montserrat">
+                  {" "}
+                  {/* Applied font-montserrat */}
                   <li>
                     <Link
                       href="/vecinos/guia-de-tramites"
@@ -592,8 +633,11 @@ export default function VecinosPage() {
 
             {/* Institucional */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Institucional</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Institucional</h3>{" "}
+              {/* Applied font-nunito */}
               <ul className="space-y-2 font-montserrat">
+                {" "}
+                {/* Applied font-montserrat */}
                 <li>
                   <a
                     href="/vecinos/muni"
@@ -615,8 +659,11 @@ export default function VecinosPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4 text-white">Emergencias y Contacto</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4 text-white">Emergencias y Contacto</h3>{" "}
+              {/* Applied font-nunito */}
               <div className="space-y-3 font-montserrat">
+                {" "}
+                {/* Applied font-montserrat */}
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
                   <p className="text-sm sm:text-base">
@@ -635,6 +682,8 @@ export default function VecinosPage() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2 font-montserrat">
+            {" "}
+            {/* Applied font-montserrat */}
             <p className="text-sm sm:text-base opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
