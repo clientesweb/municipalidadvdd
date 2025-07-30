@@ -61,9 +61,6 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Colores basados en el logotipo
-        "municipal-primary": "#16b5d0", // El azul/cian principal
-        "municipal-secondary": "#008A9B", // El azul/cian más oscuro para hover
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -93,9 +90,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        // Nuevas fuentes definidas como variables CSS
-        nunito: ["var(--font-nunito)"],
-        montserrat: ["var(--font-montserrat)"],
+        nunito: ["var(--font-nunito)"], // Nueva fuente Nunito
+        montserrat: ["var(--font-montserrat)"], // Nueva fuente Montserrat
       },
     },
   },
