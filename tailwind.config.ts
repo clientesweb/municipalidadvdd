@@ -61,6 +61,9 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Nuevos colores basados en el logotipo
+        "municipal-primary": "#16b5d0", // El azul/cian principal
+        "municipal-secondary": "#008A9B", // El azul/cian más oscuro para hover
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -90,8 +93,11 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        "darker-grotesk": ["var(--font-darker-grotesque)"],
-        "cinzel-decorative": ["var(--font-cinzel-decorative)"],
+        // Fuentes definidas como variables CSS
+        "darker-grotesque-medium": ["var(--font-darker-grotesque-medium)"],
+        "darker-grotesque-bold": ["var(--font-darker-grotesque-bold)"],
+        "darker-grotesque-black": ["var(--font-darker-grotesque-black)"],
+        "cinzel-decorative": ["var(--font-cinzel-decorative)"], // Mantener si se usa en otras partes
       },
     },
   },
