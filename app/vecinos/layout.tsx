@@ -1,20 +1,18 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
+import { Nunito, Montserrat } from "next/font/google" // Changed font imports
 
-// Configurar Darker Grotesque con el rango de pesos
-const darkerGrotesque = Darker_Grotesque({
+// Configure Nunito for titles and subtitles
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-darker-grotesque",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-nunito",
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
-const cinzelDecorative = Cinzel_Decorative({
+// Configure Montserrat for body text and footer
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-cinzel-decorative",
-  weight: ["400", "700", "900"],
+  variable: "--font-montserrat",
   display: "swap",
 })
 
@@ -66,8 +64,8 @@ export default function VecinosLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
-      <body className="font-darker-grotesk">{children}</body>
+    <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
+      <body className="font-montserrat">{children}</body> {/* Default body font set to Montserrat */}
     </html>
   )
 }
