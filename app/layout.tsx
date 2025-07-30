@@ -1,21 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google" // Importar desde next/font/google
+import { Nunito, Montserrat } from "next/font/google" // Importar las nuevas fuentes
 import "./globals.css"
 
-// Configurar Darker Grotesque con el rango de pesos
-const darkerGrotesque = Darker_Grotesque({
+// Configurar Nunito para títulos y subtítulos
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-darker-grotesque",
-  weight: ["300", "400", "500", "600", "700", "800", "900"], // Especificar todos los pesos
+  variable: "--font-nunito",
+  weight: ["700", "900"], // Bold y Black para títulos y subtítulos
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
-const cinzelDecorative = Cinzel_Decorative({
+// Configurar Montserrat para textos de cuerpo y pie de página
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-cinzel-decorative",
-  weight: ["400", "700", "900"],
+  variable: "--font-montserrat",
+  weight: ["400", "500"], // Regular y Medium para texto de cuerpo
   display: "swap",
 })
 
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     "msapplication-TileColor": "#16b5d0", // Updated color
     "msapplication-config": "/browserconfig.xml",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -93,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
+    <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
         <meta name="theme-color" content="#16b5d0" /> {/* Updated color */}
         <meta name="msapplication-TileColor" content="#16b5d0" /> {/* Updated color */}
@@ -143,7 +143,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-darker-grotesk">{children}</body>
+      <body className="font-montserrat">{children}</body> {/* Montserrat como fuente base */}
     </html>
   )
 }
