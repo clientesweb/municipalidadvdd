@@ -7,7 +7,7 @@ import "./globals.css"
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
-  weight: ["700", "900"], // Bold y Black para títulos y subtítulos
+  weight: ["400", "500", "600", "700", "800", "900"], // Pesos comunes para títulos
   display: "swap",
 })
 
@@ -15,7 +15,7 @@ const nunito = Nunito({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  weight: ["400", "500"], // Regular y Medium para texto de cuerpo
+  weight: ["300", "400", "500", "600", "700"], // Pesos comunes para texto de cuerpo
   display: "swap",
 })
 
@@ -143,7 +143,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-montserrat">{children}</body> {/* Montserrat como fuente base */}
+      <body className="font-montserrat">{children}</body> {/* Aplicar Montserrat como fuente base */}
     </html>
   )
 }
