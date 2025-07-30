@@ -31,7 +31,7 @@ export default function DondeAlojarme() {
       {/* Header Announcement - Pink color */}
       <div className="w-full bg-[#c84f9b] text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-sm sm:text-base font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
+          <p className="text-base sm:text-lg font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function DondeAlojarme() {
                 <a
                   key={index}
                   href={item.href}
-                  className={`text-base xl:text-lg font-medium transition-colors duration-200 py-2 whitespace-nowrap ${
+                  className={`text-lg xl:text-xl font-medium transition-colors duration-200 py-2 whitespace-nowrap ${
                     item.active ? "text-[#c84f9b] border-b-2 border-[#c84f9b]" : "text-gray-800 hover:text-[#c84f9b]"
                   }`}
                 >
@@ -63,7 +63,7 @@ export default function DondeAlojarme() {
                   alt="Villa del Dique Municipalidad"
                   width={300}
                   height={120}
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  className="h-16 sm:h-18 md:h-20 lg:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -75,7 +75,7 @@ export default function DondeAlojarme() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-base xl:text-lg font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -93,7 +93,7 @@ export default function DondeAlojarme() {
                   alt="Villa del Dique Municipalidad"
                   width={300}
                   height={120}
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  className="h-16 sm:h-18 md:h-20 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -125,7 +125,7 @@ export default function DondeAlojarme() {
                 <a
                   key={index}
                   href={item.href}
-                  className={`block text-2xl font-medium transition-colors duration-200 py-3 border-b border-gray-100 ${
+                  className={`block text-3xl font-medium transition-colors duration-200 py-3 border-b border-gray-100 ${
                     item.active ? "text-[#c84f9b]" : "text-gray-800 hover:text-[#c84f9b]"
                   }`}
                   onClick={toggleMenu}
@@ -141,7 +141,7 @@ export default function DondeAlojarme() {
       {/* Breadcrumb */}
       <nav className="w-full bg-gray-50 py-3 px-4">
         <div className="container mx-auto">
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
+          <div className="flex items-center space-x-2 text-base text-gray-600">
             <Link href="/" className="hover:text-[#c84f9b] transition-colors">
               Inicio
             </Link>
@@ -234,13 +234,13 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-blue-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-blue-800 text-sm">
+                    <p className="text-blue-800 text-base">
                       <strong>Dirección:</strong> Av. de los Navegantes 663
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-blue-700 flex-shrink-0" />
-                    <div className="text-blue-800 text-sm">
+                    <div className="text-blue-800 text-base">
                       <a href="tel:3546506285" className="hover:text-[#c84f9b] hover:underline mr-2">
                         3546-506285
                       </a>
@@ -256,7 +256,7 @@ export default function DondeAlojarme() {
                       href="https://instagram.com/hotelcarrillo.amerian"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-blue-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       @hotelcarrillo.amerian
                     </a>
@@ -267,7 +267,7 @@ export default function DondeAlojarme() {
                       href="https://www.amerian.com/hotel/amerian-villa-del-dique"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-blue-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       www.amerian.com
                     </a>
@@ -278,7 +278,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/r4Epumd"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-blue-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -292,13 +292,13 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-purple-800 text-sm">
+                    <p className="text-purple-800 text-base">
                       <strong>Dirección:</strong> Av. San Martín 194
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-purple-700 flex-shrink-0" />
-                    <div className="text-purple-800 text-sm">
+                    <div className="text-purple-800 text-base">
                       <a href="tel:03546497995" className="hover:text-[#c84f9b] hover:underline mr-2">
                         03546-497995
                       </a>
@@ -314,7 +314,7 @@ export default function DondeAlojarme() {
                       href="https://instagram.com/elportaldelavillahotel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-purple-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       @elportaldelavillahotel
                     </a>
@@ -325,7 +325,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/pRFHC1e"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-purple-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -339,13 +339,13 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-cyan-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-cyan-800 text-sm">
+                    <p className="text-cyan-800 text-base">
                       <strong>Dirección:</strong> Av. Los Pescadores 334
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-cyan-700 flex-shrink-0" />
-                    <div className="text-cyan-800 text-sm">
+                    <div className="text-cyan-800 text-base">
                       <a href="tel:03546497815" className="hover:text-[#c84f9b] hover:underline mr-2">
                         03546-497815
                       </a>
@@ -361,7 +361,7 @@ export default function DondeAlojarme() {
                       href="https://instagram.com/hosteriavalleazuldeldique"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-cyan-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       @hosteriavalleazuldeldique
                     </a>
@@ -372,7 +372,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/zof4721"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-cyan-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -386,13 +386,13 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-red-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-red-800 text-sm">
+                    <p className="text-red-800 text-base">
                       <strong>Dirección:</strong> Av. Hipólito Yrigoyen 329
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-red-700 flex-shrink-0" />
-                    <a href="tel:03546497252" className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline">
+                    <a href="tel:03546497252" className="text-red-800 text-base hover:text-[#c84f9b] hover:underline">
                       03546-497252
                     </a>
                   </div>
@@ -402,7 +402,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/BWpCGW7"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-red-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -426,13 +426,16 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-orange-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-orange-800 text-sm">
+                    <p className="text-orange-800 text-base">
                       <strong>Dirección:</strong> Calle de los Pinos 225
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-orange-700 flex-shrink-0" />
-                    <a href="tel:03546123456" className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline">
+                    <a
+                      href="tel:03546123456"
+                      className="text-orange-800 text-base hover:text-[#c84f9b] hover:underline"
+                    >
                       03546-123456
                     </a>
                   </div>
@@ -442,7 +445,7 @@ export default function DondeAlojarme() {
                       href="https://instagram.com/refugio.cabanas"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-orange-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       @refugio.cabanas
                     </a>
@@ -453,7 +456,7 @@ export default function DondeAlojarme() {
                       href="https://www.refugio.com.ar"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-orange-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       www.refugio.com.ar
                     </a>
@@ -464,7 +467,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/vHepg3U"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-orange-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -478,13 +481,16 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-emerald-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-emerald-800 text-sm">
+                    <p className="text-emerald-800 text-base">
                       <strong>Dirección:</strong> Ruta 5 Km 12
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-emerald-700 flex-shrink-0" />
-                    <a href="tel:03546789101" className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline">
+                    <a
+                      href="tel:03546789101"
+                      className="text-emerald-800 text-base hover:text-[#c84f9b] hover:underline"
+                    >
                       03546-789101
                     </a>
                   </div>
@@ -494,7 +500,7 @@ export default function DondeAlojarme() {
                       href="https://instagram.com/lassierras"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-emerald-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       @lassierras
                     </a>
@@ -508,13 +514,16 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-indigo-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-indigo-800 text-sm">
+                    <p className="text-indigo-800 text-base">
                       <strong>Dirección:</strong> San José 154
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-indigo-700 flex-shrink-0" />
-                    <a href="tel:03546222333" className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline">
+                    <a
+                      href="tel:03546222333"
+                      className="text-indigo-800 text-base hover:text-[#c84f9b] hover:underline"
+                    >
                       03546-222333
                     </a>
                   </div>
@@ -524,7 +533,7 @@ export default function DondeAlojarme() {
                       href="https://cabanaslamontana.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-indigo-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       cabanaslamontana.com
                     </a>
@@ -535,7 +544,7 @@ export default function DondeAlojarme() {
                       href="https://www.google.com/travel/hotels/s/YRV1pU7xgMmSZEMq9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-indigo-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -549,13 +558,16 @@ export default function DondeAlojarme() {
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-yellow-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-yellow-800 text-sm">
+                    <p className="text-yellow-800 text-base">
                       <strong>Dirección:</strong> Calle Los Nogales 110
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-yellow-700 flex-shrink-0" />
-                    <a href="tel:03546335544" className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline">
+                    <a
+                      href="tel:03546335544"
+                      className="text-yellow-800 text-base hover:text-[#c84f9b] hover:underline"
+                    >
                       03546-335544
                     </a>
                   </div>
@@ -565,7 +577,7 @@ export default function DondeAlojarme() {
                       href="https://g.co/kgs/SfSSTnE"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-yellow-800 text-base hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
@@ -612,7 +624,7 @@ export default function DondeAlojarme() {
                 height={120}
                 className="h-16 sm:h-18 md:h-20 w-auto object-contain"
               />
-              <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
+              <p className="text-xl sm:text-2xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -620,7 +632,7 @@ export default function DondeAlojarme() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -635,12 +647,12 @@ export default function DondeAlojarme() {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Acceso Rápido</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Acceso Rápido</h3>
                 <ul className="space-y-2">
                   <li>
                     <Link
                       href="/turistas/como-llegar"
-                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                     >
                       ¿Cómo llegar?
                     </Link>
@@ -648,15 +660,15 @@ export default function DondeAlojarme() {
                   <li>
                     <Link
                       href="/turistas/donde-alojarme"
-                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-medium"
+                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl font-medium"
                     >
                       ¿Dónde alojarme?
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/turistas/servicios"
-                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                      href="/vecinos/servicios"
+                      className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                     >
                       Servicios
                     </Link>
@@ -667,12 +679,12 @@ export default function DondeAlojarme() {
 
             {/* Turismo */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">Turismo</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Turismo</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/turistas/donde-comer"
-                    className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                    className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                   >
                     ¿Dónde comer?
                   </Link>
@@ -680,7 +692,7 @@ export default function DondeAlojarme() {
                 <li>
                   <Link
                     href="/turistas/circuitos"
-                    className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
+                    className="hover:text-[#c84f9b] hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
                   >
                     Circuitos
                   </Link>
@@ -690,11 +702,11 @@ export default function DondeAlojarme() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">Información Turística</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Información Turística</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">
+                  <p className="text-base sm:text-lg">
                     Oficina de Turismo
                     <br />
                     Villa del Dique, Córdoba
@@ -702,7 +714,7 @@ export default function DondeAlojarme() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">3546-528341</p>
+                  <p className="text-base sm:text-lg">3546-528341</p>
                 </div>
               </div>
             </div>
@@ -710,10 +722,10 @@ export default function DondeAlojarme() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-sm sm:text-base opacity-80">
+            <p className="text-base sm:text-lg opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-sm opacity-70">
+            <p className="text-base opacity-70">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
