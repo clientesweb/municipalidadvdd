@@ -16,67 +16,67 @@
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    --primary: 194 84% 41%; /* Color principal municipal #16b5d0 */
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
+    --secondary: 194 32% 96%;
+    --secondary-foreground: 194 84% 15%;
+    --muted: 194 32% 96%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 194 32% 96%;
+    --accent-foreground: 194 84% 15%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
+    --border: 194 32% 89%;
+    --input: 194 32% 89%;
+    --ring: 194 84% 41%;
+    --chart-1: 194 84% 41%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 38 92% 50%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-background: 194 32% 98%;
+    --sidebar-foreground: 194 84% 15%;
+    --sidebar-primary: 194 84% 41%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 194 32% 95%;
+    --sidebar-accent-foreground: 194 84% 15%;
+    --sidebar-border: 194 32% 91%;
+    --sidebar-ring: 194 84% 41%;
   }
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 194 84% 4%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: 194 84% 4%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
+    --popover: 194 84% 4%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --primary: 194 84% 41%;
     --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
+    --secondary: 194 32% 15%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
+    --muted: 194 32% 15%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 194 32% 15%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
+    --border: 194 32% 15%;
+    --input: 194 32% 15%;
+    --ring: 194 84% 41%;
+    --chart-1: 194 84% 50%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 38 92% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 194 84% 10%;
+    --sidebar-foreground: 194 32% 95%;
+    --sidebar-primary: 194 84% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 194 32% 16%;
+    --sidebar-accent-foreground: 194 32% 95%;
+    --sidebar-border: 194 32% 16%;
+    --sidebar-ring: 194 84% 41%;
   }
 }
 
@@ -86,5 +86,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Estilos personalizados para la identidad municipal */
+@layer components {
+  .municipal-gradient {
+    @apply bg-gradient-to-r from-municipal-600 to-municipal-500;
+  }
+
+  .municipal-gradient-light {
+    @apply bg-gradient-to-r from-municipal-50 to-municipal-100;
+  }
+
+  .municipal-text-gradient {
+    @apply bg-gradient-to-r from-municipal-600 to-municipal-500 bg-clip-text text-transparent;
+  }
+
+  .municipal-shadow {
+    box-shadow: 0 4px 14px 0 rgba(22, 181, 208, 0.15);
+  }
+
+  .municipal-border {
+    @apply border-municipal-200;
+  }
+
+  .municipal-hover {
+    @apply hover:bg-municipal-50 hover:border-municipal-300 transition-colors duration-200;
   }
 }
