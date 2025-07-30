@@ -87,13 +87,15 @@ export default function MuniPage() {
       {/* Header Announcement */}
       <div className="w-full bg-[#16b5d0] text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-base sm:text-lg font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
+          <p className="text-sm sm:text-base font-montserrat font-medium">
+            Página oficial de la Municipalidad de Villa del Dique
+          </p>
         </div>
       </div>
 
       {/* Header with Navigation */}
       <header className="w-full py-2 sm:py-3 px-4 bg-white shadow-sm relative">
-        <div className="container mx-auto">
+        <div className="container mx-auto relative">
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between">
             {/* Left Menu Items */}
@@ -102,7 +104,7 @@ export default function MuniPage() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-base xl:text-lg font-montserrat font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </Link>
@@ -110,14 +112,14 @@ export default function MuniPage() {
             </nav>
 
             {/* Logo Center */}
-            <div className="flex-shrink-0 mx-6 xl:mx-8">
+            <div className="absolute left-1/2 -translate-x-1/2">
               <Link href="/">
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 lg:h-24 w-auto object-contain"
+                  width={400}
+                  height={160}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -129,7 +131,7 @@ export default function MuniPage() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-base xl:text-lg font-montserrat font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </Link>
@@ -145,9 +147,9 @@ export default function MuniPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                  width={400}
+                  height={160}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -179,7 +181,7 @@ export default function MuniPage() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="block text-3xl font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-3 border-b border-gray-100"
+                  className="block text-2xl font-montserrat font-medium text-gray-800 hover:text-[#16b5d0] transition-colors duration-200 py-3 border-b border-gray-100"
                   onClick={toggleMenu}
                 >
                   {item.name}
@@ -196,7 +198,7 @@ export default function MuniPage() {
         <div className="mb-8">
           <Link
             href="/vecinos"
-            className="inline-flex items-center space-x-2 text-[#16b5d0] hover:text-[#0ea5e9] transition-colors duration-200"
+            className="inline-flex items-center space-x-2 text-[#16b5d0] hover:text-[#0ea5e9] transition-colors duration-200 font-montserrat"
           >
             <ArrowLeft className="h-4 w-4" />
             <span className="font-medium">Volver a Vecinos</span>
@@ -205,9 +207,11 @@ export default function MuniPage() {
 
         {/* Page Title */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6">LA MUNI</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-nunito font-extrabold text-gray-900 mb-6">
+            LA MUNI
+          </h1>
           <div className="w-24 h-1 bg-[#16b5d0] mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-montserrat text-gray-600 max-w-3xl mx-auto">
             Conoce las autoridades municipales comprometidas con el progreso y desarrollo de Villa del Dique
           </p>
         </div>
@@ -217,7 +221,7 @@ export default function MuniPage() {
           <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 rounded-t-lg">
             <div className="flex items-center space-x-3">
               <User className="h-6 w-6" />
-              <h2 className="text-2xl sm:text-3xl font-bold">INTENDENTE MUNICIPAL</h2>
+              <h2 className="text-2xl sm:text-3xl font-nunito font-bold">INTENDENTE MUNICIPAL</h2>
             </div>
           </div>
 
@@ -234,9 +238,11 @@ export default function MuniPage() {
               </div>
 
               <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{autoridades.intendente.nombre}</h3>
-                <p className="text-xl text-[#16b5d0] font-semibold mb-6">{autoridades.intendente.cargo}</p>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-3xl lg:text-4xl font-nunito font-bold text-gray-900 mb-4">
+                  {autoridades.intendente.nombre}
+                </h3>
+                <p className="text-xl font-nunito text-[#16b5d0] font-semibold mb-6">{autoridades.intendente.cargo}</p>
+                <p className="text-gray-600 font-montserrat leading-relaxed">
                   Líder del gobierno municipal de Villa del Dique, comprometido con el desarrollo integral de nuestra
                   comunidad a través de políticas inclusivas y el fortalecimiento del turismo como motor económico.
                 </p>
@@ -250,7 +256,7 @@ export default function MuniPage() {
           <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 rounded-t-lg">
             <div className="flex items-center space-x-3">
               <Users className="h-6 w-6" />
-              <h2 className="text-2xl sm:text-3xl font-bold">GABINETE MUNICIPAL</h2>
+              <h2 className="text-2xl sm:text-3xl font-nunito font-bold">GABINETE MUNICIPAL</h2>
             </div>
           </div>
 
@@ -268,11 +274,11 @@ export default function MuniPage() {
                         <IconComponent className="h-5 w-5 text-[#16b5d0]" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-lg font-bold text-gray-900">{secretario.nombre}</h4>
+                        <h4 className="text-lg font-nunito font-bold text-gray-900">{secretario.nombre}</h4>
                       </div>
                     </div>
-                    <p className="text-sm font-semibold text-[#16b5d0] mb-2">{secretario.area}</p>
-                    <p className="text-sm text-gray-600">{secretario.cargo}</p>
+                    <p className="text-sm font-nunito font-semibold text-[#16b5d0] mb-2">{secretario.area}</p>
+                    <p className="text-sm font-montserrat text-gray-600">{secretario.cargo}</p>
                   </div>
                 )
               })}
@@ -287,11 +293,11 @@ export default function MuniPage() {
             <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
               <div className="flex items-center space-x-3">
                 <Eye className="h-6 w-6" />
-                <h2 className="text-2xl font-bold">VISIÓN</h2>
+                <h2 className="text-2xl font-nunito font-bold">VISIÓN</h2>
               </div>
             </div>
             <div className="p-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg font-montserrat text-gray-700 leading-relaxed">
                 Ser tierra de oportunidades de formación y de trabajo y que el progreso se sustente en la{" "}
                 <strong>inclusión</strong>, en el <strong>desarrollo humano</strong> y en la{" "}
                 <strong>actividad turística</strong>.
@@ -304,11 +310,11 @@ export default function MuniPage() {
             <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
               <div className="flex items-center space-x-3">
                 <Target className="h-6 w-6" />
-                <h2 className="text-2xl font-bold">MISIÓN</h2>
+                <h2 className="text-2xl font-nunito font-bold">MISIÓN</h2>
               </div>
             </div>
             <div className="p-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg font-montserrat text-gray-700 leading-relaxed">
                 Promovemos <strong>políticas de inclusión</strong> que propicien el acceso a la educación, la salud y el
                 trabajo en pos del progreso social y económico de Villa del Dique. Desarrollamos e impulsamos la{" "}
                 <strong>actividad turística todo el año</strong>, aplicando políticas con el objetivo de mejorar la
@@ -320,13 +326,13 @@ export default function MuniPage() {
 
         {/* Compromiso Section */}
         <section className="mt-12 bg-gray-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Nuestro Compromiso</h3>
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          <h3 className="text-2xl font-nunito font-bold text-gray-900 mb-6 text-center">Nuestro Compromiso</h3>
+          <div className="grid md:grid-cols-3 gap-6 text-center font-montserrat">
             <div className="space-y-3">
               <div className="w-16 h-16 bg-[#16b5d0]/10 rounded-full flex items-center justify-center mx-auto">
                 <Users className="h-8 w-8 text-[#16b5d0]" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">Inclusión Social</h4>
+              <h4 className="text-lg font-nunito font-semibold text-gray-900">Inclusión Social</h4>
               <p className="text-gray-600">
                 Garantizamos el acceso equitativo a servicios de educación, salud y oportunidades laborales para todos
                 los vecinos.
@@ -336,7 +342,7 @@ export default function MuniPage() {
               <div className="w-16 h-16 bg-[#16b5d0]/10 rounded-full flex items-center justify-center mx-auto">
                 <Building2 className="h-8 w-8 text-[#16b5d0]" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">Desarrollo de Infraestructura</h4>
+              <h4 className="text-lg font-nunito font-semibold text-gray-900">Desarrollo de Infraestructura</h4>
               <p className="text-gray-600">
                 Invertimos en obras públicas que mejoren la calidad de vida y fortalezcan el crecimiento económico
                 local.
@@ -346,7 +352,7 @@ export default function MuniPage() {
               <div className="w-16 h-16 bg-[#16b5d0]/10 rounded-full flex items-center justify-center mx-auto">
                 <Eye className="h-8 w-8 text-[#16b5d0]" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">Turismo Sustentable</h4>
+              <h4 className="text-lg font-nunito font-semibold text-gray-900">Turismo Sustentable</h4>
               <p className="text-gray-600">
                 Promovemos un turismo responsable que genere empleo y preserve nuestros recursos naturales y culturales.
               </p>
@@ -364,11 +370,11 @@ export default function MuniPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={120}
-                height={120}
-                className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                width={160}
+                height={160}
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain"
               />
-              <p className="text-xl sm:text-2xl font-semibold text-center sm:text-center lg:text-left">
+              <p className="text-lg sm:text-xl font-nunito font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -376,7 +382,7 @@ export default function MuniPage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -391,12 +397,12 @@ export default function MuniPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Acceso Rápido</h3>
-                <ul className="space-y-2">
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>
+                <ul className="space-y-2 font-montserrat">
                   <li>
                     <Link
                       href="/vecinos/guia-de-tramites"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Guía de trámites
                     </Link>
@@ -404,7 +410,7 @@ export default function MuniPage() {
                   <li>
                     <Link
                       href="/noticias"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Noticias
                     </Link>
@@ -412,7 +418,7 @@ export default function MuniPage() {
                   <li>
                     <Link
                       href="/vecinos/servicios"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Servicios
                     </Link>
@@ -423,12 +429,12 @@ export default function MuniPage() {
 
             {/* Institucional */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Institucional</h3>
-              <ul className="space-y-2">
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Institucional</h3>
+              <ul className="space-y-2 font-montserrat">
                 <li>
                   <Link
                     href="/vecinos/muni"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     La Muni
                   </Link>
@@ -436,7 +442,7 @@ export default function MuniPage() {
                 <li>
                   <Link
                     href="/vecinos/honorable-concejo-deliberante"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     Concejo Deliberante
                   </Link>
@@ -446,11 +452,11 @@ export default function MuniPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Contacto</h3>
-              <div className="space-y-3">
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Contacto</h3>
+              <div className="space-y-3 font-montserrat">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">
+                  <p className="text-sm sm:text-base">
                     Mario Nivoli 206
                     <br />
                     Villa del Dique, Córdoba
@@ -458,18 +464,18 @@ export default function MuniPage() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">03546-497241</p>
+                  <p className="text-sm sm:text-base">03546-497241</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Línea divisoria y copyright */}
-          <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-base sm:text-lg opacity-80">
+          <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2 font-montserrat">
+            <p className="text-sm sm:text-base opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-base opacity-70">
+            <p className="text-sm opacity-70">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
