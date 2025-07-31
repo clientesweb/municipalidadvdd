@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
 
-// Configurar Darker Grotesque con el rango de pesos
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
   variable: "--font-darker-grotesque",
@@ -10,7 +9,6 @@ const darkerGrotesque = Darker_Grotesque({
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
   variable: "--font-cinzel-decorative",
@@ -65,14 +63,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/turistas/como-llegar",
+    url: "https://www.villadeldique.gob.ar/turistas/como-llegar",
     siteName: "Municipalidad de Villa del Dique",
     title: "Cómo Llegar a Villa del Dique | Guía de Transporte",
     description:
       "Descubre todas las opciones de transporte para llegar a Villa del Dique: colectivos, rutas en auto, distancias y horarios. Tu guía completa de acceso a la Perla de Calamuchita.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-como-llegar.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-como-llegar.jpg",
         width: 1200,
         height: 630,
         alt: "Cómo Llegar a Villa del Dique - Vista aérea del lago y las sierras",
@@ -85,12 +83,12 @@ export const metadata: Metadata = {
     title: "Cómo Llegar a Villa del Dique | Guía de Transporte",
     description:
       "Guía completa de transporte a Villa del Dique: colectivos, rutas, distancias y opciones de traslado a la Perla de Calamuchita.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-como-llegar.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-como-llegar.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/turistas/como-llegar",
+    canonical: "https://www.villadeldique.gob.ar/turistas/como-llegar",
   },
   category: "transportation",
   classification: "Guía de Transporte Turístico",
@@ -118,19 +116,19 @@ export default function ComoLlegarLayout({
               name: "Cómo Llegar a Villa del Dique - Guía de Transporte",
               description:
                 "Guía completa de transporte y acceso a Villa del Dique, incluyendo opciones de colectivos, rutas en auto y distancias desde principales ciudades.",
-              url: "https://www.villadeldique.com.ar/turistas/como-llegar",
-              image: "https://www.villadeldique.com.ar/images/og-image-como-llegar.jpg",
+              url: "https://www.villadeldique.gob.ar/turistas/como-llegar",
+              image: "https://www.villadeldique.gob.ar/images/og-image-como-llegar.jpg",
               author: {
                 "@type": "Organization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
+                url: "https://www.villadeldique.gob.ar",
               },
               publisher: {
                 "@type": "Organization",
                 name: "Municipalidad de Villa del Dique",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                  url: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                 },
               },
               datePublished: "2024-01-01",
@@ -213,19 +211,19 @@ export default function ComoLlegarLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Turistas",
-                  item: "https://www.villadeldique.com.ar/turistas",
+                  item: "https://www.villadeldique.gob.ar/turistas",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Cómo Llegar",
-                  item: "https://www.villadeldique.com.ar/turistas/como-llegar",
+                  item: "https://www.villadeldique.gob.ar/turistas/como-llegar",
                 },
               ],
             }),
@@ -255,8 +253,8 @@ export default function ComoLlegarLayout({
                 latitude: -32.1833,
                 longitude: -64.4833,
               },
-              url: "https://www.villadeldique.com.ar",
-              image: "https://www.villadeldique.com.ar/images/og-image-como-llegar.jpg",
+              url: "https://www.villadeldique.gob.ar",
+              image: "https://www.villadeldique.gob.ar/images/og-image-como-llegar.jpg",
               hasMap: "https://maps.google.com/?q=Villa+del+Dique,+Córdoba,+Argentina",
               isAccessibleForFree: true,
               publicAccess: true,
