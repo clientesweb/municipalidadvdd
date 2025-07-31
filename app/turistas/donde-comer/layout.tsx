@@ -64,17 +64,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/turistas/donde-comer",
+    canonical: "https://www.villadeldique.gob.ar/turistas/donde-comer",
   },
   openGraph: {
     title: "¿Dónde comer? - Gastronomía en Villa del Dique",
     description:
       "Descubre la mejor gastronomía de Villa del Dique: restaurantes, cafeterías, pizzerías y opciones para llevar. Sabores únicos con vista al lago.",
-    url: "https://www.villadeldique.com.ar/turistas/donde-comer",
+    url: "https://www.villadeldique.gob.ar/turistas/donde-comer",
     siteName: "Municipalidad de Villa del Dique",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-donde-comer.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-donde-comer.jpg",
         width: 1200,
         height: 630,
         alt: "Gastronomía en Villa del Dique - Restaurantes y Cafeterías",
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     title: "¿Dónde comer? - Gastronomía en Villa del Dique",
     description:
       "Descubre la mejor gastronomía de Villa del Dique: restaurantes, cafeterías, pizzerías y opciones para llevar.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-donde-comer.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-donde-comer.jpg"],
     creator: "@VillaDelDique",
   },
   robots: {
@@ -129,8 +129,8 @@ export default function DondeComerLayout({
               "@graph": [
                 {
                   "@type": "WebPage",
-                  "@id": "https://www.villadeldique.com.ar/turistas/donde-comer",
-                  url: "https://www.villadeldique.com.ar/turistas/donde-comer",
+                  "@id": "https://www.villadeldique.gob.ar/turistas/donde-comer",
+                  url: "https://www.villadeldique.gob.ar/turistas/donde-comer",
                   name: "¿Dónde comer? - Gastronomía en Villa del Dique",
                   description:
                     "Descubre la mejor gastronomía de Villa del Dique: restaurantes, cafeterías, pizzerías y opciones para llevar.",
@@ -141,47 +141,47 @@ export default function DondeComerLayout({
                     "@id": "https://www.villadeldique.com.ar/#organization",
                   },
                   primaryImageOfPage: {
-                    "@id": "https://www.villadeldique.com.ar/images/banner-donde-comer-villa-del-dique.jpg",
+                    "@id": "https://www.villadeldique.gob.ar/images/banner-donde-comer-villa-del-dique.jpg",
                   },
                   datePublished: "2024-01-15T10:00:00-03:00",
                   dateModified: "2024-01-15T10:00:00-03:00",
                   breadcrumb: {
-                    "@id": "https://www.villadeldique.com.ar/turistas/donde-comer#breadcrumb",
+                    "@id": "https://www.villadeldique.gob.ar/turistas/donde-comer#breadcrumb",
                   },
                   inLanguage: "es-AR",
                 },
                 {
                   "@type": "BreadcrumbList",
-                  "@id": "https://www.villadeldique.com.ar/turistas/donde-comer#breadcrumb",
+                  "@id": "https://www.villadeldique.gob.ar/turistas/donde-comer#breadcrumb",
                   itemListElement: [
                     {
                       "@type": "ListItem",
                       position: 1,
                       name: "Inicio",
-                      item: "https://www.villadeldique.com.ar",
+                      item: "https://www.villadeldique.gob.ar",
                     },
                     {
                       "@type": "ListItem",
                       position: 2,
                       name: "Turistas",
-                      item: "https://www.villadeldique.com.ar/turistas",
+                      item: "https://www.villadeldique.gob.ar/turistas",
                     },
                     {
                       "@type": "ListItem",
                       position: 3,
                       name: "¿Dónde comer?",
-                      item: "https://www.villadeldique.com.ar/turistas/donde-comer",
+                      item: "https://www.villadeldique.gob.ar/turistas/donde-comer",
                     },
                   ],
                 },
                 {
                   "@type": "Organization",
-                  "@id": "https://www.villadeldique.com.ar/#organization",
+                  "@id": "https://www.villadeldique.gob.ar/#organization",
                   name: "Municipalidad de Villa del Dique",
-                  url: "https://www.villadeldique.com.ar",
+                  url: "https://www.villadeldique.gob.ar",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                    url: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                     width: 300,
                     height: 120,
                   },
@@ -199,7 +199,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "TouristDestination",
-                  "@id": "https://www.villadeldique.com.ar/#destination",
+                  "@id": "https://www.villadeldique.gob.ar/#destination",
                   name: "Villa del Dique",
                   description:
                     "Hermoso destino turístico en las Sierras de Córdoba, Argentina, conocido por su lago, paisajes naturales y excelente gastronomía.",
@@ -219,7 +219,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "Restaurant",
-                  "@id": "https://www.villadeldique.com.ar/#milano-bar",
+                  "@id": "https://www.villadeldique.gob.ar/#milano-bar",
                   name: "Milano Bar",
                   description: "Bar y restaurante con ambiente acogedor en el centro de Villa del Dique.",
                   address: {
@@ -236,7 +236,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "Restaurant",
-                  "@id": "https://www.villadeldique.com.ar/#chela",
+                  "@id": "https://www.villadeldique.gob.ar/#chela",
                   name: "Chela",
                   description: "Restaurante artesanal con propuestas gastronómicas únicas.",
                   address: {
@@ -247,13 +247,13 @@ export default function DondeComerLayout({
                     addressCountry: "AR",
                   },
                   telephone: "+54-3546-478738",
-                  sameAs: ["https://www.instagram.com/chelaartesana"],
+                  sameAs: ["https://www.instagram/chelaartesana"],
                   servesCuisine: "Argentina",
                   priceRange: "$$",
                 },
                 {
                   "@type": "Restaurant",
-                  "@id": "https://www.villadeldique.com.ar/#don-quijote",
+                  "@id": "https://www.villadeldique.gob.ar/#don-quijote",
                   name: "Don Quijote y Parrilla Cabritos",
                   description: "Parrilla tradicional especializada en carnes y cabritos.",
                   address: {
@@ -270,7 +270,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "Cafe",
-                  "@id": "https://www.villadeldique.com.ar/#walnut-cafeteria",
+                  "@id": "https://www.villadeldique.gob.ar/#walnut-cafeteria",
                   name: "Walnut Cafeteria & Pastelería",
                   description: "Cafetería y pastelería con productos artesanales y ambiente familiar.",
                   address: {
@@ -286,7 +286,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "Restaurant",
-                  "@id": "https://www.villadeldique.com.ar/#iowa",
+                  "@id": "https://www.villadeldique.gob.ar/#iowa",
                   name: "IOWA",
                   description: "Restaurante con propuesta gastronómica internacional y ambiente moderno.",
                   address: {
@@ -303,7 +303,7 @@ export default function DondeComerLayout({
                 },
                 {
                   "@type": "FAQPage",
-                  "@id": "https://www.villadeldique.com.ar/turistas/donde-comer#faq",
+                  "@id": "https://www.villadeldique.gob.ar/turistas/donde-comer#faq",
                   mainEntity: [
                     {
                       "@type": "Question",
