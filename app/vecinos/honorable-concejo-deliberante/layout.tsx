@@ -61,14 +61,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/vecinos/honorable-concejo-deliberante",
+    url: "https://www.villadeldique.gob.ar/vecinos/honorable-concejo-deliberante",
     siteName: "Municipalidad de Villa del Dique",
     title: "Honorable Concejo Deliberante - Villa del Dique | Cuerpo Legislativo Municipal",
     description:
       "Conoce las autoridades del Honorable Concejo Deliberante de Villa del Dique. Presidente Alejandra Tosco, concejales y digestivo normativo del cuerpo legislativo que representa a los ciudadanos en la toma de decisiones municipales.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-concejo.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-concejo.jpg",
         width: 1200,
         height: 630,
         alt: "Honorable Concejo Deliberante de Villa del Dique - Sesión del cuerpo legislativo municipal",
@@ -94,12 +94,12 @@ export const metadata: Metadata = {
     title: "Honorable Concejo Deliberante - Villa del Dique",
     description:
       "Autoridades del Honorable Concejo Deliberante de Villa del Dique. Presidente Alejandra Tosco y cuerpo de concejales que representan a los ciudadanos.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-concejo.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-concejo.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos/honorable-concejo-deliberante",
+    canonical: "https://www.villadeldique.gpb.ar/vecinos/honorable-concejo-deliberante",
   },
   category: "government",
   classification: "Poder Legislativo Municipal",
@@ -139,9 +139,9 @@ export default function HonorableConcejoDeliberanteLayout({
               alternateName: ["HCD Villa del Dique", "Concejo Deliberante Villa del Dique"],
               description:
                 "Cuerpo legislativo municipal de Villa del Dique, Córdoba, Argentina. Compuesto por concejales electos que representan a los ciudadanos en la toma de decisiones municipales y la sanción de ordenanzas.",
-              url: "https://www.villadeldique.com.ar/vecinos/honorable-concejo-deliberante",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
-              image: "https://www.villadeldique.com.ar/images/og-image-concejo.jpg",
+              url: "https://www.villadeldique.gob.ar/vecinos/honorable-concejo-deliberante",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
+              image: "https://www.villadeldique.gob.ar/images/og-image-concejo.jpg",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Mario Nivoli 206",
@@ -155,7 +155,7 @@ export default function HonorableConcejoDeliberanteLayout({
               parentOrganization: {
                 "@type": "GovernmentOrganization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
+                url: "https://www.villadeldique.gob.ar",
               },
               areaServed: {
                 "@type": "City",
@@ -248,7 +248,7 @@ export default function HonorableConcejoDeliberanteLayout({
               ],
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/vecinos/honorable-concejo-deliberante",
+                "@id": "https://www.villadeldique.gob.ar/vecinos/honorable-concejo-deliberante",
               },
               sameAs: [
                 "https://www.facebook.com/villadeldique",
@@ -316,19 +316,19 @@ export default function HonorableConcejoDeliberanteLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Vecinos",
-                  item: "https://www.villadeldique.com.ar/vecinos",
+                  item: "https://www.villadeldique.gob.ar/vecinos",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Honorable Concejo Deliberante",
-                  item: "https://www.villadeldique.com.ar/vecinos/honorable-concejo-deliberante",
+                  item: "https://www.villadeldique.gob.ar/vecinos/honorable-concejo-deliberante",
                 },
               ],
             }),
