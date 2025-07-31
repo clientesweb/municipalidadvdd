@@ -66,14 +66,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/turistas",
+    url: "https://www.villadeldique.gob.ar/turistas",
     siteName: "Municipalidad de Villa del Dique",
     title: "Turistas - Villa del Dique | La Perla de Calamuchita",
     description:
       "Tu guía completa para visitar Villa del Dique, la Perla de Calamuchita. Descubre cómo llegar, dónde alojarte, dónde comer, circuitos turísticos y todos los atractivos de las Sierras de Córdoba.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-turistas.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-turistas.jpg",
         width: 1200,
         height: 630,
         alt: "Turistas Villa del Dique - La Perla de Calamuchita, Córdoba",
@@ -86,12 +86,12 @@ export const metadata: Metadata = {
     title: "Turistas - Villa del Dique | La Perla de Calamuchita",
     description:
       "Tu guía completa para visitar Villa del Dique: cómo llegar, dónde alojarte, dónde comer, circuitos y atractivos turísticos en Córdoba.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-turistas.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-turistas.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/turistas",
+    canonical: "https://www.villadeldique.gob.ar/turistas",
   },
   category: "tourism",
   classification: "Guía Turística",
@@ -119,9 +119,9 @@ export default function TuristasLayout({
               name: "Villa del Dique - Información Turística",
               description:
                 "Centro de información turística oficial de Villa del Dique, la Perla de Calamuchita. Guía completa para visitantes con información sobre alojamiento, gastronomía, actividades y atractivos turísticos.",
-              url: "https://www.villadeldique.com.ar/turistas",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
-              image: "https://www.villadeldique.com.ar/images/banner-turistas-recomendacion.webp",
+              url: "https://www.villadeldique.gob.ar/turistas",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
+              image: "https://www.villadeldique.gob.ar/images/banner-turistas-recomendacion.webp",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Villa del Dique",
@@ -163,7 +163,7 @@ export default function TuristasLayout({
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/turistas",
+                "@id": "https://www.villadeldique.gob.ar/turistas",
               },
             }),
           }}
