@@ -190,7 +190,7 @@ export default function VecinosPage() {
         <Link href="/vecinos/reclamos" className="block w-full">
           <div className="relative w-full">
             <Image
-              src="/images/banner-reclamos.webp"
+              src="/images/reclamos-banner.webp"
               alt="Villa del Dique - Reclamos"
               width={1920}
               height={400}
