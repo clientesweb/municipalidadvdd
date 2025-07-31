@@ -208,7 +208,7 @@ export default function TuristasPage() {
               className="w-full h-full object-contain"
               aria-label="Video de Villa del Dique - Tu Plan Perfecto"
             >
-              <source src="https://www.villadeldique.com.ar/videos/plan-perfecto.mp4" type="video/mp4" />
+              <source src="https://www.villadeldique.gob.ar/videos/plan-perfecto.mp4" type="video/mp4" />
               {"Your browser does not support the video tag."}
             </video>
           </DialogContent>
