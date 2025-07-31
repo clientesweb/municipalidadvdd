@@ -61,14 +61,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/turistas/recomendaciones",
+    url: "https://www.villadeldique.gob.ar/turistas/recomendaciones",
     siteName: "Municipalidad de Villa del Dique",
     title: "Recomendaciones al Turista - Villa del Dique",
     description:
       "Guía oficial de recomendaciones para turistas: consejos de seguridad, normas de convivencia y turismo responsable en Villa del Dique, la Perla de Calamuchita.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-recomendaciones.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-recomendaciones.jpg",
         width: 1200,
         height: 630,
         alt: "Recomendación al Turista - Villa del Dique, Municipalidad",
@@ -81,12 +81,12 @@ export const metadata: Metadata = {
     title: "Recomendaciones al Turista - Villa del Dique",
     description:
       "Consejos oficiales de seguridad y turismo responsable para disfrutar Villa del Dique de manera segura y sustentable.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-recomendaciones.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-recomendaciones.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/turistas/recomendaciones",
+    canonical: "https://www.villadeldique.gob.ar/turistas/recomendaciones",
   },
   category: "tourism",
   classification: "Guía de Seguridad Turística",
@@ -114,19 +114,19 @@ export default function RecomendacionesLayout({
               name: "Recomendaciones al Turista - Villa del Dique",
               description:
                 "Guía oficial de recomendaciones de seguridad y turismo responsable para visitantes de Villa del Dique, la Perla de Calamuchita.",
-              url: "https://www.villadeldique.com.ar/turistas/recomendaciones",
-              image: "https://www.villadeldique.com.ar/images/og-image-recomendaciones.jpg",
+              url: "https://www.villadeldique.gob.ar/turistas/recomendaciones",
+              image: "https://www.villadeldique.gob.ar/images/og-image-recomendaciones.jpg",
               author: {
                 "@type": "Organization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
+                url: "https://www.villadeldique.gob.ar",
               },
               publisher: {
                 "@type": "Organization",
                 name: "Municipalidad de Villa del Dique",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                  url: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                 },
               },
               datePublished: "2024-01-01",
@@ -204,19 +204,19 @@ export default function RecomendacionesLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Turistas",
-                  item: "https://www.villadeldique.com.ar/turistas",
+                  item: "https://www.villadeldique.gob.ar/turistas",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Recomendaciones",
-                  item: "https://www.villadeldique.com.ar/turistas/recomendaciones",
+                  item: "https://www.villadeldique.gob.ar/turistas/recomendaciones",
                 },
               ],
             }),
