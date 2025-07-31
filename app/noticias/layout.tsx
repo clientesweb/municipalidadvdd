@@ -1,20 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
+import { Nunito, Montserrat } from "next/font/google" // Import new fonts
 
-// Configurar Darker Grotesque con el rango de pesos
-const darkerGrotesque = Darker_Grotesque({
+// Configure Nunito for titles and subtitles
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-darker-grotesque",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-nunito",
+  weight: ["400", "500", "600", "700", "800", "900"], // Common weights for titles
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
-const cinzelDecorative = Cinzel_Decorative({
+// Configure Montserrat for body text and footer
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-cinzel-decorative",
-  weight: ["400", "700", "900"],
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"], // Common weights for body text
   display: "swap",
 })
 
@@ -93,7 +93,7 @@ export default function NoticiasLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
+    <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
         {/* Structured Data for News Section */}
         <script
@@ -132,7 +132,8 @@ export default function NoticiasLayout({
           }}
         />
       </head>
-      <body className="font-darker-grotesk">{children}</body>
+      {/* Apply Montserrat as the default font for body text */}
+      <body className="font-montserrat">{children}</body>
     </html>
   )
 }
