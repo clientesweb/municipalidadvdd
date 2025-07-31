@@ -58,14 +58,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/turistas/circuitos",
+    url: "https://www.villadeldique.gob.ar/turistas/circuitos",
     siteName: "Municipalidad de Villa del Dique",
     title: "Circuitos - Villa del Dique | La Perla de Calamuchita",
     description:
       "Explora los mejores circuitos y senderos de Villa del Dique: trekking, caminatas, rutas en bicicleta y senderos históricos para todos los niveles.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-circuitos.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-circuitos.jpg",
         width: 1200,
         height: 630,
         alt: "Circuitos Villa del Dique - La Perla de Calamuchita, Córdoba",
@@ -78,12 +78,12 @@ export const metadata: Metadata = {
     title: "Circuitos - Villa del Dique | La Perla de Calamuchita",
     description:
       "Explora los mejores circuitos y senderos de Villa del Dique: trekking, caminatas y rutas para todos los niveles.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-circuitos.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-circuitos.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/turistas/circuitos",
+    canonical: "https://www.villadeldique.gob.ar/turistas/circuitos",
   },
   category: "tourism",
   classification: "Circuitos Turísticos",
@@ -111,9 +111,9 @@ export default function CircuitosLayout({
               name: "Circuitos Turísticos Villa del Dique",
               description:
                 "Circuitos y senderos turísticos en Villa del Dique: trekking, caminatas, rutas en bicicleta y tours históricos para todos los niveles.",
-              url: "https://www.villadeldique.com.ar/turistas/circuitos",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
-              image: "https://www.villadeldique.com.ar/images/banner-circuitos-villa-del-dique.jpg",
+              url: "https://www.villadeldique.gob.ar/turistas/circuitos",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
+              image: "https://www.villadeldique.gob.ar/images/banner-circuitos-villa-del-dique.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Villa del Dique",
@@ -144,7 +144,7 @@ export default function CircuitosLayout({
               ],
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/turistas/circuitos",
+                "@id": "https://www.villadeldique.gob.ar/turistas/circuitos",
               },
             }),
           }}
