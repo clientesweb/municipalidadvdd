@@ -124,7 +124,7 @@ export default function TuristasPage() {
             {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 rounded-md transition-colors duration-200 z-[60]"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 rounded-md transition-colors duration-200 z-[55]"
               aria-label="Abrir menú"
             >
               {isMenuOpen ? <X className="h-6 w-6 text-[#c84f9b]" /> : <Menu className="h-6 w-6 text-[#c84f9b]" />}
@@ -137,7 +137,7 @@ export default function TuristasPage() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-[55] lg:hidden ${
+          className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-[50] lg:hidden ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -191,7 +191,15 @@ export default function TuristasPage() {
               {/* The play button is part of the image, so no overlay is needed */}
             </div>
           </DialogTrigger>
-          <DialogContent className="max-w-full h-full p-0 border-none bg-black/90 flex items-center justify-center">
+          <DialogContent className="max-w-full h-full p-0 border-none bg-black/90 flex items-center justify-center z-[70]">
+            {/* Close button */}
+            <button
+              onClick={handleCloseDialog}
+              className="absolute top-4 right-4 z-[80] bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors duration-200"
+              aria-label="Cerrar video"
+            >
+              <X className="h-6 w-6 text-white" />
+            </button>
             <video
               ref={videoRef}
               controls
@@ -208,10 +216,10 @@ export default function TuristasPage() {
       </section>
 
       {/* Accordion with Menu Options */}
-      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
+      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 bg-[#c84f9b]">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8 text-center">
-            Explora Villa del Dique
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-white mb-8 text-center">
+            Explora <span className="font-extrabold">VILLA DEL DIQUE</span>
           </h2>
           <Accordion type="single" collapsible className="w-full rounded-lg overflow-hidden shadow-lg">
             {" "}
