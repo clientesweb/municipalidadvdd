@@ -80,14 +80,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/vecinos/el-pueblo",
+    url: "https://www.villadeldique.gob.ar/vecinos/el-pueblo",
     siteName: "Municipalidad de Villa del Dique",
     title: "El Pueblo - Villa del Dique | La Perla de Calamuchita en las Sierras de Córdoba",
     description:
       "Conoce Villa del Dique, la Perla de Calamuchita. Un pueblo de 7.000 habitantes fundado en 1935, ubicado entre el Cerro de la Cruz y el lago de Calamuchita. Historia, tradiciones, deportes acuáticos, senderos serranos, gastronomía regional y naturaleza incomparable en el corazón de las Sierras Grandes de Córdoba.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-el-pueblo.jpeg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-el-pueblo.jpeg",
         width: 1200,
         height: 630,
         alt: "Villa del Dique - La Perla de Calamuchita, Córdoba",
@@ -115,12 +115,12 @@ export const metadata: Metadata = {
     title: "El Pueblo - Villa del Dique | La Perla de Calamuchita",
     description:
       "Descubre Villa del Dique: historia, tradiciones serranas, deportes acuáticos, senderos, gastronomía y naturaleza incomparable en Córdoba.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-el-pueblo.jpeg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-el-pueblo.jpeg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos/el-pueblo",
+    canonical: "https://www.villadeldique.gob.ar/vecinos/el-pueblo",
   },
   category: "tourism",
   classification: "Información Turística y Cultural",
@@ -162,12 +162,12 @@ export default function ElPuebloLayout({
               alternateName: ["Villa del Dique", "Perla de Calamuchita"],
               description:
                 "Villa del Dique es la Perla de Calamuchita, un pintoresco pueblo de 7.000 habitantes ubicado entre el Cerro de la Cruz y el lago de Calamuchita, en el corazón del Valle de Calamuchita, Sierras Grandes de Córdoba, Argentina.",
-              url: "https://www.villadeldique.com.ar/vecinos/el-pueblo",
+              url: "https://www.villadeldique.gob.ar/vecinos/el-pueblo",
               image: [
-                "https://www.villadeldique.com.ar/images/vista-aerea-villa-del-dique.jpeg",
-                "https://www.villadeldique.com.ar/images/panoramica-villa-del-dique.webp",
-                "https://www.villadeldique.com.ar/images/cartel-villa-del-dique.jpeg",
-                "https://www.villadeldique.com.ar/images/tarde-verano-lago.webp",
+                "https://www.villadeldique.gob.ar/images/vista-aerea-villa-del-dique.jpeg",
+                "https://www.villadeldique.gob.ar/images/panoramica-villa-del-dique.webp",
+                "https://www.villadeldique.gob.ar/images/cartel-villa-del-dique.jpeg",
+                "https://www.villadeldique.gob.ar/images/tarde-verano-lago.webp",
               ],
               address: {
                 "@type": "PostalAddress",
@@ -306,7 +306,7 @@ export default function ElPuebloLayout({
               ],
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/vecinos/el-pueblo",
+                "@id": "https://www.villadeldique.gpb.ar/vecinos/el-pueblo",
               },
               sameAs: [
                 "https://www.facebook.com/villadeldique",
@@ -329,19 +329,19 @@ export default function ElPuebloLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Vecinos",
-                  item: "https://www.villadeldique.com.ar/vecinos",
+                  item: "https://www.villadeldique.gob.ar/vecinos",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "El Pueblo",
-                  item: "https://www.villadeldique.com.ar/vecinos/el-pueblo",
+                  item: "https://www.villadeldique.gob.ar/vecinos/el-pueblo",
                 },
               ],
             }),
