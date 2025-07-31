@@ -1,16 +1,40 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button" // Import Button
 
 export default function TuristasPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const handleOpenDialog = () => {
+    setIsDialogOpen(true)
+  }
+
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false)
+  }
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isDialogOpen) {
+        videoRef.current.play().catch((error) => console.error("Error playing video:", error))
+      } else {
+        videoRef.current.pause()
+        videoRef.current.currentTime = 0 // Reset video to start
+      }
+    }
+  }, [isDialogOpen])
 
   const leftMenuItems = [
     { name: "¿Cómo llegar?", href: "/turistas/como-llegar" },
@@ -150,7 +174,77 @@ export default function TuristasPage() {
         </Link>
       </section>
 
-      {/* Banner "Tu Plan Perfecto" */}
+      {/* New Video Banner */}
+      <section className="relative w-full cursor-pointer">
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogTrigger asChild>
+            <div className="relative w-full">
+              <Image
+                src="/images/villa-del-dique-tu-plan-perfecto.webp"
+                alt="Villa del Dique - Tu Plan Perfecto Video"
+                width={1920}
+                height={1080}
+                className="w-full h-auto object-cover"
+                sizes="100vw"
+                onClick={handleOpenDialog}
+              />
+              {/* The play button is part of the image, so no overlay is needed */}
+            </div>
+          </DialogTrigger>
+          <DialogContent className="max-w-full h-full p-0 border-none bg-black/90 flex items-center justify-center">
+            <video
+              ref={videoRef}
+              controls
+              autoPlay
+              muted={false} // Ensure sound is active
+              className="w-full h-full object-contain"
+              aria-label="Video de Villa del Dique - Tu Plan Perfecto"
+            >
+              <source src="https://www.villadeldique.com.ar/videos/plan-perfecto.mp4" type="video/mp4" />
+              {"Your browser does not support the video tag."}
+            </video>
+          </DialogContent>
+        </Dialog>
+      </section>
+
+      {/* Accordion with Menu Options */}
+      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8 text-center">
+            Explora Villa del Dique
+          </h2>
+          <Accordion type="single" collapsible className="w-full rounded-lg overflow-hidden shadow-lg">
+            {" "}
+            {/* Added rounded corners and shadow */}
+            {allMenuItems.map((item, index) => (
+              <AccordionItem
+                value={`item-${index}`}
+                key={index}
+                className="border-b border-gray-200 last:border-b-0 bg-white"
+              >
+                {" "}
+                {/* Added background color to item */}
+                <AccordionTrigger className="text-lg sm:text-xl font-montserrat font-semibold text-gray-800 hover:text-[#c84f9b] hover:bg-gray-50 transition-colors duration-200 px-6 py-4">
+                  {" "}
+                  {/* Adjusted hover background and padding */}
+                  {item.name}
+                </AccordionTrigger>
+                <AccordionContent className="pt-2 pb-4 px-6">
+                  {" "}
+                  {/* Adjusted padding */}
+                  <Link href={item.href} passHref>
+                    <Button className="w-full bg-[#c84f9b] hover:bg-[#a83f80] text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">
+                      Ver más sobre {item.name}
+                    </Button>
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Original Banner "Tu Plan Perfecto" - Linking to Instagram */}
       <section className="relative w-full">
         <Link
           href="https://www.instagram.com/turismoycultura.villadeldique?igsh=NGR6bnJhcXB4Z3h5"
