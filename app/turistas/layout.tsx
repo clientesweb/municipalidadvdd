@@ -1,20 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
+import { Nunito, Montserrat } from "next/font/google" // Changed imports to Nunito and Montserrat
 
-// Configurar Darker Grotesque con el rango de pesos
-const darkerGrotesque = Darker_Grotesque({
+// Configurar Nunito con el rango de pesos
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-darker-grotesque",
+  variable: "--font-nunito",
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
-const cinzelDecorative = Cinzel_Decorative({
+// Configurar Montserrat con los pesos específicos
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-cinzel-decorative",
-  weight: ["400", "700", "900"],
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 })
 
@@ -107,7 +107,7 @@ export default function TuristasLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
+    <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
         {/* Structured Data for Tourist Information */}
         <script
@@ -169,7 +169,7 @@ export default function TuristasLayout({
           }}
         />
       </head>
-      <body className="font-darker-grotesk">{children}</body>
+      <body className="font-montserrat">{children}</body>
     </html>
   )
 }
