@@ -42,17 +42,17 @@ export default function RecomendacionesPage() {
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-montserrat">
       {/* Header Announcement */}
       <div className="w-full bg-[#c84f9b] text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-base sm:text-lg font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
+          <p className="text-sm sm:text-base font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
         </div>
       </div>
 
       {/* Header with Navigation */}
       <header className="w-full py-2 sm:py-3 px-4 bg-white shadow-sm relative">
-        <div className="container mx-auto">
+        <div className="container mx-auto relative">
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between">
             {/* Left Menu Items */}
@@ -61,7 +61,7 @@ export default function RecomendacionesPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-base xl:text-lg font-montserrat font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -69,14 +69,14 @@ export default function RecomendacionesPage() {
             </nav>
 
             {/* Logo Center */}
-            <div className="flex-shrink-0 mx-6 xl:mx-8">
+            <div className="flex-shrink-0 mx-6 xl:mx-8 absolute left-1/2 -translate-x-1/2">
               <Link href="/">
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 lg:h-24 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
                   priority
                 />
               </Link>
@@ -88,7 +88,7 @@ export default function RecomendacionesPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-base xl:text-lg font-montserrat font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -104,9 +104,9 @@ export default function RecomendacionesPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
                   priority
                 />
               </Link>
@@ -138,7 +138,7 @@ export default function RecomendacionesPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="block text-3xl font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-3 border-b border-gray-100"
+                  className="block text-2xl font-montserrat font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-3 border-b border-gray-100"
                   onClick={toggleMenu}
                 >
                   {item.name}
@@ -150,7 +150,7 @@ export default function RecomendacionesPage() {
       </header>
 
       {/* Back Button */}
-      <div className="w-full bg-gray-50 py-4 px-4">
+      <div className="w-full bg-gray-50 py-4 px-4 font-montserrat">
         <div className="container mx-auto">
           <Link
             href="/turistas"
@@ -174,16 +174,16 @@ export default function RecomendacionesPage() {
           />
         </div>
         <div className="relative container mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-nunito font-bold text-gray-900 mb-6">
             RECOMENDACIONES AL TURISTA
           </h1>
           <div className="max-w-4xl mx-auto">
             <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 sm:p-8 shadow-lg">
-              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 mb-6 leading-relaxed font-semibold">
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 mb-6 leading-relaxed font-montserrat font-semibold">
                 Bienvenidos a <span className="font-bold text-[#c84f9b]">Villa del Dique</span>, la{" "}
                 <span className="font-bold text-[#c84f9b]">Perla de Calamuchita</span>.
               </p>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-montserrat leading-relaxed">
                 El destino ideal y tu plan perfecto para disfrutar de actividades y entretenimientos, gastronomía, la
                 tranquilidad del lago y de la zona rural, la vida al aire libre y la belleza natural de nuestro entorno,
                 para toda la familia.
@@ -196,7 +196,7 @@ export default function RecomendacionesPage() {
       {/* Introduction */}
       <section className="w-full py-8 sm:py-12 px-4 bg-white">
         <div className="container mx-auto text-center">
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-montserrat">
             Antes de emprender tu aventura, te invitamos a tener en cuenta estas recomendaciones para que tu experiencia
             sea <span className="font-bold text-[#c84f9b]">inolvidable</span>.
           </p>
@@ -213,9 +213,11 @@ export default function RecomendacionesPage() {
                 <div className="bg-green-100 p-3 rounded-full mr-4">
                   <TreePine className="h-8 w-8 text-green-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">1. Cuidado del entorno natural</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
+                  1. Cuidado del entorno natural
+                </h2>
               </div>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
                   Respetá la flora y fauna local. Evitá alimentar a los animales y pisá solo por los senderos demarcados
                   y señalizados.
@@ -242,9 +244,9 @@ export default function RecomendacionesPage() {
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
                   <Shield className="h-8 w-8 text-blue-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">2. Seguridad en el lago</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">2. Seguridad en el lago</h2>
               </div>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
                   Si vas a nadar, hacelo solo en áreas habilitadas y señalizadas. Si lo vas a hacer solo, avisá siempre
                   a tu entorno en qué lugar.
@@ -274,9 +276,11 @@ export default function RecomendacionesPage() {
                 <div className="bg-red-100 p-3 rounded-full mr-4">
                   <Heart className="h-8 w-8 text-red-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">3. Disfrutá responsablemente</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
+                  3. Disfrutá responsablemente
+                </h2>
               </div>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
                   Los fogones están prohibidos en épocas de sequía. Consultá la normativa para evitar riesgos de
                   incendio.
@@ -310,9 +314,9 @@ export default function RecomendacionesPage() {
                 <div className="bg-purple-100 p-3 rounded-full mr-4">
                   <ShoppingBag className="h-8 w-8 text-purple-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">4. Apoyá la economía local</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">4. Apoyá la economía local</h2>
               </div>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
                   Descubrí nuestras ferias de artesanías y productos regionales. Cada compra ayuda a las familias de
                   nuestra comunidad.
@@ -340,13 +344,15 @@ export default function RecomendacionesPage() {
       <section className="w-full py-12 sm:py-16 md:py-20 px-4 bg-[#c84f9b]">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">Información Útil</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-nunito font-bold text-white mb-6">Información Útil</h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-xl p-8 sm:p-12">
+            <div className="bg-white rounded-lg shadow-xl p-8 sm:p-12 font-montserrat">
               <div className="text-center mb-8">
-                <h3 className="text-3xl sm:text-4xl font-bold text-[#c84f9b] mb-4">Oficina de Información Turística</h3>
+                <h3 className="text-3xl sm:text-4xl font-nunito font-bold text-[#c84f9b] mb-4">
+                  Oficina de Información Turística
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -356,7 +362,7 @@ export default function RecomendacionesPage() {
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-2">Dirección</h4>
+                      <h4 className="text-xl font-nunito font-bold text-gray-900 mb-2">Dirección</h4>
                       <p className="text-lg text-gray-700">Entre Av. Carril de los chilenos y Av. de los Navegantes</p>
                     </div>
                   </div>
@@ -366,7 +372,7 @@ export default function RecomendacionesPage() {
                       <Clock className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-2">Horarios</h4>
+                      <h4 className="text-xl font-nunito font-bold text-gray-900 mb-2">Horarios</h4>
                       <p className="text-lg text-gray-700">
                         Lunes a sábado: 8 a 20 hs
                         <br />
@@ -382,7 +388,7 @@ export default function RecomendacionesPage() {
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-2">Teléfono</h4>
+                      <h4 className="text-xl font-nunito font-bold text-gray-900 mb-2">Teléfono</h4>
                       <Link
                         href="tel:3546528341"
                         className="text-lg text-[#c84f9b] hover:text-[#a63d7a] transition-colors duration-200 font-medium"
@@ -410,12 +416,12 @@ export default function RecomendacionesPage() {
       {/* Call to Action */}
       <section className="w-full py-12 sm:py-16 px-4 bg-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8">
             ¡Explorá todo lo que Villa del Dique tiene para ofrecerte!
           </h2>
           <Link
             href="/turistas"
-            className="inline-flex items-center bg-[#c84f9b] text-white font-bold text-xl px-8 py-4 rounded-full shadow-lg hover:bg-[#a63d7a] hover:scale-105 transition-all duration-200"
+            className="inline-flex items-center bg-[#c84f9b] text-white font-montserrat font-bold text-xl px-8 py-4 rounded-full shadow-lg hover:bg-[#a63d7a] hover:scale-105 transition-all duration-200"
           >
             <ArrowLeft className="h-6 w-6 mr-2" />
             Volver a Información Turística
@@ -424,7 +430,7 @@ export default function RecomendacionesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-[#c84f9b] text-white py-8 sm:py-10 md:py-12 px-4">
+      <footer className="w-full bg-[#c84f9b] text-white py-8 sm:py-10 md:py-12 px-4 font-montserrat">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Logo y Lema */}
@@ -432,11 +438,11 @@ export default function RecomendacionesPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={120}
-                height={120}
-                className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                width={150} // Increased width
+                height={150} // Increased height
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height
               />
-              <p className="text-xl sm:text-2xl font-semibold text-center sm:text-center lg:text-left">
+              <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -444,7 +450,7 @@ export default function RecomendacionesPage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -459,12 +465,12 @@ export default function RecomendacionesPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Acceso Rápido</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>
                 <ul className="space-y-2">
                   <li>
                     <Link
                       href="/turistas/como-llegar"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       ¿Cómo llegar?
                     </Link>
@@ -472,15 +478,15 @@ export default function RecomendacionesPage() {
                   <li>
                     <Link
                       href="/turistas/donde-alojarme"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       ¿Dónde alojarme?
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/vecinos/servicios"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      href="/turistas/servicios"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Servicios
                     </Link>
@@ -491,12 +497,12 @@ export default function RecomendacionesPage() {
 
             {/* Turismo */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Turismo</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Turismo</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/turistas/donde-comer"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     ¿Dónde comer?
                   </Link>
@@ -504,7 +510,7 @@ export default function RecomendacionesPage() {
                 <li>
                   <Link
                     href="/turistas/circuitos"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     Circuitos
                   </Link>
@@ -514,11 +520,11 @@ export default function RecomendacionesPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#c84f9b]">Información Turística</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4 text-[#c84f9b]">Información Turística</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">
+                  <p className="text-sm sm:text-base">
                     Oficina de Turismo
                     <br />
                     Villa del Dique, Córdoba
@@ -526,7 +532,7 @@ export default function RecomendacionesPage() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">3546-528341</p>
+                  <p className="text-sm sm:text-base">3546-528341</p>
                 </div>
               </div>
             </div>
@@ -534,10 +540,10 @@ export default function RecomendacionesPage() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-base sm:text-lg opacity-80">
+            <p className="text-sm sm:text-base opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-base opacity-70">
+            <p className="text-sm opacity-70">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
