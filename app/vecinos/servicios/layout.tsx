@@ -66,14 +66,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/vecinos/servicios",
+    url: "https://www.villadeldique.gob.ar/vecinos/servicios",
     siteName: "Municipalidad de Villa del Dique",
     title: "Servicios - Villa del Dique | Directorio Completo de Servicios Públicos y Privados",
     description:
       "Encuentra todos los servicios que necesitas en Villa del Dique: Oficina de Turismo, Municipalidad, servicios médicos, farmacias, transporte y más. Directorio completo con teléfonos, direcciones y contactos actualizados para vecinos y turistas.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-servicios.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-servicios.jpg",
         width: 1200,
         height: 630,
         alt: "Servicios Villa del Dique - Directorio Completo de Servicios Públicos y Privados",
@@ -101,12 +101,12 @@ export const metadata: Metadata = {
     title: "Servicios - Villa del Dique | Directorio Completo",
     description:
       "Directorio completo de servicios en Villa del Dique: turismo, salud, transporte, farmacias y más. Toda la información de contacto actualizada.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-servicios.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-servicios.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos/servicios",
+    canonical: "https://www.villadeldique.gob.ar/vecinos/servicios",
   },
   category: "directory",
   classification: "Directorio de Servicios Municipales",
@@ -151,12 +151,12 @@ export default function ServiciosLayout({
               name: "Directorio de Servicios - Villa del Dique",
               description:
                 "Directorio completo de servicios públicos y privados en Villa del Dique, Córdoba, Argentina. Incluye información de contacto actualizada para turismo, salud, transporte, farmacias y servicios municipales.",
-              url: "https://www.villadeldique.com.ar/vecinos/servicios",
+              url: "https://www.villadeldique.gob.ar/vecinos/servicios",
               publisher: {
                 "@type": "GovernmentOrganization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
-                logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                url: "https://www.villadeldique.gob.ar",
+                logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Mario Nivoli 206",
@@ -308,7 +308,7 @@ export default function ServiciosLayout({
               ],
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/vecinos/servicios",
+                "@id": "https://www.villadeldique.gob.ar/vecinos/servicios",
               },
               about: {
                 "@type": "Place",
@@ -389,19 +389,19 @@ export default function ServiciosLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Vecinos",
-                  item: "https://www.villadeldique.com.ar/vecinos",
+                  item: "https://www.villadeldique.gob.ar/vecinos",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Servicios",
-                  item: "https://www.villadeldique.com.ar/vecinos/servicios",
+                  item: "https://www.villadeldique.gob.ar/vecinos/servicios",
                 },
               ],
             }),
