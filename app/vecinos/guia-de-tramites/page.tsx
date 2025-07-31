@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Mail, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion" // Import Accordion components
 
 export default function GuiaDeTramitesPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +14,7 @@ export default function GuiaDeTramitesPage() {
   }
 
   const leftMenuItems = [
-    { name: "Noticias", href: "/noticias" }, // Changed from "/vecinos/noticias"
+    { name: "Noticias", href: "/noticias" },
     { name: "El Pueblo", href: "/vecinos/el-pueblo" },
     { name: "Muni", href: "/vecinos/muni" },
   ]
@@ -153,207 +154,224 @@ export default function GuiaDeTramitesPage() {
           GUÍA DE TRÁMITES
         </h1>
 
-        {/* Habilitación de Comercio */}
-        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold mb-6">
-            <span className="text-[#16b5d0]">Habilitación de Comercio</span>
-          </h2>
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="multiple" className="w-full space-y-4">
+            {/* Habilitación de Comercio */}
+            <AccordionItem value="item-1" className="bg-white shadow-lg rounded-lg border-none">
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
+                  Habilitación de Comercio
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
+                  <p>
+                    <span className="font-semibold">Categoría:</span> Comercio
+                  </p>
+                  <p>
+                    <span className="font-semibold">Nombre del Trámite:</span> Habilitación de Comercio
+                  </p>
 
-          <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
-            <p>
-              <span className="font-semibold">Categoría:</span> Comercio
-            </p>
-            <p>
-              <span className="font-semibold">Nombre del Trámite:</span> Habilitación de Comercio
-            </p>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Fotocopia del DNI del titular.</li>
+                    <li>Título de la propiedad o contrato de locación.</li>
+                    <li>Fotocopia del CUIT (o constancia de inscripción).</li>
+                    <li>Fotocopia del Monotributo.</li>
+                    <li>Especificar el rubro sobre el cual se desarrollará la actividad.</li>
+                    <li>Inspección libre de deudas.</li>
+                    <li>Tasa de servicio a la propiedad (comprobante de pago).</li>
+                    <li>Planos aprobados.</li>
+                    <li>Final de obra.</li>
+                    <li>Carnet de manipulación de alimentos (en caso de rubros gastronómicos).</li>
+                  </ul>
 
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Fotocopia del DNI del titular.</li>
-              <li>Título de la propiedad o contrato de locación.</li>
-              <li>Fotocopia del CUIT (o constancia de inscripción).</li>
-              <li>Fotocopia del Monotributo.</li>
-              <li>Especificar el rubro sobre el cual se desarrollará la actividad.</li>
-              <li>Inspección libre de deudas.</li>
-              <li>Tasa de servicio a la propiedad (comprobante de pago).</li>
-              <li>Planos aprobados.</li>
-              <li>Final de obra.</li>
-              <li>Carnet de manipulación de alimentos (en caso de rubros gastronómicos).</li>
-            </ul>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    📍 ¿Dónde se realiza?
+                  </h3>
+                  <p className="flex items-center space-x-2">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <span>
+                      En el Edificio de la Municipalidad.{" "}
+                      <a
+                        href="https://g.co/kgs/srGht4d"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Ver en Google Maps
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">
-              📍 ¿Dónde se realiza?
-            </h3>
-            <p className="flex items-center space-x-2">
-              <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-              <span>
-                En el Edificio de la Municipalidad.{" "}
-                <a
-                  href="https://g.co/kgs/srGht4d"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#16b5d0] hover:underline font-medium"
-                >
-                  Ver en Google Maps
-                </a>
-              </span>
-            </p>
-          </div>
-        </div>
+            {/* Certificación de Posesión */}
+            <AccordionItem value="item-2" className="bg-white shadow-lg rounded-lg border-none">
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
+                  Certificación de Posesión
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
+                  <p>
+                    <span className="font-semibold">Categoría:</span> Catastro / Inmuebles
+                  </p>
+                  <p>
+                    <span className="font-semibold">Nombre del Trámite:</span> Certificación de Posesión
+                  </p>
 
-        {/* Certificación de Posesión */}
-        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 max-w-3xl mx-auto mt-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold mb-6">
-            <span className="text-[#16b5d0]">Certificación de Posesión</span>
-          </h2>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Ser titular con escritura o poseedor con mensuras de posesión aprobadas.</li>
+                    <li>Libre de deuda de impuestos.</li>
+                    <li>Certificado de amojonamiento.</li>
+                    <li>Plano de proyectos firmados por un profesional matriculado y colegiado.</li>
+                    <li>Presentar DNI del solicitante.</li>
+                    <li>Relevamiento de especies nativas del lote.</li>
+                  </ul>
 
-          <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
-            <p>
-              <span className="font-semibold">Categoría:</span> Catastro / Inmuebles
-            </p>
-            <p>
-              <span className="font-semibold">Nombre del Trámite:</span> Certificación de Posesión
-            </p>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    📍 ¿Dónde se realiza?
+                  </h3>
+                  <p className="flex items-center space-x-2">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <span>
+                      En el Colegio de Arquitectos de Villa del Dique.{" "}
+                      <a
+                        href="https://villadeldique.colegio-arquitectos.com.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Visitar sitio web
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Ser titular con escritura o poseedor con mensuras de posesión aprobadas.</li>
-              <li>Libre de deuda de impuestos.</li>
-              <li>Certificado de amojonamiento.</li>
-              <li>Plano de proyectos firmados por un profesional matriculado y colegiado.</li>
-              <li>Presentar DNI del solicitante.</li>
-              <li>Relevamiento de especies nativas del lote.</li>
-            </ul>
+            {/* Solicitud de Extracción de Arbolado Público */}
+            <AccordionItem value="item-3" className="bg-white shadow-lg rounded-lg border-none">
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
+                  Solicitud de Extracción de Arbolado Público
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
+                  <p>
+                    <span className="font-semibold">Categoría:</span> Espacios Verdes
+                  </p>
+                  <p>
+                    <span className="font-semibold">Nombre del Trámite:</span> Solicitud de pedido de extracción de
+                    arbolado público
+                  </p>
+                  <p className="flex items-center space-x-2">
+                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <span className="font-semibold">Contacto:</span>{" "}
+                    <a href="mailto:obraprivadavdd@gmail.com" className="text-[#16b5d0] hover:underline font-medium">
+                      obraprivadavdd@gmail.com
+                    </a>
+                  </p>
 
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">
-              📍 ¿Dónde se realiza?
-            </h3>
-            <p className="flex items-center space-x-2">
-              <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-              <span>
-                En el Colegio de Arquitectos de Villa del Dique.{" "}
-                <a
-                  href="https://villadeldique.colegio-arquitectos.com.ar/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#16b5d0] hover:underline font-medium"
-                >
-                  Visitar sitio web
-                </a>
-              </span>
-            </p>
-          </div>
-        </div>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Completar y presentar el formulario correspondiente.</li>
+                    <li>
+                      <a
+                        href="/solicitud.pdf" // Updated path to use public folder
+                        download="solicitud.pdf"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Descargar la documentación oficial.
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-        {/* Solicitud de Extracción de Arbolado Público */}
-        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 max-w-3xl mx-auto mt-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold mb-6">
-            <span className="text-[#16b5d0]">Solicitud de Extracción de Arbolado Público</span>
-          </h2>
+            {/* Mensura de Posesión */}
+            <AccordionItem value="item-4" className="bg-white shadow-lg rounded-lg border-none">
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
+                  Mensura de Posesión
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
+                  <p>
+                    <span className="font-semibold">Categoría:</span> Catastro / Inmuebles
+                  </p>
+                  <p>
+                    <span className="font-semibold">Nombre del Trámite:</span> Mensura de Posesión
+                  </p>
 
-          <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
-            <p>
-              <span className="font-semibold">Categoría:</span> Espacios Verdes
-            </p>
-            <p>
-              <span className="font-semibold">Nombre del Trámite:</span> Solicitud de pedido de extracción de arbolado
-              público
-            </p>
-            <p className="flex items-center space-x-2">
-              <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-              <span className="font-semibold">Contacto:</span>{" "}
-              <a href="mailto:obraprivadavdd@gmail.com" className="text-[#16b5d0] hover:underline font-medium">
-                obraprivadavdd@gmail.com
-              </a>
-            </p>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      Plano de mensura de posesión firmado por un profesional matriculado y visado por el colegio
+                      profesional.
+                    </li>
+                    <li>Reporte de cuenta y dominio.</li>
+                    <li>Reserva de nomenclatura.</li>
+                    <li>Contrato de cesión de derechos.</li>
+                    <li>Acta de constatación o declaración jurada ante juez de paz.</li>
+                    <li>DNI del poseedor.</li>
+                    <li>Impuestos municipales al día.</li>
+                  </ul>
 
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Completar y presentar el formulario correspondiente.</li>
-              <li>
-                <a
-                  href="https://www.villadeldique.com.ar/solicitud.pdf"
-                  download="solicitud.pdf"
-                  className="text-[#16b5d0] hover:underline font-medium"
-                >
-                  Descargar la documentación oficial.
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    📍 ¿Dónde se realiza?
+                  </h3>
+                  <p className="flex items-center space-x-2">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <span>
+                      En el Colegio de Arquitectos de Villa del Dique.{" "}
+                      <a
+                        href="https://villadeldique.colegio-arquitectos.com.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Visitar sitio web
+                      </a>
+                    </span>
+                  </p>
 
-        {/* Mensura de Posesión */}
-        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 max-w-3xl mx-auto mt-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold mb-6">
-            <span className="text-[#16b5d0]">Mensura de Posesión</span>
-          </h2>
+                  <p className="flex items-start space-x-2">
+                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0 mt-0.5" />
+                    <span className="font-semibold text-sm">Contacto:</span>{" "}
+                    <a
+                      href="mailto:mensuras.municipalidad.vdd@gmail.com"
+                      className="text-[#16b5d0] hover:underline font-medium text-sm break-all"
+                    >
+                      mensuras.municipalidad.vdd@gmail.com
+                    </a>
+                  </p>
 
-          <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
-            <p>
-              <span className="font-semibold">Categoría:</span> Catastro / Inmuebles
-            </p>
-            <p>
-              <span className="font-semibold">Nombre del Trámite:</span> Mensura de Posesión
-            </p>
-
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                Plano de mensura de posesión firmado por un profesional matriculado y visado por el colegio profesional.
-              </li>
-              <li>Reporte de cuenta y dominio.</li>
-              <li>Reserva de nomenclatura.</li>
-              <li>Contrato de cesión de derechos.</li>
-              <li>Acta de constatación o declaración jurada ante juez de paz.</li>
-              <li>DNI del poseedor.</li>
-              <li>Impuestos municipales al día.</li>
-            </ul>
-
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">
-              📍 ¿Dónde se realiza?
-            </h3>
-            <p className="flex items-center space-x-2">
-              <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-              <span>
-                En el Colegio de Arquitectos de Villa del Dique.{" "}
-                <a
-                  href="https://villadeldique.colegio-arquitectos.com.ar/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#16b5d0] hover:underline font-medium"
-                >
-                  Visitar sitio web
-                </a>
-              </span>
-            </p>
-
-            <p className="flex items-start space-x-2">
-              <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0 mt-0.5" />
-              <span className="font-semibold text-sm">Contacto:</span>{" "}
-              <a
-                href="mailto:mensuras.municipalidad.vdd@gmail.com"
-                className="text-[#16b5d0] hover:underline font-medium text-sm break-all"
-              >
-                mensuras.municipalidad.vdd@gmail.com
-              </a>
-            </p>
-
-            <h3 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-800 mt-8 mb-4">
-              📥 Descargar Documentación
-            </h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                <a
-                  href="https://www.villadeldique.com.ar/Mensuras_de_Posesión.pdf"
-                  download="Mensuras_de_Posesion.pdf"
-                  className="text-[#16b5d0] hover:underline font-medium"
-                >
-                  Formulario de Solicitud
-                </a>
-              </li>
-            </ul>
-          </div>
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    📥 Descargar Documentación
+                  </h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      <a
+                        href="/solicitud.pdf" // Placeholder, assuming this PDF is also in public
+                        download="Mensuras_de_Posesion.pdf"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Formulario de Solicitud
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </main>
 
@@ -366,8 +384,8 @@ export default function GuiaDeTramitesPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={160}
-                height={160}
+                width={150} // Increased width
+                height={150} // Increased height
                 className="h-20 sm:h-24 md:h-28 w-auto object-contain"
               />
               <p className="text-lg sm:text-xl font-nunito font-semibold text-center sm:text-center lg:text-left">
@@ -405,7 +423,7 @@ export default function GuiaDeTramitesPage() {
                   </li>
                   <li>
                     <Link
-                      href="/noticias" // Changed from "/vecinos/noticias"
+                      href="/noticias"
                       className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Noticias
