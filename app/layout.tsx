@@ -51,14 +51,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar",
+    url: "https://www.villadeldique.gob.ar",
     siteName: "Municipalidad de Villa del Dique",
     title: "Villa del Dique - Municipalidad Oficial | Córdoba, Argentina",
     description:
       "Sitio web oficial de la Municipalidad de Villa del Dique, Córdoba. Información para vecinos y turistas, trámites municipales y servicios públicos.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Villa del Dique Municipalidad - Sitio Oficial",
@@ -69,13 +69,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Villa del Dique - Municipalidad Oficial",
     description: "Sitio web oficial de la Municipalidad de Villa del Dique, Córdoba. El progreso que queremos.",
-    images: ["https://www.villadeldique.com.ar/images/og-image.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image.jpg"],
   },
   verification: {
     google: "google-site-verification-code-here",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar",
+    canonical: "https://www.villadeldique.gob.ar",
   },
   category: "government",
   classification: "Gobierno Municipal",
@@ -116,8 +116,8 @@ export default function RootLayout({
               "@type": "GovernmentOrganization",
               name: "Municipalidad de Villa del Dique",
               alternateName: "Villa del Dique Municipality",
-              url: "https://www.villadeldique.com.ar",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+              url: "https://www.villadeldique.gob.ar",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
               description:
                 "Municipalidad de Villa del Dique, Córdoba, Argentina. Servicios públicos, trámites municipales e información para vecinos y turistas.",
               address: {
