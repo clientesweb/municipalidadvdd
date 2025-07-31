@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Darker_Grotesque, Cinzel_Decorative } from "next/font/google"
 
-// Configurar Darker Grotesque con el rango de pesos
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
   variable: "--font-darker-grotesque",
@@ -10,7 +9,6 @@ const darkerGrotesque = Darker_Grotesque({
   display: "swap",
 })
 
-// Configurar Cinzel Decorative con los pesos específicos
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
   variable: "--font-cinzel-decorative",
@@ -51,28 +49,28 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/noticias/villa-del-dique-no-para",
+    url: "https://www.villadeldique.gob.ar/noticias/villa-del-dique-no-para",
     siteName: "Municipalidad de Villa del Dique",
     title: "Villa del Dique No Para: Avances de Obras Públicas Durante el Receso Invernal",
     description:
       "El Municipio de Villa del Dique continúa ejecutando importantes obras durante el receso invernal: finalización de sala cuna, adoquinado en barrio IPV, mejoras en escuelas y construcción del anfiteatro del Polo Cultural.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/villa-del-dique-no-para.webp",
+        url: "https://www.villadeldique.gob.ar/images/villa-del-dique-no-para.webp",
         width: 1200,
         height: 800,
         alt: "Villa del Dique No Para - Obras en progreso durante receso invernal",
         type: "image/webp",
       },
       {
-        url: "https://www.villadeldique.com.ar/images/nuevo-edificio-sala-cuna.webp",
+        url: "https://www.villadeldique.gob.ar/images/nuevo-edificio-sala-cuna.webp",
         width: 800,
         height: 600,
         alt: "Construcción del nuevo edificio de la Sala Cuna en Villa del Dique",
         type: "image/webp",
       },
       {
-        url: "https://www.villadeldique.com.ar/images/anfiteatro-polo-cultural.webp",
+        url: "https://www.villadeldique.gob.ar/images/anfiteatro-polo-cultural.webp",
         width: 800,
         height: 600,
         alt: "Construcción del anfiteatro en el Polo Cultural de Villa del Dique",
@@ -90,12 +88,12 @@ export const metadata: Metadata = {
     title: "Villa del Dique No Para: Avances de Obras Públicas",
     description:
       "El Municipio continúa con importantes obras durante el receso invernal: sala cuna, adoquinado, mejoras en escuelas y anfiteatro del Polo Cultural.",
-    images: ["https://www.villadeldique.com.ar/images/villa-del-dique-no-para.webp"],
+    images: ["https://www.villadeldique.gob.ar/images/villa-del-dique-no-para.webp"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/noticias/villa-del-dique-no-para",
+    canonical: "https://www.villadeldique.gob.ar/noticias/villa-del-dique-no-para",
   },
   category: "news",
   classification: "Artículo de Noticias",
@@ -118,7 +116,6 @@ export default function VilladelDiqueNoParaLayout({
   return (
     <html lang="es-AR" className={`${darkerGrotesque.variable} ${cinzelDecorative.variable}`}>
       <head>
-        {/* Structured Data for News Article */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -129,24 +126,24 @@ export default function VilladelDiqueNoParaLayout({
               description:
                 "El Municipio de Villa del Dique continúa ejecutando importantes obras durante el receso invernal: finalización de sala cuna, adoquinado en barrio IPV, mejoras en Escuela Almirante Brown, nueva oficina de reclamos y anfiteatro del Polo Cultural.",
               image: [
-                "https://www.villadeldique.com.ar/images/villa-del-dique-no-para.webp",
-                "https://www.villadeldique.com.ar/images/nuevo-edificio-sala-cuna.webp",
-                "https://www.villadeldique.com.ar/images/obras-barrio-ipv.webp",
-                "https://www.villadeldique.com.ar/images/anfiteatro-polo-cultural.webp",
+                "https://www.villadeldique.gob.ar/images/villa-del-dique-no-para.webp",
+                "https://www.villadeldique.gob.ar/images/nuevo-edificio-sala-cuna.webp",
+                "https://www.villadeldique.gob.ar/images/obras-barrio-ipv.webp",
+                "https://www.villadeldique.gob.ar/images/anfiteatro-polo-cultural.webp",
               ],
               datePublished: "2025-07-08T00:00:00.000Z",
               dateModified: "2025-07-08T00:00:00.000Z",
               author: {
                 "@type": "Organization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
+                url: "https://www.villadeldique.gob.ar",
               },
               publisher: {
                 "@type": "GovernmentOrganization",
                 name: "Municipalidad de Villa del Dique",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                  url: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                   width: 300,
                   height: 120,
                 },
@@ -160,7 +157,7 @@ export default function VilladelDiqueNoParaLayout({
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/noticias/villa-del-dique-no-para",
+                "@id": "https://www.villadeldique.gob.ar/noticias/villa-del-dique-no-para",
               },
               articleSection: "Obras Públicas",
               keywords: [
