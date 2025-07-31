@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Formulario de Reclamos - Municipalidad de Villa del Dique",
     description:
       "Envía tus reclamos y sugerencias a la Municipalidad de Villa del Dique. Ayúdanos a mejorar los servicios para nuestra comunidad.",
-    images: ["/images/Og-image-reclamos.jpg"], // Path to your Twitter image
+    images: ["/images/og-image-reclamos.jpg"], // Path to your Twitter image
   },
 }
 
