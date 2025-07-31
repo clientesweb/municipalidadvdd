@@ -2,7 +2,19 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign, Megaphone } from "lucide-react"
+import {
+  Menu,
+  X,
+  Facebook,
+  Instagram,
+  Youtube,
+  MapPin,
+  Phone,
+  Trash2,
+  DollarSign,
+  Megaphone,
+  Plane,
+} from "lucide-react" // Added Plane icon
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -182,6 +194,27 @@ export default function VecinosPage() {
               sizes="100vw"
             />
           </Link>
+        </div>
+      </section>
+
+      {/* New Section: Quick Access Buttons */}
+      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-gray-100">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8">Acceso Rápido</h2>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link
+              href="/vecinos/reclamos"
+              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto flex items-center justify-center min-w-[200px]"
+            >
+              <Megaphone className="h-6 w-6 mr-2" /> Reclamos
+            </Link>
+            <Link
+              href="/turistas"
+              className="bg-[#16b5d0] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto flex items-center justify-center min-w-[200px]"
+            >
+              <Plane className="h-6 w-6 mr-2" /> Turistas
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -549,15 +582,7 @@ export default function VecinosPage() {
         </Link>
       </section>
 
-      {/* Floating Complaint Button */}
-      <Link
-        href="/vecinos/reclamos"
-        className="fixed bottom-8 right-8 z-50 bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition-colors duration-200 flex items-center gap-2 text-lg font-nunito font-semibold group" // Applied font-nunito
-        aria-label="Ir a la página de reclamos"
-      >
-        <Megaphone className="h-6 w-6 group-hover:scale-110 transition-transform duration-200" />
-        <span className="hidden sm:inline-block">Reclamos</span>
-      </Link>
+      {/* Floating Complaint Button - REMOVED */}
 
       {/* Footer */}
       <footer className="w-full bg-[#16b5d0] text-white py-8 sm:py-10 md:py-12 px-4">
@@ -568,8 +593,8 @@ export default function VecinosPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={160} // Increased width
-                height={160} // Increased height
+                width={150} // Increased width
+                height={150} // Increased height
                 className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height classes
               />
               <p className="text-lg sm:text-xl font-nunito font-semibold text-center sm:text-center lg:text-left">
