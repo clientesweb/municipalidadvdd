@@ -27,17 +27,17 @@ export default function ComoLlegarPage() {
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-montserrat">
       {/* Header Announcement - Pink color */}
       <div className="w-full bg-[#c84f9b] text-white py-2 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-base sm:text-lg font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
+          <p className="text-sm sm:text-base font-medium">Página oficial de la Municipalidad de Villa del Dique</p>
         </div>
       </div>
 
       {/* Header with Navigation */}
       <header className="w-full py-2 sm:py-3 px-4 bg-white shadow-sm relative">
-        <div className="container mx-auto">
+        <div className="container mx-auto relative">
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between">
             {/* Left Menu Items */}
@@ -46,7 +46,7 @@ export default function ComoLlegarPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className={`text-lg xl:text-xl font-medium transition-colors duration-200 py-2 whitespace-nowrap ${
+                  className={`text-base xl:text-lg font-montserrat font-medium transition-colors duration-200 py-2 whitespace-nowrap ${
                     item.active ? "text-[#c84f9b] border-b-2 border-[#c84f9b]" : "text-gray-800 hover:text-[#c84f9b]"
                   }`}
                 >
@@ -56,14 +56,14 @@ export default function ComoLlegarPage() {
             </nav>
 
             {/* Logo Center */}
-            <div className="flex-shrink-0 mx-6 xl:mx-8">
+            <div className="flex-shrink-0 mx-6 xl:mx-8 absolute left-1/2 -translate-x-1/2">
               <Link href="/">
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 lg:h-24 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
                   priority
                 />
               </Link>
@@ -75,7 +75,7 @@ export default function ComoLlegarPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-lg xl:text-xl font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
+                  className="text-base xl:text-lg font-montserrat font-medium text-gray-800 hover:text-[#c84f9b] transition-colors duration-200 py-2 whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -91,9 +91,9 @@ export default function ComoLlegarPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
                   priority
                 />
               </Link>
@@ -125,7 +125,7 @@ export default function ComoLlegarPage() {
                 <a
                   key={index}
                   href={item.href}
-                  className={`block text-3xl font-medium transition-colors duration-200 py-3 border-b border-gray-100 ${
+                  className={`block text-2xl font-montserrat font-medium transition-colors duration-200 py-3 border-b border-gray-100 ${
                     item.active ? "text-[#c84f9b]" : "text-gray-800 hover:text-[#c84f9b]"
                   }`}
                   onClick={toggleMenu}
@@ -139,9 +139,9 @@ export default function ComoLlegarPage() {
       </header>
 
       {/* Breadcrumb */}
-      <nav className="w-full bg-gray-50 py-3 px-4">
+      <nav className="w-full bg-gray-50 py-3 px-4 font-montserrat">
         <div className="container mx-auto">
-          <div className="flex items-center space-x-2 text-base text-gray-600">
+          <div className="flex items-center space-x-2 text-sm text-gray-600">
             <Link href="/" className="hover:text-[#c84f9b] transition-colors">
               Inicio
             </Link>
@@ -176,15 +176,15 @@ export default function ComoLlegarPage() {
           <section className="mb-12">
             <div className="flex items-center mb-6">
               <Car className="h-8 w-8 text-[#c84f9b] mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Rutas de Acceso</h2>
+              <h2 className="text-3xl sm:text-4xl font-nunito font-bold text-gray-900">Rutas de Acceso</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-montserrat">
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#c84f9b]">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ruta Provincial N°5</h3>
+                <h3 className="text-xl font-nunito font-bold text-gray-900 mb-2">Ruta Provincial N°5</h3>
                 <p className="text-gray-700">Acceso principal desde Córdoba Capital</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#c84f9b]">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ruta Nacional N°36</h3>
+                <h3 className="text-xl font-nunito font-bold text-gray-900 mb-2">Ruta Nacional N°36</h3>
                 <p className="text-gray-700">Ruta alternativa con conexión a otras localidades</p>
               </div>
             </div>
@@ -194,15 +194,15 @@ export default function ComoLlegarPage() {
           <section className="mb-12">
             <div className="flex items-center mb-6">
               <Bus className="h-8 w-8 text-[#c84f9b] mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Ómnibus</h2>
+              <h2 className="text-3xl sm:text-4xl font-nunito font-bold text-gray-900">Ómnibus</h2>
             </div>
 
             {/* Desde Córdoba */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Desde Córdoba a Villa del Dique</h3>
+            <div className="mb-8 font-montserrat">
+              <h3 className="text-2xl font-nunito font-bold text-gray-900 mb-4">Desde Córdoba a Villa del Dique</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-blue-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-bold text-blue-900 mb-3">Buses Lep</h4>
+                  <h4 className="text-xl font-nunito font-bold text-blue-900 mb-3">Buses Lep</h4>
                   <a
                     href="https://www.buseslep.com.ar"
                     target="_blank"
@@ -214,7 +214,7 @@ export default function ComoLlegarPage() {
                   </a>
                 </div>
                 <div className="bg-green-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-bold text-green-900 mb-3">Grupo Sierras</h4>
+                  <h4 className="text-xl font-nunito font-bold text-green-900 mb-3">Grupo Sierras</h4>
                   <a
                     href="https://grupo-sierras.com.ar"
                     target="_blank"
@@ -235,11 +235,13 @@ export default function ComoLlegarPage() {
             </div>
 
             {/* Desde Buenos Aires */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Desde Buenos Aires a Villa del Dique</h3>
+            <div className="mb-8 font-montserrat">
+              <h3 className="text-2xl font-nunito font-bold text-gray-900 mb-4">
+                Desde Buenos Aires a Villa del Dique
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-blue-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-bold text-blue-900 mb-3">Buses Lep</h4>
+                  <h4 className="text-xl font-nunito font-bold text-blue-900 mb-3">Buses Lep</h4>
                   <a
                     href="https://www.buseslep.com.ar"
                     target="_blank"
@@ -251,7 +253,7 @@ export default function ComoLlegarPage() {
                   </a>
                 </div>
                 <div className="bg-red-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-bold text-red-900 mb-3">Chevallier</h4>
+                  <h4 className="text-xl font-nunito font-bold text-red-900 mb-3">Chevallier</h4>
                   <a
                     href="https://www.nuevachevallier.com"
                     target="_blank"
@@ -263,7 +265,7 @@ export default function ComoLlegarPage() {
                   </a>
                 </div>
                 <div className="bg-purple-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-bold text-purple-900 mb-3">San Juan Mar del Plata</h4>
+                  <h4 className="text-xl font-nunito font-bold text-purple-900 mb-3">San Juan Mar del Plata</h4>
                   <a
                     href="https://www.atsj.com.ar"
                     target="_blank"
@@ -282,26 +284,26 @@ export default function ComoLlegarPage() {
           <section className="mb-12">
             <div className="flex items-center mb-6">
               <Plane className="h-8 w-8 text-[#c84f9b] mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Avión</h2>
+              <h2 className="text-3xl sm:text-4xl font-nunito font-bold text-gray-900">Avión</h2>
             </div>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg font-montserrat text-gray-700 mb-6">
               Vuelos al Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella (Pajas Blancas), Córdoba:
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 font-montserrat">
               <div className="bg-orange-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-bold text-orange-900 mb-3">FlyBondi</h4>
+                <h4 className="text-xl font-nunito font-bold text-orange-900 mb-3">FlyBondi</h4>
                 <p className="text-orange-800 text-sm">Buenos Aires, Bariloche, Mendoza, Neuquén, Salta</p>
               </div>
               <div className="bg-sky-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-bold text-sky-900 mb-3">Aerolíneas Argentinas</h4>
+                <h4 className="text-xl font-nunito font-bold text-sky-900 mb-3">Aerolíneas Argentinas</h4>
                 <p className="text-sky-800 text-sm">
                   Jujuy, Salta, Tucumán, Resistencia, Iguazú, Posadas, San Juan, Mendoza, Buenos Aires, Mar del Plata,
                   Neuquén, Chapelco, Bariloche, Trelew, Comodoro Rivadavia, El Calafate, Ushuaia
                 </p>
               </div>
               <div className="bg-indigo-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-bold text-indigo-900 mb-3">JetSmart</h4>
+                <h4 className="text-xl font-nunito font-bold text-indigo-900 mb-3">JetSmart</h4>
                 <p className="text-indigo-800 text-sm">Buenos Aires</p>
               </div>
             </div>
@@ -309,31 +311,31 @@ export default function ComoLlegarPage() {
 
           {/* Desde el Aeropuerto */}
           <section className="mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-nunito font-bold text-gray-900 mb-6">
               Cómo llegar a Villa del Dique desde el Aeropuerto
             </h2>
-            <div className="bg-gradient-to-r from-[#c84f9b] to-pink-600 text-white p-6 rounded-lg shadow-lg mb-6">
-              <h3 className="text-2xl font-bold mb-4">
+            <div className="bg-gradient-to-r from-[#c84f9b] to-pink-600 text-white p-6 rounded-lg shadow-lg mb-6 font-montserrat">
+              <h3 className="text-2xl font-nunito font-bold mb-4">
                 Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella (Pajas Blancas)
               </h3>
               <p className="text-lg">Opciones de transporte desde el aeropuerto hasta Villa del Dique:</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-montserrat">
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-                <h4 className="text-xl font-bold text-blue-900 mb-3">Servicio AEROBUS</h4>
+                <h4 className="text-xl font-nunito font-bold text-blue-900 mb-3">Servicio AEROBUS</h4>
                 <p className="text-gray-700">Conexión directa Terminal-Aeropuerto con frecuencia cada una hora.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-                <h4 className="text-xl font-bold text-green-900 mb-3">Colectivo Línea 25</h4>
+                <h4 className="text-xl font-nunito font-bold text-green-900 mb-3">Colectivo Línea 25</h4>
                 <p className="text-gray-700">Servicio de transporte público desde el aeropuerto.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-                <h4 className="text-xl font-bold text-yellow-900 mb-3">Remises</h4>
+                <h4 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Remises</h4>
                 <p className="text-gray-700">Servicio de transporte privado disponible en el aeropuerto.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
-                <h4 className="text-xl font-bold text-red-900 mb-3">Taxis</h4>
+                <h4 className="text-xl font-nunito font-bold text-red-900 mb-3">Taxis</h4>
                 <p className="text-gray-700">Servicio de taxi disponible las 24 horas.</p>
               </div>
             </div>
@@ -342,18 +344,18 @@ export default function ComoLlegarPage() {
           {/* Call to Action */}
           <section className="text-center">
             <div className="bg-gradient-to-r from-[#c84f9b] to-pink-600 text-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">¿Ya sabes cómo llegar?</h3>
-              <p className="text-lg mb-6">Descubre qué hacer una vez que llegues a Villa del Dique</p>
+              <h3 className="text-2xl sm:text-3xl font-nunito font-bold mb-4">¿Ya sabes cómo llegar?</h3>
+              <p className="text-lg font-montserrat mb-6">Descubre qué hacer una vez que llegues a Villa del Dique</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/turistas/donde-alojarme"
-                  className="bg-white text-[#c84f9b] font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                  className="bg-white text-[#c84f9b] font-montserrat font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors duration-200"
                 >
                   ¿Dónde alojarme?
                 </Link>
                 <Link
                   href="/turistas/circuitos"
-                  className="bg-white text-[#c84f9b] font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                  className="bg-white text-[#c84f9b] font-montserrat font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors duration-200"
                 >
                   Ver Circuitos
                 </Link>
@@ -364,7 +366,7 @@ export default function ComoLlegarPage() {
       </main>
 
       {/* Footer - Pink color */}
-      <footer className="w-full bg-[#c84f9b] text-white py-8 sm:py-10 md:py-12 px-4">
+      <footer className="w-full bg-[#c84f9b] text-white py-8 sm:py-10 md:py-12 px-4 font-montserrat">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Logo y Lema */}
@@ -372,11 +374,11 @@ export default function ComoLlegarPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={120}
-                height={120}
-                className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                width={150} // Increased width
+                height={150} // Increased height
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height
               />
-              <p className="text-xl sm:text-2xl font-semibold text-center sm:text-center lg:text-left">
+              <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
               </p>
             </div>
@@ -384,7 +386,7 @@ export default function ComoLlegarPage() {
             {/* Redes Sociales y Acceso Rápido */}
             <div className="space-y-6 text-center sm:text-center lg:text-left">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Redes Sociales</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>
                 <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
                   <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
                     <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -399,12 +401,12 @@ export default function ComoLlegarPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4">Acceso Rápido</h3>
+                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>
                 <ul className="space-y-2">
                   <li>
                     <Link
                       href="/turistas/como-llegar"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl font-medium"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg font-medium"
                     >
                       ¿Cómo llegar?
                     </Link>
@@ -412,15 +414,15 @@ export default function ComoLlegarPage() {
                   <li>
                     <Link
                       href="/turistas/donde-alojarme"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       ¿Dónde alojarme?
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/vecinos/servicios"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                      href="/turistas/servicios"
+                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                     >
                       Servicios
                     </Link>
@@ -431,12 +433,12 @@ export default function ComoLlegarPage() {
 
             {/* Turismo */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Turismo</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Turismo</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/turistas/donde-comer"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     ¿Dónde comer?
                   </Link>
@@ -444,7 +446,7 @@ export default function ComoLlegarPage() {
                 <li>
                   <Link
                     href="/turistas/circuitos"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-lg sm:text-xl"
+                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
                   >
                     Circuitos
                   </Link>
@@ -454,11 +456,11 @@ export default function ComoLlegarPage() {
 
             {/* Contacto */}
             <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Información Turística</h3>
+              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Información Turística</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">
+                  <p className="text-sm sm:text-base">
                     Oficina de Turismo
                     <br />
                     Villa del Dique, Córdoba
@@ -466,7 +468,7 @@ export default function ComoLlegarPage() {
                 </div>
                 <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-base sm:text-lg">3546-528341</p>
+                  <p className="text-sm sm:text-base">3546-528341</p>
                 </div>
               </div>
             </div>
@@ -474,10 +476,10 @@ export default function ComoLlegarPage() {
 
           {/* Línea divisoria y copyright */}
           <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2">
-            <p className="text-base sm:text-lg opacity-80">
+            <p className="text-sm sm:text-base opacity-80">
               © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
             </p>
-            <p className="text-base opacity-70">
+            <p className="text-sm opacity-70">
               Powered By{" "}
               <a
                 href="https://dualitydomain.com"
