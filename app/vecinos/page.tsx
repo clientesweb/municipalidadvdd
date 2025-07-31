@@ -453,7 +453,7 @@ export default function VecinosPage() {
       {/* Banner "Tu Plan Perfecto" */}
       <section className="relative w-full">
         <Link
-          href="https://www.instagram.com/turismoycultura.villadeldique?igsh=NGR6bnJhcXB4Z3h5"
+          href="/turistas"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full"
