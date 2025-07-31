@@ -59,9 +59,9 @@ export default function NoticiasPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-12 xl:h-16 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased size classes
                   priority
                 />
               </Link>
@@ -89,9 +89,9 @@ export default function NoticiasPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={300}
-                  height={120}
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  width={350} // Increased width
+                  height={140} // Increased height
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased size classes
                   priority
                 />
               </Link>
@@ -230,9 +230,9 @@ export default function NoticiasPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={120}
-                height={120}
-                className="h-16 sm:h-18 md:h-20 w-auto object-contain"
+                width={150} // Increased width
+                height={150} // Increased height
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased size classes
               />
               <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
