@@ -29,7 +29,7 @@ export default function HonorableConcejoDeliberantePage() {
   // Autoridades del Concejo Deliberante
   const autoridades = {
     presidente: {
-      nombre: "Alejandra Tosco",
+      nombre: "Ernesto Gustavo Cuello",
       cargo: "Presidente",
     },
     vicepresidente: {
