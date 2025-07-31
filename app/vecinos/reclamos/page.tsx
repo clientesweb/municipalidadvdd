@@ -11,7 +11,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ArrowLeft } from "lucide-react"
 
 export default function ReclamosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -159,6 +159,19 @@ export default function ReclamosPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-6 text-center">
               Formulario de Reclamos
             </h1>
+
+            <div className="flex justify-center mb-6">
+              <Link href="/vecinos">
+                <Button
+                  variant="outline"
+                  className="flex items-center space-x-2 text-[#16b5d0] border-[#16b5d0] hover:bg-[#16b5d0] hover:text-white transition-colors duration-200 bg-transparent"
+                >
+                  <ArrowLeft className="h-4 w-4" />
+                  <span>Volver a Vecinos</span>
+                </Button>
+              </Link>
+            </div>
+
             <p className="text-lg sm:text-xl font-montserrat text-gray-700 mb-8 text-center">
               Ayúdanos a mejorar los servicios de Villa del Dique. Completa el siguiente formulario con tu reclamo o
               sugerencia.
