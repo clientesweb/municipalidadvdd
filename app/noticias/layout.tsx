@@ -1,12 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Nunito, Montserrat } from "next/font/google" // Import new fonts
+import { Nunito, Montserrat } from "next/font/google"
 
 // Configure Nunito for titles and subtitles
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"], // Common weights for titles
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 })
 
@@ -14,7 +14,7 @@ const nunito = Nunito({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  weight: ["300", "400", "500", "600", "700"], // Common weights for body text
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 })
 
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/noticias",
+    url: "https://www.villadeldique.gob.ar/noticias",
     siteName: "Municipalidad de Villa del Dique",
     title: "Noticias - Villa del Dique | La Villa QUE QUEREMOS",
     description:
       "Últimas noticias y novedades oficiales de Villa del Dique. Obras públicas, desarrollo urbano, eventos y servicios municipales. El progreso que queremos.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-noticias.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-noticias.jpg",
         width: 1200,
         height: 630,
         alt: "Noticias Villa del Dique - La Villa QUE QUEREMOS",
@@ -71,12 +71,12 @@ export const metadata: Metadata = {
     title: "Noticias - Villa del Dique | La Villa QUE QUEREMOS",
     description:
       "Últimas noticias y novedades oficiales de Villa del Dique. Obras públicas, desarrollo urbano y servicios municipales.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-noticias.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-noticias.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/noticias",
+    canonical: "https://www.villadeldique.gob.ar/noticias",
   },
   category: "news",
   classification: "Noticias Municipales",
@@ -103,14 +103,14 @@ export default function NoticiasLayout({
               "@context": "https://schema.org",
               "@type": "NewsMediaOrganization",
               name: "Municipalidad de Villa del Dique - Noticias",
-              url: "https://www.villadeldique.com.ar/noticias",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+              url: "https://www.villadeldique.gob.ar/noticias",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
               description: "Portal de noticias oficial de la Municipalidad de Villa del Dique, Córdoba, Argentina.",
               publisher: {
                 "@type": "GovernmentOrganization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
-                logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                url: "https://www.villadeldique.gob.ar",
+                logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Mario Nivoli 206",
@@ -121,7 +121,7 @@ export default function NoticiasLayout({
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/noticias",
+                "@id": "https://www.villadeldique.gob.ar/noticias",
               },
               sameAs: [
                 "https://www.facebook.com/villadeldique",
@@ -132,7 +132,6 @@ export default function NoticiasLayout({
           }}
         />
       </head>
-      {/* Apply Montserrat as the default font for body text */}
       <body className="font-montserrat">{children}</body>
     </html>
   )
