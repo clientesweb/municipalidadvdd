@@ -61,14 +61,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/vecinos/muni",
+    url: "https://www.villadeldique.gob.ar/vecinos/muni",
     siteName: "Municipalidad de Villa del Dique",
     title: "La Muni - Villa del Dique | Gobierno Municipal con Emiliano Torres",
     description:
       "Conoce al Intendente Emiliano Torres y las autoridades municipales de Villa del Dique. Un gobierno comprometido con la inclusión, el desarrollo humano y el turismo. Visión y misión para el progreso de nuestra comunidad.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-muni.jpeg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-muni.jpeg",
         width: 1200,
         height: 630,
         alt: "La Muni Villa del Dique - Gobierno Municipal con Intendente Emiliano Torres",
@@ -96,12 +96,12 @@ export const metadata: Metadata = {
     title: "La Muni - Villa del Dique | Gobierno Municipal",
     description:
       "Intendente Emiliano Torres y autoridades municipales comprometidas con el progreso, la inclusión y el desarrollo turístico de Villa del Dique.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-muni.jpeg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-muni.jpeg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos/muni",
+    canonical: "https://www.villadeldique.gob.ar/vecinos/muni",
   },
   category: "government",
   classification: "Gobierno Municipal",
@@ -141,9 +141,9 @@ export default function MuniLayout({
               alternateName: ["La Muni", "Gobierno Municipal de Villa del Dique"],
               description:
                 "Gobierno municipal de Villa del Dique, Córdoba, Argentina. Liderado por el Intendente Emiliano Torres, promueve políticas de inclusión, desarrollo humano y turismo.",
-              url: "https://www.villadeldique.com.ar/vecinos/muni",
-              logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
-              image: "https://www.villadeldique.com.ar/images/intendente-emiliano-torres.webp",
+              url: "https://www.villadeldique.gob.ar/vecinos/muni",
+              logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
+              image: "https://www.villadeldique.gob.ar/images/intendente-emiliano-torres.webp",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Mario Nivoli 206",
@@ -169,7 +169,7 @@ export default function MuniLayout({
                     "@type": "GovernmentOrganization",
                     name: "Municipalidad de Villa del Dique",
                   },
-                  image: "https://www.villadeldique.com.ar/images/intendente-emiliano-torres.webp",
+                  image: "https://www.villadeldique.gob.ar/images/intendente-emiliano-torres.webp",
                 },
                 {
                   "@type": "Person",
@@ -231,7 +231,7 @@ export default function MuniLayout({
                 "Promovemos políticas de inclusión que propicien el acceso a la educación, la salud y el trabajo en pos del progreso social y económico de Villa del Dique. Desarrollamos e impulsamos la actividad turística todo el año, aplicando políticas con el objetivo de mejorar la infraestructura y generar inversiones.",
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/vecinos/muni",
+                "@id": "https://www.villadeldique.gob.ar/vecinos/muni",
               },
               sameAs: [
                 "https://www.facebook.com/MuniVilladelDique",
@@ -254,19 +254,19 @@ export default function MuniLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Inicio",
-                  item: "https://www.villadeldique.com.ar",
+                  item: "https://www.villadeldique.gob.ar",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Vecinos",
-                  item: "https://www.villadeldique.com.ar/vecinos",
+                  item: "https://www.villadeldique.gob.ar/vecinos",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "La Muni",
-                  item: "https://www.villadeldique.com.ar/vecinos/muni",
+                  item: "https://www.villadeldique.gob.ar/vecinos/muni",
                 },
               ],
             }),
