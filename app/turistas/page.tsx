@@ -163,7 +163,7 @@ export default function TuristasPage() {
         <Link href="/turistas/recomendaciones" className="block w-full">
           <div className="relative w-full aspect-video overflow-hidden">
             <Image
-              src="/images/recomendacion-al-turista.webp"
+              src="/images/recomendacion.webp"
               alt="Recomendación al Turista - Villa del Dique"
               fill
               className="object-cover"
