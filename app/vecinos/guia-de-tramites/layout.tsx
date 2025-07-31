@@ -54,14 +54,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.villadeldique.com.ar/vecinos/guia-de-tramites",
+    url: "https://www.villadeldique.gob.ar/vecinos/guia-de-tramites",
     siteName: "Municipalidad de Villa del Dique",
     title: "Guía de Trámites - Villa del Dique | Vamos Juntos",
     description:
       "Guía completa de trámites municipales en Villa del Dique. Habilitación de comercio, certificación de posesión, mensura y más. Requisitos y procedimientos paso a paso para vecinos.",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-tramites.jpg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-tramites.jpg",
         width: 1200,
         height: 630,
         alt: "Guía de Trámites - Villa del Dique Municipalidad",
@@ -74,12 +74,12 @@ export const metadata: Metadata = {
     title: "Guía de Trámites - Villa del Dique | Vamos Juntos",
     description:
       "Guía completa de trámites municipales: habilitación de comercio, certificación de posesión, mensura y más procedimientos en Villa del Dique.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-tramites.jpg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-tramites.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos/guia-de-tramites",
+    canonical: "https://www.villadeldique.gob.ar/vecinos/guia-de-tramites",
   },
   category: "government",
   classification: "Servicios Municipales",
@@ -116,8 +116,8 @@ export default function GuiaDeTramitesLayout({
               provider: {
                 "@type": "GovernmentOrganization",
                 name: "Municipalidad de Villa del Dique",
-                url: "https://www.villadeldique.com.ar",
-                logo: "https://www.villadeldique.com.ar/images/logo-oficial.webp",
+                url: "https://www.villadeldique.gob.ar",
+                logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Mario Nivoli 206",
@@ -153,7 +153,7 @@ export default function GuiaDeTramitesLayout({
                 {
                   "@type": "ServiceChannel",
                   name: "Online",
-                  serviceUrl: "https://www.villadeldique.com.ar/vecinos/guia-de-tramites",
+                  serviceUrl: "https://www.villadeldique.gob.ar/vecinos/guia-de-tramites",
                 },
               ],
               serviceType: "Trámites Municipales",
@@ -200,7 +200,7 @@ export default function GuiaDeTramitesLayout({
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://www.villadeldique.com.ar/vecinos/guia-de-tramites",
+                "@id": "https://www.villadeldique.gob.ar/vecinos/guia-de-tramites",
               },
               sameAs: [
                 "https://www.facebook.com/villadeldique",
