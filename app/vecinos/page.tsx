@@ -2,19 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import {
-  Menu,
-  X,
-  Facebook,
-  Instagram,
-  Youtube,
-  MapPin,
-  Phone,
-  Trash2,
-  DollarSign,
-  Megaphone,
-  Plane,
-} from "lucide-react" // Added Plane icon
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from "lucide-react" // Added Plane icon
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -197,25 +185,20 @@ export default function VecinosPage() {
         </div>
       </section>
 
-      {/* New Section: Quick Access Buttons */}
-      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-gray-100">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8">Acceso Rápido</h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link
-              href="/vecinos/reclamos"
-              className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto flex items-center justify-center min-w-[200px]"
-            >
-              <Megaphone className="h-6 w-6 mr-2" /> Reclamos
-            </Link>
-            <Link
-              href="/turistas"
-              className="bg-[#16b5d0] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto flex items-center justify-center min-w-[200px]"
-            >
-              <Plane className="h-6 w-6 mr-2" /> Turistas
-            </Link>
+      {/* Banner Reclamos */}
+      <section className="relative w-full">
+        <Link href="/vecinos/reclamos" className="block w-full">
+          <div className="relative w-full">
+            <Image
+              src="/images/banner-reclamos.webp"
+              alt="Villa del Dique - Reclamos"
+              width={1920}
+              height={400}
+              className="w-full h-auto object-cover"
+              sizes="100vw"
+            />
           </div>
-        </div>
+        </Link>
       </section>
 
       {/* Pago de Tasas Municipales Section (now in Accordion) */}
