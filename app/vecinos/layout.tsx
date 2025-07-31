@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     title: "Vecinos - Villa del Dique | Municipalidad Oficial",
     description:
       "Información y servicios para los vecinos de Villa del Dique. Accede a trámites, noticias locales, servicios municipales y más.",
-    url: "https://www.villadeldique.com.ar/vecinos",
+    url: "https://www.villadeldique.gob.ar/vecinos",
     siteName: "Municipalidad de Villa del Dique",
     images: [
       {
-        url: "https://www.villadeldique.com.ar/images/og-image-vecinos.jpeg",
+        url: "https://www.villadeldique.gob.ar/images/og-image-vecinos.jpeg",
         width: 1200,
         height: 630,
         alt: "Vamos Juntos - Villa del Dique",
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     title: "Vecinos - Villa del Dique | Municipalidad Oficial",
     description:
       "Información y servicios para los vecinos de Villa del Dique. Accede a trámites, noticias locales, servicios municipales y más.",
-    images: ["https://www.villadeldique.com.ar/images/og-image-vecinos.jpeg"],
+    images: ["https://www.villadeldique.gob.ar/images/og-image-vecinos.jpeg"],
   },
   alternates: {
-    canonical: "https://www.villadeldique.com.ar/vecinos",
+    canonical: "https://www.villadeldique.gob.ar/vecinos",
   },
 }
 
