@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     images: ["https://www.villadeldique.gob.ar/images/og-image.jpg"],
   },
   verification: {
-    google: "google-site-verification=4PhndzhmQLD-SECzI-oKRv4S72csSMujPydORa5Vgu8",
+    google: "google-site-verification=9UECrS73eR-RxxnAb3t4F8NVHGKdCPqp2HSHBvF1I64",
   },
   alternates: {
     canonical: "https://www.villadeldique.gob.ar",
