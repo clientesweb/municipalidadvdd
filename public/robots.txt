@@ -1,0 +1,35 @@
+# Robots.txt para Municipalidad de Villa del Dique
+# https://www.villadeldique.gob.ar/robots.txt
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a todos los recursos importantes
+Allow: /vecinos/
+Allow: /turistas/
+Allow: /noticias/
+Allow: /images/
+Allow: /videos/
+
+# Bloquear archivos administrativos y temporales
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+Disallow: *.json$
+Disallow: /service-worker.js
+
+# Permitir bots de redes sociales
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.villadeldique.gob.ar/sitemap.xml
+
+# Crawl-delay para ser respetuosos con el servidor
+Crawl-delay: 1

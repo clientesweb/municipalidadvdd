@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.villadeldique.gob.ar/</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sección Vecinos -->
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/guia-de-tramites</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/servicios</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/reclamos</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/muni</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/honorable-concejo-deliberante</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/vecinos/el-pueblo</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sección Turistas -->
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas/como-llegar</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas/donde-alojarme</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas/donde-comer</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas/circuitos</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/turistas/recomendaciones</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sección Noticias -->
+  <url>
+    <loc>https://www.villadeldique.gob.ar/noticias</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/noticias/nueva-maquinaria-vial</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.gob.ar/noticias/villa-del-dique-no-para</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
