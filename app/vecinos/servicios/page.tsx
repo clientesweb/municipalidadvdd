@@ -19,7 +19,6 @@ import {
   Pill,
   ShieldCheck,
   Scale,
-  HandHeart,
   ClipboardList,
   BookOpen,
   GraduationCap,
@@ -325,7 +324,7 @@ export default function ServiciosPage() {
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
                     <ShieldCheck className="h-6 w-6 text-[#16b5d0]" />
-                    <span>Inspección, Monitoreo, Guardia Local y Defensa Civil</span>
+                    <span>Inspección, Monitoreo, Guardia Local, Defensa Civil y Juzgado de Faltas</span>
                   </h3>
                   <div className="space-y-4">
                     <p className="text-gray-700 font-medium">Atención: 24 hs</p>
@@ -360,10 +359,36 @@ export default function ServiciosPage() {
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <p className="text-gray-700 font-medium">Ubicación: Pilcomayo s/n (Misma que Radio Municipal)</p>
                     </div>
+                    <div className="pt-4 border-t border-gray-200">
+                      <h4 className="text-lg font-nunito font-semibold text-gray-800 mb-2 flex items-center space-x-2">
+                        <Scale className="h-5 w-5 text-[#16b5d0]" />
+                        <span>Juzgado de Faltas</span>
+                      </h4>
+                      <div className="space-y-2">
+                        <div className="flex items-center space-x-3">
+                          <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <a
+                            href="https://g.co/kgs/VUnXHqZ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
+                          >
+                            https://g.co/kgs/VUnXHqZ - Ver en Google Maps
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <a
+                            href="tel:+5493546000000"
+                            className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
+                          >
+                            +54 9 3546 00-0000
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                
 
                 {/* Registro Civil */}
                 <div className="pt-4 border-t border-gray-100">
