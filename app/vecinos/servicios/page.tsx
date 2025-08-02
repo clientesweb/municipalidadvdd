@@ -363,26 +363,7 @@ export default function ServiciosPage() {
                   </div>
                 </div>
 
-                {/* Juzgado de Faltas */}
-                <div className="pt-4 border-t border-gray-100">
-                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
-                    <Scale className="h-6 w-6 text-[#16b5d0]" />
-                    <span>Juzgado de Faltas</span>
-                  </h3>
-                  <p className="text-gray-700 font-medium">Número a confirmar</p>
-                </div>
-
-                {/* Bienestar Social */}
-                <div className="pt-4 border-t border-gray-100">
-                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
-                    <HandHeart className="h-6 w-6 text-[#16b5d0]" />
-                    <span>Bienestar Social</span>
-                  </h3>
-                  <p className="text-gray-700 font-medium">
-                    Servicios de asistencia social, contención familiar y programas municipales
-                  </p>
-                  <p className="text-gray-700 font-medium">Dirección: (agregar si está disponible)</p>
-                </div>
+                
 
                 {/* Registro Civil */}
                 <div className="pt-4 border-t border-gray-100">
