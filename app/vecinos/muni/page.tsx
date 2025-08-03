@@ -63,8 +63,8 @@ export default function MuniPage() {
         icon: Briefcase,
       },
       {
-        nombre: "Gustavo Cuello",
-        cargo: "Secretario de Salud y Bienestar Social",
+        nombre: "Susana Benítez",
+        cargo: "Secretaria de Salud y Bienestar Social",
         area: "Salud y Bienestar Social",
         icon: Users,
       },
