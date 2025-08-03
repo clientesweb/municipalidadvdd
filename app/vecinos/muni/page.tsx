@@ -19,6 +19,7 @@ import {
   Briefcase,
 } from "lucide-react"
 import Link from "next/link"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function MuniPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -357,6 +358,51 @@ export default function MuniPage() {
                 Promovemos un turismo responsable que genere empleo y preserve nuestros recursos naturales y culturales.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Manifiesto Section */}
+        <section className="mt-12">
+          <div className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="manifiesto" className="border-none">
+                <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-6 px-8 hover:no-underline [&[data-state=open]>svg]:rotate-180">
+                  <div className="flex items-center space-x-3">
+                    <Target className="h-6 w-6" />
+                    <h2 className="text-2xl sm:text-3xl font-nunito font-bold">MANIFIESTO GESTIÓN EMILIANO TORRES</h2>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="p-8 lg:p-12">
+                  <div className="prose prose-lg max-w-none font-montserrat text-gray-700 leading-relaxed">
+                    <p className="text-lg mb-6">
+                      El pueblo que soñamos, es ese que nos convoca día a día a construirlo entre todos. Como sociedad,
+                      estamos en un momento decisivo. Hoy más que nunca, tenemos el desafío de construir una comunidad
+                      fuerte, próspera, equitativa e inclusiva. Un pueblo en el que podamos convivir con esperanza y de
+                      manera fraterna y que, cuando lo necesitemos, sepamos que vamos a encontrar la mano tendida de
+                      nuestros vecinos.
+                    </p>
+
+                    <p className="text-lg mb-6">
+                      Es esa la Villa que deseamos y por la que apostamos: la que genere trabajo de calidad, la que nos
+                      acompañe con más y mejor salud y educación, la que nos invite a construir en este día y cada día,
+                      el progreso para todos sobre los pilares del orden, la seguridad, el desarrollo productivo y el
+                      cuidado del medio ambiente.
+                    </p>
+
+                    <p className="text-lg mb-6">
+                      Queremos que Villa del Dique sea ejemplo de trabajo en equipo, inclusión, identidad, participación
+                      y sostenibilidad. Juntos, vamos a construir un futuro donde cada vecino se sienta parte del
+                      progreso, donde el desarrollo sea humano, inclusivo y ecológicamente responsable. El camino al
+                      futuro está en nuestras manos y en nuestra capacidad de soñar y construirlo juntos.
+                    </p>
+
+                    <p className="text-lg font-semibold text-[#16b5d0] mb-0">
+                      Este es nuestro norte, vamos juntos con compromiso a construir la Villa del Dique que queremos.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </section>
       </main>
