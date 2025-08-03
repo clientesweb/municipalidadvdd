@@ -207,11 +207,11 @@ export default function GuiaDeTramitesPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* Certificación de Posesión */}
+            {/* Certificado de Dominio */}
             <AccordionItem value="item-2" className="bg-white shadow-lg rounded-lg border-none">
               <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
-                  Certificación de Posesión
+                  CERTIFICADO DE DOMINIO
                 </h2>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -220,36 +220,15 @@ export default function GuiaDeTramitesPage() {
                     <span className="font-semibold">Categoría:</span> Catastro / Inmuebles
                   </p>
                   <p>
-                    <span className="font-semibold">Nombre del Trámite:</span> Certificación de Posesión
+                    <span className="font-semibold">Nombre del Trámite:</span> Certificado de dominio (cambio de
+                    titularidad)
                   </p>
 
                   <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Ser titular con escritura o poseedor con mensuras de posesión aprobadas.</li>
-                    <li>Libre de deuda de impuestos.</li>
-                    <li>Certificado de amojonamiento.</li>
-                    <li>Plano de proyectos firmados por un profesional matriculado y colegiado.</li>
-                    <li>Presentar DNI del solicitante.</li>
-                    <li>Relevamiento de especies nativas del lote.</li>
+                    <li>Escritura</li>
+                    <li>Informe de dominio catastral</li>
                   </ul>
-
-                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
-                    📍 ¿Dónde se realiza?
-                  </h3>
-                  <p className="flex items-center space-x-2">
-                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <span>
-                      En el Colegio de Arquitectos de Villa del Dique.{" "}
-                      <a
-                        href="https://villadeldique.colegio-arquitectos.com.ar/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#16b5d0] hover:underline font-medium"
-                      >
-                        Visitar sitio web
-                      </a>
-                    </span>
-                  </p>
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -295,8 +274,90 @@ export default function GuiaDeTramitesPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* Mensura de Posesión */}
+            {/* Por Construcciones Nuevas o Relevamientos */}
             <AccordionItem value="item-4" className="bg-white shadow-lg rounded-lg border-none">
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
+                  POR CONSTRUCCIÓNES NUEVAS O RELEVAMIENTOS
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 font-montserrat text-gray-700 text-lg sm:text-xl">
+                  <p>
+                    <span className="font-semibold">Categoría:</span> Obras Privadas
+                  </p>
+                  <p>
+                    <span className="font-semibold">Nombre del Trámite:</span> Permiso de edificación / constancia de
+                    conexión de servicios
+                  </p>
+
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">✅ Requisitos</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Ser titular con escritura o poseedor con mensuras de posesión aprobadas</li>
+                    <li>Libre de deuda de impuestos</li>
+                    <li>Certificado de amojonamiento (solo si presenta escritura)</li>
+                    <li>
+                      Plano municipal de proyecto y conducción técnica firmado y colegiado por un profesional
+                      matriculado de la provincia de Córdoba
+                    </li>
+                    <li>DNI del titular o poseedor</li>
+                    <li>Relevamiento de especies nativas del lote, con fotos del frente y fondo</li>
+                  </ul>
+
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    🏗️ Al iniciar la obra:
+                  </h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Dar aviso de inicio de obra</li>
+                    <li>Planilla de datos de constructores</li>
+                    <li>
+                      Cartel de obra con nro de expediente municipal y M.P del profesional/es (descargar el modelo aquí)
+                      tamaño 60 x 43 cm
+                    </li>
+                  </ul>
+
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">
+                    📍 ¿Dónde se realiza?
+                  </h3>
+                  <p className="flex items-center space-x-2">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <span>
+                      En la plataforma web del Colegio de Arquitectos de Villa del Dique.{" "}
+                      <a
+                        href="https://villadeldique.colegio-arquitectos.com.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#16b5d0] hover:underline font-medium"
+                      >
+                        Visitar sitio web
+                      </a>
+                    </span>
+                  </p>
+
+                  <p className="flex items-start space-x-2">
+                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0 mt-0.5" />
+                    <span className="font-semibold">Contacto:</span>{" "}
+                    <a href="mailto:obraprivadavdd@gmail.com" className="text-[#16b5d0] hover:underline font-medium">
+                      obraprivadavdd@gmail.com
+                    </a>
+                  </p>
+
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-800 mt-8 mb-4">💡 Consejos:</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      Consulta el código de edificación y las nuevas ordenanzas antes de realizar cualquier movimiento
+                      en su lote.
+                    </li>
+                    <li>Asesórate con la oficina técnica ante cualquier duda</li>
+                    <li>Evite multas por construir sin permiso.</li>
+                    <li>Evite multas por la tala indiscriminada de especies nativas.</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Mensura de Posesión */}
+            <AccordionItem value="item-5" className="bg-white shadow-lg rounded-lg border-none">
               <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-nunito font-bold text-[#16b5d0]">
                   Mensura de Posesión
@@ -372,6 +433,15 @@ export default function GuiaDeTramitesPage() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+
+          {/* Recomendación */}
+          <div className="mt-12 p-6 bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 rounded-lg border-l-4 border-[#16b5d0]">
+            <p className="text-lg sm:text-xl font-montserrat text-gray-800 italic leading-relaxed text-center">
+              "Un pueblo que crece sin pensar en el mañana, termina pagando las consecuencias: servicios que no
+              alcanzan, tránsito desordenado, naturaleza herida y barrios sin alma. Planificar no es poner freno, es
+              cuidar lo que somos y construir, juntos, el progreso que queremos."
+            </p>
+          </div>
         </div>
       </main>
 
