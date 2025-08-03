@@ -553,7 +553,7 @@ export default function VecinosPage() {
         >
           <div className="relative w-full">
             <Image
-              src="/banner-descarga-pwa.webp"
+              src="/images/banner-descarga-pwa.webp"
               alt="Villa del Dique - Descargá Nuestra App"
               width={1920}
               height={800} // Updated height for the new banner image
