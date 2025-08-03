@@ -450,14 +450,96 @@ export default function VecinosPage() {
         </div>
       </section>
 
+      {/* Latest News Section */}
+      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-nunito font-bold text-gray-900 mb-8 sm:mb-12 text-center">
+            Últimas Noticias
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            {/* News Item 1 */}
+            <Link href="/noticias/nueva-maquinaria-vial" className="group">
+              <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <div className="relative aspect-video overflow-hidden">
+                  <Image
+                    src="/placeholder.svg?height=300&width=500"
+                    alt="Nueva Maquinaria Vial"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-4 left-4 bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-montserrat font-medium">
+                    Obras Públicas
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Nueva Maquinaria Vial para Villa del Dique
+                  </h3>
+                  <p className="text-gray-600 font-montserrat text-base leading-relaxed mb-4">
+                    La Municipalidad incorporó nueva maquinaria vial que permitirá mejorar significativamente el
+                    mantenimiento de calles y caminos rurales...
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-montserrat text-gray-500">15 de Enero, 2024</span>
+                    <span className="text-[#16b5d0] font-montserrat font-medium text-sm group-hover:underline">
+                      Leer más →
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
+            {/* News Item 2 */}
+            <Link href="/noticias/villa-del-dique-no-para" className="group">
+              <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <div className="relative aspect-video overflow-hidden">
+                  <Image
+                    src="/placeholder.svg?height=300&width=500"
+                    alt="Villa del Dique No Para"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-4 left-4 bg-[#d39d85] text-white px-3 py-1 rounded-full text-sm font-montserrat font-medium">
+                    Desarrollo
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Villa del Dique No Para: El Progreso Continúa
+                  </h3>
+                  <p className="text-gray-600 font-montserrat text-base leading-relaxed mb-4">
+                    Múltiples obras de infraestructura y mejoras urbanas se desarrollan simultáneamente en toda la
+                    localidad, consolidando el crecimiento sostenible...
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-montserrat text-gray-500">12 de Enero, 2024</span>
+                    <span className="text-[#16b5d0] font-montserrat font-medium text-sm group-hover:underline">
+                      Leer más →
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          </div>
+
+          {/* View All News Button */}
+          <div className="text-center mt-8 sm:mt-12">
+            <Link
+              href="/noticias"
+              className="inline-block bg-[#16b5d0] hover:bg-[#14a3bd] text-white font-nunito font-bold text-lg sm:text-xl px-8 py-4 sm:px-10 sm:py-5 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
+            >
+              Ver Todas las Noticias
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Banner "Tu Plan Perfecto" */}
       <section className="relative w-full">
-        <Link
-          href="/turistas"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full"
-        >
+        <Link href="/turistas" target="_blank" rel="noopener noreferrer" className="block w-full">
           <div className="relative w-full">
             <Image
               src="/images/banner-tu-plan-perfecto.webp"
