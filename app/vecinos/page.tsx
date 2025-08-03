@@ -545,49 +545,7 @@ export default function VecinosPage() {
         </div>
       </section>
 
-      {/* New Section: Download PWA - Improved */}
-      <section className="w-full py-6 sm:py-8 px-4 bg-[#16b5d0]">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-white mb-3">
-            ¡Descarga nuestra web progresiva app!
-          </h2>
-          <p className="text-sm sm:text-base font-montserrat text-white mb-6">
-            Y lleva todas las novedades de villa del dique en tu teléfono
-          </p>
-          <div className="flex flex-row justify-center items-center gap-3 max-w-md mx-auto">
-            <Link
-              href="https://www.villadeldique.gob.ar/descargar-app-android/VillaDelDique.apk" // Placeholder link
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:scale-105 transition-transform duration-200"
-            >
-              <Image
-                src="/images/google-play-button.png"
-                alt="Get it on Google Play"
-                width={140}
-                height={42}
-                className="h-10 sm:h-12 w-auto object-contain"
-              />
-            </Link>
-            <Link
-              href="#" // Placeholder link
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:scale-105 transition-transform duration-200"
-            >
-              <Image
-                src="/images/app-store-button.png"
-                alt="Available on the App Store"
-                width={140}
-                height={42}
-                className="h-10 sm:h-12 w-auto object-contain"
-              />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* New Banner: Descargá Nuestra App */}
+      {/* New Banner: Descargá Nuestra App (Updated) */}
       <section className="relative w-full">
         <Link
           href="#" // Placeholder link for app download
@@ -595,13 +553,44 @@ export default function VecinosPage() {
         >
           <div className="relative w-full">
             <Image
-              src="/banner-descarga-wpa.webp"
+              src="/banner-descarga-pwa.webp"
               alt="Villa del Dique - Descargá Nuestra App"
               width={1920}
-              height={200}
+              height={800} // Updated height for the new banner image
               className="w-full h-auto object-cover"
               sizes="100vw"
             />
+            {/* Buttons positioned absolutely on top of the image */}
+            <div className="absolute bottom-4 left-4 flex flex-row gap-3">
+              <Link
+                href="https://www.villadeldique.gob.ar/descargar-app-android/VillaDelDique.apk" // Placeholder link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:scale-105 transition-transform duration-200"
+              >
+                <Image
+                  src="/images/google-play-button.png"
+                  alt="Get it on Google Play"
+                  width={140}
+                  height={42}
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
+              </Link>
+              <Link
+                href="#" // Placeholder link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:scale-105 transition-transform duration-200"
+              >
+                <Image
+                  src="/images/app-store-button.png"
+                  alt="Available on the App Store"
+                  width={140}
+                  height={42}
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
+              </Link>
+            </div>
           </div>
         </Link>
       </section>
