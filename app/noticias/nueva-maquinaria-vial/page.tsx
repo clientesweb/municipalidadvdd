@@ -358,7 +358,7 @@ export default function NuevaMaquinariaVialPage() {
                       poster="/images/incoporacion-maquinaria.webp"
                       preload="metadata"
                     >
-                      <source src="https://www.villadeldique.com.ar/videos/nueva-incoporacion.mp4" type="video/mp4" />
+                      <source src="https://www.villadeldique.gob.ar/videos/nueva-incoporacion.mp4" type="video/mp4" />
                       Tu navegador no soporta el elemento de video.
                     </video>
                   </div>
