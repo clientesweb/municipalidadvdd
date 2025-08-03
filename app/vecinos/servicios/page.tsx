@@ -404,22 +404,31 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="https://www.google.com/maps/search/Pilcomayo+s%2Fn+Villa+del+Dique" // Placeholder link
+                        href="https://www.google.com/maps/search/Buenos+Aires+s%2Fn+Villa+del+Dique"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        Pilcomayo s/n - Ver ubicación
+                        Buenos Aires s/n - Ver ubicación
                       </a>
                     </div>
                     <p className="text-gray-700 font-medium">Horario de atención: 7:00 a 14:00 hs</p>
                     <div className="flex items-center space-x-3">
                       <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="mailto:registrocivilvilladeldique@gmail.com"
+                        href="mailto:registrocivilvillsdeldique@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        registrocivilvilladeldique@gmail.com
+                        registrocivilvillsdeldique@gmail.com
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:3546506607"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        3546-506607
                       </a>
                     </div>
                   </div>
