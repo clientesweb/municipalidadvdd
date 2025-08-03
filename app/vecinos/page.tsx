@@ -571,8 +571,8 @@ export default function VecinosPage() {
                 <Image
                   src="/images/google-play-button.png"
                   alt="Get it on Google Play"
-                  width={120}
-                  height={36}
+                  width={140}
+                  height={42}
                   className="h-10 sm:h-12 w-auto object-contain"
                 />
               </Link>
@@ -585,8 +585,8 @@ export default function VecinosPage() {
                 <Image
                   src="/images/app-store-button.png"
                   alt="Available on the App Store"
-                  width={120}
-                  height={36}
+                  width={140}
+                  height={42}
                   className="h-10 sm:h-12 w-auto object-contain"
                 />
               </Link>
