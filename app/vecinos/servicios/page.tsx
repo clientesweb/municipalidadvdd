@@ -847,7 +847,7 @@ export default function ServiciosPage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Link
-                      href="http://www.coopvvilladeldique.com"
+                      href="https://coopvdique.com.ar"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
