@@ -852,7 +852,7 @@ export default function ServiciosPage() {
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                     >
-                      www.coopvvilladeldique.com
+                      https://coopvdique.com.ar
                     </Link>
                   </div>
                 </div>
