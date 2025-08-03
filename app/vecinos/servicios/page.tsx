@@ -27,6 +27,8 @@ import {
   Waves,
   Radio,
   Leaf,
+  Hammer,
+  HandHeart,
 } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -324,7 +326,9 @@ export default function ServiciosPage() {
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
                     <ShieldCheck className="h-6 w-6 text-[#16b5d0]" />
-                    <span>Inspección, Monitoreo, Guardia Local, Defensa Civil y Juzgado de Faltas</span>
+                    <span>
+                      Inspección, Monitoreo, Guardia Local, Defensa Civil, Juzgado de Faltas y Bienestar Social
+                    </span>
                   </h3>
                   <div className="space-y-4">
                     <p className="text-gray-700 font-medium">Atención: 24 hs</p>
@@ -357,7 +361,7 @@ export default function ServiciosPage() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                      <p className="text-gray-700 font-medium">Ubicación: Pilcomayo s/n (Misma que Radio Municipal)</p>
+                      <p className="text-gray-700 font-medium">Ubicación: Pilcomayo s/n</p>
                     </div>
                     <div className="pt-4 border-t border-gray-200">
                       <h4 className="text-lg font-nunito font-semibold text-gray-800 mb-2 flex items-center space-x-2">
@@ -373,7 +377,7 @@ export default function ServiciosPage() {
                             rel="noopener noreferrer"
                             className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                           >
-                            https://g.co/kgs/VUnXHqZ - Ver en Google Maps
+                            Mario Nivoli 206 - Ver en Google Maps
                           </a>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -412,10 +416,10 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="mailto:reclamosmunivdd@gmail.com"
+                        href="mailto:registrocivilvilladeldique@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        reclamosmunivdd@gmail.com
+                        registrocivilvilladeldique@gmail.com
                       </a>
                     </div>
                   </div>
@@ -549,6 +553,15 @@ export default function ServiciosPage() {
                     </div>
                     <p className="text-gray-700 font-medium">Horario de atención: 7:00 a 14:00 hs</p>
                     <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:3546437516"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        3546 437516
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
                       <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
                         href="mailto:reclamosmunivdd@gmail.com"
@@ -566,7 +579,20 @@ export default function ServiciosPage() {
                     <FlaskConical className="h-6 w-6 text-[#16b5d0]" />
                     <span>Puesto de Control Bromatológico y Registro de Introductores</span>
                   </h3>
-                  <p className="text-gray-700 font-medium">Dirección: (agregar si está disponible)</p>
+                  <p className="text-gray-700 font-medium">
+                    Sobre Ruta 5 (cerca del mirador de Villa del Dique enfrente)
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="https://www.google.com/maps/place/RHP7%2BV85+Villa+del+Dique,+C%C3%B3rdoba/@-32.18333,-64.46667,15z"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      RHP7+V85 Villa del Dique, Córdoba - Ver en Google Maps
+                    </a>
+                  </div>
                   <p className="text-gray-700 font-medium">Contacto: (no proporcionado)</p>
                 </div>
 
@@ -608,10 +634,10 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="tel:3546458812"
+                        href="tel:3546565157"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        3546 458812
+                        3546 565157
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -625,9 +651,7 @@ export default function ServiciosPage() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                      <p className="text-gray-700 font-medium">
-                        Ubicación: Pilcomayo s/n (Misma que Inspección y Monitoreo)
-                      </p>
+                      <p className="text-gray-700 font-medium">Ubicación: Confitería de Camping</p>
                     </div>
                   </div>
                 </div>
@@ -655,6 +679,72 @@ export default function ServiciosPage() {
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
                         ambientemunivdd@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bienestar Social */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                    <HandHeart className="h-6 w-6 text-[#16b5d0]" />
+                    <span>Bienestar Social</span>
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <p className="text-gray-700 font-medium">Córdoba 20</p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:3546549479"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        3546 549479
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="mailto:bienestarsocialvdd@gmail.com"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        bienestarsocialvdd@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Oficina Técnica */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                    <Hammer className="h-6 w-6 text-[#16b5d0]" />
+                    <span>Oficina Técnica</span>
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <p className="text-gray-700 font-medium">
+                        Ubicación: Dentro de la Municipalidad (Mario Nivoli 206)
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="mailto:obraprivadavdd@gmail.com"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        obraprivadavdd@gmail.com
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="mailto:obraspublicasvdd@gmail.com"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        obraspublicasvdd@gmail.com
                       </a>
                     </div>
                   </div>
