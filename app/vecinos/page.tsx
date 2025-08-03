@@ -561,7 +561,7 @@ export default function VecinosPage() {
               sizes="100vw"
             />
             {/* Buttons positioned absolutely on top of the image */}
-            <div className="absolute bottom-4 left-4 flex flex-row gap-3">
+            <div className="absolute bottom-8 left-16 flex flex-row gap-3">
               <Link
                 href="https://www.villadeldique.gob.ar/descargar-app-android/VillaDelDique.apk" // Placeholder link
                 target="_blank"
@@ -571,8 +571,8 @@ export default function VecinosPage() {
                 <Image
                   src="/images/google-play-button.png"
                   alt="Get it on Google Play"
-                  width={140}
-                  height={42}
+                  width={120}
+                  height={36}
                   className="h-10 sm:h-12 w-auto object-contain"
                 />
               </Link>
@@ -585,8 +585,8 @@ export default function VecinosPage() {
                 <Image
                   src="/images/app-store-button.png"
                   alt="Available on the App Store"
-                  width={140}
-                  height={42}
+                  width={120}
+                  height={36}
                   className="h-10 sm:h-12 w-auto object-contain"
                 />
               </Link>
