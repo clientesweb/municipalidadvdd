@@ -217,11 +217,6 @@ export default function NoticiasPage() {
                 </div>
               </article>
             </Link>
-          </div>
-        </section>
-        <section>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Más Noticias</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Villa del Dique No Para */}
             <Link href="/noticias/villa-del-dique-no-para" className="group">
               <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
