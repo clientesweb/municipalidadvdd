@@ -312,7 +312,7 @@ export default function ControlesTransitoPage() {
             {/* Hero Image */}
             <div className="mb-12">
               <Image
-                src="/images/jornada-transito.webp"
+                src="/images/joenada-transito.webp"
                 alt="Jornada de Control de Tránsito - Subcomisario Mario Bianchini"
                 width={800}
                 height={600}
@@ -358,10 +358,10 @@ export default function ControlesTransitoPage() {
                     <video
                       controls
                       className="w-full h-full object-cover"
-                      poster="/images/jornada-transito.webp"
+                      poster="/images/joenada-transito.webp"
                       preload="metadata"
                     >
-                      <source src="/video/jornada-control-de-transito.mp4" type="video/mp4" />
+                      <source src="/videos/jornada-control-de-transito.mp4" type="video/mp4" />
                       Tu navegador no soporta el elemento de video.
                     </video>
                   </div>
