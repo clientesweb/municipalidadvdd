@@ -183,6 +183,42 @@ export default function NoticiasPage() {
         </section>
 
         {/* Regular News */}
+ <section>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Más Noticias</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Controles de Tránsito: Circular en regla, una tarea de todos */}
+            <Link href="/noticias/controles-de-tranaito" className="group">
+              <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/joenada-transito.webp"
+                    alt="La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa fortaleciendo su compromiso con la seguridad"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center space-x-2 text-[#16b5d0] mb-3">
+                    <Calendar className="h-4 w-4" />
+                    <span className="text-sm font-medium">21 de julio de 2025</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Controles de Tránsito: Circular en regla, una tarea de todos
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa fortaleciendo su compromiso con
+                    la seguridad...
+                  </p>
+                  <div className="flex items-center text-[#16b5d0] font-semibold text-sm group-hover:text-[#0ea5e9] transition-colors duration-200">
+                    <span>Leer más</span>
+                    <ArrowRight className="h-3 w-3 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  </div>
+                </div>
+              </article>
+            </Link>
+          </div>
+        </section>
         <section>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Más Noticias</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
