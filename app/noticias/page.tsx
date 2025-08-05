@@ -187,7 +187,7 @@ export default function NoticiasPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Más Noticias</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Controles de Tránsito: Circular en regla, una tarea de todos */}
-            <Link href="/noticias/controles-de-tranaito" className="group">
+            <Link href="/noticias/controles-de-transito" className="group">
               <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-48">
                   <Image
