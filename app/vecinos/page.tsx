@@ -455,30 +455,29 @@ export default function VecinosPage() {
             </Link>
 
             {/* News Item 2 */}
-            <Link href="/noticias/villa-del-dique-no-para" className="group">
+            <Link href="/noticias/controles-de-transito" className="group">
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src="/images/villa-del-dique-no-para.webp"
-                    alt="Villa del Dique No Para"
+                    src="/images/joenada-transito.webp"
+                    alt="Controles de Tránsito: Circular en regla, una tarea de todos"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute top-4 left-4 bg-[#d39d85] text-white px-3 py-1 rounded-full text-sm font-montserrat font-medium">
-                    Desarrollo
+                    Control
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
-                    Villa del Dique No Para: Avances de Obras Públicas Durante el Receso Invernal
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">Controles de Tránsito: Circular en regla, una tarea de todos
                   </h3>
                   <p className="text-gray-600 font-montserrat text-base leading-relaxed mb-4">
-                    El Municipio continúa ejecutando importantes obras en distintos puntos de la localidad durante el
-                    receso invernal.
+                    La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa fortaleciendo su compromiso con
+                    La seguridad...
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-montserrat text-gray-500">8 de julio de 2025</span>
+                    <span className="text-sm font-montserrat text-gray-500">21 de julio de 2025</span>
                     <span className="text-[#16b5d0] font-montserrat font-medium text-sm group-hover:underline">
                       Leer más →
                     </span>
