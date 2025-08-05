@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Controles de Tránsito: Circular en regla, una tarea de todos",
     description:
       "La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa fortaleciendo su compromiso con la seguridad vial mediante operativos de control de tránsito.",
-    images: ["/images/jornada-transito.webp"],
+    images: ["/images/joenada-transito.webp"],
   },
 }
 
