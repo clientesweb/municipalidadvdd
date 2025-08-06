@@ -218,10 +218,10 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="tel:+5493546405918"
+                        href="tel:03546497241"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        +54 9 3546 40 5918
+                        03546497241
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
