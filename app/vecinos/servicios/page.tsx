@@ -194,7 +194,7 @@ export default function ServiciosPage() {
                         href="tel:03546497241"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        03546497241
+                        03546 497241 (fijo)
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -203,7 +203,7 @@ export default function ServiciosPage() {
                         href="mailto:secretariaturismoycultura.vdd@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        secretariaturismoycultura.vdd@gmail.com
+                        municipiovdd@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -300,7 +300,7 @@ export default function ServiciosPage() {
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
                     <ShieldCheck className="h-6 w-6 text-[#16b5d0]" />
                     <span>
-                      Inspección, Monitoreo, Guardia Local, Defensa Civil, Juzgado de Faltas y Bienestar Social
+                      Inspección, Monitoreo, Guardia Local, Defensa Civil, Juzgado de Faltas
                     </span>
                   </h3>
                   <div className="space-y-4">
@@ -334,7 +334,7 @@ export default function ServiciosPage() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                      <p className="text-gray-700 font-medium">Ubicación: Pilcomayo s/n</p>
+                      <p className="text-gray-700 font-medium">Ubicación: Dentro del balneario municipal</p>
                     </div>
                     <div className="pt-4 border-t border-gray-200">
                       <h4 className="text-lg font-nunito font-semibold text-gray-800 mb-2 flex items-center space-x-2">
@@ -350,16 +350,16 @@ export default function ServiciosPage() {
                             rel="noopener noreferrer"
                             className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                           >
-                            Mario Nivoli 206 - Ver en Google Maps
+                            Dentro del balneario municipal - Ver en Google Maps
                           </a>
                         </div>
                         <div className="flex items-center space-x-3">
-                          <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                           <a
-                            href="tel:+5493546000000"
+                            href="mailto:+5493546000000"
                             className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                           >
-                            +54 9 3546 00-0000
+                            vddjuzgado@gmail.com
                           </a>
                         </div>
                       </div>
@@ -392,7 +392,7 @@ export default function ServiciosPage() {
                         href="mailto:registrocivilvillsdeldique@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        registrocivilvillsdeldique@gmail.com
+                        registrocivilvilladeldique@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -425,7 +425,7 @@ export default function ServiciosPage() {
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        Ingreso a la localidad (Oficina de Turismo) - Ver ubicación en Google Maps
+                        (Oficina de Turismo) - Ver ubicación en Google Maps
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -434,7 +434,7 @@ export default function ServiciosPage() {
                         href="tel:+5493546405918"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        +54 9 3546 40 5918
+                        3546 528341
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -443,7 +443,7 @@ export default function ServiciosPage() {
                         href="mailto:secretariaturismoycultura.vdd@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        secretariaturismoycultura.vdd@gmail.com
+                        villadeldiqueturismo1@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -475,7 +475,7 @@ export default function ServiciosPage() {
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        Ver ubicación
+                        RGCX+Q4C Villa del Dique, Córdoba - Ver ubicación en Google Maps
                       </a>
                     </div>
                     <p className="text-gray-700 font-medium">
@@ -488,7 +488,7 @@ export default function ServiciosPage() {
                         href="tel:+5493546405918"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        +54 9 3546 40 5918
+                        03546 497962 (fijo)
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -512,7 +512,27 @@ export default function ServiciosPage() {
                   <p className="text-gray-700 font-medium">
                     Incluye: Universidad Popular, CEDER (Centro de Desarrollo Regional)
                   </p>
-                  <p className="text-gray-700 font-medium">Dirección: (agregar si está disponible)</p>
+                  <div className="space-y-4">
+                    <p className="text-gray-700 font-medium">Dirección: Hipólito Yrigoyen s/n (canchita ipv)</p>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:2302641330"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        2302 641330
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="mailto:centrodecapacitacionvdd@gmail.com"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        centrodecapacitacionvdd@gmail.com
+                      </a>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Oficina de Reclamos (Galpón Municipal) */}
@@ -562,7 +582,7 @@ export default function ServiciosPage() {
                     <span>Puesto de Control Bromatológico y Registro de Introductores</span>
                   </h3>
                   <p className="text-gray-700 font-medium">
-                    Sobre Ruta 5 (cerca del mirador de Villa del Dique enfrente)
+                    Sobre Ruta 5
                   </p>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
@@ -575,7 +595,24 @@ export default function ServiciosPage() {
                       RHP7+V85 Villa del Dique, Córdoba - Ver en Google Maps
                     </a>
                   </div>
-                  <p className="text-gray-700 font-medium">Contacto: (no proporcionado)</p>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="mailto:vdd.inspeccion@gmail.com"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      vdd.inspeccion@gmail.com
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:3546565159"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      3546 565159
+                    </a>
+                  </div>
                 </div>
 
                 {/* Pileta Climatizada “VISAN” */}
@@ -600,7 +637,7 @@ export default function ServiciosPage() {
                         href="mailto:adrianrafaelsegura@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        adrianrafaelsegura@gmail.com
+                        deportesvdd@gmail.com
                       </a>
                     </div>
                   </div>
@@ -619,7 +656,7 @@ export default function ServiciosPage() {
                         href="tel:3546565157"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        3546 565157
+                        3546 458812
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -628,12 +665,12 @@ export default function ServiciosPage() {
                         href="mailto:comunicacionvilladeldique@gmail.com"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                       >
-                        comunicacionvilladeldique@gmail.com
+                        radiovdd90.7@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                      <p className="text-gray-700 font-medium">Ubicación: Confitería de Camping</p>
+                      <p className="text-gray-700 font-medium">Ubicación: Dentro del balneario municipal</p>
                     </div>
                   </div>
                 </div>
@@ -805,7 +842,7 @@ export default function ServiciosPage() {
                     <a
                       href="tel:03546497250"
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
+                      >
                       03546-497250
                     </a>
                   </div>
@@ -895,7 +932,7 @@ export default function ServiciosPage() {
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                     <a
-                      href="https://share.google/f5IABJPRM4IHSvHOS"
+                      href="https://share.google/f5IABJPRM4IHSvHOSnúmero"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
