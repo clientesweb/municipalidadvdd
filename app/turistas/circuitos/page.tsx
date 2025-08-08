@@ -2,20 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import {
-  Menu,
-  X,
-  Facebook,
-  Instagram,
-  Youtube,
-  MapPin,
-  Phone,
-  Clock,
-  Users,
-  Mountain,
-  Bike,
-  Camera,
-} from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Clock, Users, Mountain, Bike, Camera } from 'lucide-react'
 import Link from "next/link"
 
 export default function Circuitos() {
@@ -199,7 +186,7 @@ export default function Circuitos() {
             <div className="flex items-center mb-6">
               <Mountain className="h-8 w-8 text-[#c84f9b] mr-3" />
               <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
-                El Camino de los Cuatro Vados - La Sierrita
+                El Carril de los Chilenos - La Sierrita (ex 4 vados)
               </h2>
             </div>
 
@@ -213,18 +200,18 @@ export default function Circuitos() {
               <div className="flex items-center text-gray-600">
                 <MapPin className="h-5 w-5 mr-2 text-[#c84f9b]" />
                 <span>
-                  <strong>Extensión:</strong> 8 km
+                  <strong>Extensión:</strong> 7 km
                 </span>
               </div>
               <div className="flex items-center text-gray-600">
                 <Mountain className="h-5 w-5 mr-2 text-[#c84f9b]" />
                 <span>
-                  <strong>Dificultad:</strong> Media
+                  <strong>Dificultad:</strong> Baja/Media
                 </span>
               </div>
               <div className="flex items-center text-gray-600">
                 <span>
-                  <strong>Tipo:</strong> Caminata
+                  <strong>Tipo:</strong> Caminata - Bicicleta - Auto
                 </span>
               </div>
             </div>
@@ -236,13 +223,14 @@ export default function Circuitos() {
             </div>
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
-              Recorrido que invita a conocer la historia de <strong>"La Sierrita"</strong>, sus primeros pobladores, su
-              escuelita rural, las casas antiguas, la flora y la fauna del lugar.
+              Este recorrido te lleva a descubrir la fascinante historia de "La Sierrita", explorando los vestigios de
+              sus primeros habitantes, su entrañable escuelita rural y las antiguas moradas que aún se conservan.
             </p>
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
-              <strong>Los pasos del General San Martín</strong> por estas tierras. Los <strong>4 vados</strong> se usan
-              como paradas de descanso y puestos de hidratación.
+              Además, te sumergirás en la rica flora y fauna autóctonas del lugar, mientras sigues los pasos del General
+              San Martín por estas tierras. Los emblemáticos "carriles" se convierten en puntos estratégicos para el
+              descanso y la hidratación, permitiéndote disfrutar plenamente de la experiencia.
             </p>
 
             {/* Espacio para imagen */}
@@ -258,7 +246,7 @@ export default function Circuitos() {
           <article className="mb-16 bg-white rounded-lg shadow-md border-l-4 border-[#c84f9b] p-6 sm:p-8">
             <div className="flex items-center mb-6">
               <Bike className="h-8 w-8 text-[#c84f9b] mr-3" />
-              <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">Circuito del Embalse</h2>
+              <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">Circuito del Perilago</h2>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 font-montserrat">
@@ -290,9 +278,9 @@ export default function Circuitos() {
             </div>
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
-              Es una <strong>hermosa ruta que rodea el Embalse del Río Tercero</strong>, ideal para disfrutar de la
-              naturaleza y de sus vistas panorámicas, recorriendo las diferentes localidades del departamento
-              Calamuchita que lo rodean.
+              Esta hermosa ruta bordea el Embalse del Río Tercero, ofreciendo un recorrido encantador para disfrutar de
+              la naturaleza y sus impresionantes vistas panorámicas. A lo largo del camino, tendrás la oportunidad de
+              explorar las diversas localidades del departamento de Calamuchita que se encuentran a su alrededor.
             </p>
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
@@ -328,12 +316,8 @@ export default function Circuitos() {
                     • <strong>Recorrido Céntrico / Recorrido Casco Histórico</strong>
                   </li>
                   <li>
-                    • <strong>Bajadas del lago</strong>
-                  </li>
-                  <li>
                     • <strong>Recorrido Costero</strong>
                   </li>
-                  <li>• Vuelta por Camping Municipal, hoteles y Colonia Marina por las costas del lago</li>
                 </ul>
               </div>
 
@@ -343,7 +327,6 @@ export default function Circuitos() {
                   <Mountain className="h-6 w-6 mr-2" />
                   Dificultad Media
                 </h3>
-                <p className="text-yellow-700 text-sm mb-4">(se pueden hacer con guía)</p>
                 <ul className="text-gray-700 space-y-2">
                   <li>
                     • <strong>Vuelta al Cerro</strong>
@@ -351,17 +334,6 @@ export default function Circuitos() {
                   <li>
                     • <strong>Playa 3 de Octubre</strong>
                   </li>
-                </ul>
-              </div>
-
-              {/* Dificultad Alta */}
-              <div className="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
-                <h3 className="text-xl font-nunito font-bold text-red-900 mb-2 flex items-center">
-                  <Mountain className="h-6 w-6 mr-2" />
-                  Dificultad Alta
-                </h3>
-                <p className="text-red-700 text-sm mb-4">(se puede hacer con guía)</p>
-                <ul className="text-gray-700 space-y-2">
                   <li>
                     • <strong>La Sierrita</strong>
                   </li>
@@ -389,7 +361,7 @@ export default function Circuitos() {
               <div className="flex items-center text-gray-600">
                 <Mountain className="h-5 w-5 mr-2 text-[#c84f9b]" />
                 <span>
-                  <strong>Dificultad:</strong> Media
+                  <strong>Dificultad:</strong> Alta
                 </span>
               </div>
               <div className="flex items-center text-gray-600">
@@ -405,6 +377,14 @@ export default function Circuitos() {
                 <strong>Trekking Guiado Opcional:</strong> consultar días y horarios en Oficina de Turismo
               </p>
             </div>
+
+            <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
+              <strong>Se inicia desde la base del cerro, calle Hernán Cortez por Plaza Mateo Sferco</strong>
+            </p>
+
+            <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
+              Un ascenso exigente que recompensa con vistas panorámicas inigualables.
+            </p>
 
             {/* Espacio para imagen */}
             <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
@@ -432,7 +412,7 @@ export default function Circuitos() {
               <div className="flex items-center text-gray-600">
                 <Clock className="h-5 w-5 mr-2 text-[#c84f9b]" />
                 <span>
-                  <strong>Duración:</strong> 1 hora
+                  <strong>Duración:</strong> 1 hora y media
                 </span>
               </div>
             </div>
@@ -445,6 +425,10 @@ export default function Circuitos() {
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
               <strong>Se inicia desde el cartel VILLA DEL DIQUE</strong>, en el ingreso del pueblo.
+            </p>
+
+            <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
+              Disfrutá la costa como nunca antes, en este recorrido imperdible.
             </p>
 
             {/* Espacio para imagen */}
@@ -475,7 +459,7 @@ export default function Circuitos() {
               <div className="flex items-center text-gray-600">
                 <Clock className="h-5 w-5 mr-2 text-[#c84f9b]" />
                 <span>
-                  <strong>Duración:</strong> 2 horas
+                  <strong>Duración:</strong> 1 hora
                 </span>
               </div>
               <div className="flex items-center text-gray-600">
@@ -494,31 +478,14 @@ export default function Circuitos() {
 
             <div className="bg-blue-50 p-4 rounded-lg mb-6 font-montserrat">
               <p className="text-blue-800">
-                <strong>Guía:</strong> Ivana
+                <strong>Caminata Guiada</strong>
                 <br />
-                <strong>Intérpretes de Lengua de señas:</strong> Rosana e Ivana
+                <strong>Opcional: Intérpretes de Lengua de señas</strong>
               </p>
             </div>
 
             <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
-              Te llevará a conocer{" "}
-              <strong>los edificios y lugares que marcaron la historia del pueblo desde su fundación</strong>, pasando
-              por las primeras casas y hoteles, la parroquia, el club, y la Plaza de los Fundadores entre otros lugares.
-            </p>
-
-            <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
-              <strong>Partiendo desde la Casa de la Cultura</strong>, el recorrido continuará por la plaza Mateo Sferco,
-              el Centro Cultural Pato Carret, la Plaza de la Memoria, el Club y el Camping Municipal.
-            </p>
-
-            <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
-              Luego el <strong>Hotel El Portal</strong>, la plazoleta de la Madre y la{" "}
-              <strong>Parroquia Nuestra Señora de Pompeya</strong>.
-            </p>
-
-            <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
-              También se conocerá la historia de la <strong>ex fábrica de cerámica Bela Gero</strong>, para dirigirse al
-              Cerrito de Villa del Dique y desde allí a la <strong>Plaza de los Fundadores</strong>.
+              Un paseo por los edificios y lugares que marcaron la historia del pueblo desde su fundación.
             </p>
 
             {/* Espacio para imagen */}
