@@ -2,34 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import {
-  Menu,
-  X,
-  Facebook,
-  Instagram,
-  Youtube,
-  MapPin,
-  Phone,
-  Mail,
-  ArrowLeft,
-  Camera,
-  Building2,
-  Bus,
-  Heart,
-  Pill,
-  ShieldCheck,
-  Scale,
-  ClipboardList,
-  BookOpen,
-  GraduationCap,
-  Megaphone,
-  FlaskConical,
-  Waves,
-  Radio,
-  Leaf,
-  Hammer,
-  HandHeart,
-} from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Mail, ArrowLeft, Camera, Building2, Bus, Heart, Pill, ShieldCheck, Scale, ClipboardList, BookOpen, GraduationCap, Megaphone, FlaskConical, Waves, Radio, Leaf, Hammer, HandHeart } from 'lucide-react'
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -909,8 +882,53 @@ export default function ServiciosPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* Transporte */}
+            {/* ACA - YPF VDD */}
             <AccordionItem value="item-4" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Building2 className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ACA - YPF VDD</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="https://share.google/f5IABJPRM4IHSvHOS"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      Ver ubicación en Google Maps
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:3546497827"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      3546 497827
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="https://www.instagram.com/aca.ypf.vdd?igsh=N2MxbnB0b2tybjIx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      @aca.ypf.vdd
+                    </a>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Transporte */}
+            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Bus className="h-6 w-6" />
@@ -945,7 +963,7 @@ export default function ServiciosPage() {
             </AccordionItem>
 
             {/* Farmacias */}
-            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Pill className="h-6 w-6" />
