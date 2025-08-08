@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from 'lucide-react'
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -405,6 +405,111 @@ export default function VecinosPage() {
                       Agradecemos enormemente su comprensión y colaboración para mantener nuestro Villa del Dique limpio
                       y ordenado.
                     </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Farmacias de Turno Section */}
+      <section className="w-full py-8 sm:py-12 md:py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="pharmacy-duty" className="border border-gray-200 rounded-lg shadow-sm bg-white">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 transition-colors duration-200">
+                <div className="flex items-center space-x-3 text-left">
+                  <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
+                    </svg>
+                  </div>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-nunito font-bold text-gray-900">
+                    FARMACIAS DE TURNO - AGOSTO 2025
+                  </h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="space-y-6 text-gray-700 font-montserrat">
+                  <p className="text-base sm:text-lg leading-relaxed">
+                    Consultá el cronograma de farmacias de turno para el mes de agosto y mantené siempre a mano los contactos de emergencia.
+                  </p>
+                  
+                  {/* Calendar Image */}
+                  <div className="bg-gray-50 rounded-lg p-4 text-center">
+                    <Image
+                      src="/images/farmacias-agosto.webp"
+                      alt="Cronograma Farmacias de Turno - Agosto 2025"
+                      width={800}
+                      height={600}
+                      className="w-full max-w-3xl mx-auto rounded-lg shadow-sm"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                    />
+                  </div>
+
+                  {/* Pharmacy Contact Information */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                    <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
+                      <h4 className="text-lg font-nunito font-bold mb-2">FARMACIA GRANGETTO</h4>
+                      <p className="text-sm mb-1">San Martín 130</p>
+                      <p className="text-sm">
+                        <strong>Tel:</strong> 3546 503142 / 3546 659433
+                      </p>
+                    </div>
+
+                    <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
+                      <h4 className="text-lg font-nunito font-bold mb-2">FARMACIA CUELLO</h4>
+                      <p className="text-sm mb-1">Hipólito Yrigoyen</p>
+                      <p className="text-sm">
+                        <strong>Tel:</strong> 3546 417602
+                      </p>
+                    </div>
+
+                    <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
+                      <h4 className="text-lg font-nunito font-bold mb-2">FARMACIA DEL VALLE</h4>
+                      <p className="text-sm mb-1">San Martín 396</p>
+                      <p className="text-sm">
+                        <strong>Tel:</strong> 3546 435468
+                      </p>
+                    </div>
+
+                    <div className="bg-[#16b5d0] text-white p-4 rounded-lg">
+                      <h4 className="text-lg font-nunito font-bold mb-2">FARMACIA VILLA</h4>
+                      <p className="text-sm mb-1">Hipólito Yrigoyen</p>
+                      <p className="text-sm">
+                        <strong>Tel:</strong> 3546 561747
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Download Button */}
+                  <div className="text-center pt-4">
+                    <a
+                      href="/images/farmacias-agosto.webp"
+                      download="farmacias-turno-agosto-2025.webp"
+                      className="inline-flex items-center space-x-2 bg-[#d39d85] hover:bg-[#c8906f] text-white font-nunito font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
+                    >
+                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      <span>Descargar Cronograma</span>
+                    </a>
+                  </div>
+
+                  <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm text-yellow-700 font-montserrat">
+                          <strong>Importante:</strong> En caso de emergencia fuera del horario de atención, comunicate directamente con los números de teléfono indicados.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </AccordionContent>
