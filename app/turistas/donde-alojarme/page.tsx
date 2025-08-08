@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ExternalLink, Tent, Building, Home } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ExternalLink, Tent, Building, Home } from 'lucide-react'
 import Link from "next/link"
 
 export default function DondeAlojarme() {
@@ -253,12 +253,12 @@ export default function DondeAlojarme() {
                   <div className="flex items-center space-x-2">
                     <Instagram className="h-4 w-4 text-blue-700 flex-shrink-0" />
                     <a
-                      href="https://instagram.com/hotelcarrillo.amerian"
+                      href="https://instagram.com/hotelcarrilloamerian"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
-                      @hotelcarrillo.amerian
+                      @hotelcarrilloamerian
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
@@ -275,7 +275,7 @@ export default function DondeAlojarme() {
                   <div className="flex items-center space-x-2">
                     <MapPin className="h-4 w-4 text-blue-700 flex-shrink-0" />
                     <a
-                      href="https://g.co/kgs/r4Epumd"
+                      href="https://maps.app.goo.gl/sMdRotVHjAhTBwk18"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
@@ -286,9 +286,9 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* El Portal de la Villa */}
+              {/* Hotel Portal de la Villa */}
               <div className="bg-purple-50 p-6 rounded-lg shadow-md border-l-4 border-purple-500">
-                <h3 className="text-xl font-nunito font-bold text-purple-900 mb-3">El Portal de la Villa</h3>
+                <h3 className="text-xl font-nunito font-bold text-purple-900 mb-3">Hotel Portal de la Villa</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
@@ -322,7 +322,7 @@ export default function DondeAlojarme() {
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-purple-700 flex-shrink-0" />
                     <a
-                      href="https://g.co/kgs/pRFHC1e"
+                      href="https://maps.app.goo.gl/nfUybPsresbr8L257"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline"
@@ -369,7 +369,7 @@ export default function DondeAlojarme() {
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-cyan-700 flex-shrink-0" />
                     <a
-                      href="https://g.co/kgs/zof4721"
+                      href="https://maps.app.goo.gl/S3Y44RnECXjoqXvXA"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline"
@@ -380,29 +380,318 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* Hotel Venezia */}
+              {/* Hotel San Carlos */}
+              <div className="bg-green-50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                <h3 className="text-xl font-nunito font-bold text-green-900 mb-3">Hotel San Carlos</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-green-800 text-sm">
+                      <strong>Dirección:</strong> Ruta 5 km 118
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a href="tel:3546520773" className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-520773
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/2Qn639vXVWE1hBmX8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hotel Luna del Lago */}
+              <div className="bg-indigo-50 p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                <h3 className="text-xl font-nunito font-bold text-indigo-900 mb-3">Hotel Luna del Lago</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-indigo-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-indigo-800 text-sm">
+                      <strong>Dirección:</strong> Av. San Martín 267
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-indigo-700 flex-shrink-0" />
+                    <a href="tel:3546409286" className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-409286
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-indigo-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/nmtfASaRxxiNkdSU9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hotel Venecia */}
               <div className="bg-red-50 p-6 rounded-lg shadow-md border-l-4 border-red-500">
-                <h3 className="text-xl font-nunito font-bold text-red-900 mb-3">Hotel Venezia</h3>
+                <h3 className="text-xl font-nunito font-bold text-red-900 mb-3">Hotel Venecia</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-red-700 mt-0.5 flex-shrink-0" />
                     <p className="text-red-800 text-sm">
-                      <strong>Dirección:</strong> Av. Hipólito Yrigoyen 329
+                      <strong>Dirección:</strong> Av. Hipólito Irigoyen s/n
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-red-700 flex-shrink-0" />
                     <a href="tel:03546497252" className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      03546-497252
+                      03546-497252 (fijo)
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-red-700 flex-shrink-0" />
                     <a
-                      href="https://g.co/kgs/BWpCGW7"
+                      href="https://maps.app.goo.gl/o1Ju98P9qSfKbNyDA"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Colonia de Vacaciones Luz y Fuerza */}
+              <div className="bg-yellow-50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Colonia de Vacaciones Luz y Fuerza</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-yellow-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-yellow-800 text-sm">
+                      <strong>Dirección:</strong> Ruta Prov. 5 Km 105
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a href="tel:03546497214" className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      03546-497214 (fijo)
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a
+                      href="http://wb.luzyfuerzariocuarto.org/colonia-de-vacaciones/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Sitio web oficial
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/GqxKoW5ujW9VHUPz9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hotel de La Cañada (Sinpecor) */}
+              <div className="bg-pink-50 p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                <h3 className="text-xl font-nunito font-bold text-pink-900 mb-3">Hotel de La Cañada (Sinpecor)</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-pink-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-pink-800 text-sm">
+                      <strong>Dirección:</strong> Malvinas Argentinas 387
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <a href="tel:3514204420" className="text-pink-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      351-4204420
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <a
+                      href="https://www.sinpecor.org.ar/seccion/7/84"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      www.sinpecor.org.ar
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/b91e9JruoiLJFsx78"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Colonia Marina */}
+              <div className="bg-teal-50 p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                <h3 className="text-xl font-nunito font-bold text-teal-900 mb-3">Colonia Marina</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-teal-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-teal-800 text-sm">
+                      <strong>Dirección:</strong> Ruta provincial 5, Km 106,5
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-teal-700 flex-shrink-0" />
+                    <a href="tel:03546497062" className="text-teal-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      03546-497062 (fijo)
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-teal-700 flex-shrink-0" />
+                    <a
+                      href="https://turismo.iosfa.gob.ar/destino/sierras-de-cordoba"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      turismo.iosfa.gob.ar
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-teal-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/DZkqNU38rZVQwJRN7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Complejo Foxes 2 */}
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+                <h3 className="text-xl font-nunito font-bold text-orange-900 mb-3">Complejo Foxes 2</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-orange-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-orange-800 text-sm">
+                      <strong>Dirección:</strong> Ruta Prov. 5 km 105 y Eva Perón
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a href="tel:3546404574" className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-404574
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/complejofoxes2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @complejofoxes2
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/zwVSAaSU1YfKbCe18"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Complejo 3 de Octubre */}
+              <div className="bg-emerald-50 p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
+                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">Complejo 3 de Octubre (Sindicato Festiqypra)</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-emerald-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-emerald-800 text-sm">
+                      <strong>Dirección:</strong> Guaviare s/n Esquina, Guárico
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a href="tel:1144125031" className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-44125031
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a
+                      href="https://complejo3deoctubre.com.ar/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      complejo3deoctubre.com.ar
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/J7RaaCweV1krLqTCA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hotel Federación de Sindicatos */}
+              <div className="bg-violet-50 p-6 rounded-lg shadow-md border-l-4 border-violet-500">
+                <h3 className="text-xl font-nunito font-bold text-violet-900 mb-3">Hotel Federación de Sindicatos de Trabajadores Municipales de la Provincia de Córdoba</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-violet-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-violet-800 text-sm">
+                      <strong>Dirección:</strong> Av. Los Navegantes 237
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-violet-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/T8nXLCugwdjNHAFGA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
