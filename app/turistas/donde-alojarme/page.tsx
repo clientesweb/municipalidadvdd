@@ -159,7 +159,7 @@ export default function DondeAlojarme() {
       <section className="relative w-full">
         <div className="relative w-full aspect-video overflow-hidden">
           <Image
-            src="/images/banner-donde-alojarme-villa-del-dique.webp"
+            src="/images/donde-dormir-banner.webp"
             alt="Alojamientos en Villa del Dique"
             fill
             className="object-cover"
