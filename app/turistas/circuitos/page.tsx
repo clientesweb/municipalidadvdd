@@ -2,7 +2,20 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Clock, Users, Mountain, Bike, Camera } from 'lucide-react'
+import {
+  Menu,
+  X,
+  Facebook,
+  Instagram,
+  Youtube,
+  MapPin,
+  Phone,
+  Clock,
+  Users,
+  Mountain,
+  Bike,
+  Camera,
+} from "lucide-react"
 import Link from "next/link"
 
 export default function Circuitos() {
@@ -159,7 +172,7 @@ export default function Circuitos() {
       <section className="relative w-full">
         <div className="relative w-full aspect-video overflow-hidden">
           <Image
-            src="/images/banner-circuitos-villa-del-dique.jpg"
+            src="/images/circuitos-banner.webp"
             alt="Circuitos Villa del Dique"
             fill
             className="object-cover"
@@ -233,12 +246,14 @@ export default function Circuitos() {
               descanso y la hidratación, permitiéndote disfrutar plenamente de la experiencia.
             </p>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen del Camino de los Cuatro Vados</p>
-              </div>
+            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/circuito-la-sierrita.webp"
+                alt="Circuito La Sierrita - Paisaje rural con ganado y arroyo"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </article>
 
@@ -288,12 +303,14 @@ export default function Circuitos() {
               Amancay, Villa Quillinzo, La Cruz, Embalse, retornando a Villa del Dique.
             </p>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen del Circuito del Embalse</p>
-              </div>
+            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/circuito-perilago.webp"
+                alt="Circuito del Perilago - Vista panorámica del embalse con islas"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </article>
 
@@ -341,12 +358,14 @@ export default function Circuitos() {
               </div>
             </div>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen de Circuitos en Bicicleta</p>
-              </div>
+            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/circuitos-en-bicicleta.webp"
+                alt="Circuitos en Bicicleta - Bicicleta junto al lago"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </article>
 
@@ -386,12 +405,14 @@ export default function Circuitos() {
               Un ascenso exigente que recompensa con vistas panorámicas inigualables.
             </p>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen del Cerro de la Cruz</p>
-              </div>
+            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/circuito-subida-al-cerro.webp"
+                alt="Ascenso al Cerro de la Cruz - Vista panorámica desde el cerro"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </article>
 
