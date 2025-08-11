@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ExternalLink, Tent, Building, Home } from 'lucide-react'
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ExternalLink, Tent, Building, Home } from "lucide-react"
 import Link from "next/link"
 
 export default function DondeAlojarme() {
@@ -472,7 +472,9 @@ export default function DondeAlojarme() {
 
               {/* Colonia de Vacaciones Luz y Fuerza */}
               <div className="bg-yellow-50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Colonia de Vacaciones Luz y Fuerza</h3>
+                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">
+                  Colonia de Vacaciones Luz y Fuerza
+                </h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-yellow-700 mt-0.5 flex-shrink-0" />
@@ -636,7 +638,9 @@ export default function DondeAlojarme() {
 
               {/* Complejo 3 de Octubre */}
               <div className="bg-emerald-50 p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
-                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">Complejo 3 de Octubre (Sindicato Festiqypra)</h3>
+                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">
+                  Complejo 3 de Octubre (Sindicato Festiqypra)
+                </h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-emerald-700 mt-0.5 flex-shrink-0" />
@@ -677,7 +681,9 @@ export default function DondeAlojarme() {
 
               {/* Hotel Federación de Sindicatos */}
               <div className="bg-violet-50 p-6 rounded-lg shadow-md border-l-4 border-violet-500">
-                <h3 className="text-xl font-nunito font-bold text-violet-900 mb-3">Hotel Federación de Sindicatos de Trabajadores Municipales de la Provincia de Córdoba</h3>
+                <h3 className="text-xl font-nunito font-bold text-violet-900 mb-3">
+                  Hotel Federación de Sindicatos de Trabajadores Municipales de la Provincia de Córdoba
+                </h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-violet-700 mt-0.5 flex-shrink-0" />
@@ -709,48 +715,37 @@ export default function DondeAlojarme() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-montserrat">
-              {/* Cabaña El Refugio */}
+              {/* Cabaña Las Ruedas */}
               <div className="bg-orange-50 p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                <h3 className="text-xl font-nunito font-bold text-orange-900 mb-3">Cabaña El Refugio</h3>
+                <h3 className="text-xl font-nunito font-bold text-orange-900 mb-3">Cabaña Las Ruedas</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-orange-700 mt-0.5 flex-shrink-0" />
                     <p className="text-orange-800 text-sm">
-                      <strong>Dirección:</strong> Calle de los Pinos 225
+                      <strong>Dirección:</strong> Juan Bonivardo 300
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-orange-700 flex-shrink-0" />
-                    <a href="tel:03546123456" className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      03546-123456
+                    <a href="tel:3462660908" className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3462-660908
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Instagram className="h-4 w-4 text-orange-700 flex-shrink-0" />
                     <a
-                      href="https://instagram.com/refugio.cabanas"
+                      href="https://instagram.com/cabanas_lasruedas"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
-                      @refugio.cabanas
+                      @cabanas_lasruedas
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-orange-700 flex-shrink-0" />
                     <a
-                      href="https://www.refugio.com.ar"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
-                    >
-                      www.refugio.com.ar
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="h-4 w-4 text-orange-700 flex-shrink-0" />
-                    <a
-                      href="https://g.co/kgs/vHepg3U"
+                      href="https://maps.app.goo.gl/Vhg3GHwG8bPceBfE8"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
@@ -761,67 +756,78 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* Cabañas Las Sierras */}
+              {/* Cabañas del Dique */}
               <div className="bg-emerald-50 p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
-                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">Cabañas Las Sierras</h3>
+                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">Cabañas del Dique</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                     <p className="text-emerald-800 text-sm">
-                      <strong>Dirección:</strong> Ruta 5 Km 12
+                      <strong>Dirección:</strong> Av. Los Navegantes 509
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-emerald-700 flex-shrink-0" />
-                    <a href="tel:03546789101" className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      03546-789101
+                    <a href="tel:1144088383" className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-44088383
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Instagram className="h-4 w-4 text-emerald-700 flex-shrink-0" />
                     <a
-                      href="https://instagram.com/lassierras"
+                      href="https://instagram.com/cabaniasdeldique"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
-                      @lassierras
+                      @cabaniasdeldique
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/1JDFzmLFqWPWVYW37"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
                     </a>
                   </div>
                 </div>
               </div>
 
-              {/* Cabañas La Montaña */}
+              {/* Complejo El Tala */}
               <div className="bg-indigo-50 p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
-                <h3 className="text-xl font-nunito font-bold text-indigo-900 mb-3">Cabañas La Montaña</h3>
+                <h3 className="text-xl font-nunito font-bold text-indigo-900 mb-3">Complejo El Tala</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-indigo-700 mt-0.5 flex-shrink-0" />
                     <p className="text-indigo-800 text-sm">
-                      <strong>Dirección:</strong> San José 154
+                      <strong>Dirección:</strong> Av. Los Pescadores 415
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-indigo-700 flex-shrink-0" />
-                    <a href="tel:03546222333" className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      03546-222333
+                    <a href="tel:3546650901" className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-650901
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-indigo-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/complejoeltalaeltala"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @complejoeltalaeltala
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-indigo-700 flex-shrink-0" />
                     <a
-                      href="https://cabanaslamontana.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
-                    >
-                      cabanaslamontana.com
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="h-4 w-4 text-indigo-700 flex-shrink-0" />
-                    <a
-                      href="https://www.google.com/travel/hotels/s/YRV1pU7xgMmSZEMq9"
+                      href="https://maps.app.goo.gl/xxmoshGEnw7rtyaX6"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-indigo-800 text-sm hover:text-[#c84f9b] hover:underline"
@@ -832,29 +838,953 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* Cabañas El Sol */}
+              {/* Cabaña Las Pircas */}
               <div className="bg-yellow-50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Cabañas El Sol</h3>
+                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Cabaña Las Pircas</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
                     <MapPin className="h-4 w-4 text-yellow-700 mt-0.5 flex-shrink-0" />
                     <p className="text-yellow-800 text-sm">
-                      <strong>Dirección:</strong> Calle Los Nogales 110
+                      <strong>Dirección:</strong> Av. Los Pescadores y Belalcazar
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-yellow-700 flex-shrink-0" />
-                    <a href="tel:03546335544" className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      03546-335544
+                    <a href="tel:3584874033" className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3584-874033
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanaslaspircas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanaslaspircas
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
                     <ExternalLink className="h-4 w-4 text-yellow-700 flex-shrink-0" />
                     <a
-                      href="https://g.co/kgs/SfSSTnE"
+                      href="https://maps.app.goo.gl/T2r4zDoNgxyr3t2z8"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bellezas del Lago */}
+              <div className="bg-pink-50 p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                <h3 className="text-xl font-nunito font-bold text-pink-900 mb-3">Bellezas del Lago</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-pink-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-pink-800 text-sm">
+                      <strong>Dirección:</strong> Av. Colón 1816
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <div className="text-pink-800 text-sm">
+                      <a href="tel:1136270212" className="hover:text-[#c84f9b] hover:underline mr-2">
+                        11-36270212
+                      </a>
+                      <span>/</span>
+                      <a href="tel:1130840019" className="hover:text-[#c84f9b] hover:underline ml-2">
+                        11-30840019
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/bellezasdellago"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @bellezasdellago
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-pink-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/GTRKCPmQMRLfjFRb7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas Los Molles */}
+              <div className="bg-teal-50 p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                <h3 className="text-xl font-nunito font-bold text-teal-900 mb-3">Cabañas Los Molles</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-teal-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-teal-800 text-sm">
+                      <strong>Dirección:</strong> Av. De los Navegantes esq. Adrián "Ñoño" Urquía
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-teal-700 flex-shrink-0" />
+                    <a href="tel:3546450167" className="text-teal-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-450167
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-teal-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/unZA4t7mfUxBieck6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Chalet y Cabaña de Montaña Esmeralda */}
+              <div className="bg-green-50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                <h3 className="text-xl font-nunito font-bold text-green-900 mb-3">
+                  Chalet y Cabaña de Montaña Esmeralda
+                </h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-green-800 text-sm">
+                      <strong>Dirección:</strong> Calle Salta s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a href="tel:3584195017" className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3584-195017
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanaesmeraldavdd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanaesmeraldavdd
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/oDm1rouBhZRY7MSa8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bungalows Aguas Claras */}
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 className="text-xl font-nunito font-bold text-blue-900 mb-3">Bungalows Aguas Claras</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-blue-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-blue-800 text-sm">
+                      <strong>Dirección:</strong> Av. De los Navegantes 648
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a href="tel:3546400519" className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-400519
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/bungaguasclaras"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @bungaguasclaras
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/6PCToDpmJLmbvW4d8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Luces Casas de Montaña */}
+              <div className="bg-purple-50 p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                <h3 className="text-xl font-nunito font-bold text-purple-900 mb-3">Luces Casas de Montaña</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-purple-800 text-sm">
+                      <strong>Dirección:</strong> Av. de Los Exploradores 309, Bello Horizonte
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-purple-700 flex-shrink-0" />
+                    <a href="tel:1163095057" className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-63095057
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-purple-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/lucescasasdemontana"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @lucescasasdemontana
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-purple-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/yhA34A1ErmSnarjR7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* El Castillo */}
+              <div className="bg-red-50 p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                <h3 className="text-xl font-nunito font-bold text-red-900 mb-3">El Castillo</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-red-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-red-800 text-sm">
+                      <strong>Dirección:</strong> Río Quinto 271
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-red-700 flex-shrink-0" />
+                    <a href="tel:3583404525" className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3583-404525
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-red-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabaniaselcastillo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabaniaselcastillo
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-red-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/6yW9fupYqeQgiG1J6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* La Casita de Fran */}
+              <div className="bg-cyan-50 p-6 rounded-lg shadow-md border-l-4 border-cyan-500">
+                <h3 className="text-xl font-nunito font-bold text-cyan-900 mb-3">La Casita de Fran</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-cyan-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-cyan-800 text-sm">
+                      <strong>Dirección:</strong> Los Paraísos s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-cyan-700 flex-shrink-0" />
+                    <a href="tel:3515721619" className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3515-721619
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-cyan-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/lcdfran"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @lcdfran
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-cyan-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/maV1qCaYd1amBf5j9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Amanecer en el Lago */}
+              <div className="bg-amber-50 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+                <h3 className="text-xl font-nunito font-bold text-amber-900 mb-3">Amanecer en el Lago</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-amber-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-amber-800 text-sm">
+                      <strong>Dirección:</strong> Av. de los Navegantes 815
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-amber-700 flex-shrink-0" />
+                    <a href="tel:1161265006" className="text-amber-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-61265006
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-amber-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanasamanecerenellago"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-amber-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanasamanecerenellago
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-amber-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/oRuTwTYE1XrXcoBm8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-amber-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas Los Quebrachos */}
+              <div className="bg-lime-50 p-6 rounded-lg shadow-md border-l-4 border-lime-500">
+                <h3 className="text-xl font-nunito font-bold text-lime-900 mb-3">Cabañas Los Quebrachos</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-lime-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-lime-800 text-sm">
+                      <strong>Dirección:</strong> Av. Colón 1297 esq. Apure
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-lime-700 flex-shrink-0" />
+                    <a href="tel:3462332141" className="text-lime-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3462-332141
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-lime-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/losquebrachos_villadeldique"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lime-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @losquebrachos_villadeldique
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-lime-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/iuuG4JHZ3inwiFU48"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lime-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tres Ángeles */}
+              <div className="bg-sky-50 p-6 rounded-lg shadow-md border-l-4 border-sky-500">
+                <h3 className="text-xl font-nunito font-bold text-sky-900 mb-3">Tres Ángeles</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-sky-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sky-800 text-sm">
+                      <strong>Dirección:</strong> Juan 23 s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-sky-700 flex-shrink-0" />
+                    <a href="tel:3586002813" className="text-sky-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3586-002813
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-sky-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanas_3_angeles"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanas_3_angeles
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-sky-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/BA9nGJKHvA4vsERM8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Añoranzas */}
+              <div className="bg-rose-50 p-6 rounded-lg shadow-md border-l-4 border-rose-500">
+                <h3 className="text-xl font-nunito font-bold text-rose-900 mb-3">Añoranzas</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-rose-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-rose-800 text-sm">
+                      <strong>Dirección:</strong> Tirana esq. Oslo
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-rose-700 flex-shrink-0" />
+                    <a href="tel:3516066451" className="text-rose-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3516-066451
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-rose-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanas_anoranzas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-rose-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanas_anoranzas
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-rose-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/kywSW1r4zY8k1xRR6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-rose-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Casitas Doña Dora */}
+              <div className="bg-slate-50 p-6 rounded-lg shadow-md border-l-4 border-slate-500">
+                <h3 className="text-xl font-nunito font-bold text-slate-900 mb-3">Casitas Doña Dora</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-slate-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-slate-800 text-sm">
+                      <strong>Dirección:</strong> Tte. 1º Nivoli 358
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-slate-700 flex-shrink-0" />
+                    <a href="tel:1141474255" className="text-slate-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-41474255
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-slate-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/donadora36"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @donadora36
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-slate-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/Lk61H5bkGSoAZdwT8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* AleSte */}
+              <div className="bg-stone-50 p-6 rounded-lg shadow-md border-l-4 border-stone-500">
+                <h3 className="text-xl font-nunito font-bold text-stone-900 mb-3">AleSte</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-stone-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-stone-800 text-sm">
+                      <strong>Dirección:</strong> Hungría 48
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-stone-700 flex-shrink-0" />
+                    <div className="text-stone-800 text-sm">
+                      <a href="tel:3468564066" className="hover:text-[#c84f9b] hover:underline mr-2">
+                        3468-564066
+                      </a>
+                      <span>/</span>
+                      <a href="tel:3468569976" className="hover:text-[#c84f9b] hover:underline ml-2">
+                        3468-569976
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-stone-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/LmkFybVxLPqpsMLz8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-stone-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Luma Apart */}
+              <div className="bg-neutral-50 p-6 rounded-lg shadow-md border-l-4 border-neutral-500">
+                <h3 className="text-xl font-nunito font-bold text-neutral-900 mb-3">Luma Apart</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-neutral-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-neutral-800 text-sm">
+                      <strong>Dirección:</strong> Magallanes s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-neutral-700 flex-shrink-0" />
+                    <a href="tel:3513557755" className="text-neutral-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3513-557755
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-neutral-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/lumaapart"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @lumaapart
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-neutral-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/NAKe8WDQypDrWaKA6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas CyC */}
+              <div className="bg-zinc-50 p-6 rounded-lg shadow-md border-l-4 border-zinc-500">
+                <h3 className="text-xl font-nunito font-bold text-zinc-900 mb-3">Cabañas CyC</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-zinc-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-zinc-800 text-sm">
+                      <strong>Dirección:</strong> Av. Los Conquistadores s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-zinc-700 flex-shrink-0" />
+                    <a href="tel:1167101391" className="text-zinc-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-67101391
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-zinc-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanas.cyc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanas.cyc
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-zinc-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/bc8VnrYFR2weqadv9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas Las Rosas */}
+              <div className="bg-fuchsia-50 p-6 rounded-lg shadow-md border-l-4 border-fuchsia-500">
+                <h3 className="text-xl font-nunito font-bold text-fuchsia-900 mb-3">Cabañas Las Rosas</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-fuchsia-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-fuchsia-800 text-sm">
+                      <strong>Dirección:</strong> Los Conquistadores y Velazco
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-fuchsia-700 flex-shrink-0" />
+                    <a href="tel:3533415934" className="text-fuchsia-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3533-415934
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-fuchsia-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanaslasrosas.villadeldique"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-fuchsia-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanaslasrosas.villadeldique
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-fuchsia-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/KVMC7RhXqXUnEcFM8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-fuchsia-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Casitas La Costa */}
+              <div className="bg-violet-50 p-6 rounded-lg shadow-md border-l-4 border-violet-500">
+                <h3 className="text-xl font-nunito font-bold text-violet-900 mb-3">Casitas La Costa</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-violet-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-violet-800 text-sm">
+                      <strong>Dirección:</strong> Guaviaré s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-violet-700 flex-shrink-0" />
+                    <a href="tel:3584320295" className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3584-320295
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-violet-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/casitaslacosta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @casitaslacosta
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-violet-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/6xoZM1AELubouxNf7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Lomas del Dique */}
+              <div className="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-gray-500">
+                <h3 className="text-xl font-nunito font-bold text-gray-900 mb-3">Lomas del Dique</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-gray-800 text-sm">
+                      <strong>Dirección:</strong> Conquistadores y Cabrera
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-gray-700 flex-shrink-0" />
+                    <a href="tel:1167860810" className="text-gray-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      11-67860810
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-gray-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/zdztfENVRCgacCUf7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Las Lucías */}
+              <div className="bg-emerald-50 p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
+                <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">Las Lucías</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-emerald-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-emerald-800 text-sm">
+                      <strong>Dirección:</strong> Calle 11
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a href="tel:3382447273" className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3382-447273
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a
+                      href="https://laslucias.com.ar/villa_dique.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      laslucias.com.ar
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-emerald-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/T4G8V8EGM4rJZFPL8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Yo-Yo */}
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+                <h3 className="text-xl font-nunito font-bold text-orange-900 mb-3">Yo-Yo</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-orange-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-orange-800 text-sm">
+                      <strong>Dirección:</strong> Hipólito Yrigoyen 168
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a href="tel:3512765867" className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3512-765867
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100086291894007&mibextid=LQQJ4d"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Facebook
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="h-4 w-4 text-orange-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/iJCAwRMQnka6RNJT6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Refugio del Sol */}
+              <div className="bg-yellow-50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h3 className="text-xl font-nunito font-bold text-yellow-900 mb-3">Refugio del Sol</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-yellow-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-yellow-800 text-sm">
+                      <strong>Dirección:</strong> Av. De los Pescadores 383
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a href="tel:3546651795" className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-651795
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanas_refugiodelsol"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanas_refugiodelsol
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-yellow-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/id5YPM44CWwgPooq5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas Facu */}
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 className="text-xl font-nunito font-bold text-blue-900 mb-3">Cabañas Facu</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-blue-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-blue-800 text-sm">
+                      <strong>Dirección:</strong> Magallanes esq. Conquistadores
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a href="tel:3546430333" className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-430333
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Instagram className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a
+                      href="https://instagram.com/cabanas_facu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      @cabanas_facu
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-blue-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/ZnYdR3rDdteystDa8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 text-sm hover:text-[#c84f9b] hover:underline"
+                    >
+                      Ver en Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cabañas Alma Serrana */}
+              <div className="bg-green-50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                <h3 className="text-xl font-nunito font-bold text-green-900 mb-3">Cabañas Alma Serrana</h3>
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-green-800 text-sm">
+                      <strong>Dirección:</strong> Av. De los Pescadores s/n
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a href="tel:3546544919" className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-544919
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <ExternalLink className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/9xxugWmJ1SPYgwTE6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
