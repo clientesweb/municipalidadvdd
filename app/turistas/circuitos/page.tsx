@@ -199,7 +199,7 @@ export default function Circuitos() {
             <div className="flex items-center mb-6">
               <Mountain className="h-8 w-8 text-[#c84f9b] mr-3" />
               <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
-                El Carril de los Chilenos - La Sierrita (ex 4 vados)
+                El Carril de los Chilenos - La Sierrita
               </h2>
             </div>
 
