@@ -544,7 +544,7 @@ export default function Circuitos() {
               <div className="bg-white bg-opacity-20 p-4 rounded-lg mt-6">
                 <p className="text-white">
                   <strong>📍 Para obtener más información o solicitar mapa de los recorridos</strong> dirigirse a la{" "}
-                  <strong>Oficina de Turismo</strong> ubicada en el ingreso de la localidad.
+                  <strong>Oficina de Turismo</strong> Ubicada a pocos metros de la terminal de ómnibus.
                 </p>
               </div>
             </div>
