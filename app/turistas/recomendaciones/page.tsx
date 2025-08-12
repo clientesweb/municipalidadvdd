@@ -74,9 +74,9 @@ export default function RecomendacionesPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -104,9 +104,9 @@ export default function RecomendacionesPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -184,9 +184,8 @@ export default function RecomendacionesPage() {
                 <span className="font-bold text-[#c84f9b]">Perla de Calamuchita</span>.
               </p>
               <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-montserrat leading-relaxed">
-                El destino ideal y tu plan perfecto para disfrutar de actividades y entretenimientos, gastronomía, la
-                tranquilidad del lago y de la zona rural, la vida al aire libre y la belleza natural de nuestro entorno,
-                para toda la familia.
+                El destino ideal y tu plan perfecto para disfrutar de actividades, gastronomía, la tranquilidad del lago
+                y la vida al aire libre en un entorno natural único, pensado para toda la familia.
               </p>
             </div>
           </div>
@@ -198,7 +197,7 @@ export default function RecomendacionesPage() {
         <div className="container mx-auto text-center">
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-montserrat">
             Antes de emprender tu aventura, te invitamos a tener en cuenta estas recomendaciones para que tu experiencia
-            sea <span className="font-bold text-[#c84f9b]">inolvidable</span>.
+            sea <span className="font-bold text-[#c84f9b]">inolvidable</span> y segura.
           </p>
         </div>
       </section>
@@ -227,13 +226,13 @@ export default function RecomendacionesPage() {
                   tirados contaminando el ambiente y el paisaje.
                 </p>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center">
                 <Image
-                  src="/images/tarde-verano-lago.webp"
-                  alt="Tarde de verano en el lago de Villa del Dique"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="/images/cuidado-entorno-natural.png"
+                  alt="Cuidado del entorno natural"
+                  width={200}
+                  height={200}
+                  className="w-32 h-32 object-contain"
                 />
               </div>
             </div>
@@ -244,40 +243,86 @@ export default function RecomendacionesPage() {
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
                   <Shield className="h-8 w-8 text-blue-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">2. Seguridad en el lago</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
+                  2. Seguridad en el lago y actividades acuáticas
+                </h2>
               </div>
               <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
-                  Si vas a nadar, hacelo solo en áreas habilitadas y señalizadas. Si lo vas a hacer solo, avisá siempre
-                  a tu entorno en qué lugar.
+                  Nadá solo en áreas habilitadas y señalizadas. Si lo hacés solo, avisá siempre a tu entorno en qué
+                  lugar estarás.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Utilizá siempre el chaleco salvavidas si vas a navegar en lancha, moto de agua, kayak o paddle surf.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Si vas a usar embarcaciones, asegurate de cumplir con la normativa de seguridad náutica vigente en la
-                  región.
+                  No ingreses a balnearios durante la noche ni luego de lluvias o tormentas.
+                </p>
+                <p className="text-lg leading-relaxed">No tomes alcohol si vas a nadar.</p>
+                <p className="text-lg leading-relaxed">
+                  Evitá acampar cerca de ríos o arroyos; y estate alerta a las crecidas.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Supervisá constantemente a tus acompañantes, especialmente niñas y niños.
                 </p>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center">
                 <Image
-                  src="/images/vista-aerea-villa-del-dique.jpeg"
-                  alt="Vista aérea de Villa del Dique y su lago"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="/images/seguridad-lago.png"
+                  alt="Seguridad en el lago"
+                  width={200}
+                  height={200}
+                  className="w-32 h-32 object-contain"
                 />
               </div>
             </div>
 
-            {/* 3. Disfrutá responsablemente */}
+            {/* 3. Actividades Náuticas */}
+            <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="bg-blue-100 p-3 rounded-full mr-4">
+                  <Shield className="h-8 w-8 text-blue-600" />
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">3. Actividades Náuticas</h2>
+              </div>
+              <div className="space-y-4 text-gray-700 font-montserrat">
+                <p className="text-lg leading-relaxed">
+                  Contá con toda la documentación necesaria: matrícula, seguro y licencia de conductor náutico.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Verificá que tu embarcación esté en óptimas condiciones antes de salir.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Llevá los elementos de seguridad obligatorios: chaleco salvavidas, silbato, remo bichero, ancla, cabo,
+                  matafuego y balde de achique.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Evitá salir al agua si las condiciones climáticas no son adecuadas.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Si vas a bucear, asegurate de contar con embarcación de apoyo y boyas señalizadoras.
+                </p>
+                <p className="text-lg leading-relaxed">No navegues bajo los efectos del alcohol o drogas.</p>
+              </div>
+              <div className="mt-6 flex justify-center">
+                <Image
+                  src="/images/actividades-nauticas.png"
+                  alt="Actividades náuticas"
+                  width={200}
+                  height={200}
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* 4. Disfrutá responsablemente */}
             <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
                 <div className="bg-red-100 p-3 rounded-full mr-4">
                   <Heart className="h-8 w-8 text-red-600" />
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">
-                  3. Disfrutá responsablemente
+                  4. Disfrutá responsablemente
                 </h2>
               </div>
               <div className="space-y-4 text-gray-700 font-montserrat">
@@ -297,24 +342,24 @@ export default function RecomendacionesPage() {
                   Ver normativas de pesca <ExternalLink className="h-4 w-4 ml-1" />
                 </a>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center">
                 <Image
-                  src="/images/vista-aerea-cerro-cruz.jpeg"
-                  alt="Vista aérea del Cerro de la Cruz en Villa del Dique"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="/images/disfruta-responsable.png"
+                  alt="Disfrutá responsablemente"
+                  width={200}
+                  height={200}
+                  className="w-32 h-32 object-contain"
                 />
               </div>
             </div>
 
-            {/* 4. Apoyá la economía local */}
+            {/* 5. Apoyá la economía local */}
             <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
                 <div className="bg-purple-100 p-3 rounded-full mr-4">
                   <ShoppingBag className="h-8 w-8 text-purple-600" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">4. Apoyá la economía local</h2>
+                <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">5. Apoyá la economía local</h2>
               </div>
               <div className="space-y-4 text-gray-700 font-montserrat">
                 <p className="text-lg leading-relaxed">
@@ -322,17 +367,17 @@ export default function RecomendacionesPage() {
                   nuestra comunidad.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Conocé nuestros bares, restaurantes y cafeterías locales. Ofrecemos platos tradicionales elaborados
+                  Conocé nuestros bares, restaurantes y cafeterías locales, que ofrecen platos tradicionales elaborados
                   con ingredientes frescos.
                 </p>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center">
                 <Image
-                  src="/images/cartel-villa-del-dique.jpeg"
-                  alt="Cartel de bienvenida a Villa del Dique"
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="/images/apoyo-economia-local.png"
+                  alt="Apoyá la economía local"
+                  width={200}
+                  height={200}
+                  className="w-32 h-32 object-contain"
                 />
               </div>
             </div>
@@ -438,9 +483,9 @@ export default function RecomendacionesPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={150} // Increased width
-                height={150} // Increased height
-                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height
+                width={150}
+                height={150}
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain"
               />
               <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
@@ -605,6 +650,14 @@ export default function RecomendacionesPage() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Nadá solo en áreas habilitadas, usá chaleco salvavidas en embarcaciones y cumplí con la normativa náutica vigente.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Qué documentación necesito para actividades náuticas?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Contá con matrícula, seguro y licencia de conductor náutico. Llevá elementos de seguridad obligatorios como chaleco salvavidas, silbato, remo bichero, ancla, cabo, matafuego y balde de achique.",
                 },
               },
             ],
