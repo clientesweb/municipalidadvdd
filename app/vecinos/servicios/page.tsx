@@ -2,7 +2,34 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Mail, ArrowLeft, Camera, Building2, Bus, Heart, Pill, ShieldCheck, Scale, ClipboardList, BookOpen, GraduationCap, Megaphone, FlaskConical, Waves, Radio, Leaf, Hammer, HandHeart } from 'lucide-react'
+import {
+  Menu,
+  X,
+  Facebook,
+  Instagram,
+  Youtube,
+  MapPin,
+  Phone,
+  Mail,
+  ArrowLeft,
+  Camera,
+  Building2,
+  Bus,
+  Heart,
+  Pill,
+  ShieldCheck,
+  Scale,
+  ClipboardList,
+  BookOpen,
+  GraduationCap,
+  Megaphone,
+  FlaskConical,
+  Waves,
+  Radio,
+  Leaf,
+  Hammer,
+  HandHeart,
+} from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -299,9 +326,7 @@ export default function ServiciosPage() {
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
                     <ShieldCheck className="h-6 w-6 text-[#16b5d0]" />
-                    <span>
-                      Inspección, Monitoreo, Guardia Local, Defensa Civil, Juzgado de Faltas
-                    </span>
+                    <span>Inspección, Monitoreo, Guardia Local, Defensa Civil, Juzgado de Faltas</span>
                   </h3>
                   <div className="space-y-4">
                     <p className="text-gray-700 font-medium">Atención: 24 hs</p>
@@ -581,9 +606,7 @@ export default function ServiciosPage() {
                     <FlaskConical className="h-6 w-6 text-[#16b5d0]" />
                     <span>Puesto de Control Bromatológico y Registro de Introductores</span>
                   </h3>
-                  <p className="text-gray-700 font-medium">
-                    Sobre Ruta 5
-                  </p>
+                  <p className="text-gray-700 font-medium">Sobre Ruta 5</p>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                     <a
@@ -842,7 +865,7 @@ export default function ServiciosPage() {
                     <a
                       href="tel:03546497250"
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                      >
+                    >
                       03546-497250
                     </a>
                   </div>
@@ -960,12 +983,57 @@ export default function ServiciosPage() {
                       @aca.ypf.vdd
                     </a>
                   </div>
+                  <div className="flex items-center space-x-3">
+                    <Link
+                      href="https://www.ypf.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      https://www.ypf.com/
+                    </Link>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* ESTACIONES DE SERVICIO */}
+            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Building2 className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ESTACIONES DE SERVICIO</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat">
+                <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">GNC de Barale SA</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/Y7T7HPZi2SSFiLa27"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      Ruta 5 km 105
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:03571501402"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      03571501402
+                    </a>
+                  </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
 
             {/* Transporte */}
-            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+            <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Bus className="h-6 w-6" />
@@ -1000,7 +1068,7 @@ export default function ServiciosPage() {
             </AccordionItem>
 
             {/* Farmacias */}
-            <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <AccordionItem value="item-7" className="bg-white shadow-xl rounded-lg overflow-hidden">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Pill className="h-6 w-6" />
