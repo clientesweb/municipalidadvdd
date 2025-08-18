@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, ArrowLeft, Users, Gavel, FileText } from "lucide-react"
 import Link from "next/link"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function HonorableConcejoDeliberantePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -247,6 +248,395 @@ export default function HonorableConcejoDeliberantePage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Boletín Oficial Section */}
+        <div className="bg-white shadow-xl rounded-lg overflow-hidden mb-12">
+          <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6">
+            <div className="flex items-center space-x-3">
+              <FileText className="h-6 w-6" />
+              <h2 className="text-2xl sm:text-3xl font-nunito font-bold">BOLETÍN OFICIAL</h2>
+            </div>
+          </div>
+
+          <div className="p-8 lg:p-12">
+            <div className="mb-6">
+              <p className="text-lg font-montserrat text-gray-600">
+                Accede a las ordenanzas municipales vigentes. Puedes visualizar o descargar cada documento en formato
+                PDF.
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {/* Índice de Ordenanzas 2024 */}
+              <AccordionItem value="indice-2024" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">ÍNDICE DE ORDENANZAS 2024</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">
+                      Índice completo de ordenanzas municipales del año 2024
+                    </p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/INDICE DE ORDENANZA 2024.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1049-2024 */}
+              <AccordionItem value="ord-1049-2024" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">ORDENANZA 1049-2024</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza Municipal N° 1049 del año 2024</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1049-2024.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1043-2023 Desafío Encuentro Calamuchitano */}
+              <AccordionItem value="ord-1043-2023" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1043-2023 - DESAFÍO ENCUENTRO CALAMUCHITANO
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza sobre el Desafío Encuentro Calamuchitano</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1043-2023-DESAF-ENCUENTRO-CALAMUCHITANO.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1048-2024 Trabajos de Conservación Vialidad */}
+              <AccordionItem value="ord-1048-2024" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1048-2024 - TRABAJOS DE CONSERVACIÓN VIALIDAD
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">
+                      Ordenanza sobre trabajos de conservación de vialidad
+                    </p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1048-2024-TRAB-DE-CONSERV-VIALIDAD.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1050-2024 */}
+              <AccordionItem value="ord-1050-2024" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">ORDENANZA 1050-2024</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza Municipal N° 1050 del año 2024</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1050-2024.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1045-2022 Tarifa Remis */}
+              <AccordionItem value="ord-1045-2022" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1045-2022 - TARIFA REMIS
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza sobre tarifas de servicios de remis</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1045-2022-TARIFA-REMIS.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1044-2022 Adhesión Ente Regional Calamuchita */}
+              <AccordionItem value="ord-1044-2022" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1044-2022 - ADHESIÓN ENTE REGIONAL CALAMUCHITA
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">
+                      Ordenanza de adhesión al Ente Regional de Calamuchita
+                    </p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1044-2022-ADHES-ENTE-REGUINAL-CALAMUCH.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1046-24 Modificación Ordenanza 1039-23 */}
+              <AccordionItem value="ord-1046-24" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1046-24 - MODIFICACIÓN ORDENANZA 1039-23
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Modificación de la Ordenanza 1039-23</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1046-24-MID-ORD-1039-23.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1047-24 Modificación Servicio de Ambulancia */}
+              <AccordionItem value="ord-1047-24" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1047-24 - SERVICIO DE AMBULANCIA
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">
+                      Modificación Ordenanza 872-17 sobre servicio de ambulancia
+                    </p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1047-24-MOD-ORD-872-17-SERVICIO-DERECHA-DE-AMBULANCIA.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1051-2024 Fortalecimiento Educativo */}
+              <AccordionItem value="ord-1051-2024" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1051-2024 - FORTALECIMIENTO EDUCATIVO
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza sobre fortalecimiento educativo</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1051-2024-FORTALECIMIENTO-EDUCATIVO.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1042-2023 Presupuesto 2024 */}
+              <AccordionItem value="ord-1042-2023-pres" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1042-2023 - PRESUPUESTO 2024
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza de Presupuesto Municipal 2024</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1042-2023-PRESUPUESTO-2024-1.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1039-2023 Organigrama Municipal */}
+              <AccordionItem value="ord-1039-2023" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1039-2023 - ORGANIGRAMA MUNICIPAL
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">Ordenanza sobre organigrama municipal</p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1039-2023-ORGANIGRAMA-MUNICIPAL.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Ordenanza 1042-2023 Presupuesto 2024 (segunda versión) */}
+              <AccordionItem value="ord-1042-2023-pres2" className="border border-gray-200 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 rounded-t-lg">
+                  <div className="flex items-center space-x-3">
+                    <FileText className="h-5 w-5 text-[#16b5d0]" />
+                    <span className="text-lg font-montserrat font-semibold text-left">
+                      ORDENANZA 1042-2023 - PRESUPUESTO 2024 (VERSIÓN FINAL)
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 py-4 bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600 font-montserrat">
+                      Versión final de la Ordenanza de Presupuesto Municipal 2024
+                    </p>
+                    <div className="flex space-x-2">
+                      <a
+                        href="/ordenanzas/ORDENANZA-1042-2023-PRESUPUESTO-2024.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#16b5d0] text-white rounded-md hover:bg-[#0ea5e9] transition-colors duration-200 font-montserrat"
+                      >
+                        <FileText className="h-4 w-4 mr-2" />
+                        Ver PDF
+                      </a>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
 
