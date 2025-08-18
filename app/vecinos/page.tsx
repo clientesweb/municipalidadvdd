@@ -556,8 +556,7 @@ export default function VecinosPage() {
             <Link href="/noticias/nueva-maquinaria-vial" className="group">
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                 <div className="relative aspect-video overflow-hidden">
-                  <Image
-                    src="/images/incorporacion-maquinaria.webp"
+                  <Image               src="https://www.villadeldique.gob.ar/images/incoporacion-maquinaria.webp"
                     alt="Nueva Maquinaria Vial"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
