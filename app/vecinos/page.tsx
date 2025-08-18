@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from 'lucide-react'
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -221,6 +221,16 @@ export default function VecinosPage() {
                   <p className="text-base sm:text-lg leading-relaxed">
                     Seguí estos simples pasos para consultar y abonar tu deuda desde la comodidad de tu casa:
                   </p>
+                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded mb-6">
+                    <p className="text-base sm:text-lg leading-relaxed text-blue-800">
+                      <strong>Importante:</strong> Podrán hacerlo quienes tengan documentación en condiciones. Para
+                      consultar su número de cuenta y verificador, pueden comunicarse a este{" "}
+                      <a href="tel:3546123456" className="text-blue-600 hover:text-blue-800 underline font-semibold">
+                        celular: 3546-123456
+                      </a>{" "}
+                      en horario de 7 a 14 hs.
+                    </p>
+                  </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-10">
                     <div className="bg-[#f8f9fa] rounded-xl p-4 sm:p-6 text-center border-l-4 border-[#16b5d0] hover:shadow-lg transition-shadow duration-200">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#16b5d0] text-white rounded-full flex items-center justify-center text-xl sm:text-2xl font-nunito font-bold mx-auto mb-3">
@@ -422,7 +432,12 @@ export default function VecinosPage() {
                 <div className="flex items-center space-x-3 text-left">
                   <div className="w-10 h-10 bg-[#16b5d0] text-white rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z"
+                      />
                     </svg>
                   </div>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-nunito font-bold text-gray-900">
@@ -433,9 +448,10 @@ export default function VecinosPage() {
               <AccordionContent className="px-6 pb-6">
                 <div className="space-y-6 text-gray-700 font-montserrat">
                   <p className="text-base sm:text-lg leading-relaxed">
-                    Consultá el cronograma de farmacias de turno para el mes de agosto y mantené siempre a mano los contactos de emergencia.
+                    Consultá el cronograma de farmacias de turno para el mes de agosto y mantené siempre a mano los
+                    contactos de emergencia.
                   </p>
-                  
+
                   {/* Calendar Image */}
                   <div className="bg-gray-50 rounded-lg p-4 text-center">
                     <Image
@@ -491,7 +507,12 @@ export default function VecinosPage() {
                       className="inline-flex items-center space-x-2 bg-[#d39d85] hover:bg-[#c8906f] text-white font-nunito font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 transform"
                     >
                       <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
                       </svg>
                       <span>Descargar Cronograma</span>
                     </a>
@@ -501,12 +522,17 @@ export default function VecinosPage() {
                     <div className="flex">
                       <div className="flex-shrink-0">
                         <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                          <path
+                            fillRule="evenodd"
+                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                       <div className="ml-3">
                         <p className="text-sm text-yellow-700 font-montserrat">
-                          <strong>Importante:</strong> En caso de emergencia fuera del horario de atención, comunicate directamente con los números de teléfono indicados.
+                          <strong>Importante:</strong> En caso de emergencia fuera del horario de atención, comunicate
+                          directamente con los números de teléfono indicados.
                         </p>
                       </div>
                     </div>
@@ -531,7 +557,7 @@ export default function VecinosPage() {
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src="/images/incoporacion-maquinaria.webp"
+                    src="/images/incorporacion-maquinaria.webp"
                     alt="Nueva Maquinaria Vial"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -575,11 +601,12 @@ export default function VecinosPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">Controles de Tránsito: Circular en regla, una tarea de todos
+                  <h3 className="text-xl sm:text-2xl font-nunito font-bold text-gray-900 mb-3 group-hover:text-[#16b5d0] transition-colors duration-200">
+                    Controles de Tránsito: Circular en regla, una tarea de todos
                   </h3>
                   <p className="text-gray-600 font-montserrat text-base leading-relaxed mb-4">
-                    La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa fortaleciendo su compromiso con
-                    La seguridad...
+                    La Municipalidad de Villa del Dique, junto a la Policía de la Provincia de Córdoba, continúa
+                    fortaleciendo su compromiso con La seguridad...
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-montserrat text-gray-500">21 de julio de 2025</span>
