@@ -29,6 +29,8 @@ import {
   Leaf,
   Hammer,
   HandHeart,
+  Car,
+  Fuel,
 } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -495,7 +497,7 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="https://www.google.com/maps/search/Casa+de+la+Cultura+Villa+del+Dique" // Placeholder link
+                        href="https://www.google.com/maps/search/Casa+de+la+Cultura+Villa+del+Dique"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
@@ -570,7 +572,7 @@ export default function ServiciosPage() {
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
                       <a
-                        href="https://www.google.com/maps/search/Pilcomayo+s%2Fn+Villa+del+Dique" // Placeholder link
+                        href="https://www.google.com/maps/search/Pilcomayo+s%2Fn+Villa+del+Dique"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
@@ -638,11 +640,11 @@ export default function ServiciosPage() {
                   </div>
                 </div>
 
-                {/* Pileta Climatizada “VISAN” */}
+                {/* Pileta Climatizada "VISAN" */}
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center space-x-2">
                     <Waves className="h-6 w-6 text-[#16b5d0]" />
-                    <span>Pileta Climatizada “VISAN”</span>
+                    <span>Pileta Climatizada "VISAN"</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
@@ -794,51 +796,8 @@ export default function ServiciosPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* Electricidad */}
-            <AccordionItem value="item-2" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
-              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
-                <div className="flex items-center space-x-3">
-                  <Building2 className="h-6 w-6" />
-                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ELECTRICIDAD VILLA DEL DIQUE</h2>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="tel:+5493546534000"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      +54 9 3546 53-4000
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="mailto:Electrocidadvilladeldiqueok@gmail.com"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      Electrocidadvilladeldiqueok@gmail.com
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="https://www.instagram.com/electricidadvilladeldiqueok?igsh=NXkwOWh0Nmt2bW1j"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      @electricidadvilladeldiqueok
-                    </a>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
             {/* Cooperativa de Obra y Servicios Públicos de Villa del Dique Ltda. */}
-            <AccordionItem value="item-3" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+            <AccordionItem value="item-2" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Building2 className="h-6 w-6" />
@@ -942,98 +901,8 @@ export default function ServiciosPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* ACA - YPF VDD */}
-            <AccordionItem value="item-4" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
-              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
-                <div className="flex items-center space-x-3">
-                  <Building2 className="h-6 w-6" />
-                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ACA - YPF VDD</h2>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="https://share.google/f5IABJPRM4IHSvHOSnúmero"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      Ver ubicación en Google Maps
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="tel:3546497827"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      3546 497827
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="https://www.instagram.com/aca.ypf.vdd?igsh=N2MxbnB0b2tybjIx"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      @aca.ypf.vdd
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Link
-                      href="https://www.ypf.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      https://www.ypf.com/
-                    </Link>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
-            {/* ESTACIONES DE SERVICIO */}
-            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
-              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
-                <div className="flex items-center space-x-3">
-                  <Building2 className="h-6 w-6" />
-                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ESTACIONES DE SERVICIO</h2>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">GNC de Barale SA</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="https://maps.app.goo.gl/Y7T7HPZi2SSFiLa27"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      Ruta 5 km 105
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="tel:03571501402"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      03571501402
-                    </a>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
             {/* Transporte */}
-            <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+            <AccordionItem value="item-3" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Bus className="h-6 w-6" />
@@ -1067,8 +936,71 @@ export default function ServiciosPage() {
               </AccordionContent>
             </AccordionItem>
 
+            {/* REMISES HABILITADOS */}
+            <AccordionItem value="item-4" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Car className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">REMISES HABILITADOS</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat">
+                <div className="text-center py-8">
+                  <p className="text-gray-600 text-lg font-medium">
+                    Información de remises habilitados próximamente disponible
+                  </p>
+                  <p className="text-gray-500 text-sm mt-2">
+                    Estamos actualizando la información de los servicios de remises en Villa del Dique
+                  </p>
+                </div>
+
+                {/* Placeholder structure for 10 remises - ready for future data */}
+                <div className="hidden">
+                  {/* Remis 1 */}
+                  <div className="space-y-4 mb-6">
+                    <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre]</h3>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-3">
+                        <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Teléfono]</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Dirección]</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Email]</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Remis 2-10 structure ready for data */}
+                  {Array.from({ length: 9 }, (_, i) => (
+                    <div key={i + 2} className="space-y-4 mb-6 pt-4 border-t border-gray-100">
+                      <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre {i + 2}]</h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center space-x-3">
+                          <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Teléfono]</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Dirección]</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Email]</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
             {/* Farmacias */}
-            <AccordionItem value="item-7" className="bg-white shadow-xl rounded-lg overflow-hidden">
+            <AccordionItem value="item-5" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Pill className="h-6 w-6" />
@@ -1191,6 +1123,135 @@ export default function ServiciosPage() {
                           3546-435468
                         </a>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Electricidad Villa del Dique */}
+            <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Building2 className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ELECTRICIDAD VILLA DEL DIQUE</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:+5493546534000"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      +54 9 3546 53-4000
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="mailto:Electrocidadvilladeldiqueok@gmail.com"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      Electrocidadvilladeldiqueok@gmail.com
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="https://www.instagram.com/electricidadvilladeldiqueok?igsh=NXkwOWh0Nmt2bW1j"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      @electricidadvilladeldiqueok
+                    </a>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* ESTACIONES DE SERVICIO */}
+            <AccordionItem value="item-7" className="bg-white shadow-xl rounded-lg overflow-hidden">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Fuel className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ESTACIONES DE SERVICIO</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat space-y-8">
+                {/* ACA - YPF VDD */}
+                <div>
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">ACA - YPF VDD</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://share.google/f5IABJPRM4IHSvHOSnúmero"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        Ver ubicación en Google Maps
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:3546497827"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        3546 497827
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://www.instagram.com/aca.ypf.vdd?igsh=N2MxbnB0b2tybjIx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        @aca.ypf.vdd
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Link
+                        href="https://www.ypf.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        https://www.ypf.com/
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                {/* GNC de Barale SA */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">GNC de Barale SA</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://maps.app.goo.gl/Y7T7HPZi2SSFiLa27"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        Ruta 5 km 105
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:03571501402"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        03571501402
+                      </a>
                     </div>
                   </div>
                 </div>
