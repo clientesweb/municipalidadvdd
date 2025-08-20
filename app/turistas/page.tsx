@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-rea
 import Link from "next/link"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button" // Import Button
+import { Button } from "@/components/ui/button"
 
 export default function TuristasPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,7 +31,7 @@ export default function TuristasPage() {
         videoRef.current.play().catch((error) => console.error("Error playing video:", error))
       } else {
         videoRef.current.pause()
-        videoRef.current.currentTime = 0 // Reset video to start
+        videoRef.current.currentTime = 0
       }
     }
   }, [isDialogOpen])
@@ -44,8 +44,8 @@ export default function TuristasPage() {
 
   const rightMenuItems = [
     { name: "Circuitos", href: "/turistas/circuitos" },
+    { name: "Lugares para visitar", href: "/turistas/lugares-para-visitar" },
     { name: "Servicios", href: "/vecinos/servicios" },
-    { name: "Noticias", href: "/noticias" },
   ]
 
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
@@ -83,9 +83,9 @@ export default function TuristasPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -113,9 +113,9 @@ export default function TuristasPage() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -188,11 +188,9 @@ export default function TuristasPage() {
                 sizes="100vw"
                 onClick={handleOpenDialog}
               />
-              {/* The play button is part of the image, so no overlay is needed */}
             </div>
           </DialogTrigger>
           <DialogContent className="max-w-full h-full p-0 border-none bg-black/90 flex items-center justify-center z-[70]">
-            {/* Close button */}
             <button
               onClick={handleCloseDialog}
               className="absolute top-4 right-4 z-[80] bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors duration-200"
@@ -204,7 +202,7 @@ export default function TuristasPage() {
               ref={videoRef}
               controls
               autoPlay
-              muted={false} // Ensure sound is active
+              muted={false}
               className="w-full h-full object-contain"
               aria-label="Video de Villa del Dique - Tu Plan Perfecto"
             >
@@ -222,24 +220,16 @@ export default function TuristasPage() {
             Explora <span className="font-extrabold">VILLA DEL DIQUE</span>
           </h2>
           <Accordion type="single" collapsible className="w-full rounded-lg overflow-hidden shadow-lg">
-            {" "}
-            {/* Added rounded corners and shadow */}
             {allMenuItems.map((item, index) => (
               <AccordionItem
                 value={`item-${index}`}
                 key={index}
                 className="border-b border-gray-200 last:border-b-0 bg-white"
               >
-                {" "}
-                {/* Added background color to item */}
                 <AccordionTrigger className="text-lg sm:text-xl font-montserrat font-semibold text-gray-800 hover:text-[#c84f9b] hover:bg-gray-50 transition-colors duration-200 px-6 py-4">
-                  {" "}
-                  {/* Adjusted hover background and padding */}
                   {item.name}
                 </AccordionTrigger>
                 <AccordionContent className="pt-2 pb-4 px-6">
-                  {" "}
-                  {/* Adjusted padding */}
                   <Link href={item.href} passHref>
                     <Button className="w-full bg-[#c84f9b] hover:bg-[#a83f80] text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">
                       Ver más sobre {item.name}
@@ -311,9 +301,9 @@ export default function TuristasPage() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={150} // Increased width
-                height={150} // Increased height
-                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height
+                width={150}
+                height={150}
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain"
               />
               <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
