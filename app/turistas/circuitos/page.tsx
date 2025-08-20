@@ -2,20 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import {
-  Menu,
-  X,
-  Facebook,
-  Instagram,
-  Youtube,
-  MapPin,
-  Phone,
-  Clock,
-  Users,
-  Mountain,
-  Bike,
-  Camera,
-} from "lucide-react"
+import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Clock, Users, Mountain, Bike } from "lucide-react"
 import Link from "next/link"
 
 export default function Circuitos() {
@@ -72,9 +59,9 @@ export default function Circuitos() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -104,9 +91,9 @@ export default function Circuitos() {
                 <Image
                   src="/images/logo-oficial.webp"
                   alt="Villa del Dique Municipalidad"
-                  width={350} // Increased width
-                  height={140} // Increased height
-                  className="h-16 sm:h-20 md:h-24 w-auto object-contain" // Increased responsive height
+                  width={350}
+                  height={140}
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -246,13 +233,13 @@ export default function Circuitos() {
               descanso y la hidratación, permitiéndote disfrutar plenamente de la experiencia.
             </p>
 
-            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
               <Image
-                src="/images/circuito-la-sierrita.webp"
-                alt="Circuito La Sierrita - Paisaje rural con ganado y arroyo"
+                src="/images/la-sierrita.webp"
+                alt="Circuito La Sierrita - Paisaje rural con caballo pastando cerca del arroyo"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </article>
@@ -303,13 +290,13 @@ export default function Circuitos() {
               Amancay, Villa Quillinzo, La Cruz, Embalse, retornando a Villa del Dique.
             </p>
 
-            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
               <Image
                 src="/images/circuito-perilago.webp"
                 alt="Circuito del Perilago - Vista panorámica del embalse con islas"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </article>
@@ -358,13 +345,60 @@ export default function Circuitos() {
               </div>
             </div>
 
-            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
               <Image
-                src="/images/circuitos-en-bicicleta.webp"
-                alt="Circuitos en Bicicleta - Bicicleta junto al lago"
+                src="/images/circuito-en-bicicleta.webp"
+                alt="Circuitos en Bicicleta - Grupo de ciclistas junto al lago"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+              />
+            </div>
+          </article>
+
+          {/* Paseos a Caballo - NUEVO */}
+          <article className="mb-16 bg-white rounded-lg shadow-md border-l-4 border-[#c84f9b] p-6 sm:p-8">
+            <div className="flex items-center mb-6">
+              <Users className="h-8 w-8 text-[#c84f9b] mr-3" />
+              <h2 className="text-2xl sm:text-3xl font-nunito font-bold text-gray-900">Paseos a Caballo</h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 font-montserrat">
+              <div className="flex items-center text-gray-600">
+                <Users className="h-5 w-5 mr-2 text-[#c84f9b]" />
+                <span>
+                  <strong>Apto para:</strong> Todo público
+                </span>
+              </div>
+              <div className="flex items-center text-gray-600">
+                <Clock className="h-5 w-5 mr-2 text-[#c84f9b]" />
+                <span>
+                  <strong>Disponible:</strong> Únicamente en temporada
+                </span>
+              </div>
+            </div>
+
+            <div className="bg-pink-50 p-4 rounded-lg mb-6 font-montserrat">
+              <p className="text-pink-800">
+                <strong>Consultar días y horarios en la Oficina de Turismo</strong>
+              </p>
+            </div>
+
+            <p className="text-gray-700 font-montserrat leading-relaxed mb-4">
+              Descubrí Villa del Dique de una manera diferente: paseos guiados a caballo, ideales para todas las edades.
+            </p>
+
+            <p className="text-gray-700 font-montserrat leading-relaxed mb-6">
+              <strong>¡Reservá tu experiencia y conectate con la naturaleza!</strong>
+            </p>
+
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/paseos-a-caballo.webp"
+                alt="Paseos a Caballo - Jinete a caballo junto al lago con ganado en el fondo"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </article>
@@ -405,13 +439,13 @@ export default function Circuitos() {
               Un ascenso exigente que recompensa con vistas panorámicas inigualables.
             </p>
 
-            <div className="relative w-full h-64 rounded-lg overflow-hidden my-8">
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
               <Image
                 src="/images/circuito-subida-al-cerro.webp"
                 alt="Ascenso al Cerro de la Cruz - Vista panorámica desde el cerro"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </article>
@@ -452,12 +486,14 @@ export default function Circuitos() {
               Disfrutá la costa como nunca antes, en este recorrido imperdible.
             </p>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen del Sendero de la Costa</p>
-              </div>
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/sendero-la-costa.webp"
+                alt="Sendero de la Costa - Cartel de Villa del Dique con vista panorámica del lago"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+              />
             </div>
           </article>
 
@@ -509,12 +545,14 @@ export default function Circuitos() {
               Un paseo por los edificios y lugares que marcaron la historia del pueblo desde su fundación.
             </p>
 
-            {/* Espacio para imagen */}
-            <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center my-8">
-              <div className="text-center text-gray-500 font-montserrat">
-                <Camera className="h-12 w-12 mx-auto mb-2" />
-                <p>Imagen del Casco Histórico</p>
-              </div>
+            <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-8">
+              <Image
+                src="/images/casco-historico.webp"
+                alt="Recorrido por el Casco Histórico - Vista aérea de Villa del Dique"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+              />
             </div>
           </article>
 
@@ -544,7 +582,7 @@ export default function Circuitos() {
               <div className="bg-white bg-opacity-20 p-4 rounded-lg mt-6">
                 <p className="text-white">
                   <strong>📍 Para obtener más información o solicitar mapa de los recorridos</strong> dirigirse a la{" "}
-                  <strong>Oficina de Turismo</strong> Ubicada a pocos metros de la terminal de ómnibus.
+                  <strong>Oficina de Turismo</strong> ubicada en el ingreso de la localidad.
                 </p>
               </div>
             </div>
@@ -585,9 +623,9 @@ export default function Circuitos() {
               <Image
                 src="/images/logo-footer-blanco.png"
                 alt="Villa del Dique Municipalidad"
-                width={150} // Increased width
-                height={150} // Increased height
-                className="h-20 sm:h-24 md:h-28 w-auto object-contain" // Increased responsive height
+                width={150}
+                height={150}
+                className="h-20 sm:h-24 md:h-28 w-auto object-contain"
               />
               <p className="text-lg sm:text-xl font-semibold text-center sm:text-center lg:text-left">
                 EL PROGRESO QUE QUEREMOS
