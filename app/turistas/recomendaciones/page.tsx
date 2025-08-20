@@ -35,8 +35,8 @@ export default function RecomendacionesPage() {
 
   const rightMenuItems = [
     { name: "Circuitos", href: "/turistas/circuitos" },
+    { name: "lugares que visitar", href: "/turistas/lugares-para-visitar" },
     { name: "Servicios", href: "/vecinos/servicios" },
-    { name: "Noticias", href: "/noticias" },
   ]
 
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
