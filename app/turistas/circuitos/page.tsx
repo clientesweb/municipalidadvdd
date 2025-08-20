@@ -20,8 +20,8 @@ export default function Circuitos() {
 
   const rightMenuItems = [
     { name: "Circuitos", href: "/turistas/circuitos", active: true },
+    { name: "Lugares que visitar", href: "/turistas/lugares-para-visitar" },
     { name: "Servicios", href: "/vecinos/servicios" },
-    { name: "Noticias", href: "/noticias" },
   ]
 
   const allMenuItems = [...leftMenuItems, ...rightMenuItems]
