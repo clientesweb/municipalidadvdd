@@ -66,7 +66,7 @@ export const metadata: Metadata = {
       "Explora los mejores lugares para visitar en Villa del Dique: plazas, iglesias, miradores y sitios culturales. Tu guía completa de atractivos turísticos en las Sierras de Córdoba.",
     images: [
       {
-        url: "https://www.villadeldique.gob.ar/images/banner-que-visitar.webp",
+        url: "https://www.villadeldique.gob.ar/images/banner-que-visitar-vdd.webp",
         width: 1200,
         height: 630,
         alt: "Lugares para Visitar en Villa del Dique - Atractivos Turísticos",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "Lugares para Visitar - Villa del Dique | Atractivos Turísticos",
     description:
       "Descubre plazas, iglesias, miradores y sitios culturales en Villa del Dique. Tu guía de atractivos turísticos en Córdoba.",
-    images: ["https://www.villadeldique.gob.ar/images/banner-que-visitar.webp"],
+    images: ["https://www.villadeldique.gob.ar/images/banner-que-visitar-vdd.webp"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
@@ -112,7 +112,7 @@ export default function LugaresParaVisitarLayout({
               description:
                 "Guía completa de lugares para visitar en Villa del Dique: plazas históricas, iglesias, miradores panorámicos y sitios culturales en la Perla de Calamuchita.",
               url: "https://www.villadeldique.gob.ar/turistas/lugares-para-visitar",
-              image: "https://www.villadeldique.gob.ar/images/banner-que-visitar.webp",
+              image: "https://www.villadeldique.gob.ar/images/banner-que-visitar-vdd.webp",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Villa del Dique",
