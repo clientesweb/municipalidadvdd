@@ -143,7 +143,7 @@ const todasLasNoticias: Noticia[] = [
     titulo: "Villa del Dique celebró sus 89 años con obras, homenajes y una gran participación popular",
     fecha: "2024-10-11",
     fechaDisplay: "11 de octubre de 2024",
-    imagen: "/images/89-años-villa-del-dique-1.jpg",
+    imagen: "/images/89-anos-villa-del-dique-1.jpg",
     descripcion:
       "En el marco del 89° aniversario de Villa del Dique, el intendente Emiliano Torres encabezó los actos conmemorativos y anunció una inversión de 150 millones de pesos en la adquisición de nuevas maquinarias destinadas al mantenimiento de calles y espacios públicos.",
     slug: "/noticias/89-anos-villa-del-dique", // cambiado slug para usar caracteres seguros sin ñ
