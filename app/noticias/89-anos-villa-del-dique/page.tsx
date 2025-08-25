@@ -301,7 +301,7 @@ export default function AñosVilladelDiquePage() {
             {/* Hero Image */}
             <div className="mb-12">
               <Image
-                src="/images/89-años-villa-del-dique-1.jpg"
+                src="/images/89-anos-villa-del-dique-1.jpg"
                 alt="Intendente Emiliano Torres durante su discurso en el 89° aniversario"
                 width={800}
                 height={600}
@@ -349,7 +349,7 @@ export default function AñosVilladelDiquePage() {
                 </div>
                 <div>
                   <Image
-                    src="/images/89-años-villa-del-dique-5.jpg"
+                    src="/images/89-anos-villa-del-dique-5.jpg"
                     alt="Nueva maquinaria vial adquirida por el municipio"
                     width={600}
                     height={400}
@@ -368,7 +368,7 @@ export default function AñosVilladelDiquePage() {
               <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
                 <div>
                   <Image
-                    src="/images/89-años-villa-del-dique-2.jpg"
+                    src="/images/89-anos-villa-del-dique-2.jpg"
                     alt="Ceremonia de corte de cinta con autoridades"
                     width={600}
                     height={400}
@@ -405,7 +405,7 @@ export default function AñosVilladelDiquePage() {
                 </div>
                 <div>
                   <Image
-                    src="/images/89-años-villa-del-dique-3.jpg"
+                    src="/images/89-anos-villa-del-dique-3.jpg"
                     alt="Procesión religiosa con personal naval"
                     width={600}
                     height={400}
