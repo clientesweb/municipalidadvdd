@@ -318,7 +318,7 @@ export default function PoloCulturalPage() {
 
               <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-md mb-6">
                 <video controls className="w-full h-auto" poster="/images/polo-cultural-avances.jpg">
-                  <source src="/polo-cultura.mp4" type="video/mp4" />
+                  <source src="/videos/polo-cultura.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
