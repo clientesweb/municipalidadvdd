@@ -2,9 +2,10 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Menu, X, Facebook, Instagram, Youtube, MapPin, Phone, Trash2, DollarSign } from "lucide-react"
+import { Menu, X, Trash2, DollarSign } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Footer from "@/components/Footer"
 
 export default function VecinosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -556,7 +557,8 @@ export default function VecinosPage() {
             <Link href="/noticias/nueva-maquinaria-vial" className="group">
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                 <div className="relative aspect-video overflow-hidden">
-                  <Image               src="https://www.villadeldique.gob.ar/images/incoporacion-maquinaria.webp"
+                  <Image
+                    src="https://www.villadeldique.gob.ar/images/incoporacion-maquinaria.webp"
                     alt="Nueva Maquinaria Vial"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -657,19 +659,43 @@ export default function VecinosPage() {
               href="tel:354697829"
               className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
-              <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Policía: 354697829
+              <svg className="h-5 w-5 sm:h-6 sm:w-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.492 4.49a1 1 0 01-1.99.12zm9.054 0a1 1 0 01.948-.684h3.28a2 2 0 012 2v13a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h3.28a1 1 0 00.948-.684l1.498-4.493a1 1 0 00-.502-1.21l-2.492-4.49a1 1 0 00-1.99-.12z"
+                />
+              </svg>
+              Policía: 354697829
             </Link>
             <Link
               href="tel:3546497497"
               className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
-              <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Bomberos: 3546497497
+              <svg className="h-5 w-5 sm:h-6 sm:w-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 9v2m0 4h.01m-.01 3H12m5.914-.916a6 6 0 010 7.832H6.084a6 6 0 010-7.832h1.832m0-4.894h.01M12 12h.01m-.01 3H12m-.914 0a6 6 0 000 7.832h1.832a6 6 0 000-7.832H12z"
+                />
+              </svg>
+              Bomberos: 3546497497
             </Link>
             <Link
               href="tel:3546497636"
               className="bg-[#d39d85] text-white font-nunito font-bold text-lg sm:text-xl lg:text-2xl text-center px-8 py-4 lg:px-12 lg:py-6 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto min-w-[200px] lg:min-w-[250px] flex items-center justify-center"
             >
-              <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2" /> Hospital: 3546497636
+              <svg className="h-5 w-5 sm:h-6 sm:w-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 9v2m0 4h.01m-.01 3H12m5.914-.916a6 6 0 010 7.832H6.084a6 6 0 010-7.832h1.832m0-4.894h.01M12 12h.01m-.01 3H12m-.914 0a6 6 0 000 7.832h1.832a6 6 0 000-7.832H12z"
+                />
+              </svg>
+              Hospital: 3546497636
             </Link>
           </div>
         </div>
@@ -726,133 +752,7 @@ export default function VecinosPage() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-[#16b5d0] text-white py-8 sm:py-10 md:py-12 px-4">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {/* Logo y Lema */}
-            <div className="flex flex-col items-center sm:items-center lg:items-start space-y-4">
-              <Image
-                src="/images/logo-footer-blanco.png"
-                alt="Villa del Dique Municipalidad"
-                width={150}
-                height={150}
-                className="h-20 sm:h-24 md:h-28 w-auto object-contain"
-              />
-              <p className="text-lg sm:text-xl font-nunito font-semibold text-center sm:text-center lg:text-left">
-                EL PROGRESO QUE QUEREMOS
-              </p>
-            </div>
-
-            {/* Redes Sociales y Acceso Rápido */}
-            <div className="space-y-6 text-center sm:text-center lg:text-left">
-              <div>
-                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Redes Sociales</h3>
-                <div className="flex space-x-4 justify-center sm:justify-center lg:justify-start">
-                  <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
-                    <Youtube className="h-5 w-5 sm:h-6 sm:w-6" />
-                  </a>
-                  <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
-                    <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
-                  </a>
-                  <a href="#" className="hover:opacity-80 hover:scale-110 transition-all duration-200">
-                    <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Acceso Rápido</h3>
-                <ul className="space-y-2 font-montserrat">
-                  <li>
-                    <Link
-                      href="/vecinos/guia-de-tramites"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
-                    >
-                      Guía de trámites
-                    </Link>
-                  </li>
-                  <li>
-                    <a
-                      href="/noticias"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
-                    >
-                      Noticias
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/vecinos/servicios"
-                      className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
-                    >
-                      Servicios
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Institucional */}
-            <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4">Institucional</h3>
-              <ul className="space-y-2 font-montserrat">
-                <li>
-                  <a
-                    href="/vecinos/muni"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
-                  >
-                    La Muni
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/vecinos/honorable-concejo-deliberante"
-                    className="hover:underline hover:opacity-80 transition-all duration-200 text-base sm:text-lg"
-                  >
-                    Concejo Deliberante
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contacto */}
-            <div className="text-center sm:text-center lg:text-left">
-              <h3 className="text-xl sm:text-2xl font-nunito font-bold mb-4 text-white">Emergencias y Contacto</h3>
-              <div className="space-y-3 font-montserrat">
-                <div className="flex items-start space-x-2 justify-center sm:justify-center lg:justify-start">
-                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">
-                    Mario Nivoli 206
-                    <br />
-                    Villa del Dique, Córdoba
-                  </p>
-                </div>
-                <div className="flex items-center space-x-2 justify-center sm:justify-center lg:justify-start">
-                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <p className="text-sm sm:text-base">03546-497241</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Línea divisoria y copyright */}
-          <div className="border-t border-white/20 mt-6 sm:mt-8 pt-4 sm:pt-6 text-center space-y-2 font-montserrat">
-            <p className="text-sm sm:text-base opacity-80">
-              © 2024 Municipalidad de Villa del Dique. Todos los derechos reservados.
-            </p>
-            <p className="text-sm opacity-70">
-              Powered By{" "}
-              <a
-                href="https://dualitydomain.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline hover:opacity-90 font-medium transition-all duration-200"
-              >
-                Duality Domain
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
