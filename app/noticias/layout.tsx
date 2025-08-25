@@ -95,7 +95,6 @@ export default function NoticiasLayout({
   return (
     <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
-        {/* Structured Data for News Section */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
