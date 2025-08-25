@@ -95,19 +95,17 @@ export default function RootLayout({
   return (
     <html lang="es-AR" className={`${nunito.variable} ${montserrat.variable}`}>
       <head>
-        <meta name="theme-color" content="#16b5d0" /> {/* Updated color */}
-        <meta name="msapplication-TileColor" content="#16b5d0" /> {/* Updated color */}
+        <meta name="theme-color" content="#16b5d0" />
+        <meta name="msapplication-TileColor" content="#16b5d0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Villa del Dique" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Favicons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/images/favicon-192x192.png" type="image/png" sizes="192x192" />
         <link rel="icon" href="/images/favicon-512x512.png" type="image/png" sizes="512x512" />
         <link rel="apple-touch-icon" href="/images/favicon-192x192.png" />
-        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -143,7 +141,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-montserrat">{children}</body> {/* Aplicar Montserrat como fuente base */}
+      <body className="font-montserrat">{children}</body>
     </html>
   )
 }
