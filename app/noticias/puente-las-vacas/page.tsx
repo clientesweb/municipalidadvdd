@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Calendar, User, ArrowLeft, Share2, Check, Copy } fro
 import Link from "next/link"
 import Footer from "@/components/Footer"
 
-export default function CasaEstudiantesCordobaPage() {
+export default function PuenteLasVacasPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "shared">("idle")
 
@@ -16,8 +16,8 @@ export default function CasaEstudiantesCordobaPage() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital",
-      text: "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital, un espacio destinado a brindar apoyo y acompañamiento a los jóvenes de nuestra localidad.",
+      title: "Mantenimiento conjunto del Puente de las Vacas: trabajo articulado por la seguridad y el bienestar",
+      text: "La Municipalidad de Villa del Dique, en coordinación con la Municipalidad de Embalse, llevó adelante tareas de mantenimiento en el Puente de las Vacas.",
       url: window.location.href,
     }
 
@@ -49,9 +49,11 @@ export default function CasaEstudiantesCordobaPage() {
 
   const shareOnSocial = (platform: "facebook" | "twitter" | "whatsapp") => {
     const url = encodeURIComponent(window.location.href)
-    const title = encodeURIComponent("Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital")
+    const title = encodeURIComponent(
+      "Mantenimiento conjunto del Puente de las Vacas: trabajo articulado por la seguridad y el bienestar",
+    )
     const text = encodeURIComponent(
-      "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital.",
+      "La Municipalidad de Villa del Dique, en coordinación con la Municipalidad de Embalse, llevó adelante tareas de mantenimiento en el Puente de las Vacas.",
     )
 
     const urls = {
@@ -187,21 +189,6 @@ export default function CasaEstudiantesCordobaPage() {
 
       {/* Main Content Area */}
       <main className="flex-grow container mx-auto py-8 px-4 sm:py-12 md:py-16 lg:py-20">
-        {/* Breadcrumb Navigation */}
-        <div className="mb-8">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Inicio
-            </Link>
-            <span>/</span>
-            <Link href="/noticias" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Noticias
-            </Link>
-            <span>/</span>
-            <span className="text-gray-900">Casa de Estudiantes en Córdoba Capital</span>
-          </nav>
-        </div>
-
         {/* Back Button */}
         <div className="mb-8">
           <Link
@@ -218,14 +205,14 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Header */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital
+              Mantenimiento conjunto del Puente de las Vacas: trabajo articulado por la seguridad y el bienestar
             </h1>
 
             {/* Article Meta */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
                 <Calendar className="h-4 w-4" />
-                <span className="text-sm">7 de febrero de 2024</span>
+                <span className="text-sm">15 de julio de 2025</span>
               </div>
               <div className="flex items-center space-x-2">
                 <User className="h-4 w-4" />
@@ -297,7 +284,8 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Important Notice */}
             <div className="bg-[#16b5d0]/10 border-l-4 border-[#16b5d0] p-4 mb-8">
               <p className="text-lg font-semibold text-[#16b5d0]">
-                🏠 HISTÓRICO: Villa del Dique concreta su Casa de Estudiantes en Córdoba Capital
+                🤝 TRABAJO CONJUNTO: Municipalidades de Villa del Dique y Embalse colaboran en el mantenimiento del
+                Puente de las Vacas
               </p>
             </div>
           </div>
@@ -305,34 +293,48 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-              La Municipalidad de Villa del Dique anuncia con gran satisfacción la{" "}
-              <strong>concreción de la Casa de Estudiantes en Córdoba Capital</strong>, un espacio destinado a brindar
-              apoyo y acompañamiento a los jóvenes de nuestra localidad que deciden continuar sus estudios en la capital
-              provincial.
+              La Municipalidad de Villa del Dique, en coordinación con la Municipalidad de Embalse, llevó adelante{" "}
+              <strong>tareas de mantenimiento en el Puente de las Vacas</strong>, ubicado en la zona limítrofe entre
+              ambas localidades.
             </p>
 
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="/images/puente-las-vacas.jpg"
+                alt="Mantenimiento conjunto del Puente de las Vacas"
+                width={800}
+                height={600}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              La firma del contrato marca un <strong>paso histórico en la gestión municipal</strong>, respondiendo a una
-              de las necesidades más sentidas por las familias: contar con un lugar adecuado que garantice mejores
-              condiciones de acceso a la educación superior.
+              Los trabajos incluyeron <strong>tareas de pintura, limpieza y desmalezado</strong>, con el objetivo de
+              mejorar la seguridad vial para vecinos, vecinas y turistas que transitan diariamente por este sector.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Estas acciones forman parte de una <strong>política de colaboración entre municipios</strong>, que busca
+              optimizar recursos y reforzar el cuidado de la infraestructura compartida en beneficio de toda la región.
             </p>
 
             {/* Quote Section */}
             <div className="bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 border-l-4 border-[#16b5d0] p-6 mb-8 rounded-r-lg">
               <blockquote className="text-xl text-gray-800 font-medium italic leading-relaxed">
-                "Queremos que nuestros jóvenes tengan más oportunidades y menos obstáculos en su camino educativo. Esta
-                Casa de Estudiantes es un compromiso cumplido con la comunidad y una herramienta concreta para acompañar
-                sus proyectos de vida"
+                "Agradecemos al intendente de Embalse, Mario Rivarola, por su compromiso y predisposición para llevar
+                adelante este trabajo conjunto, que refuerza el vínculo institucional y fortalece el desarrollo integral
+                de nuestras comunidades."
               </blockquote>
               <cite className="block text-right text-[#16b5d0] font-semibold mt-4">
-                — Intendente de Villa del Dique
+                — Municipalidad de Villa del Dique
               </cite>
             </div>
 
             {/* Video Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Video: Casa de Estudiantes en Córdoba Capital</span>
+                <span className="text-[#16b5d0]">Video: Trabajo Conjunto</span>
               </h3>
 
               <div className="flex justify-center">
@@ -341,10 +343,10 @@ export default function CasaEstudiantesCordobaPage() {
                     <video
                       controls
                       className="w-full h-full object-cover"
-                      poster="/casa-de-estudiantes-villa-del-dique-en-c-rdoba-cap.png"
+                      poster="/images/puente-las-vacas.jpg"
                       preload="metadata"
                     >
-                      <source src="/videos/casa-estudiantes-cordoba.mp4" type="video/mp4" />
+                      <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/puente-las-vacas-9i63Gr3u1CVBr4DCKtcT0g7SB5gSqh.mp4" type="video/mp4" />
                       Tu navegador no soporta el elemento de video.
                     </video>
                   </div>
@@ -352,97 +354,61 @@ export default function CasaEstudiantesCordobaPage() {
                   {/* Video Caption */}
                   <div className="p-4 bg-white">
                     <p className="text-sm text-gray-600 text-center">
-                      <strong>Video oficial:</strong> Presentación de la Casa de Estudiantes de Villa del Dique en
-                      Córdoba Capital.
+                      <strong>Video oficial:</strong> Tareas de mantenimiento conjunto en el Puente de las Vacas entre
+                      las municipalidades de Villa del Dique y Embalse.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Process Information */}
+            {/* Benefits and Collaboration */}
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Proceso de Preinscripción</span>
+                <span className="text-[#16b5d0]">Beneficios del Trabajo Conjunto</span>
               </h2>
-
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En los próximos días se darán a conocer los{" "}
-                <strong>requisitos y el procedimiento de preinscripción</strong>, que incluirá una instancia de
-                valoración socioeconómica a cargo del Área de Bienestar Social, con el objetivo de asegurar una
-                distribución justa y equitativa de los cupos disponibles.
-              </p>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0] mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Próximos Pasos</h4>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Publicación de requisitos de preinscripción</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Evaluación socioeconómica por el Área de Bienestar Social</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Asignación equitativa de cupos disponibles</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Inicio del funcionamiento de la Casa de Estudiantes</span>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Benefits and Impact */}
-            <section className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Impacto en la Comunidad</span>
-              </h3>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para los Estudiantes</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">Seguridad Vial</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Acceso facilitado a la educación superior</span>
+                      <span>Mejores condiciones de tránsito para vecinos y turistas</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Reducción de costos de alojamiento</span>
+                      <span>Infraestructura más segura y accesible</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Ambiente de estudio y compañerismo</span>
+                      <span>Mantenimiento preventivo de la estructura</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Apoyo y acompañamiento municipal</span>
+                      <span>Cuidado de la zona limítrofe compartida</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#0ea5e9]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para las Familias</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">Colaboración Intermunicipal</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Tranquilidad y seguridad para sus hijos</span>
+                      <span>Optimización de recursos públicos</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Reducción significativa de gastos</span>
+                      <span>Fortalecimiento del vínculo institucional</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Garantía de condiciones adecuadas</span>
+                      <span>Desarrollo integral de la región</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Apoyo institucional continuo</span>
+                      <span>Política de colaboración sostenible</span>
                     </li>
                   </ul>
                 </div>
@@ -452,9 +418,9 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Conclusion */}
             <div className="bg-gray-50 p-8 rounded-lg mt-12">
               <p className="text-xl text-gray-800 leading-relaxed text-center font-medium">
-                Este proyecto reafirma el <strong>compromiso de Villa del Dique con el futuro de su comunidad</strong>,
-                promoviendo el acceso a la educación como un derecho y una inversión en el{" "}
-                <strong>desarrollo local</strong>.
+                <strong>Seguimos trabajando unidos por un entorno más seguro, ordenado y accesible para todos.</strong>{" "}
+                Esta colaboración intermunicipal demuestra que el trabajo conjunto es la clave para el desarrollo
+                regional y el bienestar de nuestras comunidades.
               </p>
             </div>
           </div>
@@ -472,7 +438,6 @@ export default function CasaEstudiantesCordobaPage() {
         </article>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

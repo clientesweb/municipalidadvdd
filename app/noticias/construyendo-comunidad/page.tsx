@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Calendar, User, ArrowLeft, Share2, Check, Copy } fro
 import Link from "next/link"
 import Footer from "@/components/Footer"
 
-export default function CasaEstudiantesCordobaPage() {
+export default function ConstruyendoComunidadPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "shared">("idle")
 
@@ -16,8 +16,8 @@ export default function CasaEstudiantesCordobaPage() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital",
-      text: "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital, un espacio destinado a brindar apoyo y acompañamiento a los jóvenes de nuestra localidad.",
+      title: "Construyendo comunidad: un llamado al trabajo colectivo",
+      text: "Desde la gestión municipal de Villa del Dique renovamos nuestro compromiso con una visión clara: construir, entre todos, un pueblo que sea ejemplo de trabajo en equipo.",
       url: window.location.href,
     }
 
@@ -49,9 +49,9 @@ export default function CasaEstudiantesCordobaPage() {
 
   const shareOnSocial = (platform: "facebook" | "twitter" | "whatsapp") => {
     const url = encodeURIComponent(window.location.href)
-    const title = encodeURIComponent("Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital")
+    const title = encodeURIComponent("Construyendo comunidad: un llamado al trabajo colectivo")
     const text = encodeURIComponent(
-      "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital.",
+      "Desde la gestión municipal de Villa del Dique renovamos nuestro compromiso con una visión clara: construir, entre todos, un pueblo que sea ejemplo de trabajo en equipo.",
     )
 
     const urls = {
@@ -187,21 +187,6 @@ export default function CasaEstudiantesCordobaPage() {
 
       {/* Main Content Area */}
       <main className="flex-grow container mx-auto py-8 px-4 sm:py-12 md:py-16 lg:py-20">
-        {/* Breadcrumb Navigation */}
-        <div className="mb-8">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Inicio
-            </Link>
-            <span>/</span>
-            <Link href="/noticias" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Noticias
-            </Link>
-            <span>/</span>
-            <span className="text-gray-900">Casa de Estudiantes en Córdoba Capital</span>
-          </nav>
-        </div>
-
         {/* Back Button */}
         <div className="mb-8">
           <Link
@@ -218,14 +203,14 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Header */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital
+              Construyendo comunidad: un llamado al trabajo colectivo
             </h1>
 
             {/* Article Meta */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
                 <Calendar className="h-4 w-4" />
-                <span className="text-sm">7 de febrero de 2024</span>
+                <span className="text-sm">13 de octubre de 2024</span>
               </div>
               <div className="flex items-center space-x-2">
                 <User className="h-4 w-4" />
@@ -297,7 +282,8 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Important Notice */}
             <div className="bg-[#16b5d0]/10 border-l-4 border-[#16b5d0] p-4 mb-8">
               <p className="text-lg font-semibold text-[#16b5d0]">
-                🏠 HISTÓRICO: Villa del Dique concreta su Casa de Estudiantes en Córdoba Capital
+                🤝 IMPORTANTE: Un llamado a la participación activa de todos los vecinos en la construcción de nuestra
+                comunidad
               </p>
             </div>
           </div>
@@ -305,156 +291,205 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-              La Municipalidad de Villa del Dique anuncia con gran satisfacción la{" "}
-              <strong>concreción de la Casa de Estudiantes en Córdoba Capital</strong>, un espacio destinado a brindar
-              apoyo y acompañamiento a los jóvenes de nuestra localidad que deciden continuar sus estudios en la capital
-              provincial.
+              Desde la gestión municipal de Villa del Dique renovamos nuestro compromiso con una visión clara:{" "}
+              <strong>
+                construir, entre todos, un pueblo que sea ejemplo de trabajo en equipo, inclusión y participación
+                ciudadana
+              </strong>
+              . Un lugar donde se valore la identidad local, se respete el entorno natural y se proyecte un futuro común
+              desde el diálogo y la cooperación.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              La firma del contrato marca un <strong>paso histórico en la gestión municipal</strong>, respondiendo a una
-              de las necesidades más sentidas por las familias: contar con un lugar adecuado que garantice mejores
-              condiciones de acceso a la educación superior.
-            </p>
-
-            {/* Quote Section */}
-            <div className="bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 border-l-4 border-[#16b5d0] p-6 mb-8 rounded-r-lg">
-              <blockquote className="text-xl text-gray-800 font-medium italic leading-relaxed">
-                "Queremos que nuestros jóvenes tengan más oportunidades y menos obstáculos en su camino educativo. Esta
-                Casa de Estudiantes es un compromiso cumplido con la comunidad y una herramienta concreta para acompañar
-                sus proyectos de vida"
-              </blockquote>
-              <cite className="block text-right text-[#16b5d0] font-semibold mt-4">
-                — Intendente de Villa del Dique
-              </cite>
-            </div>
-
-            {/* Video Section */}
+            {/* Hero Image */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Video: Casa de Estudiantes en Córdoba Capital</span>
-              </h3>
-
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-md mx-auto bg-black rounded-lg overflow-hidden shadow-lg">
-                  <div style={{ aspectRatio: "9/16" }}>
-                    <video
-                      controls
-                      className="w-full h-full object-cover"
-                      poster="/casa-de-estudiantes-villa-del-dique-en-c-rdoba-cap.png"
-                      preload="metadata"
-                    >
-                      <source src="/videos/casa-estudiantes-cordoba.mp4" type="video/mp4" />
-                      Tu navegador no soporta el elemento de video.
-                    </video>
-                  </div>
-
-                  {/* Video Caption */}
-                  <div className="p-4 bg-white">
-                    <p className="text-sm text-gray-600 text-center">
-                      <strong>Video oficial:</strong> Presentación de la Casa de Estudiantes de Villa del Dique en
-                      Córdoba Capital.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-4.jpg-Z2RXynoS67SZOqjcTJcZS85rmC9XIG.jpeg"
+                alt="Villa del Dique - Queremos crecer como destino turístico"
+                width={800}
+                height={600}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
 
-            {/* Process Information */}
+            {/* Visión de Crecimiento */}
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Proceso de Preinscripción</span>
+                <span className="text-[#16b5d0]">Una Visión de Crecimiento Integral</span>
               </h2>
 
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En los próximos días se darán a conocer los{" "}
-                <strong>requisitos y el procedimiento de preinscripción</strong>, que incluirá una instancia de
-                valoración socioeconómica a cargo del Área de Bienestar Social, con el objetivo de asegurar una
-                distribución justa y equitativa de los cupos disponibles.
-              </p>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0] mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Próximos Pasos</h4>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Publicación de requisitos de preinscripción</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Evaluación socioeconómica por el Área de Bienestar Social</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Asignación equitativa de cupos disponibles</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Inicio del funcionamiento de la Casa de Estudiantes</span>
-                  </li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    Estamos trabajando intensamente, con convicción y compromiso, porque creemos profundamente en el{" "}
+                    <strong>poder transformador del esfuerzo colectivo</strong>. Sabemos que los grandes logros no se
+                    alcanzan de manera individual, sino sumando voluntades, uniendo esfuerzos y compartiendo objetivos.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>
+                      Queremos ser una comunidad que vaya para adelante, con oportunidades de estudio y trabajo
+                    </strong>{" "}
+                    para todos nuestros vecinos, especialmente para los jóvenes que representan el futuro de nuestro
+                    pueblo.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-3.jpg-nkiotM14vZmOpD244AXvkGaVTBK9hc.jpeg"
+                    alt="Queremos ser una comunidad que vaya para adelante"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
               </div>
             </section>
 
-            {/* Benefits and Impact */}
+            {/* Unidad y Fortalecimiento */}
             <section className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Impacto en la Comunidad</span>
-              </h3>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Fortaleciendo Nuestros Lazos</span>
+              </h2>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para los Estudiantes</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Acceso facilitado a la educación superior</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Reducción de costos de alojamiento</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Ambiente de estudio y compañerismo</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Apoyo y acompañamiento municipal</span>
-                    </li>
-                  </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-1.jpg-KR9A8ZN5WPfiB9hcop1tXKv9mKx23E.jpeg"
+                    alt="El aniversario de nuestra comunidad nos tiene que encontrar más unidos que nunca"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
                 </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#0ea5e9]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para las Familias</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Tranquilidad y seguridad para sus hijos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Reducción significativa de gastos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Garantía de condiciones adecuadas</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Apoyo institucional continuo</span>
-                    </li>
-                  </ul>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>El aniversario de nuestra comunidad nos tiene que encontrar más unidos que nunca</strong>.
+                    Cada celebración, cada logro compartido, cada desafío superado en conjunto nos fortalece como pueblo
+                    y nos acerca más a nuestros objetivos comunes.
+                  </p>
                 </div>
               </div>
             </section>
 
-            {/* Conclusion */}
+            {/* Plan de Gobierno */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Un Plan Claro para el Futuro</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>Tenemos un plan de gobierno. Sabemos en qué lugar queremos poner a Villa del Dique</strong>.
+                    No trabajamos al azar, sino con objetivos claros y metas definidas que nos permiten avanzar de
+                    manera ordenada y eficiente hacia el desarrollo que todos merecemos.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-7.jpg-JUGqlexcA4fWMNijjkh8Jy2AsGqPeG.jpeg"
+                    alt="Tenemos un plan de gobierno para Villa del Dique"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Enfrentando Desafíos */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Afrontando Nuevos Desafíos</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-5.jpg-Wz9wEnGgmsj6lBftw8nuu8XPQ2558J.jpeg"
+                    alt="Tenemos muchos y nuevos desafíos que vamos afrontando"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>Tenemos muchos y nuevos desafíos que vamos afrontando</strong> con la responsabilidad que
+                    nos caracteriza. Cada obstáculo es una oportunidad de crecimiento, cada problema una chance de
+                    demostrar nuestra capacidad de trabajo en equipo.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Progreso Inclusivo */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Un Progreso que Incluya a Todos</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>Queremos el progreso de Villa del Dique. Y que nadie quede afuera</strong>. El desarrollo
+                    verdadero es aquel que llega a todas las familias, que beneficia a todos los sectores y que
+                    construye oportunidades para cada uno de nuestros vecinos.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-2.jpg-kprLFk0S9emMuqge3aU8dyJnhD86dk.jpeg"
+                    alt="Queremos el progreso de Villa del Dique y que nadie quede afuera"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Desarrollo Económico */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Impulsando el Desarrollo Económico</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/construyendo-comunidad-6.jpg-3i7QFkAFKbKFSXCSYAPcDE41hQt1Ms.jpeg"
+                    alt="Estamos trabajando en base al ahorro económico para favorecer la inversión privada"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>
+                      Estamos trabajando en base al ahorro económico para favorecer la inversión privada y que se genere
+                      empleo
+                    </strong>
+                    . Una gestión responsable de los recursos públicos nos permite crear las condiciones necesarias para
+                    que el sector privado invierta y genere las oportunidades laborales que nuestro pueblo necesita.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Llamado a la Acción */}
             <div className="bg-gray-50 p-8 rounded-lg mt-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Un Llamado a la Participación</h3>
+              <p className="text-xl text-gray-800 leading-relaxed text-center font-medium mb-4">
+                El desafío es grande, pero también es una oportunidad:{" "}
+                <strong>
+                  consolidar una comunidad que crezca con equidad, que genere oportunidades y que fortalezca sus lazos
+                </strong>{" "}
+                a partir del respeto, la solidaridad y el sentido de pertenencia.
+              </p>
               <p className="text-xl text-gray-800 leading-relaxed text-center font-medium">
-                Este proyecto reafirma el <strong>compromiso de Villa del Dique con el futuro de su comunidad</strong>,
-                promoviendo el acceso a la educación como un derecho y una inversión en el{" "}
-                <strong>desarrollo local</strong>.
+                <strong>Invitamos a todos los vecinos y vecinas a ser parte activa de este proceso</strong>. Porque el
+                progreso de Villa del Dique se construye entre todos, y cada aporte cuenta.
               </p>
             </div>
           </div>
@@ -472,7 +507,6 @@ export default function CasaEstudiantesCordobaPage() {
         </article>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Calendar, User, ArrowLeft, Share2, Check, Copy } fro
 import Link from "next/link"
 import Footer from "@/components/Footer"
 
-export default function CasaEstudiantesCordobaPage() {
+export default function NuevoEspacioBienestarSocialPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "shared">("idle")
 
@@ -16,8 +16,8 @@ export default function CasaEstudiantesCordobaPage() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital",
-      text: "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital, un espacio destinado a brindar apoyo y acompañamiento a los jóvenes de nuestra localidad.",
+      title: "Nuevo Espacio de Bienestar Social en Villa del Dique",
+      text: "La Municipalidad de Villa del Dique tiene el orgullo de anunciar la recuperación y puesta en funcionamiento de un espacio clave para la comunidad: las nuevas oficinas de Bienestar Social.",
       url: window.location.href,
     }
 
@@ -49,9 +49,9 @@ export default function CasaEstudiantesCordobaPage() {
 
   const shareOnSocial = (platform: "facebook" | "twitter" | "whatsapp") => {
     const url = encodeURIComponent(window.location.href)
-    const title = encodeURIComponent("Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital")
+    const title = encodeURIComponent("Nuevo Espacio de Bienestar Social en Villa del Dique")
     const text = encodeURIComponent(
-      "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital.",
+      "La Municipalidad de Villa del Dique tiene el orgullo de anunciar la recuperación y puesta en funcionamiento de un espacio clave para la comunidad.",
     )
 
     const urls = {
@@ -198,7 +198,7 @@ export default function CasaEstudiantesCordobaPage() {
               Noticias
             </Link>
             <span>/</span>
-            <span className="text-gray-900">Casa de Estudiantes en Córdoba Capital</span>
+            <span className="text-gray-900">Nuevo Espacio de Bienestar Social</span>
           </nav>
         </div>
 
@@ -218,14 +218,14 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Header */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital
+              Nuevo Espacio de Bienestar Social en Villa del Dique
             </h1>
 
             {/* Article Meta */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
                 <Calendar className="h-4 w-4" />
-                <span className="text-sm">7 de febrero de 2024</span>
+                <span className="text-sm">27 de agosto de 2024</span>
               </div>
               <div className="flex items-center space-x-2">
                 <User className="h-4 w-4" />
@@ -297,7 +297,7 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Important Notice */}
             <div className="bg-[#16b5d0]/10 border-l-4 border-[#16b5d0] p-4 mb-8">
               <p className="text-lg font-semibold text-[#16b5d0]">
-                🏠 HISTÓRICO: Villa del Dique concreta su Casa de Estudiantes en Córdoba Capital
+                🏢 BIENESTAR SOCIAL: Nuevo espacio renovado para fortalecer la atención a la comunidad
               </p>
             </div>
           </div>
@@ -305,34 +305,22 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-              La Municipalidad de Villa del Dique anuncia con gran satisfacción la{" "}
-              <strong>concreción de la Casa de Estudiantes en Córdoba Capital</strong>, un espacio destinado a brindar
-              apoyo y acompañamiento a los jóvenes de nuestra localidad que deciden continuar sus estudios en la capital
-              provincial.
+              La Municipalidad de Villa del Dique tiene el orgullo de anunciar la{" "}
+              <strong>recuperación y puesta en funcionamiento</strong> de un espacio clave para la comunidad: las nuevas
+              oficinas de <strong>Bienestar Social</strong>. Este lugar, totalmente renovado, ha sido destinado a
+              centralizar y fortalecer las acciones orientadas a mejorar la calidad de vida de nuestros vecinos y
+              vecinas.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              La firma del contrato marca un <strong>paso histórico en la gestión municipal</strong>, respondiendo a una
-              de las necesidades más sentidas por las familias: contar con un lugar adecuado que garantice mejores
-              condiciones de acceso a la educación superior.
+              Este importante logro es el resultado del <strong>compromiso sostenido</strong> de los equipos de trabajo
+              municipales y de cada persona que colaboró con dedicación y esfuerzo para hacerlo realidad.
             </p>
-
-            {/* Quote Section */}
-            <div className="bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 border-l-4 border-[#16b5d0] p-6 mb-8 rounded-r-lg">
-              <blockquote className="text-xl text-gray-800 font-medium italic leading-relaxed">
-                "Queremos que nuestros jóvenes tengan más oportunidades y menos obstáculos en su camino educativo. Esta
-                Casa de Estudiantes es un compromiso cumplido con la comunidad y una herramienta concreta para acompañar
-                sus proyectos de vida"
-              </blockquote>
-              <cite className="block text-right text-[#16b5d0] font-semibold mt-4">
-                — Intendente de Villa del Dique
-              </cite>
-            </div>
 
             {/* Video Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Video: Casa de Estudiantes en Córdoba Capital</span>
+                <span className="text-[#16b5d0]">Video: Nuevo Espacio de Bienestar Social</span>
               </h3>
 
               <div className="flex justify-center">
@@ -341,10 +329,10 @@ export default function CasaEstudiantesCordobaPage() {
                     <video
                       controls
                       className="w-full h-full object-cover"
-                      poster="/casa-de-estudiantes-villa-del-dique-en-c-rdoba-cap.png"
+                      poster="/images/nuevo-espacio-bienestar.jpg"
                       preload="metadata"
                     >
-                      <source src="/videos/casa-estudiantes-cordoba.mp4" type="video/mp4" />
+                      <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nuevo-espacio-bienestar-xTZnXcpmny5uyyovjpIFz1CzhcUpdw.mp4" type="video/mp4" />
                       Tu navegador no soporta el elemento de video.
                     </video>
                   </div>
@@ -352,97 +340,82 @@ export default function CasaEstudiantesCordobaPage() {
                   {/* Video Caption */}
                   <div className="p-4 bg-white">
                     <p className="text-sm text-gray-600 text-center">
-                      <strong>Video oficial:</strong> Presentación de la Casa de Estudiantes de Villa del Dique en
-                      Córdoba Capital.
+                      <strong>Video oficial:</strong> Presentación del nuevo espacio de Bienestar Social renovado en
+                      Villa del Dique.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Process Information */}
+            {/* Main Sections */}
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Proceso de Preinscripción</span>
+                <span className="text-[#16b5d0]">Renovación Integral del Espacio</span>
               </h2>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En los próximos días se darán a conocer los{" "}
-                <strong>requisitos y el procedimiento de preinscripción</strong>, que incluirá una instancia de
-                valoración socioeconómica a cargo del Área de Bienestar Social, con el objetivo de asegurar una
-                distribución justa y equitativa de los cupos disponibles.
+                El nuevo espacio no solo permitirá brindar una <strong>atención más cercana y eficiente</strong>, sino
+                que también será un punto de encuentro para el diseño e implementación de{" "}
+                <strong>políticas sociales</strong> que promuevan la inclusión, la igualdad de oportunidades y el
+                fortalecimiento del tejido comunitario.
               </p>
 
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0] mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Próximos Pasos</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-4">Características del Nuevo Espacio</h4>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start space-x-2">
                     <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Publicación de requisitos de preinscripción</span>
+                    <span>Oficinas completamente renovadas y modernizadas</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Evaluación socioeconómica por el Área de Bienestar Social</span>
+                    <span>Espacios diseñados para una atención más cercana y eficiente</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Asignación equitativa de cupos disponibles</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Inicio del funcionamiento de la Casa de Estudiantes</span>
+                    <span>Centro de diseño e implementación de políticas sociales inclusivas</span>
                   </li>
                 </ul>
               </div>
             </section>
 
-            {/* Benefits and Impact */}
             <section className="mb-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Impacto en la Comunidad</span>
+                <span className="text-[#16b5d0]">Compromiso con la Comunidad</span>
               </h3>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Desde el municipio reafirmamos nuestro <strong>compromiso con el bienestar</strong> de todas las
+                familias de Villa del Dique, avanzando con convicción hacia una comunidad más justa, solidaria y
+                cohesionada.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para los Estudiantes</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">Objetivos Principales</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Acceso facilitado a la educación superior</span>
+                      <span>Promover la inclusión social</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Reducción de costos de alojamiento</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Ambiente de estudio y compañerismo</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Apoyo y acompañamiento municipal</span>
+                      <span>Garantizar igualdad de oportunidades</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#0ea5e9]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para las Familias</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">Impacto Comunitario</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Tranquilidad y seguridad para sus hijos</span>
+                      <span>Fortalecimiento del tejido comunitario</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Reducción significativa de gastos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Garantía de condiciones adecuadas</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Apoyo institucional continuo</span>
+                      <span>Mejora en la calidad de vida de los vecinos</span>
                     </li>
                   </ul>
                 </div>
@@ -452,9 +425,10 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Conclusion */}
             <div className="bg-gray-50 p-8 rounded-lg mt-12">
               <p className="text-xl text-gray-800 leading-relaxed text-center font-medium">
-                Este proyecto reafirma el <strong>compromiso de Villa del Dique con el futuro de su comunidad</strong>,
-                promoviendo el acceso a la educación como un derecho y una inversión en el{" "}
-                <strong>desarrollo local</strong>.
+                Este nuevo espacio de Bienestar Social representa un{" "}
+                <strong>paso fundamental hacia una Villa del Dique más inclusiva y solidaria</strong>, donde cada
+                familia tenga acceso a las herramientas y el apoyo necesario para{" "}
+                <strong>construir un futuro mejor</strong>.
               </p>
             </div>
           </div>

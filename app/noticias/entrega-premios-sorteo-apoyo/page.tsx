@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Calendar, User, ArrowLeft, Share2, Check, Copy } fro
 import Link from "next/link"
 import Footer from "@/components/Footer"
 
-export default function CasaEstudiantesCordobaPage() {
+export default function EntregaPremiosSorteoApoyoPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "shared">("idle")
 
@@ -16,8 +16,8 @@ export default function CasaEstudiantesCordobaPage() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital",
-      text: "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital, un espacio destinado a brindar apoyo y acompañamiento a los jóvenes de nuestra localidad.",
+      title: "Entrega de premios del Sorteo de Apoyo Institucional",
+      text: "El intendente Emiliano Torres recibió a los ganadores del Sorteo de Apoyo Institucional, llevado a cabo durante el almuerzo popular por el 89° aniversario de Villa del Dique.",
       url: window.location.href,
     }
 
@@ -49,9 +49,9 @@ export default function CasaEstudiantesCordobaPage() {
 
   const shareOnSocial = (platform: "facebook" | "twitter" | "whatsapp") => {
     const url = encodeURIComponent(window.location.href)
-    const title = encodeURIComponent("Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital")
+    const title = encodeURIComponent("Entrega de premios del Sorteo de Apoyo Institucional")
     const text = encodeURIComponent(
-      "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital.",
+      "El intendente Emiliano Torres recibió a los ganadores del Sorteo de Apoyo Institucional, llevado a cabo durante el almuerzo popular por el 89° aniversario de Villa del Dique.",
     )
 
     const urls = {
@@ -187,21 +187,6 @@ export default function CasaEstudiantesCordobaPage() {
 
       {/* Main Content Area */}
       <main className="flex-grow container mx-auto py-8 px-4 sm:py-12 md:py-16 lg:py-20">
-        {/* Breadcrumb Navigation */}
-        <div className="mb-8">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Inicio
-            </Link>
-            <span>/</span>
-            <Link href="/noticias" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Noticias
-            </Link>
-            <span>/</span>
-            <span className="text-gray-900">Casa de Estudiantes en Córdoba Capital</span>
-          </nav>
-        </div>
-
         {/* Back Button */}
         <div className="mb-8">
           <Link
@@ -218,14 +203,14 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Header */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital
+              Entrega de premios del Sorteo de Apoyo Institucional
             </h1>
 
             {/* Article Meta */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
                 <Calendar className="h-4 w-4" />
-                <span className="text-sm">7 de febrero de 2024</span>
+                <span className="text-sm">16 de octubre de 2024</span>
               </div>
               <div className="flex items-center space-x-2">
                 <User className="h-4 w-4" />
@@ -297,7 +282,8 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Important Notice */}
             <div className="bg-[#16b5d0]/10 border-l-4 border-[#16b5d0] p-4 mb-8">
               <p className="text-lg font-semibold text-[#16b5d0]">
-                🏠 HISTÓRICO: Villa del Dique concreta su Casa de Estudiantes en Córdoba Capital
+                🏆 IMPORTANTE: Reconocimiento a las instituciones locales que fortalecen el entramado social de nuestra
+                comunidad
               </p>
             </div>
           </div>
@@ -305,156 +291,143 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-              La Municipalidad de Villa del Dique anuncia con gran satisfacción la{" "}
-              <strong>concreción de la Casa de Estudiantes en Córdoba Capital</strong>, un espacio destinado a brindar
-              apoyo y acompañamiento a los jóvenes de nuestra localidad que deciden continuar sus estudios en la capital
-              provincial.
+              El intendente Emiliano Torres recibió en el día de hoy a los ganadores del{" "}
+              <strong>Sorteo de Apoyo Institucional</strong>, llevado a cabo el pasado viernes durante el almuerzo
+              popular por el 89° aniversario de Villa del Dique.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              La firma del contrato marca un <strong>paso histórico en la gestión municipal</strong>, respondiendo a una
-              de las necesidades más sentidas por las familias: contar con un lugar adecuado que garantice mejores
-              condiciones de acceso a la educación superior.
-            </p>
-
-            {/* Quote Section */}
-            <div className="bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 border-l-4 border-[#16b5d0] p-6 mb-8 rounded-r-lg">
-              <blockquote className="text-xl text-gray-800 font-medium italic leading-relaxed">
-                "Queremos que nuestros jóvenes tengan más oportunidades y menos obstáculos en su camino educativo. Esta
-                Casa de Estudiantes es un compromiso cumplido con la comunidad y una herramienta concreta para acompañar
-                sus proyectos de vida"
-              </blockquote>
-              <cite className="block text-right text-[#16b5d0] font-semibold mt-4">
-                — Intendente de Villa del Dique
-              </cite>
-            </div>
-
-            {/* Video Section */}
+            {/* Hero Image */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Video: Casa de Estudiantes en Córdoba Capital</span>
-              </h3>
-
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-md mx-auto bg-black rounded-lg overflow-hidden shadow-lg">
-                  <div style={{ aspectRatio: "9/16" }}>
-                    <video
-                      controls
-                      className="w-full h-full object-cover"
-                      poster="/casa-de-estudiantes-villa-del-dique-en-c-rdoba-cap.png"
-                      preload="metadata"
-                    >
-                      <source src="/videos/casa-estudiantes-cordoba.mp4" type="video/mp4" />
-                      Tu navegador no soporta el elemento de video.
-                    </video>
-                  </div>
-
-                  {/* Video Caption */}
-                  <div className="p-4 bg-white">
-                    <p className="text-sm text-gray-600 text-center">
-                      <strong>Video oficial:</strong> Presentación de la Casa de Estudiantes de Villa del Dique en
-                      Córdoba Capital.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/sorteo-de-apoyo-1.jpg"
+                alt="Grupo de ganadoras del sorteo junto al intendente con motocicleta azul"
+                width={800}
+                height={600}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
 
-            {/* Process Information */}
+            {/* Participación Institucional */}
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Proceso de Preinscripción</span>
+                <span className="text-[#16b5d0]">Fortaleciendo el Entramado Social</span>
               </h2>
 
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En los próximos días se darán a conocer los{" "}
-                <strong>requisitos y el procedimiento de preinscripción</strong>, que incluirá una instancia de
-                valoración socioeconómica a cargo del Área de Bienestar Social, con el objetivo de asegurar una
-                distribución justa y equitativa de los cupos disponibles.
-              </p>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0] mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Próximos Pasos</h4>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Publicación de requisitos de preinscripción</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Evaluación socioeconómica por el Área de Bienestar Social</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Asignación equitativa de cupos disponibles</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Inicio del funcionamiento de la Casa de Estudiantes</span>
-                  </li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    La iniciativa, que contó con una <strong>destacada participación de representantes</strong> de
+                    diversas entidades locales, forma parte del compromiso del Municipio con el fortalecimiento de las
+                    instituciones que conforman el entramado social de nuestra comunidad.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Este sorteo representa una forma concreta de{" "}
+                    <strong>reconocer y acompañar el trabajo cotidiano</strong> de nuestras organizaciones locales.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/sorteo-de-apoyo-2.jpg"
+                    alt="Ganador joven del sorteo con motocicleta roja junto al intendente"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
               </div>
             </section>
 
-            {/* Benefits and Impact */}
+            {/* Ganadores del Sorteo */}
             <section className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Impacto en la Comunidad</span>
-              </h3>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Entrega de Premios</span>
+              </h2>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para los Estudiantes</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Acceso facilitado a la educación superior</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Reducción de costos de alojamiento</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Ambiente de estudio y compañerismo</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Apoyo y acompañamiento municipal</span>
-                    </li>
-                  </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="/sorteo-de-apoyo-4.jpg"
+                    alt="Ganadora del sorteo con bicicleta rosa junto al intendente"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
                 </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#0ea5e9]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para las Familias</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Tranquilidad y seguridad para sus hijos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Reducción significativa de gastos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Garantía de condiciones adecuadas</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Apoyo institucional continuo</span>
-                    </li>
-                  </ul>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Los premios del sorteo incluyeron <strong>motocicletas y bicicletas</strong> que fueron entregadas
+                    personalmente por el intendente Emiliano Torres a los afortunados ganadores, representantes de
+                    diferentes instituciones de Villa del Dique.
+                  </p>
                 </div>
               </div>
             </section>
 
-            {/* Conclusion */}
+            {/* Compromiso con las Instituciones */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Reconocimiento al Trabajo Institucional</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>Agradecemos profundamente a todos los que formaron parte de esta propuesta</strong>, que
+                    busca reconocer y acompañar el trabajo cotidiano de nuestras organizaciones. Cada institución
+                    representa un pilar fundamental en el desarrollo de nuestra comunidad.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/sorteo-de-apoyo-5.jpg"
+                    alt="Niño ganador del sorteo con bicicleta BMX"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Más Ganadores */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Celebrando Juntos</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="/sorteo-de-apoyo-3.jpg"
+                    alt="Ganadora del sorteo con bicicleta negra junto al intendente"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    La alegría de los ganadores y la participación de las instituciones locales reflejan el{" "}
+                    <strong>espíritu de comunidad</strong> que caracteriza a Villa del Dique. Cada premio entregado
+                    representa el reconocimiento al compromiso institucional.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Compromiso Futuro */}
             <div className="bg-gray-50 p-8 rounded-lg mt-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Compromiso Continuo</h3>
+              <p className="text-xl text-gray-800 leading-relaxed text-center font-medium mb-4">
+                <strong>
+                  Seguimos trabajando con firmeza para impulsar acciones que promuevan el desarrollo institucional y el
+                  bienestar colectivo
+                </strong>
+                , convencidos de que una comunidad fuerte se construye con participación, compromiso y cooperación.
+              </p>
               <p className="text-xl text-gray-800 leading-relaxed text-center font-medium">
-                Este proyecto reafirma el <strong>compromiso de Villa del Dique con el futuro de su comunidad</strong>,
-                promoviendo el acceso a la educación como un derecho y una inversión en el{" "}
-                <strong>desarrollo local</strong>.
+                El fortalecimiento de nuestras instituciones es fundamental para el crecimiento sostenible de Villa del
+                Dique.
               </p>
             </div>
           </div>
@@ -472,7 +445,6 @@ export default function CasaEstudiantesCordobaPage() {
         </article>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

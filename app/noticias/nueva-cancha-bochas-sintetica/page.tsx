@@ -6,7 +6,7 @@ import { Menu, X, Facebook, Calendar, User, ArrowLeft, Share2, Check, Copy } fro
 import Link from "next/link"
 import Footer from "@/components/Footer"
 
-export default function CasaEstudiantesCordobaPage() {
+export default function NuevaCanchaBochasSinteticaPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "shared">("idle")
 
@@ -16,8 +16,8 @@ export default function CasaEstudiantesCordobaPage() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital",
-      text: "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital, un espacio destinado a brindar apoyo y acompañamiento a los jóvenes de nuestra localidad.",
+      title: "Nueva cancha de bochas sintética en Villa del Dique: más deporte, inclusión y comunidad",
+      text: "La Municipalidad inauguró la nueva cancha de bochas sintética, impulsando el desarrollo del deporte local y generando espacios de encuentro para todas las edades.",
       url: window.location.href,
     }
 
@@ -49,9 +49,11 @@ export default function CasaEstudiantesCordobaPage() {
 
   const shareOnSocial = (platform: "facebook" | "twitter" | "whatsapp") => {
     const url = encodeURIComponent(window.location.href)
-    const title = encodeURIComponent("Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital")
+    const title = encodeURIComponent(
+      "Nueva cancha de bochas sintética en Villa del Dique: más deporte, inclusión y comunidad",
+    )
     const text = encodeURIComponent(
-      "La Municipalidad de Villa del Dique anuncia con gran satisfacción la concreción de la Casa de Estudiantes en Córdoba Capital.",
+      "La Municipalidad inauguró la nueva cancha de bochas sintética, impulsando el desarrollo del deporte local.",
     )
 
     const urls = {
@@ -187,21 +189,6 @@ export default function CasaEstudiantesCordobaPage() {
 
       {/* Main Content Area */}
       <main className="flex-grow container mx-auto py-8 px-4 sm:py-12 md:py-16 lg:py-20">
-        {/* Breadcrumb Navigation */}
-        <div className="mb-8">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Inicio
-            </Link>
-            <span>/</span>
-            <Link href="/noticias" className="hover:text-[#16b5d0] transition-colors duration-200">
-              Noticias
-            </Link>
-            <span>/</span>
-            <span className="text-gray-900">Casa de Estudiantes en Córdoba Capital</span>
-          </nav>
-        </div>
-
         {/* Back Button */}
         <div className="mb-8">
           <Link
@@ -218,14 +205,14 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Header */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Villa del Dique ya cuenta con su Casa de Estudiantes en Córdoba Capital
+              Nueva cancha de bochas sintética en Villa del Dique: más deporte, inclusión y comunidad
             </h1>
 
             {/* Article Meta */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
                 <Calendar className="h-4 w-4" />
-                <span className="text-sm">7 de febrero de 2024</span>
+                <span className="text-sm">7 de abril de 2025</span>
               </div>
               <div className="flex items-center space-x-2">
                 <User className="h-4 w-4" />
@@ -297,7 +284,7 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Important Notice */}
             <div className="bg-[#16b5d0]/10 border-l-4 border-[#16b5d0] p-4 mb-8">
               <p className="text-lg font-semibold text-[#16b5d0]">
-                🏠 HISTÓRICO: Villa del Dique concreta su Casa de Estudiantes en Córdoba Capital
+                🏆 IMPORTANTE: Nueva infraestructura deportiva inaugurada en Villa del Dique
               </p>
             </div>
           </div>
@@ -305,146 +292,191 @@ export default function CasaEstudiantesCordobaPage() {
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-              La Municipalidad de Villa del Dique anuncia con gran satisfacción la{" "}
-              <strong>concreción de la Casa de Estudiantes en Córdoba Capital</strong>, un espacio destinado a brindar
-              apoyo y acompañamiento a los jóvenes de nuestra localidad que deciden continuar sus estudios en la capital
-              provincial.
+              La <strong>Municipalidad de Villa del Dique</strong> inauguró la nueva cancha de bochas sintética en el{" "}
+              <strong>Club Deportivo y Biblioteca Villa del Dique</strong>, una obra que representa un nuevo impulso al{" "}
+              <strong>desarrollo del deporte local</strong> y a la generación de espacios de encuentro y recreación para
+              personas de todas las edades.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              La firma del contrato marca un <strong>paso histórico en la gestión municipal</strong>, respondiendo a una
-              de las necesidades más sentidas por las familias: contar con un lugar adecuado que garantice mejores
-              condiciones de acceso a la educación superior.
-            </p>
-
-            {/* Quote Section */}
-            <div className="bg-gradient-to-r from-[#16b5d0]/10 to-[#0ea5e9]/10 border-l-4 border-[#16b5d0] p-6 mb-8 rounded-r-lg">
-              <blockquote className="text-xl text-gray-800 font-medium italic leading-relaxed">
-                "Queremos que nuestros jóvenes tengan más oportunidades y menos obstáculos en su camino educativo. Esta
-                Casa de Estudiantes es un compromiso cumplido con la comunidad y una herramienta concreta para acompañar
-                sus proyectos de vida"
-              </blockquote>
-              <cite className="block text-right text-[#16b5d0] font-semibold mt-4">
-                — Intendente de Villa del Dique
-              </cite>
-            </div>
-
-            {/* Video Section */}
+            {/* Hero Image */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Video: Casa de Estudiantes en Córdoba Capital</span>
-              </h3>
-
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-md mx-auto bg-black rounded-lg overflow-hidden shadow-lg">
-                  <div style={{ aspectRatio: "9/16" }}>
-                    <video
-                      controls
-                      className="w-full h-full object-cover"
-                      poster="/casa-de-estudiantes-villa-del-dique-en-c-rdoba-cap.png"
-                      preload="metadata"
-                    >
-                      <source src="/videos/casa-estudiantes-cordoba.mp4" type="video/mp4" />
-                      Tu navegador no soporta el elemento de video.
-                    </video>
-                  </div>
-
-                  {/* Video Caption */}
-                  <div className="p-4 bg-white">
-                    <p className="text-sm text-gray-600 text-center">
-                      <strong>Video oficial:</strong> Presentación de la Casa de Estudiantes de Villa del Dique en
-                      Córdoba Capital.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/images/nueva-cancha-bochas-1.jpg"
+                alt="Inauguración de la nueva cancha de bochas sintética en Villa del Dique"
+                width={800}
+                height={600}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
 
-            {/* Process Information */}
+            {/* Un Proyecto de Integración y Desarrollo */}
             <section className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Proceso de Preinscripción</span>
+                <span className="text-[#16b5d0]">Un Proyecto de Integración y Desarrollo</span>
               </h2>
 
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En los próximos días se darán a conocer los{" "}
-                <strong>requisitos y el procedimiento de preinscripción</strong>, que incluirá una instancia de
-                valoración socioeconómica a cargo del Área de Bienestar Social, con el objetivo de asegurar una
-                distribución justa y equitativa de los cupos disponibles.
-              </p>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0] mb-8">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Próximos Pasos</h4>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Publicación de requisitos de preinscripción</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Evaluación socioeconómica por el Área de Bienestar Social</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Asignación equitativa de cupos disponibles</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-[#16b5d0] font-bold">•</span>
-                    <span>Inicio del funcionamiento de la Casa de Estudiantes</span>
-                  </li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    Este proyecto fue posible gracias al <strong>trabajo articulado con el Club de Bochas</strong>,
+                    institución que desde hace años promueve la práctica deportiva como un{" "}
+                    <strong>motor de integración, identidad y sentido de pertenencia</strong>.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    La nueva cancha sintética no solo mejora las condiciones para la práctica del deporte, sino que
+                    también <strong>fortalece los lazos comunitarios</strong> y genera oportunidades para el encuentro
+                    intergeneracional.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-7.jpg"
+                    alt="Vista completa de la nueva cancha de bochas sintética"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
               </div>
             </section>
 
-            {/* Benefits and Impact */}
+            {/* Deporte para Todas las Edades */}
             <section className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="text-[#16b5d0]">Impacto en la Comunidad</span>
-              </h3>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Deporte para Todas las Edades</span>
+              </h2>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#16b5d0]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para los Estudiantes</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Acceso facilitado a la educación superior</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Reducción de costos de alojamiento</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Ambiente de estudio y compañerismo</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#16b5d0] font-bold">•</span>
-                      <span>Apoyo y acompañamiento municipal</span>
-                    </li>
-                  </ul>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-4.jpg"
+                    alt="Jugadora en acción en la nueva cancha de bochas"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
                 </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    La cancha de bochas sintética se destaca por ser un espacio{" "}
+                    <strong>inclusivo y accesible para personas de todas las edades</strong>. Desde jóvenes que se
+                    inician en el deporte hasta adultos mayores que encuentran en las bochas una actividad recreativa y
+                    social.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    La superficie sintética garantiza <strong>condiciones óptimas de juego durante todo el año</strong>,
+                    independientemente de las condiciones climáticas.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#0ea5e9]">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Para las Familias</h4>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Tranquilidad y seguridad para sus hijos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Reducción significativa de gastos</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Garantía de condiciones adecuadas</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#0ea5e9] font-bold">•</span>
-                      <span>Apoyo institucional continuo</span>
-                    </li>
-                  </ul>
+            {/* Participación y Compromiso Comunitario */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Participación y Compromiso Comunitario</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    La inauguración contó con una <strong>gran participación de la comunidad</strong>, evidenciando el
+                    entusiasmo y el apoyo de los vecinos hacia este tipo de iniciativas que fortalecen el tejido social
+                    local.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Desde el Municipio destacamos y agradecemos el{" "}
+                    <strong>compromiso del Club y de cada una de las personas</strong> que hicieron posible esta
+                    iniciativa.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-3.jpg"
+                    alt="Comunidad reunida en la inauguración de la cancha de bochas"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Jóvenes y Tradición */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Jóvenes y Tradición</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-2.jpg"
+                    alt="Joven jugador en la nueva cancha de bochas sintética"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    La nueva cancha también representa una oportunidad para que{" "}
+                    <strong>las nuevas generaciones se acerquen a deportes tradicionales</strong> como las bochas,
+                    manteniendo vivas las tradiciones deportivas y culturales de nuestra comunidad mientras se adaptan a
+                    las nuevas tecnologías y superficies de juego.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Encuentro Intergeneracional */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Encuentro Intergeneracional</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Uno de los aspectos más destacados de esta nueva infraestructura es su capacidad para{" "}
+                    <strong>generar encuentros entre diferentes generaciones</strong>. La cancha se convierte en un
+                    espacio donde abuelos, padres e hijos pueden compartir momentos de recreación y aprendizaje mutuo.
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-5.jpg"
+                    alt="Vecinos disfrutando de la nueva cancha de bochas"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Tradición y Modernidad */}
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                <span className="text-[#16b5d0]">Tradición y Modernidad</span>
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <Image
+                    src="/images/nueva-cancha-bochas-6.jpg"
+                    alt="Adulto mayor jugando en la nueva cancha sintética"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    La cancha sintética combina <strong>la tradición del juego de bochas con la modernidad</strong> de
+                    las nuevas tecnologías en superficies deportivas. Esto garantiza una experiencia de juego superior y
+                    condiciones óptimas para la práctica deportiva durante todo el año.
+                  </p>
                 </div>
               </div>
             </section>
@@ -452,9 +484,9 @@ export default function CasaEstudiantesCordobaPage() {
             {/* Conclusion */}
             <div className="bg-gray-50 p-8 rounded-lg mt-12">
               <p className="text-xl text-gray-800 leading-relaxed text-center font-medium">
-                Este proyecto reafirma el <strong>compromiso de Villa del Dique con el futuro de su comunidad</strong>,
-                promoviendo el acceso a la educación como un derecho y una inversión en el{" "}
-                <strong>desarrollo local</strong>.
+                <strong>Juntos seguimos construyendo comunidad</strong>, fortaleciendo los valores del deporte y
+                generando oportunidades para el crecimiento colectivo. Esta nueva cancha de bochas sintética es un
+                ejemplo más del compromiso municipal con el <strong>desarrollo integral de Villa del Dique</strong>.
               </p>
             </div>
           </div>
@@ -472,7 +504,6 @@ export default function CasaEstudiantesCordobaPage() {
         </article>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
