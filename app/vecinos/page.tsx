@@ -226,8 +226,8 @@ export default function VecinosPage() {
                     <p className="text-base sm:text-lg leading-relaxed text-blue-800">
                       <strong>Importante:</strong> Podrán hacerlo quienes tengan documentación en condiciones. Para
                       consultar su número de cuenta y verificador, pueden comunicarse a este{" "}
-                      <a href="tel:3546123456" className="text-blue-600 hover:text-blue-800 underline font-semibold">
-                        celular: 3546-123456
+                      <a href="tel:+5493546561531" className="text-blue-600 hover:text-blue-800 underline font-semibold">
+                        celular: 3546 56‑1531
                       </a>{" "}
                       en horario de 7 a 14 hs.
                     </p>
