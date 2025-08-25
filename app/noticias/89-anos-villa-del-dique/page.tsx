@@ -424,7 +424,7 @@ export default function AñosVilladelDiquePage() {
               <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
                 <div>
                   <Image
-                    src="/images/89-años-villa-del-dique-4.jpg"
+                    src="/images/89-anos-villa-del-dique-4.jpg"
                     alt="Vecinos participando en la celebración comunitaria"
                     width={600}
                     height={400}
