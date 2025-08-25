@@ -17,17 +17,52 @@ import Footer from "@/components/Footer"
 export default function ReclamosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    telefono: "",
+    direccion: "",
+    tipoReclamo: "",
+    descripcion: "",
+  })
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const handleInputChange = (field: string, value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      [field]: value,
+    }))
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log("Formulario enviado!")
+
+    const subject = `Reclamo - ${formData.tipoReclamo || "Sin especificar"}`
+
+    const body = `
+FORMULARIO DE RECLAMO - MUNICIPALIDAD DE VILLA DEL DIQUE
+
+Nombre y Apellido: ${formData.nombre}
+Email: ${formData.email}
+Teléfono: ${formData.telefono}
+Dirección del Reclamo: ${formData.direccion}
+Tipo de Reclamo: ${formData.tipoReclamo}
+
+Descripción del Reclamo:
+${formData.descripcion}
+
+---
+Este reclamo fue enviado desde el sitio web oficial de la Municipalidad de Villa del Dique.
+    `.trim()
+
+    const mailtoLink = `mailto:reclamosmunivdd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+    window.location.href = mailtoLink
+
     setIsDialogOpen(true)
-    // Optionally reset form fields here
   }
 
   const leftMenuItems = [
@@ -46,7 +81,6 @@ export default function ReclamosPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header Announcement */}
       <div className="w-full bg-[#16b5d0] text-white py-2 px-4">
         <div className="container mx-auto text-center">
           <p className="text-sm sm:text-base font-montserrat font-medium">
@@ -55,12 +89,9 @@ export default function ReclamosPage() {
         </div>
       </div>
 
-      {/* Header with Navigation */}
       <header className="w-full py-2 sm:py-3 px-4 bg-white shadow-sm relative">
         <div className="container mx-auto relative">
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between">
-            {/* Left Menu Items */}
             <nav className="flex space-x-6 xl:space-x-8">
               {leftMenuItems.map((item, index) => (
                 <a
@@ -73,7 +104,6 @@ export default function ReclamosPage() {
               ))}
             </nav>
 
-            {/* Logo Center */}
             <div className="absolute left-1/2 -translate-x-1/2">
               <Link href="/">
                 <Image
@@ -87,7 +117,6 @@ export default function ReclamosPage() {
               </Link>
             </div>
 
-            {/* Right Menu Items */}
             <nav className="flex space-x-6 xl:space-x-8">
               {rightMenuItems.map((item, index) => (
                 <a
@@ -101,9 +130,7 @@ export default function ReclamosPage() {
             </nav>
           </div>
 
-          {/* Mobile/Tablet Layout */}
           <div className="flex lg:hidden justify-between items-center">
-            {/* Logo */}
             <div className="flex-1 flex justify-center">
               <Link href="/">
                 <Image
@@ -117,7 +144,6 @@ export default function ReclamosPage() {
               </Link>
             </div>
 
-            {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 rounded-md transition-colors duration-200 z-[60]"
@@ -128,10 +154,8 @@ export default function ReclamosPage() {
           </div>
         </div>
 
-        {/* Mobile Menu Overlay */}
         {isMenuOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden" onClick={toggleMenu} />}
 
-        {/* Mobile Menu */}
         <div
           className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-[55] lg:hidden ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -182,53 +206,84 @@ export default function ReclamosPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <Label htmlFor="nombre">Nombre y Apellido</Label>
-                  <Input id="nombre" placeholder="Tu nombre completo" required />
+                  <Input
+                    id="nombre"
+                    placeholder="Tu nombre completo"
+                    required
+                    value={formData.nombre}
+                    onChange={(e) => handleInputChange("nombre", e.target.value)}
+                  />
                 </div>
                 <div>
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="tu@ejemplo.com" required />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="tu@ejemplo.com"
+                    required
+                    value={formData.email}
+                    onChange={(e) => handleInputChange("email", e.target.value)}
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <Label htmlFor="telefono">Teléfono</Label>
-                  <Input id="telefono" type="tel" placeholder="Ej: 3546123456" />
+                  <Input
+                    id="telefono"
+                    type="tel"
+                    placeholder="Ej: 3546123456"
+                    value={formData.telefono}
+                    onChange={(e) => handleInputChange("telefono", e.target.value)}
+                  />
                 </div>
                 <div>
                   <Label htmlFor="direccion">Dirección del Reclamo</Label>
-                  <Input id="direccion" placeholder="Calle, número, barrio" required />
+                  <Input
+                    id="direccion"
+                    placeholder="Calle, número, barrio"
+                    required
+                    value={formData.direccion}
+                    onChange={(e) => handleInputChange("direccion", e.target.value)}
+                  />
                 </div>
               </div>
               <div>
                 <Label htmlFor="tipoReclamo">Tipo de Reclamo</Label>
-                <Select required>
+                <Select
+                  required
+                  value={formData.tipoReclamo}
+                  onValueChange={(value) => handleInputChange("tipoReclamo", value)}
+                >
                   <SelectTrigger id="tipoReclamo" className="w-full">
                     <SelectValue placeholder="Selecciona un tipo de reclamo" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="alumbrado">Alumbrado Público</SelectItem>
-                    <SelectItem value="residuos">Recolección de Residuos</SelectItem>
-                    <SelectItem value="vias">Vías Públicas (Calles, veredas)</SelectItem>
-                    <SelectItem value="espaciosVerdes">Espacios Verdes (Plazas, parques)</SelectItem>
-                    <SelectItem value="agua">Agua y Saneamiento</SelectItem>
-                    <SelectItem value="otros">Otros</SelectItem>
+                    <SelectItem value="Alumbrado Público">Alumbrado Público</SelectItem>
+                    <SelectItem value="Recolección de Residuos">Recolección de Residuos</SelectItem>
+                    <SelectItem value="Vías Públicas (Calles, veredas)">Vías Públicas (Calles, veredas)</SelectItem>
+                    <SelectItem value="Espacios Verdes (Plazas, parques)">Espacios Verdes (Plazas, parques)</SelectItem>
+                    <SelectItem value="Agua y Saneamiento">Agua y Saneamiento</SelectItem>
+                    <SelectItem value="Otros">Otros</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <div>
                 <Label htmlFor="descripcion">Descripción del Reclamo</Label>
-                <Textarea id="descripcion" placeholder="Detalla tu reclamo aquí..." rows={5} required />
-              </div>
-              <div>
-                <Label htmlFor="adjunto">Adjuntar Archivo (Opcional)</Label>
-                <Input id="adjunto" type="file" />
-                <p className="text-sm text-gray-500 mt-1">Puedes adjuntar fotos o documentos relevantes.</p>
+                <Textarea
+                  id="descripcion"
+                  placeholder="Detalla tu reclamo aquí..."
+                  rows={5}
+                  required
+                  value={formData.descripcion}
+                  onChange={(e) => handleInputChange("descripcion", e.target.value)}
+                />
               </div>
               <Button
                 type="submit"
                 className="w-full py-3 text-lg bg-[#16b5d0] hover:bg-[#14a3bd] text-white font-nunito"
               >
-                Enviar Reclamo
+                Enviar Reclamo por Email
               </Button>
             </form>
 
@@ -236,9 +291,10 @@ export default function ReclamosPage() {
               <DialogContent className="sm:max-w-[425px] p-6 text-center">
                 <DialogHeader>
                   <CheckCircle className="mx-auto h-16 w-16 text-green-500 mb-4" />
-                  <DialogTitle className="text-2xl font-nunito font-bold">¡Reclamo Enviado!</DialogTitle>
+                  <DialogTitle className="text-2xl font-nunito font-bold">¡Reclamo Preparado!</DialogTitle>
                   <DialogDescription className="font-montserrat text-gray-600">
-                    Tu reclamo ha sido recibido con éxito. Nos pondremos en contacto contigo si es necesario.
+                    Se ha abierto tu cliente de email con todos los datos del reclamo. Solo debes enviarlo para
+                    completar el proceso.
                   </DialogDescription>
                 </DialogHeader>
                 <Button
@@ -253,7 +309,6 @@ export default function ReclamosPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
