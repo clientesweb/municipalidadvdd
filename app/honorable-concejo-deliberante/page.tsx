@@ -47,6 +47,10 @@ export default function HonorableConcejoDeliberantePage() {
       nombre: "Mónica Palacios",
       cargo: "Secretaria",
     },
+    tribunosCuentas: {
+      presidente: "María Edther Díaz",
+      vocales: ["Cristian Alejandri Gonzalez", "Sergio Castellaro"],
+    },
   }
 
   return (
@@ -200,8 +204,8 @@ export default function HonorableConcejoDeliberantePage() {
               <h3 className="text-3xl sm:text-4xl font-nunito font-bold text-gray-900">Autoridades</h3>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 font-montserrat">
-              {/* Presidente */}
+            {/* Presidente */}
+            <div className="grid lg:grid-cols-3 gap-8 font-montserrat">
               <div className="bg-gradient-to-br from-[#16b5d0]/10 to-[#0ea5e9]/10 p-6 rounded-lg border-l-4 border-[#16b5d0]">
                 <h4 className="text-xl font-nunito font-bold text-[#16b5d0] mb-2">Presidente</h4>
                 <p className="text-2xl font-semibold text-gray-900">{autoridades.presidente.nombre}</p>
@@ -217,12 +221,6 @@ export default function HonorableConcejoDeliberantePage() {
               <div className="bg-gradient-to-br from-[#16b5d0]/10 to-[#0ea5e9]/10 p-6 rounded-lg border-l-4 border-[#16b5d0]">
                 <h4 className="text-xl font-nunito font-bold text-[#16b5d0] mb-2">Vice-Presidente Primero</h4>
                 <p className="text-2xl font-semibold text-gray-900">{autoridades.vicepresidentePrimero.nombre}</p>
-              </div>
-
-              {/* Secretaria */}
-              <div className="bg-gradient-to-br from-[#16b5d0]/10 to-[#0ea5e9]/10 p-6 rounded-lg border-l-4 border-[#16b5d0]">
-                <h4 className="text-xl font-nunito font-bold text-[#16b5d0] mb-2">Secretaria</h4>
-                <p className="text-2xl font-semibold text-gray-900">{autoridades.secretaria.nombre}</p>
               </div>
             </div>
 
@@ -247,6 +245,54 @@ export default function HonorableConcejoDeliberantePage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Secretaria */}
+            <div className="mt-12">
+              <h4 className="text-3xl font-nunito font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                <Users className="h-8 w-8 text-[#16b5d0]" />
+                <span>Secretaria</span>
+              </h4>
+              <div className="bg-gradient-to-br from-[#16b5d0]/10 to-[#0ea5e9]/10 p-6 rounded-lg border-l-4 border-[#16b5d0] max-w-md">
+                <h5 className="text-xl font-nunito font-bold text-[#16b5d0] mb-2">Secretaria</h5>
+                <p className="text-2xl font-semibold text-gray-900">{autoridades.secretaria.nombre}</p>
+              </div>
+            </div>
+
+            {/* Tribunos de Cuentas 2025 */}
+            <div className="mt-12">
+              <h4 className="text-3xl font-nunito font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                <Gavel className="h-8 w-8 text-[#16b5d0]" />
+                <span>Tribunos de Cuentas 2025</span>
+              </h4>
+              <div className="space-y-6">
+                {/* Presidente */}
+                <div className="bg-gradient-to-br from-[#16b5d0]/10 to-[#0ea5e9]/10 p-6 rounded-lg border-l-4 border-[#16b5d0] max-w-md">
+                  <h5 className="text-xl font-nunito font-bold text-[#16b5d0] mb-2">Presidente</h5>
+                  <p className="text-2xl font-semibold text-gray-900">{autoridades.tribunosCuentas.presidente}</p>
+                </div>
+
+                {/* Vocales */}
+                <div>
+                  <h5 className="text-xl font-nunito font-bold text-gray-900 mb-4">Vocales</h5>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {autoridades.tribunosCuentas.vocales.map((vocal, index) => (
+                      <div
+                        key={index}
+                        className="bg-white border-2 border-[#16b5d0]/20 p-4 rounded-lg hover:border-[#16b5d0]/40 hover:shadow-md transition-all duration-200"
+                      >
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-[#16b5d0]/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <Gavel className="h-6 w-6 text-[#16b5d0]" />
+                          </div>
+                          <p className="text-lg font-semibold text-gray-900">{vocal}</p>
+                          <p className="text-sm text-gray-600">Vocal</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
