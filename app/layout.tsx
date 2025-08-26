@@ -33,6 +33,17 @@ export const metadata: Metadata = {
     "vecinos",
     "servicios públicos",
     "gobierno local",
+    "municipio villa del dique",
+    "intendencia villa del dique",
+    "gobierno villa del dique",
+    "Mario Nívoli 206",
+    "villa del dique cordoba",
+    "municipalidad cordoba",
+    "tramites online villa del dique",
+    "turismo villa del dique",
+    "noticias villa del dique",
+    "servicios municipales",
+    "villa del dique argentina",
   ],
   authors: [{ name: "Municipalidad de Villa del Dique" }],
   creator: "Municipalidad de Villa del Dique",
@@ -80,8 +91,8 @@ export const metadata: Metadata = {
   category: "government",
   classification: "Gobierno Municipal",
   other: {
-    "theme-color": "#16b5d0", // Updated color
-    "msapplication-TileColor": "#16b5d0", // Updated color
+    "theme-color": "#16b5d0",
+    "msapplication-TileColor": "#16b5d0",
     "msapplication-config": "/browserconfig.xml",
   },
   generator: "v0.dev",
@@ -102,6 +113,10 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Villa del Dique" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="geo.region" content="AR-X" />
+        <meta name="geo.placename" content="Villa del Dique" />
+        <meta name="geo.position" content="-32.1667;-64.4167" />
+        <meta name="ICBM" content="-32.1667, -64.4167" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/images/favicon-192x192.png" type="image/png" sizes="192x192" />
         <link rel="icon" href="/images/favicon-512x512.png" type="image/png" sizes="512x512" />
@@ -113,19 +128,29 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "GovernmentOrganization",
               name: "Municipalidad de Villa del Dique",
-              alternateName: "Villa del Dique Municipality",
+              alternateName: [
+                "Villa del Dique Municipality",
+                "Municipio Villa del Dique",
+                "Intendencia Villa del Dique",
+              ],
               url: "https://www.villadeldique.gob.ar",
               logo: "https://www.villadeldique.gob.ar/images/logo-oficial.webp",
               description:
                 "Municipalidad de Villa del Dique, Córdoba, Argentina. Servicios públicos, trámites municipales e información para vecinos y turistas.",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Mario Nivoli 206",
+                streetAddress: "Mario Nívoli 206",
                 addressLocality: "Villa del Dique",
                 addressRegion: "Córdoba",
+                postalCode: "X5892",
                 addressCountry: "AR",
               },
               telephone: "+54-3546-497241",
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "-32.1667",
+                longitude: "-64.4167",
+              },
               areaServed: {
                 "@type": "City",
                 name: "Villa del Dique",
@@ -133,10 +158,34 @@ export default function RootLayout({
                 addressCountry: "Argentina",
               },
               sameAs: [
-                "https://www.facebook.com/villadeldique",
-                "https://www.instagram.com/villadeldique",
-                "https://www.youtube.com/villadeldique",
+                "https://www.facebook.com/munivilladeldique/?locale=es_LA",
+                "https://www.instagram.com/munivilladeldique/",
               ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+54-3546-497241",
+                contactType: "customer service",
+                areaServed: "AR",
+                availableLanguage: "Spanish",
+              },
+              openingHours: "Mo-Fr 08:00-16:00",
+              priceRange: "Gratuito",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Municipalidad de Villa del Dique",
+              url: "https://www.villadeldique.gob.ar",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://www.villadeldique.gob.ar/buscar?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
             }),
           }}
         />
