@@ -627,17 +627,16 @@ export default function ServiciosPage() {
                       className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
                     >
                       vdd.inspeccion@gmail.com
-                      </a>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                      <a
-                        href="tel:3546565159"
-                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                      >
-                        3546 565159
-                      </a>
-                    </div>
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                    <a
+                      href="tel:3546565159"
+                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                    >
+                      3546 565159
+                    </a>
                   </div>
                 </div>
 
@@ -946,94 +945,56 @@ export default function ServiciosPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                {/* Programa Municipal Viaje Seguro */}
-                <div className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white p-6 rounded-lg mb-8">
-                  <h3 className="text-2xl font-nunito font-bold mb-4">Programa Municipal "Viaje Seguro"</h3>
-                  <p className="text-lg leading-relaxed">
-                    Vecinos, para sus traslados, les recordamos la importancia de utilizar remises habilitados por su municipio y que formen parte del programa "Viaje Seguro".
+                <div className="text-center py-8">
+                  <p className="text-gray-600 text-lg font-medium">
+                    Información de remises habilitados próximamente disponible
                   </p>
-                  <p className="text-lg font-semibold mt-2">Su seguridad es nuestra prioridad. ¡Gracias por colaborar!</p>
+                  <p className="text-gray-500 text-sm mt-2">
+                    Estamos actualizando la información de los servicios de remises en Villa del Dique
+                  </p>
                 </div>
 
-                {/* Lista de Remises Habilitados */}
-                <div className="grid gap-6 md:grid-cols-2">
-                  {/* Remis 1 - Segura, Juan Carlos */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Segura, Juan Carlos</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 007</span>
-                    </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 12.669.715</p>
-                      <p><span className="font-semibold">Vehículo:</span> Volkswagen Voyage</p>
-                      <p><span className="font-semibold">Patente:</span> LLS939</p>
-                    </div>
-                  </div>
-
-                  {/* Remis 2 - Videla, Jorge */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Videla, Jorge</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 009</span>
-                    </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 23.979.952</p>
-                      <p><span className="font-semibold">Vehículo:</span> Renault Logan</p>
-                      <p><span className="font-semibold">Patente:</span> PEO377</p>
+                {/* Placeholder structure for 10 remises - ready for future data */}
+                <div className="hidden">
+                  {/* Remis 1 */}
+                  <div className="space-y-4 mb-6">
+                    <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre]</h3>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-3">
+                        <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Teléfono]</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Dirección]</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                        <span className="text-gray-700">[Email]</span>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Remis 3 - Tavano, Martín */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Tavano, Martín</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 002</span>
+                  {/* Remis 2-10 structure ready for data */}
+                  {Array.from({ length: 9 }, (_, i) => (
+                    <div key={i + 2} className="space-y-4 mb-6 pt-4 border-t border-gray-100">
+                      <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre {i + 2}]</h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center space-x-3">
+                          <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Teléfono]</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Dirección]</span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
+                          <span className="text-gray-700">[Email]</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 25.610.951</p>
-                      <p><span className="font-semibold">Vehículo:</span> Fiat Cronos</p>
-                      <p><span className="font-semibold">Patente:</span> AH175YQ</p>
-                    </div>
-                  </div>
-
-                  {/* Remis 4 - Marín, Leonel */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Marín, Leonel</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 010</span>
-                    </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 35.668.175</p>
-                      <p><span className="font-semibold">Vehículo:</span> Fiat Strada Freedom</p>
-                      <p><span className="font-semibold">Patente:</span> AF295CA</p>
-                    </div>
-                  </div>
-
-                  {/* Remis 5 - Cejas, Jesica */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Cejas, Jesica</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 003</span>
-                    </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 38.159.030</p>
-                      <p><span className="font-semibold">Vehículo:</span> Renault Duster Oroch</p>
-                      <p><span className="font-semibold">Patente:</span> AE035ZE</p>
-                    </div>
-                  </div>
-
-                  {/* Remis 6 - Díaz, Andrea */}
-                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Díaz, Andrea</h3>
-                      <span className="bg-[#16b5d0] text-white px-3 py-1 rounded-full text-sm font-semibold">AE 001</span>
-                    </div>
-                    <div className="space-y-2 text-gray-700">
-                      <p><span className="font-semibold">DNI:</span> 24.863.903</p>
-                      <p><span className="font-semibold">Vehículo:</span> Chevrolet Corsa</p>
-                      <p><span className="font-semibold">Patente:</span> KYG819</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -1067,8 +1028,6 @@ export default function ServiciosPage() {
                         <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
                         <a
                           href="tel:3546561747"
-                          target="_blank"
-                          rel="noopener noreferrer"
                           className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                         >
                           3546-561747
@@ -1098,8 +1057,6 @@ export default function ServiciosPage() {
                           <a
                             href="tel:03546497294"
                             className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
-                            target="_blank"
-                            rel="noopener noreferrer"
                           >
                             03546-497294
                           </a>
@@ -1107,8 +1064,6 @@ export default function ServiciosPage() {
                           <a
                             href="tel:3546503142"
                             className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
-                            target="_blank"
-                            rel="noopener noreferrer"
                           >
                             3546-503142
                           </a>
@@ -1136,8 +1091,6 @@ export default function ServiciosPage() {
                         <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
                         <a
                           href="tel:3546417602"
-                          target="_blank"
-                          rel="noopener noreferrer"
                           className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                         >
                           3546-417602
@@ -1165,8 +1118,6 @@ export default function ServiciosPage() {
                         <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
                         <a
                           href="tel:3546435468"
-                          target="_blank"
-                          rel="noopener noreferrer"
                           className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 text-sm font-medium"
                         >
                           3546-435468
@@ -1310,7 +1261,8 @@ export default function ServiciosPage() {
         </div>
       </main>
 
+      {/* Footer */}
       <Footer />
-  </div>
+    </div>
   )
 }
