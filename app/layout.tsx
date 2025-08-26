@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     "msapplication-TileColor": "#16b5d0",
     "msapplication-config": "/browserconfig.xml",
   },
-  generator: "v0.dev",
+  generator: "Duality Domain",
 }
 
 export default function RootLayout({
