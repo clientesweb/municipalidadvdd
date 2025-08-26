@@ -945,56 +945,183 @@ export default function ServiciosPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                <div className="text-center py-8">
-                  <p className="text-gray-600 text-lg font-medium">
-                    Información de remises habilitados próximamente disponible
+                {/* Programa Viaje Seguro */}
+                <div className="bg-blue-50 border-l-4 border-[#16b5d0] p-4 mb-8">
+                  <h3 className="text-lg font-nunito font-bold text-gray-900 mb-2">
+                    Programa Municipal "Viaje seguro"
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Vecinos, para sus traslados, les recordamos la importancia de utilizar remises habilitados por su
+                    municipio y que formen parte del programa "Viaje Seguro".
                   </p>
-                  <p className="text-gray-500 text-sm mt-2">
-                    Estamos actualizando la información de los servicios de remises en Villa del Dique
+                  <p className="text-gray-700 font-medium mt-2">
+                    Su seguridad es nuestra prioridad. ¡Gracias por colaborar!
                   </p>
                 </div>
 
-                {/* Placeholder structure for 10 remises - ready for future data */}
-                <div className="hidden">
-                  {/* Remis 1 */}
-                  <div className="space-y-4 mb-6">
-                    <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre]</h3>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                        <span className="text-gray-700">[Teléfono]</span>
+                {/* Lista de Remises Habilitados */}
+                <div className="space-y-6">
+                  {/* Remis 1 - Segura, Juan Carlos */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Segura, Juan Carlos</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">12.669.715</span>
                       </div>
-                      <div className="flex items-center space-x-3">
-                        <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                        <span className="text-gray-700">[Dirección]</span>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Volkswagen</span>
                       </div>
-                      <div className="flex items-center space-x-3">
-                        <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                        <span className="text-gray-700">[Email]</span>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Voyage</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">LLS939</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 007</span>
                       </div>
                     </div>
                   </div>
 
-                  {/* Remis 2-10 structure ready for data */}
-                  {Array.from({ length: 9 }, (_, i) => (
-                    <div key={i + 2} className="space-y-4 mb-6 pt-4 border-t border-gray-100">
-                      <h3 className="text-xl font-nunito font-bold text-gray-900">Remis [Nombre {i + 2}]</h3>
-                      <div className="space-y-2">
-                        <div className="flex items-center space-x-3">
-                          <Phone className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                          <span className="text-gray-700">[Teléfono]</span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <MapPin className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                          <span className="text-gray-700">[Dirección]</span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <Mail className="h-4 w-4 text-[#16b5d0] flex-shrink-0" />
-                          <span className="text-gray-700">[Email]</span>
-                        </div>
+                  {/* Remis 2 - Videla, Jorge */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Videla, Jorge</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">23.979.952</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Renault</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Logan</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">PEO377</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 009</span>
                       </div>
                     </div>
-                  ))}
+                  </div>
+
+                  {/* Remis 3 - Tavano, Martín */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Tavano, Martín</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">25.610.951</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Fiat</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Cronos</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">AH175YQ</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 002</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Remis 4 - Marín, Leonel */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Marín, Leonel</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">35.668.175</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Fiat</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Strada Freedom</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">AF295CA</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 010</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Remis 5 - Cejas, Jesica */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Cejas, Jesica</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">38.159.030</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Renault</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Duster Oroch</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">AE035ZE</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 003</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Remis 6 - Díaz, Andrea */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-lg font-nunito font-bold text-gray-900 mb-3">Díaz, Andrea</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">DNI:</span>
+                        <span className="text-gray-800">24.863.903</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Marca:</span>
+                        <span className="text-gray-800">Chevrolet</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Vehículo:</span>
+                        <span className="text-gray-800">Corsa</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Patente:</span>
+                        <span className="text-gray-800">KYG819</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="font-medium text-gray-600">Chapa:</span>
+                        <span className="text-gray-800 font-semibold">AE 001</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
