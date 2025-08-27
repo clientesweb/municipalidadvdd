@@ -30,6 +30,7 @@ import {
   HandHeart,
   Car,
   Fuel,
+  Globe,
 } from "lucide-react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -1256,44 +1257,431 @@ export default function ServiciosPage() {
               </AccordionContent>
             </AccordionItem>
 
-            {/* Electricidad Villa del Dique */}
+            {/* SERVICIOS PRIVADOS - Cambié el título de "ELECTRICIDAD VILLA DEL DIQUE" a "SERVICIOS PRIVADOS" y agregué todos los nuevos servicios organizados por categorías */}
             <AccordionItem value="item-6" className="bg-white shadow-xl rounded-lg overflow-hidden mb-6">
               <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
                 <div className="flex items-center space-x-3">
                   <Building2 className="h-6 w-6" />
-                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ELECTRICIDAD VILLA DEL DIQUE</h2>
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">SERVICIOS PRIVADOS</h2>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="p-6 sm:p-8 font-montserrat">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="tel:+5493546534000"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      +54 9 3546 53-4000
-                    </a>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat space-y-8">
+                {/*  Removí Electricidad Villa del Dique de aquí para moverla a la sección de electricistas */}
+
+                {/* Electricistas - Agregué nueva sección de electricistas */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🔌</span>
+                    Electricistas
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6 pl-6">
+                    <div className="space-y-4">
+                      {/*  Agregué Electricidad Villa del Dique como primer electricista con dirección y página web */}
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Electricidad Villa del Dique</h4>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Ruta 5 km 107</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:+5493546534000" className="hover:text-[#16b5d0]">
+                              +54 9 3546 53-4000
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:Electrocidadvilladeldiqueok@gmail.com" className="hover:text-[#16b5d0]">
+                              Electrocidadvilladeldiqueok@gmail.com
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Globe className="h-4 w-4 text-[#16b5d0]" />
+                            <a
+                              href="https://www.electricidadvilladeldique.com.ar"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-[#16b5d0]"
+                            >
+                              www.electricidadvilladeldique.com.ar
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Instagram className="h-4 w-4 text-[#16b5d0]" />
+                            <a
+                              href="https://www.instagram.com/electricidadvilladeldiqueok?igsh=NXkwOWh0Nmt2bW1j"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-[#16b5d0]"
+                            >
+                              @electricidadvilladeldiqueok
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Electroman</h4>
+                        <p className="text-sm text-gray-600 mb-2">Ezequiel Lattuada</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>La Cumbre 50</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3413457078" className="hover:text-[#16b5d0]">
+                              3413457078
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:ezequiel.lattuada.2@gmail.com" className="hover:text-[#16b5d0]">
+                              ezequiel.lattuada.2@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Fran</h4>
+                        <p className="text-sm text-gray-600 mb-2">Franco Laurino</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Eslovaquia 958</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:1133529482" className="hover:text-[#16b5d0]">
+                              1133529482
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:francolaurino1990@gmail.com" className="hover:text-[#16b5d0]">
+                              francolaurino1990@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">JF Servicios Eléctricos</h4>
+                        <p className="text-sm text-gray-600 mb-2">Juan Fierro</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Estocolmo s/n</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3517506633" className="hover:text-[#16b5d0]">
+                              3517506633
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:juancabj9822@gmail.com" className="hover:text-[#16b5d0]">
+                              juancabj9822@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Perticarari Electricidad</h4>
+                        <p className="text-sm text-gray-600 mb-2">Francisco Perticarari</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Calle pública s/n</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3546500069" className="hover:text-[#16b5d0]">
+                              3546500069
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:admperticarari293@gmail.com" className="hover:text-[#16b5d0]">
+                              admperticarari293@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Servicios del Valle</h4>
+                        <p className="text-sm text-gray-600 mb-2">Marcos Hidalgo</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Salta 776</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3546405881" className="hover:text-[#16b5d0]">
+                              3546405881
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:hidalgomarcosjulian@gmail.com" className="hover:text-[#16b5d0]">
+                              hidalgomarcosjulian@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">Lucas Ernesto Martínez</h4>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Santa María 544, zona del valle</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3517458886" className="hover:text-[#16b5d0]">
+                              3517458886
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:lucianamartinez1414@gmail.com" className="hover:text-[#16b5d0]">
+                              lucianamartinez1414@gmail.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="mailto:Electrocidadvilladeldiqueok@gmail.com"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      Electrocidadvilladeldiqueok@gmail.com
-                    </a>
+                </div>
+
+                {/* Limpieza - Agregué sección de servicios de limpieza */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🧹</span>
+                    Limpieza
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Yazmin</h4>
+                      <p className="text-sm text-gray-600 mb-2">Verónica Orbes - Personal de limpieza</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Barrio IPV</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546490348" className="hover:text-[#16b5d0]">
+                            3546490348
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:orbesvero44@gmail.com" className="hover:text-[#16b5d0]">
+                            orbesvero44@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
-                    <a
-                      href="https://www.instagram.com/electricidadvilladeldiqueok?igsh=NXkwOWh0Nmt2bW1j"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
-                    >
-                      @electricidadvilladeldiqueok
-                    </a>
+                </div>
+
+                {/* Matafuegos - Agregué sección de matafuegos */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🔥</span>
+                    Matafuegos
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">MATAFUEGOS LA VILLA</h4>
+                      <p className="text-sm text-gray-600 mb-2">Ramon Cuello - Mantenimiento, venta de matafuegos</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Rio Quinto 380</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546502274" className="hover:text-[#16b5d0]">
+                            3546502274
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:candelaalemi24@gmail.com" className="hover:text-[#16b5d0]">
+                            candelaalemi24@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Albañilería - Agregué sección de albañilería */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🛠</span>
+                    Albañilería
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Vieyra</h4>
+                      <p className="text-sm text-gray-600 mb-2">Agustín Vieyra - Albañilería en general</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Zona del valle, Villa del Dique</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546650402" className="hover:text-[#16b5d0]">
+                            3546650402
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:agustinvieyra2018@gmail.com" className="hover:text-[#16b5d0]">
+                            agustinvieyra2018@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Seguridad - Agregué sección de seguridad */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">📹</span>
+                    Seguridad
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6 pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">SM Seguridad</h4>
+                      <p className="text-sm text-gray-600 mb-2">Thiago Moscetta - Alarmas, cámaras y monitoreo</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>San Martín s/n</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546525631" className="hover:text-[#16b5d0]">
+                            3546525631
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:thiagomoscetta123@gmail.com" className="hover:text-[#16b5d0]">
+                            thiagomoscetta123@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Clan Seguridad</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Cámaras, alarmas, distribución de wifi, instalaciones de antenas Starlink, servicio técnico
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Claudio: </span>
+                          <a href="tel:351572169" className="hover:text-[#16b5d0]">
+                            351572169
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Gustavo: </span>
+                          <a href="tel:3546405796" className="hover:text-[#16b5d0]">
+                            3546405796
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Agustín: </span>
+                          <a href="tel:3512273169" className="hover:text-[#16b5d0]">
+                            3512273169
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Refrigeración / Soldador - Agregué sección de refrigeración */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🧊</span>
+                    Refrigeración / Soldador
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">SA servicio técnico en refrigeración</h4>
+                      <p className="text-sm text-gray-600 mb-2">Santiago Arce - Soldador</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Suecia y Eslovaquia</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3586010635" className="hover:text-[#16b5d0]">
+                            3586010635
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:arcesanty01@gmail.com" className="hover:text-[#16b5d0]">
+                            arcesanty01@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Seguros - Agregué sección de seguros */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🛡</span>
+                    Seguros
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Damian Aviles - Seguros</h4>
+                      <p className="text-sm text-gray-600 mb-2">Damian Aviles - Seguros Generales</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Av. San Martín esquina Av. San Casimiro</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3516431405" className="hover:text-[#16b5d0]">
+                            3516431405
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:daviles@mediterraneaseguros.com.ar" className="hover:text-[#16b5d0]">
+                            daviles@mediterraneaseguros.com.ar
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </AccordionContent>
