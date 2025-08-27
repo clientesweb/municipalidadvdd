@@ -636,7 +636,7 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* Complejo 3 de Octubre */}
+              {/* Complejo 3 de Octubre (Sindicato Festiqypra) */}
               <div className="bg-emerald-50 p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
                 <h3 className="text-xl font-nunito font-bold text-emerald-900 mb-3">
                   Complejo 3 de Octubre (Sindicato Festiqypra)
@@ -1762,29 +1762,30 @@ export default function DondeAlojarme() {
                 </div>
               </div>
 
-              {/* Cabañas Alma Serrana */}
-              <div className="bg-green-50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
-                <h3 className="text-xl font-nunito font-bold text-green-900 mb-3">Cabañas Alma Serrana</h3>
+              {/* Cabañas Rincón del Lago */}
+              {/* Cabañas Rincón del Lago */}
+              <div className="bg-violet-50 p-6 rounded-lg shadow-md border-l-4 border-violet-500">
+                <h3 className="text-xl font-nunito font-bold text-violet-900 mb-3">Cabañas Rincón del Lago</h3>
                 <div className="space-y-2">
                   <div className="flex items-start space-x-2">
-                    <MapPin className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
-                    <p className="text-green-800 text-sm">
-                      <strong>Dirección:</strong> Av. De los Pescadores s/n
+                    <MapPin className="h-4 w-4 text-violet-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-violet-800 text-sm">
+                      <strong>Dirección:</strong> Av. Los Pescadores 398
                     </p>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Phone className="h-4 w-4 text-green-700 flex-shrink-0" />
-                    <a href="tel:3546544919" className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline">
-                      3546-544919
+                    <Phone className="h-4 w-4 text-violet-700 flex-shrink-0" />
+                    <a href="tel:3546497123" className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline">
+                      3546-497123
                     </a>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <ExternalLink className="h-4 w-4 text-green-700 flex-shrink-0" />
+                    <ExternalLink className="h-4 w-4 text-violet-700 flex-shrink-0" />
                     <a
-                      href="https://maps.app.goo.gl/9xxugWmJ1SPYgwTE6"
+                      href="https://maps.app.goo.gl/9J9t66ag6636924t7"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-green-800 text-sm hover:text-[#c84f9b] hover:underline"
+                      className="text-violet-800 text-sm hover:text-[#c84f9b] hover:underline"
                     >
                       Ver en Google Maps
                     </a>
