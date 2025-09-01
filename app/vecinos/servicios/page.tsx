@@ -2044,6 +2044,91 @@ export default function ServiciosPage() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-7" className="bg-white shadow-xl rounded-lg overflow-hidden">
+              <AccordionTrigger className="bg-gradient-to-r from-[#16b5d0] to-[#0ea5e9] text-white py-4 px-6 text-left hover:no-underline">
+                <div className="flex items-center space-x-3">
+                  <Car className="h-6 w-6" />
+                  <h2 className="text-2xl sm:text-3xl font-nunito font-bold">ESTACIONES DE SERVICIO</h2>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="p-6 sm:p-8 font-montserrat space-y-8">
+                {/* ACA - YPF VDD */}
+                <div>
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">ACA - YPF VDD</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://share.google/f5IABJPRM4IHSvHOSnúmero"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        Ver ubicación en Google Maps
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:3546497827"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        3546 497827
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Instagram className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://www.instagram.com/aca.ypf.vdd?igsh=N2MxbnB0b2tybjIx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        @aca.ypf.vdd
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Link
+                        href="https://www.ypf.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        https://www.ypf.com/
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                {/* GNC de Barale SA */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4">GNC de Barale SA</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="https://maps.app.goo.gl/Y7T7HPZi2SSFiLa27"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        Ruta 5 km 105
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-[#16b5d0] flex-shrink-0" />
+                      <a
+                        href="tel:03571501402"
+                        className="text-gray-700 hover:text-[#16b5d0] transition-colors duration-200 font-medium"
+                      >
+                        03571501402
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </main>
