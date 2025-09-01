@@ -29,7 +29,6 @@ import {
   Hammer,
   HandHeart,
   Car,
-  Fuel,
   Globe,
 } from "lucide-react"
 import Link from "next/link"
@@ -1279,6 +1278,7 @@ export default function ServiciosPage() {
                       {/*  Agregué Electricidad Villa del Dique como primer electricista con dirección y página web */}
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <h4 className="font-semibold text-gray-900 mb-2">Electricidad Villa del Dique</h4>
+                        <p className="text-sm text-gray-600 mb-2">Responsable: Guillermo Modesto</p>
                         <div className="space-y-1 text-sm">
                           <div className="flex items-center space-x-2">
                             <MapPin className="h-4 w-4 text-[#16b5d0]" />
@@ -1531,9 +1531,9 @@ export default function ServiciosPage() {
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
                     <span className="text-2xl mr-2">🛠</span>
-                    Albañilería
+                    Albañilería / Construcción
                   </h3>
-                  <div className="pl-6">
+                  <div className="grid md:grid-cols-2 gap-6 pl-6">
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-gray-900 mb-2">Vieyra</h4>
                       <p className="text-sm text-gray-600 mb-2">Agustín Vieyra - Albañilería en general</p>
@@ -1556,35 +1556,351 @@ export default function ServiciosPage() {
                         </div>
                       </div>
                     </div>
+
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">M Y M CONSTRUCCIÓN</h4>
+                      <p className="text-sm text-gray-600 mb-2">Mariano Marín - Construcción en general</p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Pública s/n, Barrio IPV, Villa del Dique</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546538858" className="hover:text-[#16b5d0]">
+                            3546538858
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:marinmariano3639@gmail.com" className="hover:text-[#16b5d0]">
+                            marinmariano3639@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                {/* Seguridad - Agregué sección de seguridad */}
+                {/* Climatización / Gas / Plomería - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">❄</span>
+                    Climatización / Gas / Plomería
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">JR Servicios de Climatización</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Javier Arancibia - Plomero, gasista, reparación e instalación de aire acondicionado
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>La Falda s/n</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3413344185" className="hover:text-[#16b5d0]">
+                            3413344185
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:javierarancibia00@gmail.com" className="hover:text-[#16b5d0]">
+                            javierarancibia00@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mecánica / Lubricentro - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🛠</span>
+                    Mecánica / Lubricentro
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6 pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Mecánica Hinsch</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Dario David Hinsch - Mecánica Vial, mecánica especializada Diesel y Naftero, mecánica
+                        automotriz, servicio de diagnóstico computarizado, lubricentro, armado de motores, reparación de
+                        sistemas hidráulicos y neumáticos de equipos, embragues
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Ruta 5 KMS 104</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546524893" className="hover:text-[#16b5d0]">
+                            3546524893
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:tallerhinsch@hotmail.com.ar" className="hover:text-[#16b5d0]">
+                            tallerhinsch@hotmail.com.ar
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Lubricentro Barra</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Martinez Viviana Elizabeth - Aceites, filtros, escapes, repuestos de electricidad del automotor
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>San Martín 635, Villa del Dique</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3571322356" className="hover:text-[#16b5d0]">
+                            3571322356
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:florenciabarra98@outlook.es" className="hover:text-[#16b5d0]">
+                            florenciabarra98@outlook.es
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Lavaderos de autos - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🚗</span>
+                    Lavaderos de autos
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Brillo Car</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Lichiri Franco - Lavado del automóvil, cambio de lámparas, baterías, aceite
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Hipólito Irigoyen 672</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:Francolichiri160@gmail.com" className="hover:text-[#16b5d0]">
+                            Francolichiri160@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tecnología / Informática - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">💻</span>
+                    Tecnología / Informática
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">DEL DIQUE TECNOLOGÍA</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        De Leandro Miguel Reyes - Reparación de PC, instalación de cámaras de seguridad, filmación con
+                        drones, instalación de Internet Starlink, automatización de hogares con asistencia virtual
+                        (Alexa)
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>RPN5 y Av. Eva Perón (pegado a ABERCOR)</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546543115" className="hover:text-[#16b5d0]">
+                            3546543115
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:DelDiqueTecnologia@gmail.com" className="hover:text-[#16b5d0]">
+                            DelDiqueTecnologia@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Náutica / Embarcaciones - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🛥</span>
+                    Náutica / Embarcaciones
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Náutica NAUTILUS</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Toccoli Franco Germán - Fabricación de hidropedales y reparaciones en fibra de vidrio, gestoría
+                        náutica, traslado de embarcaciones
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>San Martín s/n, Villa Nueva / Villa del Dique</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546453119" className="hover:text-[#16b5d0]">
+                            3546453119
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:elcuchuflito22@gmail.com" className="hover:text-[#16b5d0]">
+                            elcuchuflito22@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Motos / Venta y Consignación - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🏍</span>
+                    Motos / Venta y Consignación
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Bailone Motos</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Bailone Jonathan - Venta y consignación de motos, cuatriciclos y UTV
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Ruta 5 km 106</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:0353154243474" className="hover:text-[#16b5d0]">
+                            0353/154243474
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:0353155690594" className="hover:text-[#16b5d0]">
+                            0353/155690594
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:jonibailone@hotmail.com" className="hover:text-[#16b5d0]">
+                            jonibailone@hotmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Herrería / Metalúrgica - New section */}
+                <div className="pt-4 border-t border-gray-100">
+                  <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
+                    <span className="text-2xl mr-2">🔧</span>
+                    Herrería / Metalúrgica
+                  </h3>
+                  <div className="pl-6">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Techos Calamuchita</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Julio Santillán - Herrería, rejas, portones, tinglados, trailer, trabajos en acero inoxidable
+                      </p>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex items-center space-x-2">
+                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                          <span>Mendoza 51</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546454714" className="hover:text-[#16b5d0]">
+                            3546454714
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Mail className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="mailto:Santillan.julio@gmail.com" className="hover:text-[#16b5d0]">
+                            Santillan.julio@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Seguridad - Updated section with MAC MONITOREO */}
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
                     <span className="text-2xl mr-2">📹</span>
                     Seguridad
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6 pl-6">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-900 mb-2">SM Seguridad</h4>
-                      <p className="text-sm text-gray-600 mb-2">Thiago Moscetta - Alarmas, cámaras y monitoreo</p>
-                      <div className="space-y-1 text-sm">
-                        <div className="flex items-center space-x-2">
-                          <MapPin className="h-4 w-4 text-[#16b5d0]" />
-                          <span>San Martín s/n</span>
+                    <div className="space-y-4">
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">SM Seguridad</h4>
+                        <p className="text-sm text-gray-600 mb-2">Thiago Moscetta - Alarmas, cámaras y monitoreo</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>San Martín s/n</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3546525631" className="hover:text-[#16b5d0]">
+                              3546525631
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:thiagomoscetta123@gmail.com" className="hover:text-[#16b5d0]">
+                              thiagomoscetta123@gmail.com
+                            </a>
+                          </div>
                         </div>
-                        <div className="flex items-center space-x-2">
-                          <Phone className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="tel:3546525631" className="hover:text-[#16b5d0]">
-                            3546525631
-                          </a>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <Mail className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="mailto:thiagomoscetta123@gmail.com" className="hover:text-[#16b5d0]">
-                            thiagomoscetta123@gmail.com
-                          </a>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900 mb-2">MAC MONITOREO</h4>
+                        <p className="text-sm text-gray-600 mb-2">Lorena Pizzio - Sistema de seguridad y monitoreo</p>
+                        <div className="space-y-1 text-sm">
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-[#16b5d0]" />
+                            <span>Arturo Illia 189</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="tel:3546514464" className="hover:text-[#16b5d0]">
+                              3546514464
+                            </a>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-[#16b5d0]" />
+                            <a href="mailto:Macmonitoreo@gmail.com" className="hover:text-[#16b5d0]">
+                              Macmonitoreo@gmail.com
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1621,31 +1937,34 @@ export default function ServiciosPage() {
                   </div>
                 </div>
 
-                {/* Refrigeración / Soldador - Agregué sección de refrigeración */}
+                {/* Alquiler de Baños / Sanitarios - New section */}
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
-                    <span className="text-2xl mr-2">🧊</span>
-                    Refrigeración / Soldador
+                    <span className="text-2xl mr-2">🚽</span>
+                    Alquiler de Baños / Sanitarios
                   </h3>
                   <div className="pl-6">
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-900 mb-2">SA servicio técnico en refrigeración</h4>
-                      <p className="text-sm text-gray-600 mb-2">Santiago Arce - Soldador</p>
+                      <h4 className="font-semibold text-gray-900 mb-2">Baños Químicos Calamuchita</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Vanina K. Lopez - Alquiler de baños químicos para obras y eventos, obradores, desagote de cámara
+                        séptica
+                      </p>
                       <div className="space-y-1 text-sm">
                         <div className="flex items-center space-x-2">
                           <MapPin className="h-4 w-4 text-[#16b5d0]" />
-                          <span>Suecia y Eslovaquia</span>
+                          <span>La Falda 441, Villa del Dique</span>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Phone className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="tel:3586010635" className="hover:text-[#16b5d0]">
-                            3586010635
+                          <a href="tel:+5493516786671" className="hover:text-[#16b5d0]">
+                            +54 9 351 678-6671
                           </a>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Mail className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="mailto:arcesanty01@gmail.com" className="hover:text-[#16b5d0]">
-                            arcesanty01@gmail.com
+                          <a href="mailto:bqcalamuchita@hotmail.com" className="hover:text-[#16b5d0]">
+                            bqcalamuchita@hotmail.com
                           </a>
                         </div>
                       </div>
@@ -1653,33 +1972,71 @@ export default function ServiciosPage() {
                   </div>
                 </div>
 
-                {/* Seguros - Agregué sección de seguros */}
+                {/* Estudios / Agrimensura y Arquitectura - New section */}
                 <div className="pt-4 border-t border-gray-100">
                   <h3 className="text-xl font-nunito font-bold text-gray-900 mb-4 flex items-center">
-                    <span className="text-2xl mr-2">🛡</span>
-                    Seguros
+                    <span className="text-2xl mr-2">📐</span>
+                    Estudios / Agrimensura y Arquitectura
                   </h3>
                   <div className="pl-6">
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-900 mb-2">Damian Aviles - Seguros</h4>
-                      <p className="text-sm text-gray-600 mb-2">Damian Aviles - Seguros Generales</p>
+                      <h4 className="font-semibold text-gray-900 mb-2">Estudio Carnevale & Asoc.</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Ing. Alejandro Carnevale – MP 2899 - Agrimensura y arquitectura
+                      </p>
                       <div className="space-y-1 text-sm">
                         <div className="flex items-center space-x-2">
                           <MapPin className="h-4 w-4 text-[#16b5d0]" />
-                          <span>Av. San Martín esquina Av. San Casimiro</span>
+                          <span>Buenos Aires 16, Local 7</span>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Phone className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="tel:3516431405" className="hover:text-[#16b5d0]">
-                            3516431405
+                          <a href="tel:3546659946" className="hover:text-[#16b5d0]">
+                            3546 659946
+                          </a>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Phone className="h-4 w-4 text-[#16b5d0]" />
+                          <a href="tel:3546488592" className="hover:text-[#16b5d0]">
+                            3546 488592
                           </a>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Mail className="h-4 w-4 text-[#16b5d0]" />
-                          <a href="mailto:daviles@mediterraneaseguros.com.ar" className="hover:text-[#16b5d0]">
-                            daviles@mediterraneaseguros.com.ar
+                          <a href="mailto:estudiocarnevale@live.com.ar" className="hover:text-[#16b5d0]">
+                            estudiocarnevale@live.com.ar
                           </a>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t-2 border-[#16b5d0] mt-8">
+                  <div className="bg-blue-50 p-6 rounded-lg">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0">
+                        <svg className="h-6 w-6 text-[#16b5d0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-nunito font-bold text-gray-900 mb-2">¿Prestás algún servicio?</h4>
+                        <p className="text-gray-700 font-montserrat">
+                          Si prestás algún servicio y no llegaste a inscribirte a través del formulario que compartimos
+                          desde las redes de la Municipalidad, no te preocupes: todavía podés sumarte. Para hacerlo,
+                          solo tenés que comunicarte enviando un mensaje al{" "}
+                          <a
+                            href="tel:3512142738"
+                            className="text-[#16b5d0] hover:text-[#0ea5e9] font-semibold underline"
+                          >
+                            351 214 2738
+                          </a>
                       </div>
                     </div>
                   </div>
