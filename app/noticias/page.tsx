@@ -18,6 +18,67 @@ interface Noticia {
 
 const todasLasNoticias: Noticia[] = [
   {
+    id: "mamografo-movil-ultimo-dia",
+    titulo: "Último día del Mamógrafo Móvil en Villa del Dique",
+    fecha: "2025-09-11",
+    fechaDisplay: "11 de septiembre de 2025",
+    imagen: "/images/mamofrago-movil.jpg",
+    descripcion:
+      "Recordamos a todas las vecinas que mañana será el último día de atención del Mamógrafo Móvil en Villa del Dique. La mamografía es el método más eficaz para detectar el cáncer de mama en etapas tempranas.",
+    slug: "/noticias/mamografo-movil-ultimo-dia",
+  },
+  {
+    id: "campana-prevencion-incendios",
+    titulo: "Campaña de Prevención de Incendios en Villa del Dique",
+    fecha: "2025-09-10",
+    fechaDisplay: "10 de septiembre de 2025",
+    imagen: "/images/no-al-fuego.jpg",
+    descripcion:
+      "Un descuido puede terminar en tragedia. Te invitamos a sumarte a las acciones de prevención de incendios y cuidar entre todos nuestro entorno. La responsabilidad de prevenir es de todos.",
+    slug: "/noticias/campana-prevencion-incendios",
+  },
+  {
+    id: "nueva-camioneta-seguridad",
+    titulo: "Villa del Dique incorpora una nueva camioneta para reforzar la seguridad",
+    fecha: "2025-08-09",
+    fechaDisplay: "9 de agosto de 2025",
+    imagen: "/images/nueva-camioneta.jpg",
+    descripcion:
+      "Con el objetivo de fortalecer el plan de seguridad en nuestra localidad, Villa del Dique recibió una camioneta 0 km gracias a las gestiones del Intendente Emiliano Torres ante el Gobierno Provincial, que se suma a la flota de vehículos de la Guardia Local.",
+    slug: "/noticias/nueva-camioneta-seguridad",
+  },
+  {
+    id: "registro-civil-normalidad",
+    titulo: "El Registro Civil de Villa del Dique retoma su atención con normalidad",
+    fecha: "2025-09-10",
+    fechaDisplay: "10 de septiembre de 2025",
+    imagen: "/images/registro-civil-vdd.jpg",
+    descripcion:
+      "El Registro Civil de Villa del Dique ya funciona con normalidad, pudiendo dar curso a solicitudes de DNI y/o Pasaporte tras la resolución de inconvenientes en los servidores del RENAPER que afectó a más de 40 localidades de Córdoba.",
+    slug: "/noticias/registro-civil-normalidad",
+  },
+  {
+    id: "inauguracion-polo-cultural",
+    titulo: "🎭 Villa del Dique inaugura su nuevo Polo Cultural",
+    fecha: "2025-09-06",
+    fechaDisplay: "6 de septiembre de 2025",
+    imagen: "/images/inaguracion-vdd.jpg",
+    descripcion:
+      "Desde el viernes 12 de septiembre, Villa del Dique contará con un nuevo Polo Cultural que integra la renovada Casa de la Cultura, el Centro Cultural Pato Carret y el nuevo anfiteatro al aire libre, formando un verdadero corazón cultural para el pueblo.",
+    slug: "/noticias/inauguracion-polo-cultural",
+  },
+  {
+    id: "torneo-nacional-atletismo-sindrome-down",
+    titulo:
+      "🏅 Villa del Dique brilló en el Torneo Nacional de Atletismo para Personas con Síndrome de Down en Mendoza",
+    fecha: "2025-09-04",
+    fechaDisplay: "4 de septiembre de 2025",
+    imagen: "/images/deportes-vdd-1.jpg",
+    descripcion:
+      "El pasado 4 de septiembre, Villa del Dique fue protagonista en el Torneo Nacional de Atletismo para Personas con Síndrome de Down, realizado en la provincia de Mendoza. Nuestros atletas obtuvieron importantes resultados que llenan de orgullo a toda la comunidad.",
+    slug: "/noticias/torneo-nacional-atletismo-sindrome-down",
+  },
+  {
     id: "bomberos-voluntarios",
     titulo: "Reconocimiento y apoyo a nuestros bomberos voluntarios: acompañamiento a una inversión histórica",
     fecha: "2025-07-22",
