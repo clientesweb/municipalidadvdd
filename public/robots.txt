@@ -1,12 +1,35 @@
+# Robots.txt para Municipalidad de Villa del Dique
+# https://www.villadeldique.gob.ar/robots.txt
+
 User-agent: *
 Allow: /
 
+# Permitir acceso a todos los recursos importantes
+Allow: /vecinos/
+Allow: /turistas/
+Allow: /noticias/
+Allow: /images/
+Allow: /videos/
+
+# Bloquear archivos administrativos y temporales
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+Disallow: *.json$
+Disallow: /service-worker.js
+
+# Permitir bots de redes sociales
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
 # Sitemap
-Sitemap: https://merkat-agri.vercel.app/sitemap.xml
+Sitemap: https://www.villadeldique.gob.ar/sitemap.xml
 
-# Disallow admin or private areas if any
-# Disallow: /admin/
-# Disallow: /private/
-
-# Allow all search engines to crawl the site
+# Crawl-delay para ser respetuosos con el servidor
 Crawl-delay: 1
