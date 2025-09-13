@@ -18,6 +18,16 @@ interface Noticia {
 
 const todasLasNoticias: Noticia[] = [
   {
+    id: "inauguracion-polo-cultural-realizada",
+    titulo: "Villa del Dique inauguró su nuevo Polo Cultural",
+    fecha: "2025-09-12",
+    fechaDisplay: "12 de septiembre de 2025",
+    imagen: "/images/gran-inaguracion.jpg",
+    descripcion:
+      "Con enorme orgullo anunciamos que Villa del Dique ya cuenta con un Polo Cultural que permitirá seguir promoviendo actividades que fortalezcan la unión, el intercambio y el disfrute de toda nuestra comunidad.",
+    slug: "/noticias/inauguracion-polo-cultural-realizada",
+  },
+  {
     id: "mamografo-movil-ultimo-dia",
     titulo: "Último día del Mamógrafo Móvil en Villa del Dique",
     fecha: "2025-09-11",
